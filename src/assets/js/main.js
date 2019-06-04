@@ -1,32 +1,20 @@
-$(document).ready(function(){
-    $('.menu-tab').click(function(){
-      $('.menu-hide').toggleClass('show');
-      $('.menu-tab').toggleClass('active');
+$(function () {
+    $('.menu-tab').on('click', function() {
+        $('.menu-hide').toggleClass('show');
+        $('.menu-tab, .bg-mask, body').toggleClass('active');
     });
-    $('a').click(function(){
-      $('.menu-hide').removeClass('show');
-      $('.menu-tab').removeClass('active');
-    });
-  });
 
-  $(".show").on("click", function(){
-    $(".mask").addClass("active");
-    $("body").addClass("active");
-  });
-  
-  // Function for close the Modal
-  
-function closeModal(){
-    $(".mask").removeClass("active");
-    $("body").removeClass("active");
-  }
-  
-  $(".close, .mask").on("click", function(){
-    closeModal();
-  });
-  
-  $(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-      closeModal();
-    }
-  });
+    $('.close, .mask').on('click', function() {
+        $('.mask, body').removeClass('active');
+    });
+    
+    $('.show').on('click', function() {
+        $('.mask, body').addClass('active');
+    });
+
+    $(document).on('keyup', function(e) {
+        if (e.keyCode == 27) {
+            $('.mask, body').removeClass('active');
+        }
+    });
+});
