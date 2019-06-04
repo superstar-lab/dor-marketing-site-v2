@@ -1,0 +1,79 @@
+hero:
+  title: Count your foot traffic
+  subtitle: Measure how well your stores engage customers so you can repeat what works best.
+  button: What drives us
+  buttonUrl: "#"
+
+cards:
+- title: Roll out to 100% of your stores
+  image: /assets/images/homepage/card-1.jpg
+  subtitle: Install our thermal people counter in minutes. Peel and stick over any door to start collecting accurate data.
+  button: Get faster ROI from our hardware »
+  buttonUrl: "#"
+- title: Report to your heart’s content
+  image: /assets/images/homepage/card-2.jpg
+  subtitle: Access your data your way. Get more mileage by integrating any point of sale or using our API for custom applications.
+  button: Our approach to data empowerment »
+  buttonUrl: "#"
+- title: React faster to emerging trends
+  image: /assets/images/homepage/card-3.jpg
+  subtitle: Predict what will happen next with year-over-year trends. Replace guesstimates with a source of truth — no decoding necessary. 
+  button: Take action on clear insights »
+  buttonUrl: "#"
+
+features:
+- title: See the full picture
+  subtitle: Collect the most important metrics you need to instantly understand how well your stores are performing. Drive key decisions with data that increases in value over time.
+  image: /assets/images/homepage/features1.png
+  button: Get full visibility into every store
+  buttonUrl: "#"
+- title: Create meaningful experiences
+  subtitle: Drive and engage more traffic in stores optimized for profit. With data analytics, separate what’s working from what’s clutter to keep your customers coming back.
+  image: /assets/images/homepage/features2.png
+  button: Focus on your stores’ real purpose
+  buttonUrl: "#"
+- title: Work with a true partner
+  subtitle: "We empower retailers to focus on what really matters: Operating efficient stores where meaningful engagement happens. We’re here to make it easier for you to be operationally excellent."
+  image: /assets/images/homepage/features3.png
+  button: What drives us
+  buttonUrl: "#"
+
+testimonials:
+  title: Hear what customers have to say about Dor
+  reviews:
+  - color: green
+    text: With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.
+    author: Retail Toolkit
+  - color: peach
+    text: If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.
+    author: Clothes Mentor
+  - color: blue
+    text: Dor is our secret weapon behind the scenes.
+    author: Original Mattress Factory
+
+clients:
+  title: More customers that love Dor
+  logos:
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+  - image: /assets/images/homepage/clients.png
+    alt: clients
+
+demo:
+  title: Empower your business today
+  subtitle: Request a demo to have an account executive show you just how easy it is to get started with Dor.
+  button: What drives us
+  buttonUrl: "#"
+  

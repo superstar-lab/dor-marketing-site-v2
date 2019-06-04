@@ -1,0 +1,112 @@
+#footer {
+    margin: 19px 0 40px;
+
+    .flex-row { 
+        
+        @include media-down(md) {
+           flex-direction: column;
+        }
+
+        .footer-links {
+            display: flex;
+
+            @include media-down(md) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .col {
+                padding: 0;
+
+                @include media-down(sm) {
+                    margin-bottom: 32px;
+                }
+            }
+    
+            .section-name {
+                font-weight: $font-weight-semi-bold;
+                margin-bottom: 10px;
+                @extend .footer.link;
+
+                @include media-down(sm) {
+                    font-size: $font-size-small;
+                }
+            }
+            
+            ul {
+                @extend .list-style;
+    
+                li {
+                    margin-bottom: 8px;
+                    
+                    a {
+                        font-weight: $font-weight-normal;        
+                        @include media-down(sm) {
+                            font-size: $font-size-small;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-social {
+
+            @include media-down(md) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 40px;
+            }
+
+            @include media-down(sm) {
+                margin-top: 0;
+                display: flex;
+                justify-content: center;
+            }
+            
+            ul {
+                @extend .list-style;
+                display: flex;
+                justify-content: space-between;
+
+                @include media-down(md) {
+                    justify-content: end;
+                }
+
+                li {
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100px;
+                        display: table-cell;
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #e7e8ea;
+                        color: $blue;
+                    }
+
+                    @include media-down(md) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        color: $brownish-grey;
+        font-size: $font-size-medium;
+        line-height: $line-height;
+        text-align: right;
+
+        @include media-down(md) {
+            margin-top: -33px;
+        }
+        
+        @include media-down(sm) {
+            margin-top: 24px;
+            text-align: center;
+            font-size: $font-size-small;
+        }
+    }
+}

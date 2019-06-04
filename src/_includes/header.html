@@ -1,0 +1,41 @@
+{% assign string = site.data.header %}
+
+<div id="header" class="sticky">
+    <div class="content-wrap">
+        <nav class="header-menu flex-row">
+            <a href="{{ site.url }}" class="header-logo" id="home-logo-desktop-header">
+                <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
+            </a>
+            {% for link in string.navigation %}
+            <a href="{{ link.url }}" class="hidden-xs header-menu-item link">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
+        <div class="header-menu flex-row right-group">
+            <a href="{{ string.rightSection.link.url }}" class="header-menu-item sign-in">
+                {{ string.rightSection.link.title }}
+            </a>
+            <a href="#" class="header-menu-item button-link">
+                <div class="button small blue show" aria-haspopup="true">
+                    {{ string.rightSection.button.title }}
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="mobile-header visible-xs">
+        <div class="menu-tab">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </div>
+        <div class="menu-hide">
+            <nav>
+                <ul>
+                    {% for link in string.navigation %}
+                    <a href="{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

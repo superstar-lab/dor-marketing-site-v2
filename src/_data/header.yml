@@ -1,0 +1,20 @@
+navigation:
+- title: How it Works
+  url: how-it-works
+- title: Pricing
+  url: pricing
+- title: Resources
+  url: resources
+- title: Customers
+  url: customers
+
+logo:
+  description: Dor Logo
+  image: "/assets/images/logos/dor_logo.svg"
+
+rightSection:
+  link:
+    title: Sign In
+    url: sign-in
+  button:
+    title: Request Demo

@@ -1,0 +1,106 @@
+<div id="footer">
+    <div class="flex-row  wrapper">
+        <div class="footer-links col-75 col-sm-100 fl-sm-wrap">
+            {% for section in site.data.footer.navigation %}
+            <div class="col col-sm-50">
+                <div class="section-name">{{ section.name }}</div>
+                <ul>
+                    {% for link in section.links %}
+                    <li>
+                        <a href="{{ link.url }}" class="footer link">
+                            {{ link.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="footer-social col-25 ">
+            <div class="footer-section social">
+                <ul>
+                    {% for social in site.data.footer.social %}
+                    <li>
+                        <a href="{{ social.url }}" class="link">
+                            <i class="fab {{ social.icon }} icon small"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright col">{{ site.data.footer.copyright }}</div>
+</div>
+
+<div class="mask" role="dialog"></div>
+<div class="modal">
+    <div class="modal-body wrapper">
+        <h3>Request a quote </h3>
+        <button class="close" role="button">✖</button>
+        <form>
+            <div class="flex-row">
+                <div class="col form-field">
+                    <label for="quote-first-name">
+                        First Name*
+                    </label>
+                    <input class="form-input required" id="quote-first-name" type="text" name="firstname" required autocomplete="given-name">
+                </div>
+                <div class="col form-field">
+                    <label for="quote-last-name">
+                        Last Name*
+                    </label>
+                    <input class="form-input required" id="quote-last-name" type="text" name="lastname" required >
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col form-field">
+                    <label for="quote-email">
+                        Email*
+                    </label>
+                    <input class="form-input required" id="quote-email" type="email" name="email">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col form-field">
+                    <label for="quote-company">
+                        Company*
+                    </label>
+                    <input class="form-input required" id="quote-company" type="text" name="company">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col form-field">
+                    <label for="quote-phone">
+                        Phone
+                    </label>
+                    <input class="form-input required" id="quote-phone" type="text" name="phone">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col form-field">
+                    <label for="quote-phone">
+                        Business Type*
+                    </label>
+                    <select class="select-css">
+                        <option>This is a native select element</option>
+                        <option>Apples</option>
+                        <option>Bananas</option>
+                        <option>Grapes</option>
+                        <option>Oranges</option>
+                    </select>
+                </div>
+            </div>
+            <div class="copyright">* Required  ·  By submitting your information, you agree to our<a href="#"> terms and conditions.</a></div>
+            <div class="text-center button-section ">
+                <a href="{{ string.demo.buttonUrl }}" class="button-link">
+                    <div class="button large blue">
+                        Get a Quote
+                    </div>
+                </a>
+            </div>
+            
+        </form>
+    </div>
+</div>

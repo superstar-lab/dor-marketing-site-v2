@@ -1,0 +1,15 @@
+// ---
+// # this front matter ensures Jekyll reads the file to be transformed into CSS later
+// # This is the main scss file that will be transformed into main.css
+// # Add any additional scss in _scss and import here
+// ---
+
+@import "hamburgers/hamburgers";
+@import "breakpoints";
+@import "colors";
+@import "typography";
+@import "app";
+@import "header";
+@import "footer";
+@import "homepage";
+

@@ -1,0 +1,372 @@
+#hero {
+    background: url(../images/homepage/homepage-hero.jpg) no-repeat center center;
+    min-height: 65vh;
+    width: 100%;
+    background-size: cover;
+
+
+    .hero-text {
+        opacity: 0.95;
+        border-radius: 10px;
+        background-color: $dark-blue;
+        padding: 48px;
+        color: $white;
+        @include media-down(md) {
+            padding: 24px;
+        }
+    }
+
+    .subtitle {
+        margin: 8px 0 28px;
+        @include media-down(md) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+#homepage-cards {
+    @extend .padding;
+
+    .card {
+        justify-content: space-between;
+
+        &:last-child {
+    
+            @include media-down(sm) {
+                margin-bottom: 0px;
+            }
+        }
+
+        @include media-down(sm) {
+            justify-content: baseline;
+            margin-bottom: 32px;
+        }
+
+        img {
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 36px;
+            color: $light-black;
+
+            @include media-down(sm) {
+                margin-top: 4px;
+                margin-bottom: 16px;
+            }
+        }
+
+        a {
+            color: $blue;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+#features {
+    background-color: $ice-blue;
+    @extend .padding;
+
+    .flex-row {
+
+        @include media-down(sm) {
+            flex-direction: column-reverse;
+        }
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+            margin: 96px 0;
+
+            @include media-down(md) {
+                margin: 64px 0;
+            }
+
+            @include media-down(sm) {
+                margin: 0;
+                flex-direction: column-reverse;
+                margin: 32px 0;
+            }
+
+            .col:nth-child(2n+1) {
+                margin-left: 32px;
+                margin-right: 0;
+                
+                @include media-down(md) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .col {
+
+            &:nth-child(2n+1) {
+                margin-right: 32px;
+                @include media-down(md) {
+                    margin-right: 0;
+                }
+            }
+            
+            h2 {
+                margin-bottom: 17px;
+                color: $dark-blue;
+
+                @include media-down(sm) {
+                    margin-bottom: 6px;
+                    margin-top: 17px;
+                }
+            }
+
+            p {
+                font-size: $font-size-large;
+                color: $black;
+                line-height: 1.5;
+                margin: 38px 0 28px;
+
+                @include media-down(md) {
+                    font-size: $font-size-medium;
+                    margin: 24px 0 16px;
+                }
+
+                @include media-down(sm) {
+                    margin: 10px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+#testimonials {
+    @extend .padding;
+
+    h2 {
+        margin-bottom: 48px;
+
+        @include media-down(md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .flex-column {
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+            border-radius: 16px;
+            margin-bottom: 48px;
+            
+            @include media-down(md) { 
+                margin-bottom: 32px;
+            }
+            
+            &:nth-child(1) {
+                @extend .col-75;
+                padding: 32px 64px;
+                
+                @include media-down(md) { 
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                
+                @include media-down(sm) {
+                    padding: 16px;
+                }
+            }
+            
+            &:nth-child(2) {
+                @extend .col-66;
+                padding: 32px 64px;
+                
+                @include media-down(md) { 
+                    flex: 0 0 90%;
+                    max-width: 90%;
+                }
+
+                @include media-down(sm) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding: 16px;
+                }
+            }
+            
+            &:nth-child(3) {
+                padding: 32px 64px;
+                @extend .col-50;
+
+                @include media-down(md) {
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                    margin-bottom: 0;
+                }
+
+                @include media-down(sm) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding: 16px;
+                }
+            }
+
+            & > div {
+                justify-content: space-between;
+            }
+
+            p {
+                line-height: 1.4;
+                color: $black;
+                margin-bottom: 16px;
+                padding: 0 56px;
+
+                @include media-down(md) {
+                    padding: 0 25px;
+                    font-size: $default-font-size;
+                }
+
+                @include media-down(sm) {
+                    padding: 0;
+                    margin-top: 16px;
+                }
+            }
+
+            cite {
+                display: inline-block;
+                font-style: normal;
+                font-size: $font-size-small;
+                font-weight: $font-weight-bold;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $black;
+
+                @include media-down(md) {
+                    font-size: $font-size-medium;
+                }
+
+                @include media-down(sm) {
+                    font-size: $font-size-small;
+                }
+                
+            }
+        }
+    }
+
+    .green {
+        background-color: $teal;
+    }
+
+    .peach {
+        background-color: $peach;
+    }
+
+    .blue {
+        background-color: $light-blue-grey;
+    }
+}
+
+#clients {
+    @extend .padding;
+    background-color: $ice-blue;
+
+    h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        font-weight: $font-weight-normal;
+        color: $brownish-grey;
+        margin-bottom: 24px;
+
+        @include media-down(md) {
+            font-size: $font-size-medium;
+        }
+
+        @include media-down(sm) {
+            margin-top: 8px;
+        }
+    }
+
+    .flex-row {
+        flex-flow: wrap;
+
+        & > div {
+            margin-top: 24px;
+
+            @include media-down(md) {
+                margin-top: 16px;
+            }
+
+            @include media-down(sm) {
+                margin-top: 10px;
+            }
+
+            img {
+                padding: 50px 24px;
+
+                @include media-down(md) {
+                    padding: 46px  35px;
+                }
+
+                @include media-down(sm) {
+                    padding: 39px 22px;
+                }
+            }
+        }
+    }
+}
+
+#demo {
+    padding: 96px 0;
+
+    @include media-down(md) {
+        padding: 64px 0;
+    }
+
+    @include media-down(sm) {
+        padding: 32px 0 48px;
+    }
+
+    .wrapper {
+
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            padding: 0;
+        }
+
+        .col-25 {
+
+            @include media-down(md) {
+                padding: 0;
+                max-width: 13%;
+                flex: 0 0 90%;
+            }
+        }
+
+        .col-50 {
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                max-width: 74%;
+                flex: 0 0 74%;
+                padding: 0 40px;
+            }
+        }
+        
+        .icon.icon-zigzag-group {
+            
+            @include media-down(md) {
+                background-size: cover;
+            }
+        }
+    }
+    
+    .flex-row {
+
+        p {
+            margin: 12px 0 32px;
+            font-size: $font-size-large;
+            line-height: 1.33;  
+        }
+    }
+
+}
+
+hr {
+    border: 1px solid $light-blue-grey;
+    margin: 0 32px;
+}

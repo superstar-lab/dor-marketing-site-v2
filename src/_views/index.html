@@ -1,0 +1,114 @@
+---
+title: Dor - Operations driven by foot traffic analytics
+permalink: /
+layout: default
+---
+{% assign string = site.data.homepage %}
+
+<section id="hero" class="content-middle">
+    <div class="wrapper content-wrap">
+        <div class="hero-text col-50">
+            <h1 class="text-title">
+                {{ string.hero.title }}
+            </h1>
+            <div class="subtitle">{{ string.hero.subtitle }}</div>
+            <a href="{{ string.hero.buttonUrl }}" class="button-link">
+                <div class="button large white">
+                    {{ string.hero.button }}
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="homepage-cards">
+    <div class="flex-row fl-sm-col wrapper">
+        {% for card in string.cards %}
+        <div class="card col col-sm-100 flex-column">
+            <img src="{{ card.image }}">
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.subtitle }}</p>
+            <a href="{{ card.buttonUrl }}">{{ card.button }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="features">
+    <div class="wrapper content-wrap">
+        {% for feature in string.features %}
+        <div class="flex-row fl-sm-col content-middle">
+            <div class="col col-sm-100">
+                <h2>{{ feature.title }}</h2>
+                <div>
+                    <i class="icon icon-zigzag"></i>
+                </div>
+                <p>{{ feature.subtitle }}</p>
+                <a href="{{ feature.buttonUrl }}" class="button-link">
+                    <div class="button large blue">
+                        {{ feature.button }}
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-100">
+                <img src="{{ feature.image }}">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="wrapper content-wrap">
+        <h2 class="text-center">{{ string.testimonials.title }}</h2>
+        <div class="flex-column">
+            {% for testimonial in string.testimonials.reviews %}
+            <div class="{{ testimonial.color }} ">
+                <div class="flex-row">
+                    <i class="icon icon-quote {{ testimonial.color }}"></i>
+                    <i class="icon icon-quote {{ testimonial.color }} rotate"></i>
+                </div>
+                <div class="text-center">
+                    <p>{{ testimonial.text }}</p>
+                    <cite>{{ testimonial.author  }}</cite>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="clients">
+    <div class="wrapper">
+        <h2>{{ string.clients.title }}</h2>
+        <div class="flex-row">
+            {% for logo in string.clients.logos %}
+            <div class="col-25">
+                <img src="{{ logo.image }}" alt="{{ logo.alt }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="demo">
+    <div class="wrapper flex-row fl-sm-col content-middle">
+        <div class="col-25 hidden-xs">
+            <i class="icon icon-zigzag-group"></i>
+        </div>
+        <div class="col-50 col-sm-100 text-center">
+            <h2>{{ string.demo.title }}</h2>
+            <p>{{ string.demo.subtitle }}</p>
+            <a href="{{ string.demo.buttonUrl }}" class="button-link">
+                <div class="button large blue">
+                    {{ string.demo.button }}
+                </div>
+            </a>
+        </div>
+        <div class="col-25 text-right hidden-xs">
+            <i class="icon icon-zigzag-group"></i>
+        </div>
+    </div>
+</section>
+
+<hr>

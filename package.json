@@ -1,0 +1,37 @@
+{
+  "name": "dor-marketing",
+  "version": "1.7.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "babel-core": "^6.26.3",
+    "browser-sync": "^2.26.3",
+    "fancy-log": "^1.3.2",
+    "glob": "^7.1.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-awspublish": "^3.3.3",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-filesize": "0.0.6",
+    "gulp-rename": "^1.2.3",
+    "gulp-rev-all": "^0.9.7",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "rename": "^1.0.4"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-cloudfront-invalidate": "^0.1.5",
+    "postcss-scss": "^1.0.5"
+  }
+}

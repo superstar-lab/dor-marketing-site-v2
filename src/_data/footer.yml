@@ -1,0 +1,55 @@
+navigation:
+- name: How It Works
+  links:
+  - title: Hardware
+    url: hardware
+  - title: Software
+    url: software
+  - title: Pricing
+    url: pricing
+- name: Resources
+  links:
+  - title: Why Dor?
+    url: why-dor
+  - title: Accuracy & Visibility
+    url: accuracy-visibility
+  - title: Retail
+    url: retail
+  - title: Blog
+    url: https://blog.getdor.com/
+- name: Company
+  links:
+  - title: About Us
+    url: about-us
+  - title: Customers
+    url: customers
+  - title: Careers
+    url: careers
+  - title: Integrations
+    url: integrations
+  - title: Press
+    url: press
+- name: Support
+  links:
+  - title: FAQ
+    url: faq
+  - title: Contact Us
+    url: https://support.getdor.com/s/#contact
+  - title: Terms of Use
+    url: https://app.getdor.com/terms-of-use
+  - title: Privacy Policy
+    url: https://app.getdor.com/privacy-policy
+
+social:
+- icon: fa-twitter
+  url: https://twitter.com/dortechnologies
+- icon: fa-linkedin
+  url: https://www.linkedin.com/company/dor-technologies
+- icon: fa-facebook
+  url: https://www.facebook.com/getdor/
+- icon: fa-instagram
+  url: https://www.instagram.com/getdor/
+- icon: fa-blog
+  url: https://blog.getdor.com/
+
+copyright: ©2019 Dor Technologies, Inc
