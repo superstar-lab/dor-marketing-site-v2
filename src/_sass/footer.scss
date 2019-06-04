@@ -136,8 +136,8 @@
 .modal {
     position: fixed;
     z-index: 100;
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
+    width: 55%;
     top: 0;
     display: flex;
     justify-content: center;
@@ -145,10 +145,37 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease-out;
-    transform: translateY(45px);
+    transform: translateX(-50%) translateY(-50%); top: 50%; left: 50%;
+
+    @include media-down(md) {
+        width: 75%;
+    }
+
+    @include media-down(sm) {
+        width: 90%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+
+    
+    ::-webkit-scrollbar-thumb {
+        background: $light-blue-grey; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
     
     .modal-body {
-        width: 50%;
+        height: 90vh;
+        overflow-x: auto;
         background: $white;
         position: relative;
         padding: 32px;
@@ -156,51 +183,81 @@
         border-radius: 9px;
 
         @include media-down(md) {
-            width: 75%;
-        }
-
-        @include media-down(sm) {
-            width: 90%;
+            padding: 24px;
         }
         
-        h3 {
-            display: inline-block;
-            font-size: $font-size-large;
-            margin: 0 12px;
+        @include media-down(sm) {
+            padding: 16px;
+            height: 80vh;
         }
 
-        .close {
-            position: absolute;
-            top: 33px;
-            font-size: 22px;
-            right:33px;
-            background: $white;
-            color: $black;
-            cursor: pointer;
-            border: 0;
+        .col {
+            padding: 0;
         }
 
-        .copyright {
+        .content-middle {
+            margin-bottom: 16px;
+
+            h3 {
+                display: inline-block;
+                font-size: $font-size-large;
+    
+                @include media-down(md) {
+                    font-size: $default-font-size;
+                }
+            }
+    
+            .close {
+                position: absolute;
+                right: 33px;
+                background: $white;
+                color: $black;
+                cursor: pointer;
+                border: 0;
+    
+                @include media-down(md) {
+                    right: 16px;
+                }
+            }
+        }
+        
+        
+        .consent-text {
             font-size: $font-size-small;
             color: $brownish-grey;
-            margin: 16px;
             
             a {
                 font-size: $font-size-small;
                 color: $blue;
             }
-          
+            
         }
-
-        .form-field {
-            margin-top: 16px;
-
+        
+        #fsCell78379958 {
+            
+            @include media-down(sm) {
+                text-align: center;
+            }
+        }
+        
+        .fsBody.fsEmbed {
+            padding: 0; 
+            
+            .fsForm {
+                margin: 0;
+                padding: 0;
+            }
+            
             label {
                 font-size: $font-size-small;
                 line-height: 1.29;
                 color: $brownish-grey;
                 margin-bottom: 8px;
                 display: block;
+                
+                @include media-down(sm) {
+                    font-size: $font-size-xs;
+                }
             }
 
             input, select {
@@ -217,11 +274,17 @@
                 color: #111111;
             }
 
-            .button-section {
-                margin-top: 16px;
+            .fsSubmitButton,
+            .fsPreviousButton, 
+            .fsNextButton {
+                @extend .button;
+                @extend .large;
+                background-color: $blue !important;
+                width: 80%;
+                border-radius: 8px !important;
 
-                .button {
-                    padding: 0 110px;
+                @include media-down(sm) {
+                    width: 100%;
                 }
             }
         }
@@ -235,6 +298,5 @@
     & + .modal{
         visibility: visible;
         opacity: 1;
-        transform: translateY(0);
     }
 }

@@ -4,6 +4,30 @@
     width: 100%;
     background-size: cover;
 
+    @include media-down(sm) {
+        background: none;
+        min-height: auto;
+        align-items: flex-end;
+    }
+    
+    .hero-image {
+
+        @include media-down(sm) {
+            background: url(../images/homepage/homepage-hero.jpg) no-repeat;
+            background-position: top center;
+            background-size: contain;
+            min-height: 250px;
+            width: 100%;
+            background-size: cover;
+        }
+    }
+
+    .content-wrap {
+
+        @include media-down(sm) {
+            padding: 0;
+        }
+    }
 
     .hero-text {
         opacity: 0.95;
@@ -11,13 +35,20 @@
         background-color: $dark-blue;
         padding: 48px;
         color: $white;
+
         @include media-down(md) {
             padding: 24px;
+        }
+
+        @include media-down(sm) {
+            opacity: 1;
+            border-radius: 0;
         }
     }
 
     .subtitle {
         margin: 8px 0 28px;
+
         @include media-down(md) {
             margin-bottom: 24px;
         }

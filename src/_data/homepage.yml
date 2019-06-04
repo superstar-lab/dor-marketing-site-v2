@@ -1,8 +1,7 @@
 hero:
   title: Count your foot traffic
   subtitle: Measure how well your stores engage customers so you can repeat what works best.
-  button: What drives us
-  buttonUrl: "#"
+  button: Request Demo
 
 cards:
 - title: Roll out to 100% of your stores
@@ -74,6 +73,5 @@ clients:
 demo:
   title: Empower your business today
   subtitle: Request a demo to have an account executive show you just how easy it is to get started with Dor.
-  button: What drives us
-  buttonUrl: "#"
+  button: Request Demo
   

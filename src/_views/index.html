@@ -7,13 +7,14 @@ layout: default
 
 <section id="hero" class="content-middle">
     <div class="wrapper content-wrap">
+        <div class="hero-image"></div>
         <div class="hero-text col-50">
             <h1 class="text-title">
                 {{ string.hero.title }}
             </h1>
             <div class="subtitle">{{ string.hero.subtitle }}</div>
-            <a href="{{ string.hero.buttonUrl }}" class="button-link">
-                <div class="button large white">
+            <a class="button-link">
+                <div class="button large white show" aria-haspopup="true">
                     {{ string.hero.button }}
                 </div>
             </a>
@@ -99,8 +100,8 @@ layout: default
         <div class="col-50 col-sm-100 text-center">
             <h2>{{ string.demo.title }}</h2>
             <p>{{ string.demo.subtitle }}</p>
-            <a href="{{ string.demo.buttonUrl }}" class="button-link">
-                <div class="button large blue">
+            <a class="button-link">
+                <div class="button large blue show" aria-haspopup="true">
                     {{ string.demo.button }}
                 </div>
             </a>

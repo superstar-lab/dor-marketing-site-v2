@@ -225,6 +225,7 @@ img {
     text-align: center;
     vertical-align: middle;
     display: inline-block;
+    cursor: pointer;
 
     &.blue {
         background-color: $blue;
@@ -294,6 +295,19 @@ img {
 // Icons 
 
 .icon {
+
+    &.icon-close {
+        background: url(../images/icons/close.png) no-repeat left center;
+        background-size: cover;
+        height: 22px;
+        width: 22px;
+        display: inline-block;
+
+        @include media-down(sm) {
+            width: 16px;
+            height: 16px;
+        }
+    }
 
     &.icon-quote {
         background-size: contain;
