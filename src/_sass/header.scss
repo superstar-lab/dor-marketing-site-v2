@@ -14,8 +14,12 @@
 
     .header-logo {
         margin-left: 12px;
+
+        @include media-down(lg) {
+            margin-left: 0;
+        }
     }
-    
+
     .header-logo-1 {
 
         @include media-down(sm) {
@@ -30,6 +34,10 @@
         align-items: stretch;
         z-index: 10;
 
+        @include media-down(lg) {
+            margin: 0;
+            padding: 0;
+        }
         @include media-down(md) {
             justify-content: space-between;
         }
