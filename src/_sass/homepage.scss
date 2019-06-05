@@ -31,6 +31,7 @@
 
     .hero-text {
         opacity: 0.95;
+        margin: 0 12px;
         border-radius: 10px;
         background-color: $dark-blue;
         padding: 48px;
@@ -343,61 +344,3 @@
     }
 }
 
-#demo {
-    padding: 96px 0;
-
-    @include media-down(md) {
-        padding: 64px 0;
-    }
-
-    @include media-down(sm) {
-        padding: 32px 0 48px;
-    }
-
-    .wrapper {
-
-        @media (min-width: 768px) and (max-width: 991.98px) { 
-            padding: 0;
-        }
-
-        .col-25 {
-
-            @include media-down(md) {
-                padding: 0;
-                max-width: 13%;
-                flex: 0 0 90%;
-            }
-        }
-
-        .col-50 {
-
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                max-width: 74%;
-                flex: 0 0 74%;
-                padding: 0 40px;
-            }
-        }
-        
-        .icon.icon-zigzag-group {
-            
-            @include media-down(md) {
-                background-size: cover;
-            }
-        }
-    }
-    
-    .flex-row {
-
-        p {
-            margin: 12px 0 32px;
-            font-size: $font-size-large;
-            line-height: 1.33;  
-        }
-    }
-
-}
-
-hr {
-    border: 1px solid $light-blue-grey;
-    margin: 0 32px;
-}

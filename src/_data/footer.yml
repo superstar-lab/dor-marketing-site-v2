@@ -1,3 +1,8 @@
+demo:
+  title: Empower your business today
+  subtitle: Request a demo to have an account executive show you just how easy it is to get started with Dor.
+  button: Request Demo
+  
 navigation:
 - name: How It Works
   links:

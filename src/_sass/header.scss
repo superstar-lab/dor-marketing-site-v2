@@ -12,10 +12,14 @@
         margin-top: $header-height;
     }
 
+    .header-logo {
+        margin-left: 12px;
+    }
+    
     .header-logo-1 {
 
         @include media-down(sm) {
-            margin-left: 44px;
+            margin-left: 28px;
         }
     }
 
