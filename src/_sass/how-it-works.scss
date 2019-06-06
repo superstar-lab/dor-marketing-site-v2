@@ -1,0 +1,301 @@
+#how-it-works {
+
+    .hero {
+        background-color: $dark-blue;
+        padding: 64px 0;
+
+        @include media-down(sm) {
+            padding: 0 0 24px;
+
+            .wrapper {
+                padding: 0;
+            }
+
+            .text {
+                padding: 0 16px;
+            }
+        }
+
+        .video-section {
+
+            @include media-down(sm) {
+                width: 100%;
+                margin-bottom: 20px;                
+            }
+        }
+
+        h1, 
+        .subtitle {
+            color: $white;
+        }
+
+        .subtitle {
+            margin: 8px 0 24px;
+            opacity: 0.8;
+        }
+    }
+}
+
+.tabs {
+    
+    nav {
+        background-color: $white;
+        position: sticky;
+        top: $header-height - 1;
+        padding: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+        ul {
+            
+            li {
+                display: inline-block;
+                
+                &.active {
+                    
+                    a {
+                        color: $blue;
+                        border: 2px solid $blue;
+                        border-radius: 4px;
+                    }
+                }
+                
+                a {
+                    padding: 9px 20px;
+                    color: $brownish-grey;
+                    text-transform: uppercase;
+                    font-size: $font-size-small;
+                    font-weight: $font-weight-bold;
+                    line-height: 1.29;
+                    letter-spacing: 0.5px;
+
+                    @include media-down(md) {
+                        font-size: $font-size-xs;
+                    }
+
+                    @include media-down(sm) {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.tabs-stage {
+
+    & > div {
+        display: none;
+    }
+
+    & > div.active {
+        display: block;
+    }
+
+    #hardware {
+    
+        #people-counter {
+            @extend .padding;
+    
+            .subtitle {
+                margin: 12px 0 40px;
+                max-width: 75%;
+                display: inline-block;
+    
+                @include media-down(md) {
+                    margin: 8px 0 24px;
+                }
+    
+                @include media-down(sm) {
+                    max-width: 100%;
+                    font-size: $font-size-medium;
+        
+                }
+            }
+        }
+    
+        #installation {
+            margin: 48px 0 128px;
+    
+            @include media-down(md) {
+                margin: 9px 0 64px;
+            }
+    
+            @include media-down(sm) {
+                margin: 0 0 48px;
+            }
+    
+            h2 {
+                margin-bottom: 12px;
+            }
+    
+            p {
+                color: $dark-grey;
+            }
+    
+            .flex-row  {
+    
+                .col {
+                    
+                    &:first-child {
+                        padding-right: 28px;
+                        
+                        @include media-down(sm) {
+                            padding: 0;
+                        }
+                    }
+                    
+                    &:last-child {
+                        padding-right: 28px;
+    
+                        @include media-down(sm) {
+                            padding: 0;
+                            margin-bottom: 16px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+    }
+}
+
+.location {
+
+    h2 {
+        margin-bottom: 40px;
+
+        @include media-down(md) {
+            margin-bottom: 24px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 4px;
+        }
+    }
+    
+    .wrapper  >  .flex-row {
+
+        @include media-down(md) {
+            flex-direction: column;    
+        }
+        
+        & > .col {
+        
+            @include media-down(md) {
+                display: flex;
+                flex-direction: row;
+                margin: 12px 0;
+            }
+
+            @include media-down(sm) {
+                flex-direction: column;
+            }
+        }
+    }
+    
+    .checklist-section {
+        padding: 32px;
+        border-radius: 8px;
+        border: solid 1px $light-blue-grey;
+        
+        &:first-child {
+            margin-bottom: 24px;
+
+            @include media-down(md) {
+                margin-bottom: 0;
+                margin-right: 24px;
+            }
+
+            @include media-down(sm) {
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+        }
+
+        h3 {
+            margin-left: 44px;
+            margin-bottom: 22px;
+            text-transform: uppercase;
+
+            @include media-down(md) {
+                margin-left: 32px;
+                font-size: $font-size-medium;
+            }
+        }
+
+        ul {
+
+            li {
+                margin-bottom: 22px;
+                
+                @include media-down(md) {
+                    margin-bottom: 12px;
+                }
+                
+                span {
+                    width: calc(100% - 24px);
+                    padding-left: 20px;
+                    font-size: $default-font-size;
+
+                    @include media-down(md) {
+                        font-size: $font-size-medium;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+
+        @include media-down(md) {
+           object-fit: none;
+           height: auto;
+        }
+
+    }
+}
+
+.more-details {
+    margin-top: 80px;
+    margin-bottom: 64px;
+    padding: 48px 96px;
+    background-color: $whitish-grey;
+
+    @include media-down(md) {
+        margin-top: 44px;
+        margin-bottom: 56px;
+    }
+
+    @include media-down(sm) {
+        padding: 24px 26px;
+        text-align: center;
+    }
+
+    img {
+
+        @include media-down(sm) {
+            max-width: 70%;
+        }
+    }
+
+    .col-66 {
+        margin-left: 24px;
+
+        @include media-down(sm) {
+            margin: 23px 0 0 0;
+        }
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+}

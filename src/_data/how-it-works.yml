@@ -1,0 +1,45 @@
+hero:
+  title: Count your foot traffic
+  subtitle: Measure how well your stores engage customers so you can repeat what works best.
+  button: Request Demo
+  videoUrl: https://www.youtube.com/embed/wNjMUDspr1k
+
+navigation:
+  - title: Hardware
+  - title: Software
+  - title: Customer Support
+
+hardware:
+  people-counter:
+    title: Hardware that scales with you
+    subtitle: 'Get data faster with the world’s first thermal-sensing, battery-operated people counter'
+    image: /assets/images/how-it-works/dor.jpg
+    alt: People counter image
+
+  installation:
+    title: Tech that doesn’t slow you down
+    subtitle: 'With zero reliance on your in-store network, Dor sets up in minutes. Just peel and stick on your entrances and we’ll do the rest. Dor’s proprietary thermal technology and advanced machine-learning algorithms ensure consistently accurate counts with no calibration needed, so you can focus on what really matters in your stores: your customers.'
+    image: /assets/images/how-it-works/installation.png
+    alt: Installation image
+  
+  feautures:
+    title: Tech for one or one thousand locations
+    image: /assets/images/how-it-works/location.png
+    alt: Locations
+    points:
+    - title: Deployment speed
+      lists:
+        - title: Ships in days, sets up in minutes
+        - title: Install the battery-operated sensor yourself without wires or technicians
+        - title: Deploy to 100% of your stores
+    - title: Technology
+      lists:
+        - title: Machine learning enhances accuracy on every door in any condition
+        - title: Thermal sensors protect customer privacy
+        - title: Hourly data automatically available at your fingertips on your dashboard
+  
+  details:
+    title: 'Need more details? <br>Download the datasheet for sensor specs'
+    button: Download Sensor Datasheet
+    image: /assets/images/how-it-works/details.png
+    alt: Details

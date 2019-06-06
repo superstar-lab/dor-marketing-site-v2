@@ -1,0 +1,140 @@
+//Flex classes
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-down(md) {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    @include media-down(sm) {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row; 
+}
+
+.fl-sm-wrap {
+
+    @include media-down(sm) {
+        flex-wrap: wrap;
+    }
+}
+
+.fl-sm-col {
+
+    @include media-down(sm) {
+        flex-direction: column;
+    }
+}
+
+.fl-sm-reverse {
+
+    @include media-down(sm) {
+        flex-direction: column-reverse;
+    }
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center {
+    justify-content: middle;
+}
+
+.content-middle {
+    align-items: center;
+    display: flex;
+}
+
+// Grid
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 12px;
+
+    @include media-down(sm) {
+        padding: 0;
+    }
+}
+
+.col-25 {
+    padding: 0 12px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    @include media-down(md) { 
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.col-33 {
+    padding: 0 12px;
+    flex: 0 0 33.3367%;
+    max-width: 33.3367%;
+
+    @include media-down(sm) { 
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.col-50 {
+    padding: 0 12px;
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    @include media-down(sm) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.col-66 {
+    padding: 0 12px;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-75 {
+    padding: 0 12px;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-sm-50 {
+
+    @include media-down(sm) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.col-sm-100 {
+
+    @include media-down(sm) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}

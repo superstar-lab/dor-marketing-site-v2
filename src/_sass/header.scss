@@ -3,7 +3,7 @@
     width: 100%;
     height: $header-height;
     background-color: $white;
-    color: $dark-gray;
+    color: $brownish-grey;
     box-shadow: $header-box-shadow;
     position: fixed;
     z-index: 10;
@@ -38,6 +38,7 @@
             margin: 0;
             padding: 0;
         }
+
         @include media-down(md) {
             justify-content: space-between;
         }
@@ -73,9 +74,10 @@
         
         &.sign-in {
             color: $blue;
+            font-weight: $font-weight-bold;
 
             @include media-down(md) {
-                font-size: $font-size-medium;
+                font-size: $font-size-small;
             }
         }
 

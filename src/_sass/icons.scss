@@ -1,0 +1,70 @@
+.icon {
+
+    &.icon-close {
+        background: url(../images/icons/close.png) no-repeat left center;
+        background-size: cover;
+        height: 22px;
+        width: 22px;
+        display: inline-block;
+
+        @include media-down(sm) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &.icon-check {
+        background: url(../images/icons/check.svg) no-repeat left center;
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+    }
+
+    &.icon-quote {
+        background-size: contain;
+        height: 20px;
+        width: 24px;
+        display: inline-block;
+
+        &.green {
+            background: url(../images/icons/quote_green.svg) no-repeat left center;
+        }
+
+        &.blue {
+            background: url(../images/icons/quote_blue.svg) no-repeat left center;
+        }
+
+        &.peach {
+            background: url(../images/icons/quote_peach.svg) no-repeat left center;
+        }
+    }
+
+    &.icon-zigzag {
+        background: url(../images/icons/zigzag.svg) no-repeat left center;
+        background-size: contain;
+        height: 10px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    &.icon-zigzag-group {
+        background: url(../images/icons/zigzag-group.svg) no-repeat  center;
+        background-size: contain;
+        height: 110px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    &.small {
+        font-size: 1.4295rem;
+    }
+
+    &.medium {
+        font-size: 2.5rem;
+    }
+
+    &.large {
+        font-size: 2.875rem;
+    }
+}

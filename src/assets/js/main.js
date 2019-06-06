@@ -17,4 +17,22 @@ $(function () {
             $('.mask, body').removeClass('active');
         }
     });
+
+    // bajani eli iraric es logicheskiy hatvacner@ commenterov
+    var elements = $('#navigation');
+    Stickyfill.add(elements);
+
+    // tabs
+    $('.tabs-nav a').on('click', function(event) {
+        event.preventDefault();
+        
+        var tabSelector = $(this).attr('href');
+        
+        $('.tabs-nav li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        
+        $('.tabs-stage > div').removeClass('active');
+        $('.tabs-stage').find(tabSelector).addClass('active');
+    });
 });
+

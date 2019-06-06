@@ -1,0 +1,52 @@
+.button-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.button {
+    border-radius: 8px;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+
+    &.blue {
+        background-color: $blue;
+        color: $white;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    &.white {
+        background-color: $white;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: $white;
+        }
+    }
+
+    &.small {
+        height: 31px;
+        padding: 0 12px;
+        line-height: 31px;
+        font-size: $font-size-small;
+       
+    }
+
+    &.large {
+        height: 56px;
+        padding: 0 32px;
+        line-height: 56px;
+        font-size: $default-font-size;
+        @include media-down(md) {
+            font-size: $font-size-medium;
+            padding: 0 24px;
+            height: 48px;
+            line-height: 48px;
+        }
+    }
+}
