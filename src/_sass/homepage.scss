@@ -44,6 +44,7 @@
         @include media-down(sm) {
             opacity: 1;
             border-radius: 0;
+            margin: 0;
         }
     }
 
