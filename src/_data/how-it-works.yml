@@ -9,37 +9,105 @@ navigation:
   - title: Software
   - title: Customer Support
 
-hardware:
-  people-counter:
-    title: Hardware that scales with you
-    subtitle: 'Get data faster with the world’s first thermal-sensing, battery-operated people counter'
-    image: /assets/images/how-it-works/dor.jpg
-    alt: People counter image
+tabs:
+  - title: hardware
+    content:
+      heading:
+        title: Hardware that scales with you
+        subtitle: 'Get data faster with the world’s first thermal-sensing, battery-operated people counter'
+        image: /assets/images/how-it-works/dor.jpg
+        alt: People counter image
 
-  installation:
-    title: Tech that doesn’t slow you down
-    subtitle: 'With zero reliance on your in-store network, Dor sets up in minutes. Just peel and stick on your entrances and we’ll do the rest. Dor’s proprietary thermal technology and advanced machine-learning algorithms ensure consistently accurate counts with no calibration needed, so you can focus on what really matters in your stores: your customers.'
-    image: /assets/images/how-it-works/installation.png
-    alt: Installation image
-  
-  feautures:
-    title: Tech for one or one thousand locations
-    image: /assets/images/how-it-works/location.png
-    alt: Locations
-    points:
-    - title: Deployment speed
-      lists:
-        - title: Ships in days, sets up in minutes
-        - title: Install the battery-operated sensor yourself without wires or technicians
-        - title: Deploy to 100% of your stores
-    - title: Technology
-      lists:
-        - title: Machine learning enhances accuracy on every door in any condition
-        - title: Thermal sensors protect customer privacy
-        - title: Hourly data automatically available at your fingertips on your dashboard
-  
-  details:
-    title: 'Need more details? <br>Download the datasheet for sensor specs'
-    button: Download Sensor Datasheet
-    image: /assets/images/how-it-works/details.png
-    alt: Details
+      second-section:
+        title: Tech that doesn’t slow you down
+        subtitle: 'With zero reliance on your in-store network, Dor sets up in minutes. Just peel and stick on your entrances and we’ll do the rest. Dor’s proprietary thermal technology and advanced machine-learning algorithms ensure consistently accurate counts with no calibration needed, so you can focus on what really matters in your stores: your customers.'
+        image: /assets/images/how-it-works/installation.png
+        alt: Installation image
+      
+      feautures:
+        title: Tech for one or one thousand locations
+        image: /assets/images/how-it-works/location.png
+        alt: Locations
+        points:
+        - title: Deployment speed
+          lists:
+            - title: Ships in days, sets up in minutes
+            - title: Install the battery-operated sensor yourself without wires or technicians
+            - title: Deploy to 100% of your stores
+        - title: Technology
+          lists:
+            - title: Machine learning enhances accuracy on every door in any condition
+            - title: Thermal sensors protect customer privacy
+            - title: Hourly data automatically available at your fingertips on your dashboard
+      
+      details:
+        title: 'Need more details? <br>Download the datasheet for sensor specs'
+        button: Download Sensor Datasheet
+        image: /assets/images/how-it-works/details.png
+        alt: Details
+
+  - title: software
+    content:
+      heading:
+        title: Software built for swift action
+        subtitle: 'Get easy, constant access to foot traffic trends for all of your locations, then track how operational decisions create change for your business.'
+        image: /assets/images/how-it-works/apple.png
+        alt: Apple image
+
+      second-section:
+        title: Equip your whole team to succeed with true visibility
+        subtitle: 'Data is only valuable if you can access it on your terms. Unite your company’s stakeholders on a smart dashboard they can use to analyze multiple date ranges and stores while factoring in seasonality so they can keep their finger to the pulse of the most important metrics in your business.'
+        image: /assets/images/how-it-works/equipment.jpg
+        alt: Installation image
+      
+      feautures:
+        title: Get a powerful perspective on store performance
+        image: /assets/images/how-it-works/performance.jpg
+        alt: Performance
+        points:
+        - title: Actionable Insights
+          lists:
+            - title: View how your most important business metrics are trending across any date range
+            - title: Compare metrics across different date ranges and compare store-by-store performance
+            - title: Get conversion rate insights with direct or custom point-of-sale integrations
+        - title: Data flexibility
+          lists:
+            - title: View, analyze and download your cloud-based data anytime
+            - title: Power your own business intelligence tools seamlessly with API support
+            - title: Invite unlimited users while having full control over role-based access within your organization
+      
+      details:
+        title: 'Need more details? <br>Download the datasheet for sensor specs'
+        button: Download Sensor Datasheet
+        image: /assets/images/how-it-works/small-apple.png
+        alt: Details
+
+  - title: Customer Support
+    content:
+      heading:
+        title: Support from a true partner
+        subtitle: 'Our team is here to support your journey from discovery to data-driven decision making — and beyond. Let’s discover and replicate what works in your stores together.'
+        image: /assets/images/how-it-works/mountain.jpg
+        alt: Apple image
+
+      second-section:
+        title: Don’t plan your next big initiative alone
+        subtitle: Your customers are already telling you what they want. Through their engagement with your brand, they’re leaving patterns and trends behind them. With the right tool in hand to capture those trends, and the right partner dedicated to supporting your long-term operational excellence, you can meet your customer where they need you to be.'
+        image: /assets/images/how-it-works/forest.jpg
+        alt: Installation image
+      
+      feautures:
+        title: Operate excellently with the right partner by your side
+        image: /assets/images/how-it-works/ocean.jpg
+        alt: Proactive support
+        points:
+        - title: Proactive support
+          lists:
+            - title: Avoid downtime with proactive, remote resolution of hardware issues
+            - title: Get help anytime via phone, email and chat support from your dedicated customer success manager and their team
+            - title: Install, activate and stay up and running faster with a support team available to everyone in your organization
+        - title: A team focused on your success
+          lists:
+            - title: Access insights that confirm your hunches and open new possibilities from our team
+            - title: Reference and take action toward growth through custom quarterly reports
+            - title: View your success anytime with an on-demand analytics dashboard

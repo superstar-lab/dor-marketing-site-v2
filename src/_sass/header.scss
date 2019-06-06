@@ -13,9 +13,9 @@
     }
 
     .header-logo {
-        margin-left: 12px;
+        margin-left: 32px;
 
-        @include media-down(lg) {
+        @include media-down(md) {
             margin-left: 0;
         }
     }
@@ -65,7 +65,7 @@
         }
 
         &.button-link {
-            margin-left: 32px;
+            margin-left: 12px;
 
             @include media-down(md) {
                 margin-left: 16px;
@@ -94,6 +94,9 @@
             margin-right: 12px;
         }
     }
+
+    // Mobile header 
+
 
     @include media-down(sm) {
 
