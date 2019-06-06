@@ -25,84 +25,85 @@ layout: default
     </div>
 </section>
 
-<section class="tabs">
-    <nav>
-        <ul class="tabs-nav">
-            {% for nav in string.navigation %}
-            <li {% if forloop.first == true %}class="active"{% endif %}>
-                <a href="#{{ nav.title  | downcase | remove: ' ' }}">{{ nav.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
+<nav id="navigation">
+    <ul>
+        {% for nav in string.navigation %}
+        <li>
+            <a href="#{{ nav.title  | downcase | remove: ' ' }}">{{ nav.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
 
-    <div class="tabs-stage">
-        <div class="active" id="hardware" >
-            <section id="people-counter">
-                <div class="wrapper flex-column">
-                    <div class="col text-center">
-                        <h2 class="large">{{ string.hardware.people-counter.title }}</h2>
-                        <div class="subtitle">{{ string.hardware.people-counter.subtitle }}</div>
-                        <img src="{{ string.hardware.people-counter.image }}" alt="{{ string.hardware.people-counter.alt }}">
+<div class="tabs-stage">
+    {% for tab in string.tabs %}
+    <div id="{{ tab.title  | downcase | remove: ' '  }}" >
+        <section class="heading">
+            <div class="wrapper flex-column">
+                <div class="col text-center">
+                    <h2 class="large">{{ tab.content.heading.title }}</h2>
+                    <div class="subtitle">{{ tab.content.heading.subtitle }}</div>
+                    <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+                </div>
+            </div>
+        </section>
+    
+        <section class="second-section">
+            <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
+                <div class="col">
+                    <img src="{{ tab.content.second-section.image }}" alt="{{ tab.content.second-section.alt }}">
+                </div>
+                <div class="col">
+                    <h2>{{ tab.content.second-section.title }}</h2>
+                    <p>{{ tab.content.second-section.subtitle }}</p>
+                </div>
+        </section>
+        
+        <section class="feautures">
+            <div class="wrapper">
+                <h2 class="text-center">{{ tab.content.feautures.title }}</h2>
+                <div class="flex-row">
+                    <div class="col">
+                        {% for item in tab.content.feautures.points %}
+                        <div class="checklist-section">
+                            <h3>{{ item.title }}</h3>
+                            <ul>
+                                {% for list in item.lists %}
+                                <li class="flex-row">
+                                    <i class="icon icon-check"></i>
+                                    <span>{{ list.title }}</span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="col">
+                        <img src="{{ tab.content.feautures.image }}" alt="{{ tab.content.feautures.alt }}">
                     </div>
                 </div>
-            </section>
-        
-            <section id="installation">
-                <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
-                    <div class="col">
-                        <img src="{{ string.hardware.installation.image }}" alt="{{ string.hardware.installation.alt }}">
+            </div>
+        </section>
+
+        {% if tab.content.details %}
+        <section class="more-details">
+            <div class="wrapper">
+                <div class="flex-row fl-sm-col content-middle col">
+                    <div class="col-33 col-sm-100">
+                        <img src="{{ tab.content.details.image }}" alt="{{ tab.content.details.alt }}">
                     </div>
-                    <div class="col">
-                        <h2>{{ string.hardware.installation.title }}</h2>
-                        <p>{{ string.hardware.installation.subtitle }}</p>
-                    </div>
-            </section>
-            
-            <section id="locations" class="location">
-                <div class="wrapper">
-                    <h2 class="text-center">{{ string.hardware.feautures.title }}</h2>
-                    <div class="flex-row">
-                        <div class="col">
-                            {% for item in string.hardware.feautures.points %}
-                            <div class="checklist-section">
-                                <h3>{{ item.title }}</h3>
-                                <ul>
-                                    {% for list in item.lists %}
-                                    <li class="flex-row">
-                                        <i class="icon icon-check"></i>
-                                        <span>{{ list.title }}</span>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
+                    <div class="col-66 col-sm-100">
+                        <h2>{{ tab.content.details.title }}</h2>
+                        <a class="button-link">
+                            <div class="button large blue show" aria-haspopup="true">
+                                {{ tab.content.details.button }}
                             </div>
-                            {% endfor %}
-                        </div>
-                        <div class="col">
-                            <img src="{{ string.hardware.feautures.image }}" alt="{{ string.hardware.feautures.alt }}">
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </section>
-        
-            <section id="more-details" class="more-details">
-                <div class="wrapper">
-                    <div class="flex-row fl-sm-col content-middle col">
-                        <div class="col-33 col-sm-100">
-                            <img src="{{ string.hardware.details.image }}" alt="{{ string.hardware.details.alt }}">
-                        </div>
-                        <div class="col-66 col-sm-100">
-                            <h2>{{ string.hardware.details.title }}</h2>
-                            <a class="button-link">
-                                <div class="button large blue show" aria-haspopup="true">
-                                    {{ string.hardware.details.button }}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        {% endif %}
     </div>
-
-</section>
+    {% endfor %}
+</div>

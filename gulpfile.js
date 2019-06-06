@@ -111,9 +111,18 @@ gulp.task( 'build:js-src', ( done ) => {
         .on( 'end', () => done() );
 } );
 
+gulp.task('build:js-vendor', done => {
+    gulp.src(paths.vendor.src + '/*.js')
+        .pipe(concat('vendor.js'))
+        .pipe(uglify())
+        .pipe(size())
+        .pipe(gulp.dest(paths.vendor.dest))
+        .on('end', () => done());
+});
+
 gulp.task( 'build:js', gulp.series( 'build:js-src' ) );
 
-gulp.task( 'build:assets', gulp.parallel( 'build:css', 'build:js' ) );
+gulp.task( 'build:assets', gulp.parallel( 'build:css', 'build:js', 'build:js-vendor' ) );
 
 gulp.task( 'build-all:staging', gulp.series( 'build:staging', 'build:assets' ) );
 gulp.task( 'build-all:production', gulp.series( 'build:production', 'build:assets' ) );
