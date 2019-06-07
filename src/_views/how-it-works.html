@@ -6,7 +6,7 @@ layout: default
 
 {% assign string = site.data.how-it-works %}
 
-<section id="how-it-works">
+<section id="how-it-works" class="hero-section">
     <div class="hero">
         <div class="wrapper flex-row fl-sm-reverse content-middle">
             <div class="col text">
@@ -25,7 +25,7 @@ layout: default
     </div>
 </section>
 
-<nav id="navigation">
+<nav id="navigation" class="body-navigation">
     <ul>
         {% for nav in string.navigation %}
         <li>
@@ -37,73 +37,76 @@ layout: default
 
 <div class="tabs-stage">
     {% for tab in string.tabs %}
-    <div id="{{ tab.title  | downcase | remove: ' '  }}" >
-        <section class="heading">
-            <div class="wrapper flex-column">
-                <div class="col text-center">
-                    <h2 class="large">{{ tab.content.heading.title }}</h2>
-                    <div class="subtitle">{{ tab.content.heading.subtitle }}</div>
-                    <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+    <div>
+        <div id="{{ tab.title  | downcase | remove: ' '  }}" >
+            <section class="heading">
+                <div class="wrapper flex-column">
+                    <div class="col text-center">
+                        <h2 class="large">{{ tab.content.heading.title }}</h2>
+                        <div class="subtitle">{{ tab.content.heading.subtitle }}</div>
+                        <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+                    </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="second-section">
-            <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
-                <div class="col">
-                    <img src="{{ tab.content.second-section.image }}" alt="{{ tab.content.second-section.alt }}">
-                </div>
-                <div class="col">
-                    <h2>{{ tab.content.second-section.title }}</h2>
-                    <p>{{ tab.content.second-section.subtitle }}</p>
-                </div>
-        </section>
+            </section>
         
-        <section class="feautures">
-            <div class="wrapper">
-                <h2 class="text-center">{{ tab.content.feautures.title }}</h2>
-                <div class="flex-row">
+            <section class="second-section">
+                <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
                     <div class="col">
-                        {% for item in tab.content.feautures.points %}
-                        <div class="checklist-section">
-                            <h3>{{ item.title }}</h3>
-                            <ul>
-                                {% for list in item.lists %}
-                                <li class="flex-row">
-                                    <i class="icon icon-check"></i>
-                                    <span>{{ list.title }}</span>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endfor %}
+                        <img src="{{ tab.content.second-section.image }}" alt="{{ tab.content.second-section.alt }}">
                     </div>
                     <div class="col">
-                        <img src="{{ tab.content.feautures.image }}" alt="{{ tab.content.feautures.alt }}">
+                        <h2>{{ tab.content.second-section.title }}</h2>
+                        <p>{{ tab.content.second-section.subtitle }}</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        {% if tab.content.details %}
-        <section class="more-details">
-            <div class="wrapper">
-                <div class="flex-row fl-sm-col content-middle col">
-                    <div class="col-33 col-sm-100">
-                        <img src="{{ tab.content.details.image }}" alt="{{ tab.content.details.alt }}">
-                    </div>
-                    <div class="col-66 col-sm-100">
-                        <h2>{{ tab.content.details.title }}</h2>
-                        <a class="button-link">
-                            <div class="button large blue show" aria-haspopup="true">
-                                {{ tab.content.details.button }}
+            </section>
+            
+            <section class="feautures">
+                <div class="wrapper">
+                    <h2 class="text-center">{{ tab.content.feautures.title }}</h2>
+                    <div class="flex-row">
+                        <div class="col">
+                            {% for item in tab.content.feautures.points %}
+                            <div class="checklist-section">
+                                <h3>{{ item.title }}</h3>
+                                <ul>
+                                    {% for list in item.lists %}
+                                    <li class="flex-row">
+                                        <i class="icon icon-check"></i>
+                                        <span>{{ list.title }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
                             </div>
-                        </a>
+                            {% endfor %}
+                        </div>
+                        <div class="col">
+                            <img src="{{ tab.content.feautures.image }}" alt="{{ tab.content.feautures.alt }}">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        {% endif %}
+            </section>
+    
+            {% if tab.content.details %}
+            <section class="more-details">
+                <div class="wrapper">
+                    <div class="flex-row fl-sm-col content-middle col">
+                        <div class="col-33 col-sm-100">
+                            <img src="{{ tab.content.details.image }}" alt="{{ tab.content.details.alt }}">
+                        </div>
+                        <div class="col-66 col-sm-100">
+                            <h2>{{ tab.content.details.title }}</h2>
+                            <a class="button-link">
+                                <div class="button large blue show" aria-haspopup="true">
+                                    {{ tab.content.details.button }}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+        </div>
+        {% include cta.html %}
     </div>
     {% endfor %}
 </div>

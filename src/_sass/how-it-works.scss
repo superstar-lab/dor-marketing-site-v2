@@ -1,8 +1,7 @@
-#how-it-works {
+.hero-section {
 
     .hero {
         background-color: $dark-blue;
-        padding: 64px 0;
 
         @include media-down(sm) {
             padding: 0 0 24px;
@@ -31,12 +30,22 @@
 
         .subtitle {
             margin: 8px 0 24px;
-            opacity: 0.8;
+        }
+    }
+
+    &#how-it-works {
+
+        .hero {
+            padding: 64px 0;
+    
+            .subtitle {
+                opacity: 0.8;
+            }
         }
     }
 }
 
-#navigation {
+.body-navigation {
     background-color: $white;
     position: sticky;
     top: $header-height - 1;
@@ -82,6 +91,14 @@
 }
 
 .tabs-stage {
+
+    .demo {
+        background-color: $ice-blue;
+    }
+
+    & > div:last-child .demo {
+        display: none
+    }
 
     .heading {
         @extend .padding;
