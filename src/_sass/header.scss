@@ -57,6 +57,11 @@
             align-items: center;
             justify-content: center;
 
+            &.active {
+                color: $black;
+                font-weight: $font-weight-bold;
+            }
+
             @include media-down(md) {
                 padding: 20px;
                 font-size: $font-size-xs;
@@ -176,7 +181,7 @@
                     li {
                         padding: 20px 23px;
                         transition: all .5s ease;
-            
+                        
                         a {
                             padding: 30px 25px;
                             line-height: 1.29;

@@ -4,7 +4,6 @@
         background-color: $dark-blue;
 
         @include media-down(sm) {
-            padding: 0 0 24px;
 
             .wrapper {
                 padding: 0;
@@ -37,6 +36,10 @@
 
         .hero {
             padding: 64px 0;
+
+            @include media-down(sm) {
+                padding: 0 0 24px;
+            }
     
             .subtitle {
                 opacity: 0.8;
@@ -216,7 +219,7 @@
                     }
             
                     h3 {
-                        margin-left: 44px;
+                        margin-left: 40px;
                         margin-bottom: 22px;
                         text-transform: uppercase;
             
@@ -237,12 +240,10 @@
                             
                             span {
                                 width: calc(100% - 24px);
-                                padding-left: 20px;
                                 font-size: $default-font-size;
             
                                 @include media-down(md) {
                                     font-size: $font-size-medium;
-                                    padding-left: 12px;
                                 }
                             }
                         }

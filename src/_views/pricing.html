@@ -1,0 +1,78 @@
+---
+title: Dor | Pricing
+permalink: /pricing/
+layout: default
+cta: false
+---
+
+{% assign string = site.data.pricing %}
+
+<div class="pricing">
+    <section id="pricing" class="page-hero hero-section content-center content-middle">
+        <div class="mobile-image">
+            <img src="{{ string.hero.image }}">
+        </div>
+        <div class="hero col-50 col-sm-100">
+            <div class="wrapper flex-row fl-sm-reverse content-middle">
+                <div class="col text-center">
+                    <h1>{{ string.hero.title }}</h1>
+                    <div class="subtitle">{{ string.hero.subtitle }}</div>
+                    <a class="button-link">
+                        <div class="button large white show" aria-haspopup="true">
+                            {{ string.hero.button }}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="plans">
+        <div class="wrapper">
+            <h2 class="text-center large">Solutions for all sizes</h2>
+            <div class="flex-row fl-sm-col cards">
+                {% for plan in string.plans %}
+                <div class="col col-sm-100">
+                    <div class="card flex-row">
+                        <div class="col-66">
+                            <h3>{{ plan.title }}</h3>
+                            <small>{{ plan.subtitle }}</small>
+                            <ul>
+                                {% for list in plan.lists %}
+                                <li>{{ list.title }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-33">
+                            <img src="{{ plan.image }}" alt="{{ list.alt }}">
+                        </div>
+                    </div>
+                    <div class="checklist-section">
+                        <small>{{ plan.points.title }}</small>
+                        <ul>
+                            {% for list in plan.points.lists %}
+                            <li class="flex-row">
+                                <i class="icon icon-check"></i>
+                                <span>{{ list.title }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+    
+        </div>
+    </section>
+    
+    <section id="form">
+        <div class="form-section">
+            <div class="wrapper content-center flex-column content-middle">
+                <h2>Let’s get the conversation started</h2>
+                <div class="col-50 col-sm-100">
+                    <script type="text/javascript" src="https://getdor.formstack.com/forms/js.php/getdor_com_copy"></script><noscript><a href="https://getdor.formstack.com/forms/getdor_com_copy" title="Online Form">Online Form - getdor.com V2 - Get a demo</a></noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

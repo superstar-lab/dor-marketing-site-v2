@@ -21,29 +21,16 @@ $(function () {
     });
 
     // sticky header
-    var elements = $('.body-navigation');
+    var elements = $('#navigation');
     Stickyfill.add(elements);
 
     // scroll spy
     var mainHeader = document.getElementById('header');
     var stickyHeader = document.getElementById('navigation');
-    var spy = new Gumshoe('.body-navigation a', {
+    var spy = new Gumshoe('#navigation a', {
         offset: function () {
             return mainHeader.getBoundingClientRect().height + stickyHeader.getBoundingClientRect().height;
         }
     });
-
-    // tabs
-    // $('.tabs-nav a').on('click', function(event) {
-    //     event.preventDefault();
-        
-    //     var tabSelector = $(this).attr('href');
-        
-    //     $('.tabs-nav li').removeClass('active');
-    //     $(this).parent('li').addClass('active');
-        
-    //     $('.tabs-stage > div').removeClass('active');
-    //     $('.tabs-stage').find(tabSelector).addClass('active');
-    // });
 });
 

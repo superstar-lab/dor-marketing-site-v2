@@ -19,6 +19,16 @@
         height: 24px;
         width: 24px;
         display: inline-block;
+        position: absolute;
+        z-index: -1;
+
+        & + * {
+            padding-left: 40px;
+
+            @include media-down(md) {
+                padding-left: 36px;
+            }
+        }
     }
 
     &.icon-quote {

@@ -1,0 +1,38 @@
+hero:
+  title: Start a pilot today
+  subtitle: Get the foot traffic data you need at every single one of your locations in record time.
+  button: Request Demo
+  image: /assets/images/pricing/hero.jpg
+
+plans:
+  - title: PRO
+    subtitle: 'Good for:'
+    image: /assets/images/pricing/pro.jpg
+    alt: 
+    lists:
+      - title: Independent retailers
+      - title: Medium-sized chains
+      - title: Proof of concepts
+    points:
+      title: 'Included:'
+      lists:
+        - title: Analytics dashboard
+        - title: Unlimited users
+        - title: 3-day rapid deployment
+        - title: Sales data integration
+        - title: Unlimited customer support
+
+  - title: ENTERPRISE
+    subtitle: 'Good for:'
+    image: /assets/images/pricing/enterprise.jpg
+    alt:
+    lists:
+      - title: National chains
+    points:
+      title: 'All <strong>Pro</strong> features, plus:'
+      lists:
+        - title: Quarterly business reviews
+        - title: Custom rollout plan
+        - title: Dedicated customer success representative
+        - title: Marketing insights
+        - title: Custom service-level/enterprise service agreements

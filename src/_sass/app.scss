@@ -79,6 +79,56 @@ img {
     }
 }
 
+// Common styles
+
+.hero-section.page-hero {
+    min-height: 65vh;
+    width: 100%;
+
+    @include media-down(sm) {
+        min-height: auto;
+        background: $dark-blue !important;
+        display: block;
+    }
+
+    &.hero-section {
+
+        @include media-down(sm) {
+            width: 100%;              
+        }
+        
+        .mobile-image {
+            display: none;
+
+            @include media-down(sm) {
+                display: block;
+            }
+        }
+
+        .hero {
+            padding: 48px;
+            border-radius: 8px;
+
+            @include media-down(md) {
+                padding: 40px;
+            }
+            
+            @include media-down(sm) {
+                border-radius: 0;
+                padding: 24px;
+
+                .wrapper {
+                    padding: 0;
+                }
+    
+                .text {
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+}
+
 // Links
 .link {
     color: inherit;
