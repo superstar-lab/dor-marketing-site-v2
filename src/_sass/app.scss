@@ -6,6 +6,12 @@ $default-mobile-padding: 32px 0 48px;
 
 $header-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
+:target::before {
+    content: "";
+    display: block;
+    height: 107px; /* fixed header height*/
+    margin: -107px 0 0; /* negative fixed header height */
+}
 
 html {
     min-height: 100vh;
