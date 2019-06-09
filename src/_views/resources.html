@@ -1,0 +1,101 @@
+---
+title: Dor | Resources
+permalink: /resources/
+layout: default
+---
+
+{% assign string = site.data.resource-page %}
+
+<section id="resources" class="page-hero hero-section content-center content-middle">
+    <div class="mobile-image">
+        <img src="{{ string.hero.image }}">
+    </div>
+    <div class="hero col-50 col-sm-100">
+        <div class="wrapper flex-row fl-sm-reverse content-middle">
+            <div class="col text-center">
+                <h1>{{ string.hero.title }}</h1>
+                <div class="subtitle">{{ string.hero.subtitle }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<nav id="navigation" class="body-navigation">
+    <ul>
+        {% for nav in string.navigation %}
+        <li>
+            <a href="#{{ nav.title  | downcase | remove: ' ' }}">{{ nav.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<section class="resource-stages">
+    {% for item in site.data.resources %}
+    <div id="{{ string.navigation.title  | downcase | remove: ' '  }}" >
+        <div class="wrapper content-middle content-center">
+            <div class="col-75 col-sm-100">
+                <div class="heading">
+                    <h2 class="text-center">{{ item.title }}</h2>
+                    {% if item.subtitle %}
+                    <div class="subtitle text-center">{{ item.subtitle }}</div>
+                    {% endif %}
+                </div>
+                {% if item.featured %}
+                <div class="padding">
+                    {% for post in item.featured %}
+                    <div class="featured">
+                        <img src="{{ post.image }}" alt="{{ post.alt }}">
+                        <p>{{ post.text }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="all-posts">
+            <div class="wrapper">
+                {% if item.learnMore.title %}
+                <h2 class="text-center">{{ item.learnMore.title }}</h2>
+                {% endif %}
+
+                {% if item.featured %}
+                {% else %}
+                <div class="filter col flex-row">
+                    <span>{{ string.filter }}:</span>
+                    <span id="type-filter">
+                        <span>{{ string.filterName }}</span>
+                        <ul>
+                            <li><a data-type="all_filter" href="#">{{ string.filterName }}</a></li>
+                            {% assign all_types = item.learnMore.posts  | map: "type" | uniq  %}
+                            {% for item in all_types  %}
+                            <li><a data-type="{{ item }}" href="#">{{ item | capitalize }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </span>
+                </div>
+                {% endif %}
+
+                <div class="flex-row fl-sm-col">
+                    {% for item in item.learnMore.posts %}
+                    <div class="col-33" id="resources-card" data-type="{{ item.type }}">
+                        <div class="card">
+                            <a target="_blank" href="{{ item.url }}">
+                                <div>
+                                    <span>{{ item.type | upcase  }}</span>
+                                    <span>{{ item.date }}</span>
+                                </div>
+                                <img src="{{ item.imageurl }}">
+                                <h2>{{ item.title }}</h2>
+                                <p>{{ item.description | truncatewords: 15 }}</p>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>

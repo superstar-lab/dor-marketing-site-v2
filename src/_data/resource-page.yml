@@ -1,0 +1,14 @@
+hero:
+  title: Take your brand’s physical future in your hands
+  subtitle: Explore resources to equip you and your team to succeed in-store and beyond.
+  image: /assets/images/resources/hero.jpg
+
+navigation:
+  - title: Why Dor?
+  - title: Accuracy & Visibility
+  - title: Retail
+  - title: All Resources
+
+filter: Filter
+filterName: All
+        

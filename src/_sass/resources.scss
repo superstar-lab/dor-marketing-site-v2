@@ -1,0 +1,241 @@
+#resources {
+    background: url(../images/resources/hero.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.resource-stages {
+
+    & > div {
+        @extend .padding;
+
+        @include media-down(sm) {
+            padding: 48px 0 0 0;
+        }
+    }
+
+    img {
+        border-radius: 8px;
+    }
+
+    & > div:nth-child(1) .all-posts {
+        background-color: $ice-blue;
+    }
+
+    & > div:nth-child(2) .all-posts {
+        background-color: $light-grey;
+    }
+
+    & > div:nth-child(3) .all-posts {
+        background-color: $pink;
+    }
+
+    .all-posts {
+        padding: 64px 0;
+
+        @include media-down(md) {
+            padding: 40px 0;
+        }
+
+        @include media-down(sm) {
+           padding: 32px 0;
+        }
+        .flex-row {
+            flex-wrap: wrap;
+            & > div {
+                margin-bottom: 24px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .featured {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(2n+1) {
+            margin-bottom: 80px;
+
+            @include media-down(sm) {
+                margin-bottom: 30px;
+            }
+
+            img {
+                align-self: flex-end;
+            }
+
+            p {
+                align-self: flex-start;
+            }
+        }
+
+        &:nth-child(2n) {
+
+            img {
+                align-self: flex-start;
+            }
+
+            p {
+                align-self: flex-end;
+            }
+        }
+
+        img {
+            max-width: 80%;
+
+            @include media-down(sm) {
+                max-width: 100%;
+            }
+        }
+        
+        p {
+            margin-top: -12%;
+            max-width: 60%;
+            padding: 32px;
+            color: $dark-grey;
+            border-radius: 8px;
+            background-color: $white;
+
+            @include media-down(sm) {
+                max-width: 100%;
+                padding: 0;
+                border-radius: 0;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        background-color: $white;
+        padding: 16px 20px 32px 20px;
+        height: 100%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        @include media-down(sm) {
+            
+        }
+
+        a {
+
+            & > div {
+
+                span {
+                    margin-bottom: 16px;
+                    display: inline-block;
+                    opacity: 0.5;
+                    font-size: $font-size-small;
+                    line-height: 1.5;
+                    letter-spacing: 0.5px;
+                    color: $brownish-grey;
+
+                    &:last-child {
+                        float: right;
+                    }
+                }
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 145px;
+                object-fit: cover;
+                border-radius: 8px;
+
+                @include media-down(sm) {
+                    height: auto;
+                    object-fit: none;
+                }
+
+
+            }
+
+            h2 {
+                margin: 12px 0;
+                font-size: $font-size-large;
+                font-weight: $font-weight-bold;
+                color: $black;
+            }
+
+            p {
+                line-height: 1.4;
+                color: $brownish-grey;
+            }
+        }
+
+    }
+
+    
+    
+    .filter.flex-row {
+        justify-content: normal;
+        margin-bottom: 15px;
+
+        span {
+            color: $brownish-grey; 
+
+            &:last-child {
+                margin-left: 5px;
+                cursor: pointer;
+                
+                span {
+                    color: $blue;
+
+                    &:after {
+                        content: "";
+                        background: url( '/assets/images/resources/chevron-down.svg' ) no-repeat center center;
+                        height: 8px;
+                        width: 16px;
+                        margin-left: 3px;
+                        background-size: contain;
+                        display: inline-block;
+                        transition: all .3s linear;
+                        will-change: contents;
+                    }
+                }
+
+                & > ul {
+                    margin-left: -40px;
+                    margin-top: 5px;
+                    background-color: $white;
+                    padding: 15px;
+                    position: absolute;
+                    z-index: 1;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,.15);
+                    border-radius: 4px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition:visibility 0.3s linear,opacity 0.3s linear;
+                    text-transform: capitalize;
+
+                    li {
+                        margin-bottom: 5px;
+
+                        a {
+                            display: block;
+                            white-space: nowrap;
+                            text-decoration: none;
+                            color: $blue;
+                            font-size: $font-size-medium;
+                        }
+                    }
+                }
+
+                &.visible {
+
+                    span:after {
+                        transform:rotate(-180deg);
+                    }
+
+                    ul {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

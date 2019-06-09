@@ -49,6 +49,7 @@
 }
 
 .body-navigation {
+    position: relative;
     background-color: $white;
     position: sticky;
     top: $header-height - 1;

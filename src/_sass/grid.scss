@@ -89,8 +89,8 @@
 
 .col-33 {
     padding: 0 12px;
-    flex: 0 0 33.3367%;
-    max-width: 33.3367%;
+    flex: 0 0 33%;
+    max-width: 33%;
 
     @include media-down(sm) { 
         flex: 0 0 100%;
