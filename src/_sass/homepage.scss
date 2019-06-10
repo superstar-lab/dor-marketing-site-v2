@@ -1,5 +1,5 @@
 #hero {
-    background: url(../images/homepage/homepage-hero.jpg) no-repeat center center;
+    background: url(../images/homepage/hero.png) no-repeat center center;
     min-height: 65vh;
     width: 100%;
     background-size: cover;
@@ -13,7 +13,7 @@
     .hero-image {
 
         @include media-down(sm) {
-            background: url(../images/homepage/homepage-hero.jpg) no-repeat;
+            background: url(../images/homepage/hero.png) no-repeat;
             background-position: top center;
             background-size: contain;
             min-height: 250px;

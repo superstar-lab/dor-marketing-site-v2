@@ -5,17 +5,17 @@ hero:
 
 cards:
 - title: Roll out to 100% of your stores
-  image: /assets/images/homepage/card-1.jpg
+  image: /assets/images/homepage/card-1.png
   subtitle: Install our thermal people counter in minutes. Peel and stick over any door to start collecting accurate data.
   button: Get faster ROI from our hardware »
   buttonUrl: "#"
 - title: Report to your heart’s content
-  image: /assets/images/homepage/card-2.jpg
+  image: /assets/images/homepage/card-2.png
   subtitle: Access your data your way. Get more mileage by integrating any point of sale or using our API for custom applications.
   button: Our approach to data empowerment »
   buttonUrl: "#"
 - title: React faster to emerging trends
-  image: /assets/images/homepage/card-3.jpg
+  image: /assets/images/homepage/card-3.png
   subtitle: Predict what will happen next with year-over-year trends. Replace guesstimates with a source of truth — no decoding necessary. 
   button: Take action on clear insights »
   buttonUrl: "#"

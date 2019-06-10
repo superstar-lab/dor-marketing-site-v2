@@ -1,17 +1,18 @@
 [
 	{
 		"section": "Why dor?",
+		"allposts": false,
 		"title": "Our mission",
 		"subtitle": "We empower retailers to focus on what really matters: Operating efficient stores where meaningful engagement happens.",
 		"featured": [
 			{
-				"image": "/assets/images/resources/ocean-blue.jpg",
+				"image": "/assets/images/resources/section1-1.png",
 				"alt": "Image",
 				"text": "Shoppers are demanding more meaningful in-store experiences than ever. We believe retailers can only keep up with those expectations when they’re equipped with accurate data about how their stores perform. So we’re focused on one thing: Making it easier for you to be operationally excellent, unlocking more possibilities for your team to understand the health of your stores.",
 				"url": null
 			},
 			{
-				"image": "/assets/images/resources/ocean-green.jpg",
+				"image": "/assets/images/resources/section1-2.png",
 				"alt": "image",
 				"text": "It’s impossible to consistently deliver a great store experience without accurate foot traffic data. Retail ops and marketing leaders lose money in guessing games. We are here to help you get out of that game with a people counting sensor that’s truly accurate — capturing the highest quality data in the widest possible variety of environments and doorways consistently, so your data can appreciate over time.",
 				"url": null
@@ -53,17 +54,18 @@
 	},
 	{
 		"section": "Accuracy & Visibility",
+		"allposts": false,
 		"title": "Full visibility",
 		"subtitle": "Retailers are only as successful as the data they collect, own and enrich over time. The only actionable data set is accurate people counts for every revenue-generating doorway in your business.",
 		"featured": [
 			{
-				"image": "/assets/images/resources/stars.jpg",
+				"image": "/assets/images/resources/section2-1.png",
 				"alt": "Image",
 				"text": "It’s impossible to make any decisions for your retail business without a people counting solution delivering full visibility of every store through accurate counts of the traffic relevant to your goals. Full visibility means having a people counting solution in every single revenue-generating doorway in your business. It’s knowing not just a sample size of your performance, but the whole picture.",
 				"url": null
 			},
 			{
-				"image": "/assets/images/resources/road.jpg",
+				"image": "/assets/images/resources/section2-2.png",
 				"alt": "image",
 				"text": "Accurate foot traffic counts are only possible with full visibility, using technology that achieves the closest to 100% accurate counts with enough consistency to establish trends over time. In the industry of people counting, 70-85% is considered standard, and that’s using outdated technologies like cameras that deploy too slowly to make full coverage and therefore true accuracy possible in the first place.",
 				"url": null
@@ -104,17 +106,18 @@
 	},
 	{
 		"section": "Retail",
+		"allposts": false,
 		"title": "Apocalypse...or renaissance?",
 		"subtitle": "Retail’s physical footprint is shrinking while consumers demand more from brands than ever before. Here’s what to do about it.",
 		"featured": [
 			{
-				"image": "/assets/images/resources/mountains.jpg",
+				"image": "/assets/images/resources/section3-1.png",
 				"alt": "Image",
 				"text": "The way people interact with spaces is fundamentally shifting. Customers are demanding more value from their experiences in your stores. They also happen to be giving you all the data you need to pivot, simply through their own engagement with your brand. Retail leaders are listening and responding, creating the consistent meaningful experiences necessary for them to survive — and thrive.",
 				"url": null
 			},
 			{
-				"image": "/assets/images/resources/snow.jpg",
+				"image": "/assets/images/resources/section3-2.png",
 				"alt": "image",
 				"text": "The data shows that retail’s physical footprint is shrinking while consumers demand more from brands than ever before. Customers no longer want or need millions of retail square footage to have a meaningful interaction with a brand in person, and retail has been reacting far too slowly. To compete, retailers must create the experiences their shoppers desire in the spaces that make those experiences profitable, driving revenue in spaces that are optimized for efficiency.",
 				"url": null
@@ -155,6 +158,7 @@
 	},
 	{
 		"section": "All Resources",
+		"allposts": true,
 		"learnMore": {
 			"title": "All Dor resources",
 			"posts": [

@@ -1,5 +1,5 @@
 #pricing {
-    background: url(../images/pricing/hero.jpg) no-repeat center center;
+    background: url(../images/pricing/hero.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -28,9 +28,15 @@
             border-radius: 8px;
             border: solid 1px $light-blue-grey;
             padding: 40px;
+            height: 270px;
 
             @include media-down(md) {
+                height: 218px;
                 padding: 20px;
+            }
+
+            @include media-down(sm) {
+                height: auto;
             }
 
             h3 {
@@ -72,14 +78,6 @@
         
             .card {
                 background-color: $blue;
-
-                @include media-down(md) {
-                    min-height: 218px;
-                }
-
-                @include media-down(sm) {
-                    min-height: auto;
-                }
 
                 h3, 
                 ul > li, 

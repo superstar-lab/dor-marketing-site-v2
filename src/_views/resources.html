@@ -33,8 +33,8 @@ layout: default
 
 <section class="resource-stages">
     {% for item in site.data.resources %}
+    {% if item.allposts == false %}
     <div id="{{ item.section | downcase | remove: ' ' | remove: '?'  }}" >
-        {% if item.title %}
         <div class="wrapper content-middle content-center">
             <div class="col-75 col-sm-100">
                 <div class="heading">
@@ -55,28 +55,9 @@ layout: default
                 {% endif %}
             </div>
         </div>
-        {% endif %}
         <div class="all-posts">
             <div class="wrapper">
                 <h2 class="text-center">{{ item.learnMore.title }}</h2>
-
-                {% if item.featured %}
-                {% else %}
-                <div class="filter col flex-row">
-                    <span>{{ string.filter }}:</span>
-                    <span id="type-filter">
-                        <span>{{ string.filterName }}</span>
-                        <ul>
-                            <li><a data-type="all_filter" href="#">{{ string.filterName }}</a></li>
-                            {% assign all_types = item.learnMore.posts  | map: "type" | uniq  %}
-                            {% for item in all_types  %}
-                            <li><a data-type="{{ item }}" href="#">{{ item | capitalize }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </span>
-                </div>
-                {% endif %}
-
                 <div class="flex-row fl-sm-col"  id="resources-card">
                     {% for item in item.learnMore.posts %}
                     <div class="col-33 cards" data-type="{{ item.type }}">
@@ -97,5 +78,47 @@ layout: default
             </div>
         </div>
     </div>
+    {% endif %}
     {% endfor %}
+
+    <div id="allresources" >
+        <div class="all-posts">
+            <div class="wrapper">
+                <h2 class="text-center">{{ string.allposts.title }}</h2>
+                <div class="filter col flex-row">
+                    <span>{{ string.allposts.filter }}:</span>
+                    <span id="type-filter">
+                        <span>{{ string.allposts.filterName }}</span>
+                        <ul>
+                            <li><a data-type="all_filter" href="#">{{ string.filterName }}</a></li>
+                            {% for item in site.data.resources %}
+                            {% assign all_types = item.learnMore.posts  | map: "type" | uniq  %}
+                            {% for item in all_types  %}
+                            <li><a data-type="{{ item }}" href="#">{{ item | capitalize }}</a></li>
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </span>
+                </div>
+                <div class="flex-row fl-sm-col"  id="resources-card">
+                {% for item in site.data.resources %}
+                {% for item in item.learnMore.posts %}
+                <div class="col-33 cards" data-type="{{ item.type }}">
+                    <div class="card">
+                        <a target="_blank" href="{{ item.url }}">
+                            <div>
+                                <span>{{ item.type | upcase  }}</span>
+                                <span>{{ item.date }}</span>
+                            </div>
+                            <img src="{{ item.imageurl }}">
+                            <h2>{{ item.title }}</h2>
+                            <p>{{ item.description | truncatewords: 15 }}</p>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </section>
