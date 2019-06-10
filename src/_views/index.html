@@ -79,15 +79,4 @@ layout: default
     </div>
 </section>
 
-<section id="clients">
-    <div class="wrapper">
-        <h2>{{ string.clients.title }}</h2>
-        <div class="flex-row">
-            {% for logo in string.clients.logos %}
-            <div class="col-25">
-                <img src="{{ logo.image }}" alt="{{ logo.alt }}">
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+{% include partners.html %}

@@ -46,26 +46,6 @@ testimonials:
   - color: peach
     text: If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.
     author: Clothes Mentor
-  - color: blue
+  - color: pink
     text: Dor is our secret weapon behind the scenes.
     author: Original Mattress Factory
-
-clients:
-  title: More customers that love Dor
-  logos:
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients
-  - image: /assets/images/homepage/clients.png
-    alt: clients

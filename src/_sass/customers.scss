@@ -1,14 +1,132 @@
 #customers {
     background: url(../images/customers/hero.jpg) no-repeat center center;
     background-size: cover;
+
+    .subtitle {
+        margin-bottom: 0;
+    }
 }
 .feedback {
+    @extend .padding;
 
     .about-company {
 
         .bordered-box {
             border-radius: 8px;
             border: solid 1px $light-blue-grey;
+
+            .col-33 {
+                padding: 0;
+            }
+
+            img {
+
+                @include media-down(sm) {
+                    display: block;
+                    height: 228px;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                margin: 0 28px;
+
+                @include media-down(md) {
+                    margin: 0 20px;
+                }
+
+                @include media-down(sm) {
+                    margin: 20px 16px;
+                }
+
+                h2 {
+
+                    @include media-down(md) {
+                        font-size: $font-size-xl;
+                    }
+                }
+
+                p {
+                    margin: 24px 0;
+                    color: $dark-grey;
+
+                    @include media-down(md) {
+                        margin: 20px 0;
+                    }
+                }
+    
+                a {
+                    display: block;
+                    font-weight: $font-weight-bold;
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    .review {
+        padding: 160px 0;
+
+        @include media-down(md) {
+            padding: 96px 0;
+        }
+
+        @include media-down(sm) {
+            padding: 64px 0;
+        }
+
+        blockquote {
+            color: $black;
+
+            @include media-down(sm) {
+                margin: 0;
+                padding: 0;
+            }
+            
+            p {
+                font-size: $font-size-xl;
+                line-height: 1.43;
+
+                @include media-down(md) {
+                    font-size: $font-size-large;
+                }
+
+                @include media-down(sm) {
+                    font-size: $default-font-size;
+                }
+            }
+            
+            footer {
+                font-size: $font-size-xl;
+                display: block;
+                font-weight: $font-weight-bold;
+                margin: 19px 0 6px;
+                line-height: 1.29;
+
+                @include media-down(md) {
+                    font-size: $font-size-large;
+                }
+
+                @include media-down(sm) {
+                    margin: 16px 0 4px;
+                    font-size: $default-font-size;
+                }
+
+                & + div {
+                    font-size: $default-font-size;
+                    line-height: 1.4;
+                    color: $brownish-grey;
+
+                    @include media-down(md) {
+                        font-size: $font-size-medium;
+                    }
+                    
+                    a {
+                        color: $brownish-grey;
+                        font-style: italic;
+                    }
+                }
+            }
         }
     }
 }

@@ -54,13 +54,15 @@
     position: sticky;
     z-index: 1;
     top: $header-height - 1;
-    padding: 16px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-
+    
     ul {
+        padding: 16px 0;
+        white-space: nowrap;
+        overflow-x: auto;
         
         li {
             display: inline-block;
@@ -71,6 +73,8 @@
                     color: $blue;
                     border: 2px solid $blue;
                     border-radius: 4px;
+
+                    
                 }
             }
             
