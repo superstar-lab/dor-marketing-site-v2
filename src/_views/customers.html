@@ -45,7 +45,7 @@ cta: false
                     <blockquote>
                         <p>{{ review.text }}</p>
                         <footer>{{ review.author }}</footer>
-                        <div>{{ review.authorpositon }}<a href="#">{{ review.link }}</a></div>
+                        <div>{{ review.authorPosition }}<a href="{{ authorUrl }}">{{ review.authorLink }}</a></div>
                     </blockquote>
                 </div>
             </div>
@@ -54,4 +54,3 @@ cta: false
     </section>
 
     {% include partners.html %}
-    

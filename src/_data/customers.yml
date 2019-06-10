@@ -12,9 +12,9 @@ feedback:
     url: '#'
     text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
     author: Daniel Kowalke
-    ahthorposition: General Manager
-    url: '#'
-    link:  '@ Retail Toolkit'
+    authorPosition: General Manager
+    authorUrl: '#'
+    authorLink:  '@ Retail Toolkit'
 
   - image: /assets/images/customers/customer2.png
     category: Retail Toolkit
@@ -24,9 +24,9 @@ feedback:
     url: '#'
     text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
     author: Daniel Kowalke
-    ahthorposition: General Manager
-    url: '#'
-    link:  '@ Retail Toolkit'
+    authorPosition: General Manager
+    authorUrl: '#'
+    authorLink:  '@ Retail Toolkit'
 
   - image: /assets/images/customers/customer3.png
     category: APPAREL
@@ -36,9 +36,9 @@ feedback:
     url: '#'
     text: “If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.”
     author: Adam Scott
-    ahthorposition: President 
-    url: '#'
-    link:  '@ Clothes Mentor'
+    authorPosition: President 
+    authorUrl: '#'
+    authorLink:  '@ Clothes Mentor'
 
   - image: /assets/images/customers/customer4.png
     category: Store Management Platform
@@ -48,6 +48,6 @@ feedback:
     url: '#'
     text: “Foot traffic is yet another data set that helps us better understand where we stand and how effective we are.”
     author: Tim Minick
-    ahthorposition: Director of IT
-    url: '#'
-    link:  '@ HPM Building Supply'
+    authorPosition: Director of IT
+    authorUrl: '#'
+    authorLink:  '@ HPM Building Supply'
