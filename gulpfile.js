@@ -137,12 +137,14 @@ gulp.task( 'watch:assets', ( done ) => {
 // default task for development
 gulp.task( 'default', gulp.series( 'build:development', 'jekyll:serve', 'build:assets', 'watch:assets' ) );
 
-var aws = {
-    key: process.env.AWS_KEY,
-    secret: process.env.AWS_SECRET,
-    bucket: process.env.AWS_S3_BUCKET_NAME,
-    staging_bucket: 'staging.getdor.com',
-    distributionId: process.env.AWS_CLOUDFRONT_DIST_ID
+var aws_cloudfront_invalidate_staging = {
+    accessKeyId: process.env.AWS_KEY,
+    secretAccessKey: process.env.AWS_SECRET,
+    staging_bucket: process.env.AWS_S3_BUCKET_NAME_STAGING,
+    distributionId: process.env.AWS_CLOUDFRONT_DIST_ID_STAGING,
+    paths: [
+        '/*'
+    ]
 };
 
 // STAGING - PUBLISH TO S3
@@ -150,10 +152,10 @@ gulp.task( 'publish:staging', ( done ) => {
 
     var publisher = awspublish.create( {
         params: {
-            Bucket: aws.staging_bucket
+            Bucket: aws_cloudfront_invalidate_staging.staging_bucket
         },
-        accessKeyId: aws.key,
-        secretAccessKey: aws.secret,
+        accessKeyId: aws_cloudfront_invalidate_staging.accessKeyId,
+        secretAccessKey: aws_cloudfront_invalidate_staging.secretAccessKey,
         region: 'us-west-2'
     } );
 
@@ -169,6 +171,7 @@ gulp.task( 'publish:staging', ( done ) => {
         .pipe( publisher.publish() )
         .pipe( publisher.cache() )
         .pipe( awspublish.reporter() )
+        .pipe( cloudfront_invalidate( aws_cloudfront_invalidate_staging ) )
         .on( 'end', () => {
             log( 'Published to S3' );
             done();
