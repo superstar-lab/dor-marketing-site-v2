@@ -141,7 +141,7 @@ var aws_cloudfront_invalidate_staging = {
     accessKeyId: process.env.AWS_KEY,
     secretAccessKey: process.env.AWS_SECRET,
     staging_bucket: process.env.AWS_S3_BUCKET_NAME_STAGING,
-    distributionId: process.env.AWS_CLOUDFRONT_DIST_ID_STAGING,
+    distribution: process.env.AWS_CLOUDFRONT_DIST_ID_STAGING,
     paths: [
         '/*'
     ]
