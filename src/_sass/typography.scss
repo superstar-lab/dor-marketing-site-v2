@@ -81,6 +81,20 @@ p, a {
     }
 }
 
+small {
+    margin-bottom: 16px;
+    display: block;
+    font-size: $font-size-small;
+    letter-spacing: 0.5px;
+    color: $brownish-grey;
+    text-transform: uppercase;
+
+    strong {
+        color: $black;
+    }
+}
+
+
 ul {
     list-style: none;
     margin: 0;

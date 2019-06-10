@@ -1,0 +1,12 @@
+<section id="partners">
+    <div class="wrapper">
+        <h2>{{ site.data.partners.title }}</h2>
+        <div class="flex-row">
+            {% for logo in site.data.partners.logos %}
+            <div class="col-25">
+                <img src="{{ logo.image }}" alt="{{ logo.alt }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -52,19 +52,6 @@
             
         }
 
-        small {
-            margin-bottom: 16px;
-            display: block;
-            font-size: $font-size-small;
-            letter-spacing: 0.5px;
-            color: $brownish-grey;
-            text-transform: uppercase;
-
-            strong {
-                color: $black;
-            }
-        }
-
         .col:last-child { 
             margin-left: 32px;
 

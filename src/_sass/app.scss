@@ -135,6 +135,58 @@ img {
     }
 }
 
+// Partners
+
+#partners {
+    @extend .padding;
+    background-color: $ice-blue;
+
+    h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        font-weight: $font-weight-normal;
+        color: $brownish-grey;
+        margin-bottom: 24px;
+
+        @include media-down(md) {
+            font-size: $font-size-medium;
+        }
+
+        @include media-down(sm) {
+            margin-top: 8px;
+        }
+    }
+
+    .flex-row {
+        flex-flow: wrap;
+
+        & > div {
+            margin-top: 24px;
+
+            @include media-down(md) {
+                margin-top: 16px;
+            }
+
+            @include media-down(sm) {
+                margin-top: 10px;
+            }
+
+            img {
+                padding: 50px 24px;
+
+                @include media-down(md) {
+                    padding: 46px  35px;
+                }
+
+                @include media-down(sm) {
+                    padding: 39px 22px;
+                }
+            }
+        }
+    }
+}
+
 // Links
 .link {
     color: inherit;
