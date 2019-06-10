@@ -1,5 +1,6 @@
 [
 	{
+		"section": "Why dor?",
 		"title": "Our mission",
 		"subtitle": "We empower retailers to focus on what really matters: Operating efficient stores where meaningful engagement happens.",
 		"featured": [
@@ -51,6 +52,7 @@
 		}
 	},
 	{
+		"section": "Accuracy & Visibility",
 		"title": "Full visibility",
 		"subtitle": "Retailers are only as successful as the data they collect, own and enrich over time. The only actionable data set is accurate people counts for every revenue-generating doorway in your business.",
 		"featured": [
@@ -101,6 +103,7 @@
 		}
 	},
 	{
+		"section": "Retail",
 		"title": "Apocalypse...or renaissance?",
 		"subtitle": "Retail’s physical footprint is shrinking while consumers demand more from brands than ever before. Here’s what to do about it.",
 		"featured": [
@@ -151,8 +154,9 @@
 		}
 	},
 	{
-		"title": "All Dor resources",
+		"section": "All Resources",
 		"learnMore": {
+			"title": "All Dor resources",
 			"posts": [
 				{
 					"date": "2/1/2019",

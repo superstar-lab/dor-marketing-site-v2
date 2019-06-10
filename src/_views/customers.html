@@ -1,0 +1,27 @@
+---
+title: Dor | Customers
+permalink: /customers/
+layout: default
+cta: false
+---
+
+{% assign string = site.data.customers %}
+
+<div class="customers">
+    <section id="customers" class="page-hero hero-section content-center content-middle">
+        <div class="mobile-image">
+            <img src="{{ string.hero.image }}">
+        </div>
+        <div class="hero col-50 col-sm-100">
+            <div class="wrapper flex-row fl-sm-reverse content-middle">
+                <div class="col text-center">
+                    <h1>{{ string.hero.title }}</h1>
+                    <div class="subtitle">{{ string.hero.subtitle }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        
+    </section>

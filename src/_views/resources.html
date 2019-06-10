@@ -25,7 +25,7 @@ layout: default
     <ul>
         {% for nav in string.navigation %}
         <li>
-            <a href="#{{ nav.title  | downcase | remove: ' ' }}">{{ nav.title }}</a>
+            <a href="#{{ nav.title  | downcase | remove: ' ' | remove: '?' }}">{{ nav.title }}</a>
         </li>
         {% endfor %}
     </ul>
@@ -33,7 +33,8 @@ layout: default
 
 <section class="resource-stages">
     {% for item in site.data.resources %}
-    <div id="{{ string.navigation.title  | downcase | remove: ' '  }}" >
+    <div id="{{ item.section | downcase | remove: ' ' | remove: '?'  }}" >
+        {% if item.title %}
         <div class="wrapper content-middle content-center">
             <div class="col-75 col-sm-100">
                 <div class="heading">
@@ -43,7 +44,7 @@ layout: default
                     {% endif %}
                 </div>
                 {% if item.featured %}
-                <div class="padding">
+                <div>
                     {% for post in item.featured %}
                     <div class="featured">
                         <img src="{{ post.image }}" alt="{{ post.alt }}">
@@ -54,11 +55,10 @@ layout: default
                 {% endif %}
             </div>
         </div>
+        {% endif %}
         <div class="all-posts">
             <div class="wrapper">
-                {% if item.learnMore.title %}
                 <h2 class="text-center">{{ item.learnMore.title }}</h2>
-                {% endif %}
 
                 {% if item.featured %}
                 {% else %}
@@ -77,9 +77,9 @@ layout: default
                 </div>
                 {% endif %}
 
-                <div class="flex-row fl-sm-col">
+                <div class="flex-row fl-sm-col"  id="resources-card">
                     {% for item in item.learnMore.posts %}
-                    <div class="col-33" id="resources-card" data-type="{{ item.type }}">
+                    <div class="col-33 cards" data-type="{{ item.type }}">
                         <div class="card">
                             <a target="_blank" href="{{ item.url }}">
                                 <div>

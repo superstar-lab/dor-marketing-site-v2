@@ -1,7 +1,7 @@
 $(function () {
     var $typeFilter = $('#type-filter');
     var $currentType = $typeFilter.find('span');
-    var $cards = $('#resources-card .card');
+    var $cards = $('#resources-card .cards');
 
     $currentType.on('click', function () {
         $typeFilter.toggleClass('visible');
