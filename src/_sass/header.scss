@@ -1,3 +1,13 @@
+@mixin vertical-align($position) {
+    position:$position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+@mixin all-transition($time) {
+    transition: all $time;
+}
+
 #header {
     top: 0;
     width: 100%;
@@ -23,7 +33,7 @@
     .header-logo-1 {
 
         @include media-down(sm) {
-            margin-left: 28px;
+            margin-left: 40px;
         }
     }
 
@@ -32,7 +42,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
-        z-index: 10;
 
         @include media-down(lg) {
             margin: 0;
@@ -63,8 +72,9 @@
             }
 
             @include media-down(md) {
-                padding: 20px;
                 font-size: $font-size-xs;
+                padding: 20px;
+                justify-content: flex-start;
             }
             
         }
@@ -80,10 +90,8 @@
         &.sign-in {
             color: $blue;
             font-weight: $font-weight-bold;
+            font-size: $font-size-small;
 
-            @include media-down(md) {
-                font-size: $font-size-small;
-            }
         }
 
         &.selected {
@@ -102,19 +110,17 @@
 
     // Mobile header 
 
-
     @include media-down(sm) {
 
         .menu-tab {
             width: 44px;
             height: $header-height;
             position: fixed;
-            z-index: 1;
+            z-index: 10;
             background-color: $red;
             top: 0px;
             left: 0px;
             cursor: pointer;
-            transition: all .6s ease-in-out;
             
             div {
                 width: 16px;
@@ -122,7 +128,6 @@
                 background-color: $white;
                 display: block;
                 margin: 3px 17px;
-                transition: all .6s ease-in-out;
               
                 &:nth-child(1){
                     margin-top: 22px;
@@ -132,12 +137,12 @@
           
         .menu-tab.active {
             left: 0;
-            transition: all 600ms ease-in-out;
             background-color: $white;
             z-index: 100;
             will-change: auto;
-
+            
             div {
+                will-change: auto;
                 height: 2px;
 
                 &:nth-child(1){
@@ -147,18 +152,18 @@
             
             #one {
                 transform: translateY(11px) rotate(-130deg);
-                transition: all .6s ease-in-out;
+                transition: background-color 0.6s ease-in-out;
                 background-color: $black;
             }
             
             #two {
                 opacity: 0;
-                transition: .4s ease;
+                transition: .8s ease;
             }
             
             #three {
                 transform: translateY(1px) rotate(-45deg);
-                transition: all .6s ease-in-out;
+                transition: background-color 0.6s ease-in-out;
                 background-color: $black;
             }
         }
@@ -170,13 +175,14 @@
             position: fixed;
             z-index: 10;
             top: 0px;
-            transition: all .6s ease-in-out;
+            visibility: visible;
+            background-color: $white;
+            @include all-transition(0.3s);
             
             nav {
-
+                
                 ul {
                     margin-top: $header-height;
-                    border-top: 1px solid $light-blue-grey;
 
                     li {
                         padding: 20px 23px;
@@ -192,12 +198,14 @@
                 }
             }
         }
-
+        
         .menu-hide.show {
             left: 0px;
-            background-color: $white;
-            transition: all .6s ease-in-out;
+            box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+            transform: translate3d(0px, 0, 0);
+            animation-timing-function: 1s ease-in;
         }
     }
 }
   
+
