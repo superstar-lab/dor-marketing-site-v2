@@ -16,7 +16,7 @@ cta: false
                 <h1>{{ string.hero.title }}</h1>
                 <div class="subtitle">{{ string.hero.subtitle }}</div>
                 <a class="button-link">
-                    <div class="button large white show" aria-haspopup="true">
+                    <div class="button large blue show" aria-haspopup="true">
                         {{ string.hero.button }}
                     </div>
                 </a>
@@ -33,7 +33,7 @@ cta: false
             <div class="col col-sm-100">
                 <div class="card flex-row">
                     <div class="col-66">
-                        <h3>{{ plan.title }}</h3>
+                        <h2>{{ plan.title }}</h2>
                         <small>{{ plan.subtitle }}</small>
                         <ul>
                             {% for list in plan.lists %}
@@ -50,7 +50,11 @@ cta: false
                     <ul>
                         {% for list in plan.points.lists %}
                         <li class="flex-row">
+                            {% if  plan.title == 'PRO' %}
+                            <i class="icon icon-check bordered"></i>
+                            {% else %}
                             <i class="icon icon-check"></i>
+                            {% endif %}
                             <span>{{ list.title }}</span>
                         </li>
                         {% endfor %}

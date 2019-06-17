@@ -1,6 +1,19 @@
 #pricing {
     background: url(../images/pricing/hero.png) no-repeat center center;
     background-size: cover;
+
+    .hero {
+        background-color: $white;
+
+        h1 {
+            color: $black;
+        }
+
+        .subtitle {
+            color: $light-black;
+        }
+
+    }
 }
 
 .plans {
@@ -34,19 +47,36 @@
                 height: 218px;
                 padding: 20px;
             }
-
+            
             @include media-down(sm) {
                 height: auto;
             }
-
-            h3 {
+            
+            h2 {
                 margin-bottom: 32px;
-            }
 
+                @include media-down(sm) {
+                    font-size: $font-size-large;
+                }
+            }
+            
+            small {
+                font-size: $font-size-medium;
+
+                @include media-down(md) {
+                    font-size: $font-size-small;
+                }
+            }
+            
             ul {
                 
                 li {
                     margin-bottom: 8px;
+                    font-size: $default-font-size;
+                    
+                    @include media-down(md) {
+                        font-size: $font-size-medium;
+                    }
                 }
             }
             
@@ -56,17 +86,18 @@
             margin-left: 32px;
 
             @include media-down(md) {
-                margin-left: 0;
+                margin-left: 12px;
             }
 
             @include media-down(sm) {
                 margin-top: 32px;
+                margin-left: 0;
             }
         
             .card {
                 background-color: $blue;
 
-                h3, 
+                h2, 
                 ul > li, 
                 small {
                     color: $white;
@@ -98,11 +129,12 @@
             small {
                 margin-bottom: 16px;
                 margin-left: 40px;
+                font-size: $font-size-medium;
 
                 @include media-down(md) {
-                    margin-left: 34px;
+                    margin-left: 28px;
+                    font-size: $font-size-small;
                 }
-
             }
         }
     }    

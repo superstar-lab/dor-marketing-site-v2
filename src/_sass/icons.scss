@@ -35,6 +35,10 @@
             height: 16px;
             width: 16px;
         }
+        
+        &.bordered {
+            background-image: url(../images/pricing/check.svg);
+        }
 
         & + * {
             padding-left: 40px;
