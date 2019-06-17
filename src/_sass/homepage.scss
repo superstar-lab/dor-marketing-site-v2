@@ -2,6 +2,7 @@
     background: url(../images/homepage/hero.png) no-repeat center center;
     width: 100%;
     background-size: cover;
+    min-height: 65vh;
 
     @include media-down(sm) {
         background: none;
@@ -21,10 +22,11 @@
         }
     }
 
-    .content-wrap {
+    .wrapper {
 
         @include media-down(sm) {
             padding: 0;
+            display: block;
         }
     }
 
@@ -60,7 +62,6 @@
     @extend .padding;
 
     .card {
-        justify-content: space-between;
 
         &:last-child {
     
@@ -76,12 +77,28 @@
 
         img {
             margin-bottom: 16px;
+            height: 300px;
+            object-fit: cover;
+
+            @include media-down(md) {
+                height: 176px;
+            }
+                
+            @include media-down(sm) {
+                height: inherit;
+            }
         }
 
         p {
             margin-top: 8px;
             margin-bottom: 36px;
             color: $light-black;
+            min-height: 118px;
+
+            @include media-down(md) {
+                margin-bottom: 12px;
+                min-height: auto;
+            }
 
             @include media-down(sm) {
                 margin-top: 4px;
@@ -100,7 +117,12 @@
     background-color: $ice-blue;
     @extend .padding;
 
+    
     .flex-row {
+
+        @include media-down(md) {
+            align-items: flex-start;
+        }
 
         @include media-down(sm) {
             flex-direction: column-reverse;
@@ -140,7 +162,6 @@
             }
             
             h2 {
-                margin-bottom: 17px;
                 color: $dark-blue;
 
                 @include media-down(sm) {
@@ -153,11 +174,11 @@
                 font-size: $font-size-large;
                 color: $black;
                 line-height: 1.5;
-                margin: 38px 0 28px;
+                margin: 12px 0 28px;
 
                 @include media-down(md) {
                     font-size: $font-size-medium;
-                    margin: 24px 0 16px;
+                    margin: 12px 0 16px;
                 }
 
                 @include media-down(sm) {
@@ -192,11 +213,10 @@
             }
             
             &:nth-child(1) {
-                @extend .col-75;
+                max-width: 86%;
                 padding: 32px 64px;
                 
                 @include media-down(md) { 
-                    flex: 0 0 100%;
                     max-width: 100%;
                 }
                 
@@ -206,16 +226,14 @@
             }
             
             &:nth-child(2) {
-                @extend .col-66;
+                max-width: 73%;
                 padding: 32px 64px;
                 
                 @include media-down(md) { 
-                    flex: 0 0 90%;
                     max-width: 90%;
                 }
 
                 @include media-down(sm) {
-                    flex: 0 0 100%;
                     max-width: 100%;
                     padding: 16px;
                 }
@@ -223,16 +241,14 @@
             
             &:nth-child(3) {
                 padding: 32px 64px;
-                @extend .col-50;
+                max-width: 60%;
 
                 @include media-down(md) {
-                    flex: 0 0 80%;
                     max-width: 80%;
                     margin-bottom: 0;
                 }
 
                 @include media-down(sm) {
-                    flex: 0 0 100%;
                     max-width: 100%;
                     padding: 16px;
                 }
@@ -247,6 +263,7 @@
                 color: $black;
                 margin-bottom: 16px;
                 padding: 0 56px;
+                font-size: $font-size-large;
 
                 @include media-down(md) {
                     padding: 0 25px;
@@ -262,16 +279,12 @@
             cite {
                 display: inline-block;
                 font-style: normal;
-                font-size: $font-size-small;
+                font-size: $font-size-medium;
                 font-weight: $font-weight-bold;
                 line-height: 1.5;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: $black;
-
-                @include media-down(md) {
-                    font-size: $font-size-medium;
-                }
 
                 @include media-down(sm) {
                     font-size: $font-size-small;
