@@ -7,19 +7,19 @@ navigation:
 - name: How It Works
   links:
   - title: Hardware
-    url: hardware
+    url: how-it-works/#hardware
   - title: Software
-    url: software
+    url: how-it-works/#software
   - title: Pricing
-    url: pricing
+    url: how-it-works/#customersupport
 - name: Resources
   links:
   - title: Why Dor?
-    url: why-dor
+    url: resources/#whydor
   - title: Accuracy & Visibility
-    url: accuracy-visibility
+    url: resources/#accuracy&visibility
   - title: Retail
-    url: retail
+    url: resources/#retail
   - title: Blog
     url: https://blog.getdor.com/
 - name: Company
