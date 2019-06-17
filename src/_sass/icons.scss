@@ -1,5 +1,13 @@
 .icon {
 
+    &.blog {
+        background: url(../images/icons/blog.svg) no-repeat left center;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+
     &.icon-close {
         background: url(../images/icons/close.png) no-repeat left center;
         background-size: cover;
@@ -21,12 +29,18 @@
         display: inline-block;
         position: absolute;
         z-index: -1;
+        margin-top: 3px;
+        
+        @include media-down(md) {
+            height: 16px;
+            width: 16px;
+        }
 
         & + * {
             padding-left: 40px;
 
             @include media-down(md) {
-                padding-left: 36px;
+                padding-left: 28px;
             }
         }
     }
@@ -45,8 +59,8 @@
             background: url(../images/icons/quote_blue.svg) no-repeat left center;
         }
 
-        &.peach {
-            background: url(../images/icons/quote_peach.svg) no-repeat left center;
+        &.pink {
+            background: url(../images/icons/quote_pink.svg) no-repeat left center;
         }
     }
 

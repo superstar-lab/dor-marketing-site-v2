@@ -1,6 +1,8 @@
 {% include cta.html %}
-    
-<hr>
+  
+<div class="wrapper">
+    <hr>
+</div>
 <div id="footer">
     <div class="flex-row  wrapper">
         <div class="footer-links col-75 col-sm-100 fl-sm-wrap">
@@ -26,7 +28,7 @@
                     {% for social in site.data.footer.social %}
                     <li>
                         <a href="{{ social.url }}" target="_blank" class="link">
-                            <i class="fab {{ social.icon }} icon small"></i>
+                            <i class="{{ social.icon }} icon small"></i>
                         </a>
                     </li>
                     {% endfor %}

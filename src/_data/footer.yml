@@ -46,15 +46,15 @@ navigation:
     url: https://app.getdor.com/privacy-policy
 
 social:
-- icon: fa-twitter
+- icon: fab fa-twitter
   url: https://twitter.com/dortechnologies
-- icon: fa-linkedin
+- icon: fab fa-linkedin
   url: https://www.linkedin.com/company/dor-technologies
-- icon: fa-facebook
+- icon: fab fa-facebook
   url: https://www.facebook.com/getdor/
-- icon: fa-instagram
+- icon: fab fa-instagram
   url: https://www.instagram.com/getdor/
-- icon: fa-blog
+- icon: blog
   url: https://blog.getdor.com/
 
 copyright: ©2019 Dor Technologies, Inc

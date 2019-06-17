@@ -183,6 +183,11 @@ img {
 
             @include media-down(md) {
                 margin-top: 16px;
+
+                &:nth-child(7),
+                &:nth-child(8), {
+                    display: none;
+                }
             }
 
             @include media-down(sm) {
