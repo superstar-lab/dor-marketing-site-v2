@@ -111,6 +111,10 @@
 
     .heading {
         @extend .padding;
+
+        @include media-down(md) {
+            padding-top: 56px;
+        }
     
         .subtitle {
             margin: 12px 0 40px;
@@ -209,6 +213,10 @@
                     padding: 32px;
                     border-radius: 8px;
                     border: solid 1px $light-blue-grey;
+
+                    @include media-down(sm) {
+                        padding: 24px 16px;
+                    }
                     
                     &:first-child {
                         margin-bottom: 24px;
@@ -258,7 +266,6 @@
             }
         }
         
-    
         img {
             display: block;
             width: 100%;
@@ -276,8 +283,17 @@
     .more-details {
         margin-top: 80px;
         margin-bottom: 64px;
-        padding: 48px 96px;
-        background-color: $whitish-grey;
+        background-color: $whitish-grey;  
+        border-radius: 8px; 
+        margin: 0 12px;
+
+        @include media-down(sm) {
+            margin: 0;
+        }
+        
+        .flex-row {
+            padding: 48px 96px;
+        }
     
         @include media-down(md) {
             margin-top: 44px;

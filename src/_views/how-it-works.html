@@ -87,9 +87,9 @@ layout: default
             </section>
     
             {% if tab.content.details %}
-            <section class="more-details">
-                <div class="wrapper">
-                    <div class="flex-row fl-sm-col content-middle col">
+            <div class="wrapper">
+                <div class="more-details">
+                    <div class="flex-row fl-sm-col content-middle">
                         <div class="col-33 col-sm-100">
                             <img src="{{ tab.content.details.image }}" alt="{{ tab.content.details.alt }}">
                         </div>
@@ -103,7 +103,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             {% endif %}
         </div>
         {% include cta.html %}
