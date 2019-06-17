@@ -200,70 +200,84 @@
             .col {
             
                 @include media-down(md) {
-                    display: flex;
-                    flex-direction: row;
                     margin: 12px 0;
+                    display: table;
+                    border-spacing: 25px 0;   
                 }
-    
+
                 @include media-down(sm) {
-                    flex-direction: column;
+                    border-spacing: 0;
                 }
-    
-                .checklist-section {
-                    padding: 32px;
-                    border-radius: 8px;
-                    border: solid 1px $light-blue-grey;
+
+                & > .checklist-section {
+
+                    @include media-down(md) {
+                        display: table-cell;
+                        width: 50%;
+                    }
 
                     @include media-down(sm) {
-                        padding: 24px 16px;
+                        display: block;
+                        width: 100%;
                     }
-                    
-                    &:first-child {
-                        margin-bottom: 24px;
-            
-                        @include media-down(md) {
-                            margin-bottom: 0;
-                            margin-right: 24px;
-                        }
-            
-                        @include media-down(sm) {
-                            margin-right: 0;
-                            margin-bottom: 16px;
-                        }
+                }
+            }
+    
+            .checklist-section {
+                padding: 32px;
+                border-radius: 8px;
+                border: solid 1px $light-blue-grey;
+
+                @include media-down(sm) {
+                    padding: 24px 16px;
+                }
+                
+                &:first-child {
+                    margin-bottom: 24px;
+        
+                    @include media-down(md) {
+                        margin-bottom: 0;
+                        margin-right: 24px;
                     }
-            
-                    h3 {
-                        margin-left: 40px;
+        
+                    @include media-down(sm) {
+                        margin-right: 0;
+                        margin-bottom: 16px;
+                    }
+                }
+        
+                h3 {
+                    margin-left: 40px;
+                    margin-bottom: 22px;
+                    text-transform: uppercase;
+        
+                    @include media-down(md) {
+                        margin-left: 28px;
+                        font-size: $font-size-medium;
+                    }
+                }
+        
+                ul {
+        
+                    li {
                         margin-bottom: 22px;
-                        text-transform: uppercase;
-            
+                        
                         @include media-down(md) {
-                            margin-left: 32px;
-                            font-size: $font-size-medium;
+                            margin-bottom: 12px;
                         }
-                    }
-            
-                    ul {
-            
-                        li {
-                            margin-bottom: 22px;
-                            
+                        
+                        span {
+                            width: calc(100% - 24px);
+                            font-size: $default-font-size;
+        
                             @include media-down(md) {
-                                margin-bottom: 12px;
-                            }
-                            
-                            span {
-                                width: calc(100% - 24px);
-                                font-size: $default-font-size;
-            
-                                @include media-down(md) {
-                                    font-size: $font-size-medium;
-                                }
+                                font-size: $font-size-medium;
                             }
                         }
                     }
                 }
             }
+            
         }
         
         img {
@@ -274,7 +288,11 @@
             border-radius: 8px;
     
             @include media-down(md) {
-               height: auto;
+                height: calc((100vw - 64px)* (2/3));
+            }
+
+            @include media-down(sm) {
+                height: calc((100vw - 32px)* (2/3));
             }
     
         }
@@ -285,7 +303,7 @@
         margin-bottom: 64px;
         background-color: $whitish-grey;  
         border-radius: 8px; 
-        margin: 0 12px;
+        margin: 80px 12px 64px 12px;
 
         @include media-down(sm) {
             margin: 0;
@@ -293,6 +311,10 @@
         
         .flex-row {
             padding: 48px 96px;
+
+            @include media-down(sm) {
+                padding: 0;
+            }
         }
     
         @include media-down(md) {
@@ -301,7 +323,7 @@
         }
     
         @include media-down(sm) {
-            padding: 24px 26px;
+            padding: 24px 13px;
             text-align: center;
         }
     

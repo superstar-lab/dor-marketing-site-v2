@@ -38,7 +38,7 @@ layout: default
         <div class="wrapper content-middle content-center">
             <div class="col-75 col-sm-100">
                 <div class="heading">
-                    <h2 class="text-center">{{ item.title }}</h2>
+                    <h2 class="text-center large">{{ item.title }}</h2>
                     {% if item.subtitle %}
                     <div class="subtitle text-center">{{ item.subtitle }}</div>
                     {% endif %}
@@ -68,7 +68,7 @@ layout: default
                                     <span>{{ item.date }}</span>
                                 </div>
                                 <img src="{{ item.imageurl }}">
-                                <h2>{{ item.title }}</h2>
+                                <h2>{{ item.title  | truncatewords: 4 }}</h2>
                                 <p>{{ item.description | truncatewords: 15 }}</p>
                             </a>
                         </div>
@@ -108,10 +108,9 @@ layout: default
                         <a target="_blank" href="{{ item.url }}">
                             <div>
                                 <span>{{ item.type | upcase  }}</span>
-                                <span>{{ item.date }}</span>
                             </div>
                             <img src="{{ item.imageurl }}">
-                            <h2>{{ item.title }}</h2>
+                            <h2>{{ item.title  | truncatewords: 4 }}</h2>
                             <p>{{ item.description | truncatewords: 15 }}</p>
                         </a>
                     </div>

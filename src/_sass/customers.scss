@@ -16,6 +16,10 @@
             border: solid 1px $light-blue-grey;
             margin: 0 12px;
 
+            @include media-down(md) {
+                align-items: unset;
+            }
+
             @include media-down(sm) {
                 margin: 0;
             }
@@ -24,11 +28,21 @@
                 padding: 0;
             }
 
+            .col-66 {
+                align-self: center;
+            }
+
             img {
+                height: 100%;
+
+                @include media-down(md) {
+                    height: 100%;
+                    object-fit: cover;
+                }
 
                 @include media-down(sm) {
                     display: block;
-                    height: 228px;
+                    height: calc((100vw - 32px)* (2/3));
                     width: 100vh;
                     object-fit: cover;
                 }
@@ -36,11 +50,11 @@
 
             .text {
                 margin: 0 28px;
-
+                
                 @include media-down(md) {
-                    margin: 0 20px;
+                    margin: 32px 20px;
                 }
-
+                
                 @include media-down(sm) {
                     margin: 20px 16px;
                 }

@@ -8,8 +8,8 @@
     & > div > div.wrapper.content-middle.content-center > div {
         @extend .padding;
 
-        @include media-down(sm) {
-            padding-top: 48px;
+        @include media-down(md) {
+            padding-top: 56px;
         }
     }
     
@@ -18,7 +18,7 @@
     }
 
     h2 {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
 
         & + .subtitle {
             margin-bottom: 64px;
@@ -57,11 +57,16 @@
         }
 
         @include media-down(sm) {
-           padding: 32px 0;
+            padding: 32px 0;
         }
-
+        
         .flex-row {
             flex-wrap: wrap;
+
+            @include media-down(sm) {
+                display: block;
+            }
+
             & > div {
                 margin-bottom: 24px;
             }
@@ -153,7 +158,7 @@
                     letter-spacing: 0.5px;
                     color: $brownish-grey;
 
-                    &:last-child {
+                    &:nth-child(2) {
                         float: right;
                     }
                 }
@@ -179,6 +184,10 @@
                 font-size: $font-size-large;
                 font-weight: $font-weight-bold;
                 color: $black;
+
+                @include media-down(md) {
+                    font-size: $default-font-size;
+                }
             }
 
             p {
