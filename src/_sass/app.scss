@@ -117,7 +117,7 @@ img {
         .hero {
             max-width: 596px;
             margin: 128px 12px;
-            padding: 48px;
+            padding: 48px 16px;
             border-radius: 8px;
 
             @include media-down(md) {

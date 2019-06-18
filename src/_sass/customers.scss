@@ -96,57 +96,61 @@
         }
 
         blockquote {
-            color: $black;
-
+            
             @include media-down(sm) {
                 margin: 0;
                 padding: 0;
             }
-            
-            p {
-                font-size: $font-size-xl;
-                line-height: 1.43;
 
-                @include media-down(md) {
-                    font-size: $font-size-large;
-                }
-
-                @include media-down(sm) {
-                    font-size: $default-font-size;
-                }
-            }
-            
-            footer {
-                font-size: $font-size-xl;
-                display: block;
-                font-weight: $font-weight-bold;
-                margin: 19px 0 6px;
-                line-height: 1.29;
-
-                @include media-down(md) {
-                    font-size: $font-size-large;
-                }
-
-                @include media-down(sm) {
-                    margin: 16px 0 4px;
-                    font-size: $default-font-size;
-                }
-
-                & + div {
-                    font-size: $default-font-size;
-                    line-height: 1.4;
-                    color: $brownish-grey;
-
+            a {
+                color: $black;
+                
+                p {
+                    font-size: $font-size-xl;
+                    line-height: 1.43;
+    
                     @include media-down(md) {
-                        font-size: $font-size-medium;
+                        font-size: $font-size-large;
                     }
-                    
-                    a {
+    
+                    @include media-down(sm) {
+                        font-size: $default-font-size;
+                    }
+                }
+                
+                footer {
+                    font-size: $font-size-xl;
+                    display: block;
+                    font-weight: $font-weight-bold;
+                    margin: 19px 0 6px;
+                    line-height: 1.29;
+    
+                    @include media-down(md) {
+                        font-size: $font-size-large;
+                    }
+    
+                    @include media-down(sm) {
+                        margin: 16px 0 4px;
+                        font-size: $default-font-size;
+                    }
+    
+                    & + div {
+                        font-size: $default-font-size;
+                        line-height: 1.4;
                         color: $brownish-grey;
-                        font-style: italic;
+    
+                        @include media-down(md) {
+                            font-size: $font-size-medium;
+                        }
+                        
+                        a {
+                            color: $brownish-grey;
+                            font-style: italic;
+                        }
                     }
                 }
             }
         }
+            
     }
 }

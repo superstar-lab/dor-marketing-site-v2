@@ -42,9 +42,11 @@ layout: default
             <div class="review content-middle content-center">
                 <div class="col-75 col-sm-100 text-center">
                     <blockquote>
-                        <p>{{ review.text }}</p>
-                        <footer>{{ review.author }}</footer>
-                        <div><a href="{{ review.authorUrl }}">{{ review.authorPosition }}</a></div>
+                        <a href="{{ review.authorUrl }}">
+                            <p>{{ review.text }}</p>
+                            <footer>{{ review.author }}</footer>
+                            <div>{{ review.authorPosition }}</div>
+                        </a>
                     </blockquote>
                 </div>
             </div>
