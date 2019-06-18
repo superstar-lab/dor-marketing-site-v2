@@ -38,7 +38,7 @@ tabs:
           lists:
             - title: Machine learning enhances accuracy on every door in any condition
             - title: Thermal sensors protect customer privacy
-            - title: Hourly data automatically available at your fingertips on your dashboard
+            - title: Actionable data automatically available at your fingertips on your dashboard
       
       details:
         title: 'Need more details? <br>Download the datasheet for sensor specs'
@@ -56,7 +56,7 @@ tabs:
 
       second-section:
         title: Equip your whole team to succeed with true visibility
-        subtitle: 'Data is only valuable if you can access it on your terms. Unite your company’s stakeholders on a smart dashboard they can use to analyze multiple date ranges and stores while factoring in seasonality so they can keep their finger to the pulse of the most important metrics in your business.'
+        subtitle: 'Data is only valuable if you can access it on your terms. Unite your company’s stakeholders on a smart dashboard they can use to analyze multiple date ranges and stores while factoring in seasonality so they can keep their finger to the pulse of the most important metrics in your business. Foot traffic counts, conversion rates and revenue per store.'
         image: /assets/images/how-it-works/software-2.png
         alt: Installation image
       
@@ -104,7 +104,7 @@ tabs:
         - title: Proactive support
           lists:
             - title: Avoid downtime with proactive, remote resolution of hardware issues
-            - title: Get help anytime via phone, email and chat support from your dedicated customer success manager and their team
+            - title: Get help via phone, email or chat from your dedicated customer success manager and their team
             - title: Install, activate and stay up and running faster with a support team available to everyone in your organization
         - title: A team focused on your success
           lists:

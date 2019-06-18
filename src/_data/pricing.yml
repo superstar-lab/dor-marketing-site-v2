@@ -28,11 +28,12 @@ plans:
     alt:
     lists:
       - title: National chains
+      - title: Special requirements
+      - title: Fleet-wide performance audits
     points:
       title: 'All <strong>Pro</strong> features, plus:'
       lists:
         - title: Quarterly business reviews
-        - title: Custom rollout plan
         - title: Dedicated customer success representative
         - title: Marketing insights
-        - title: Custom service-level/enterprise service agreements
+        - title: Enterprise Service & Custom Agreements
