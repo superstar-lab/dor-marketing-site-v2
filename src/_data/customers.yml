@@ -14,7 +14,6 @@ feedback:
     author: Robert Odom
     authorPosition: Director of Sales and Marketing, Original Mattress Factory
     authorUrl: 'https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/'
-    authorLink:  '@ Retail Toolkit'
 
   - image: /assets/images/customers/customer2.png
     category: RETAIL ANALYTICS
@@ -26,7 +25,6 @@ feedback:
     author: Daniel Kowalke
     authorPosition: General Manager, Retail Toolkit
     authorUrl: 'https://blog.getdor.com/2019/03/27/retail-toolkit-customer-story/'
-    authorLink:  '@ Retail Toolkit'
 
   - image: /assets/images/customers/customer3.png
     category: APPAREL
@@ -38,7 +36,6 @@ feedback:
     author: Adam Scott
     authorPosition: President, Clothes Mentor
     authorUrl: 'https://blog.getdor.com/2018/01/29/clothes-mentor-case-study/'
-    authorLink:  '@ Clothes Mentor'
 
   - image: /assets/images/customers/customer4.png
     category: Store Management Platform
@@ -50,4 +47,3 @@ feedback:
     author: Tim Minick
     authorPosition: Director of IT, HPM Building Supply
     authorUrl: 'https://blog.getdor.com/2018/05/30/hpm-building-supply-case-study/'
-    authorLink:  '@ HPM Building Supply'
