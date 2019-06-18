@@ -1,0 +1,73 @@
+---
+title: Dor | About Us
+permalink: /about-us/
+layout: default
+cta: false
+---
+
+{% assign string = site.data.about %}
+
+<section id="about-us" class="page-hero hero-section content-center content-middle">
+    <div class="mobile-image">
+        <img src="{{ string.hero.image }}">
+    </div>
+    <div class="hero col-50 col-sm-100">
+        <div class="wrapper flex-row fl-sm-reverse content-middle">
+            <div class="col text-center">
+                <h1>{{ string.hero.title }}</h1>
+                <div class="subtitle">{{ string.hero.subtitle }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission">
+    <div class="wrapper">
+        {% for item in string.missions %}
+        <div class="flex-row fl-sm-reverse content-middle">
+            <div class="col">
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.text }}</p>
+            </div>
+            <div class="col">
+                <img src="{{ item.image }}">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="team">
+    <div class="wrapper content-center flex-row">
+        <div class="col-66 col-sm-100 text-center">
+            <h2 class="large">{{ string.team.title }}</h2>
+            <div class="subtitle">{{ string.team.subtitle }}</div>
+        </div>
+    </div>
+    <div class="wrapper members">
+        <div class="flex-row ">
+            {% for member in string.members %}
+            <div class="col-25 col-sm-50 text-center">
+                <img src="{{ member.image }}">
+                <h4>{{ member.name }}</h4>
+                <div>{{ member.position }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="working-days">
+    <div class="wrapper">
+        <h2 class="large text-center">{{ string.workingDay.title }}</h2>
+        <div class="flex-row ">
+            {% for item in string.workingDay.photos %}
+            <div class="col-25 col-sm-50 text-center">
+                <img src="{{ item.image }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include work-with-us.html %}

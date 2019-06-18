@@ -1,0 +1,65 @@
+hero:
+  title: About us
+  subtitle: Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.
+  image: /assets/images/about/hero.jpg
+
+missions:
+  - title: What we do
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+    image: /assets/images/about/mission.jpg
+  - title: Why we do
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+    image: /assets/images/about/mission.jpg
+  - title: Founder story
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+    image: /assets/images/about/mission.jpg
+
+team:
+  title: Meet the team
+  subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+
+members:
+  - image: /assets/images/about/brand.png
+    name: Michael Brand
+    position: Founding CEO
+  - image: /assets/images/about/golembeski.png
+    name: Gregg Golembeski
+    position: Founding CTO
+  - image: /assets/images/about/delbuck.png
+    name: Julie Delbuck
+    position: Head of Operations
+  - image: /assets/images/about/bas.png
+    name: Levent Bas
+    position: Head of Product
+  - image: /assets/images/about/abad.png
+    name: Joseph Abad
+    position: Director of Hardware
+  - image: /assets/images/about/brandes.png
+    name: Alex Brandes
+    position: Director of Software
+  - image: /assets/images/about/schneider.png
+    name: Woody Schneider
+    position: Director of Sales
+  - image: /assets/images/about/hackworth.png
+    name: Dave Hackworth
+    position: Customer Support Manager
+
+workingDay:
+  title: See what it’s like working at Dor
+  photos:
+    - image: /assets/images/about/day1.png
+    - image: /assets/images/about/day2.png
+    - image: /assets/images/about/day3.png
+    - image: /assets/images/about/day4.png
+    - image: /assets/images/about/day5.png
+    - image: /assets/images/about/day6.png
+    - image: /assets/images/about/day7.png
+    - image: /assets/images/about/day8.png
+    - image: /assets/images/about/day9.png
+    - image: /assets/images/about/day10.png
+    - image: /assets/images/about/day11.png
+    - image: /assets/images/about/day12.png
+    - image: /assets/images/about/day13.png
+    - image: /assets/images/about/day14.png
+    - image: /assets/images/about/day15.png
+    - image: /assets/images/about/day16.png

@@ -20,12 +20,13 @@ $font-size-h1-mobile: floor(($default-font-size * 1.2));
 
 $font-size-h2: floor(($default-font-size * 1.6));
 $font-size-h3: floor(($default-font-size * 1.4));
+$font-size-h4: floor(($default-font-size * 1.2));
 
 * {
 	font-family: $font-family;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
 	margin: 0;
 }
 
@@ -69,6 +70,18 @@ h3 {
 
     @include media-down(md) {
         font-size: $default-font-size;
+    }
+}
+
+h4 {
+    font-size: $font-size-h4;
+
+    @include media-down(md) {
+        font-size: $default-font-size;
+    }
+
+    @include media-down(sm) {
+        font-size: $font-size-medium;
     }
 }
 
