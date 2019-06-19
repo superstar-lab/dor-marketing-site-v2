@@ -149,12 +149,64 @@
     }
 }
 
-.open-position {
+.open-positions {
     background-color: $ice-blue;
     @extend .padding;
 
     h2 {
         margin-bottom: 8px;
+    }
+
+    #jobs-container {
+        margin-top: 48px;
+
+        @include media-down(md) {
+            margin-top: 16px;
+        } 
+
+        @include media-down(sm) {
+            margin-top: 9px;
+        }
+
+        .lever ul {
+
+            li {
+                padding: 24px;
+                background-color: $white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+                margin-top: 16px;
+                text-align: left;
+                cursor: default;
+                
+                a {
+                    font-size: $font-size-large;
+                    color: $black;
+                    font-weight: $font-weight-bold;
+                    pointer-events: none;
+                    cursor: pointer;
+
+                    @include media-down(md) {
+                        font-size: $default-font-size;
+                    }
+
+                    &:after {
+                        content: 'See role';
+                        display: block;
+                        font-size: $default-font-size;
+                        color: $blue;
+                        margin-top: 12px;
+                        font-weight: $font-weight-semi-bold;
+                        pointer-events: inherit;
+
+                        @include media-down(md) {
+                            margin-top: 6px;
+                            font-size: $font-size-small;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
