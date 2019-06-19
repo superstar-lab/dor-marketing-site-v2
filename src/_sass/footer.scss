@@ -209,40 +209,41 @@ hr {
 .modal {
     position: fixed;
     z-index: 100;
-    top: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease-out;
-    transform: translateX(-50%) translateY(-50%); top: 50%; left: 50%;
-    width: 600px;
-
-    @include media-down(md) {
-        width: 576px;
-    }
-
+    transform: translateX(-50%) translateY(-50%); 
+    top: 50%; 
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    
     @include media-down(sm) {
-        width: 100%;
         padding: 24px 16px;
     }
     
     .modal-body {
+        margin: 64px;
         overflow-x: auto;
         background: $white;
         position: relative;
         padding: 32px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 9px;
-        max-height: 400px;
-        
+        width: 600px;
+
         @include media-down(md) {
             padding: 24px;
+            width: 576px;
         }
         
         @include media-down(sm) {
             padding: 16px;
+            width: 100%;
         }
 
         .col {
