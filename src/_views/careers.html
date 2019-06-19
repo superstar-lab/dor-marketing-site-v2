@@ -1,0 +1,111 @@
+---
+title: Dor | Careers
+permalink: /careers/
+layout: default
+cta: false
+---
+
+{% assign string = site.data.careers %}
+
+<section id="careers" class="page-hero hero-section content-center content-middle">
+    <div class="mobile-image">
+        <img src="{{ string.hero.image }}">
+    </div>
+    <div class="hero col-50 col-sm-100">
+        <div class="wrapper flex-row fl-sm-reverse content">
+            <div class="col text-center">
+                <h1>{{ string.hero.title }}</h1>
+                <div class="subtitle">{{ string.hero.subtitle }}</div>
+                <a href="{{ site.baseurl }}{{ string.hero.buttonUrl }}" class="button-link">
+                    <div class="button large white">
+                        {{ string.hero.button }}
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission career">
+    <div class="wrapper">
+        <div class="flex-row fl-sm-reverse content-middle">
+            <div class="col">
+                <h2>{{ string.aboutWork.title }}</h2>
+                <p>{{ string.aboutWork.text }}</p>
+                <a href="{{ site.baseurl }}/{{ string.aboutWork.buttonUrl }}" class="button-link">
+                    <div class="button large blue">
+                        {{ string.aboutWork.button }}
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <img src="{{ string.aboutWork.image }}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-value">
+    <div class="wrapper">
+        <h2 class="text-center">{{ string.values.title }}</h2>
+        <div class="flex-row">
+            {% for point in string.values.points %}
+            <div class="col-50 text-center">
+                <div>
+                    <h4>{{ point.title }}</h4>
+                    <p>{{ point.subtitle }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="wrapper">
+        <div class="flex-row fl-sm-col content-middle">
+            <div class="col">
+                <img src="{{ string.benefits.image }}">
+            </div>
+            <div class="col">
+                <h2>{{ string.benefits.title }}</h2>
+                {% for point in string.benefits.points %}
+                    <div class="benefit-points content-middle">
+                        <i class="icon icon-benefit {{ point.icon }}"></i>
+                        <span>{{ point.title }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="open-position" id="open-positions">
+    <div class="wrapper text-center">
+        <h2 class="large">Open positions</h2>
+        <div class="subtitle">Excited about Dor but don’t see a role that fits your background?<br>Reach out to careers@getdor.com and we’ll keep you in mind for future roles.</div>
+
+        <div class="col" id="jobs-container">
+            <div class="job-list"></div>
+        </div>
+    </div>
+</section>
+
+<section class="employees-feedback">
+    <div class="wrapper">
+        <h2 class="text-center">{{ string.feedbacks.title }}</h2>
+        <div class="flex-row fl-sm-col">
+            {% for feedback in string.feedbacks.reviews %}
+            <div class="col">
+                <div class="feedback-box">
+                    <p>{{ feedback.text }}</p>
+                    <img src="{{ feedback.authorImage }}">
+                    <div>{{ feedback.authorName }}</div>
+                    <small>{{ feedback.authorPosition }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

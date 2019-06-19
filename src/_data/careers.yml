@@ -1,0 +1,56 @@
+hero:
+  title: Careers
+  subtitle: At Dor we’re working to empower retailers worldwide, and this starts by empowering our team. Come work at Dor - you won’t regret it. 
+  button: See Open Positions
+  buttonUrl: "#open-positions"
+  image: /assets/images/careers/hero.jpg
+
+aboutWork:
+  title: How we work
+  text: At Dor, we’re striving to empower our customers and we achieve this by empowering and supporting our employees. We work hard, and we do it together. We believe in transparency and communication - direct, honest communication is a cornerstone of how we work together. Good ideas come from everywhere, and our team reflects that in our diverse backgrounds. There will probably be one more sentence worth of words here
+  image: /assets/images/about/mission.jpg
+  button: Read More About  Us
+  buttonUrl: about-us
+
+values:
+  title: Our Values
+  points:
+    - title: Win together
+      subtitle: “That’s not my job” is not in our vocabulary; we work hard and support each other to achieve big wins. We try new things and solve difficult problems - our failures count as wins if we learn from them.
+    - title: Say it
+      subtitle: Growth is our goal. We seek and give feedback to help each other grow, and communicate early, often, and directly to get there.
+    - title: Simplify
+      subtitle: We stay focused on what’s important to achieve our goal of delighting the customer with a well thought out and easy to understand solution.
+    - title: Give a damn 
+      subtitle: 'We give a damn about the work we’re doing, the people we’re doing it with, and the people we do it for: our customer.'
+
+benefits:
+  image: /assets/images/about/mission.jpg
+  title: Benefits
+  points:
+    - icon: icon-sun
+      title: Sunlit office in the heart of San Francisco’s SOMA district
+    - icon: icon-women
+      title: Company sponsored health benefits
+    - icon: icon-vacation
+      title: Flexible vacation
+    - icon: icon-lunch
+      title: Catered weekly lunch
+    - icon: icon-fun
+      title: Fun-loving coworkers
+    - icon: icon-dog
+      title: Dog-friendly office
+    - icon: icon-laptop
+      title: Budget for work equipment
+
+feedbacks:
+  title: Hear what our employees have to say about working at Dor
+  reviews:
+    - text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
+      authorImage: /assets/images/careers/brand.png
+      authorName: Michael Brand
+      authorPosition: Founding CEO
+    - text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
+      authorImage: /assets/images/careers/golembeski.png
+      authorName: Gregg Golembeski
+      authorPosition: Founding CTO

@@ -1,0 +1,225 @@
+#careers {
+    background: url(../images/careers/hero.jpg) no-repeat center center;
+    background-size: cover;
+
+    .hero {
+        opacity: 0.95;
+        padding: 40px 8px;
+
+        @include media-down(sm) {
+            padding: 20px 16px;
+        }
+
+        h1 {
+
+            @include media-down(sm) {
+                font-size: $font-size-large;
+            }
+        }
+
+    }
+}
+
+.career {
+    
+    .button-link {
+        margin-top: 20px;
+        display: block;
+        
+        @include media-down(md) {
+            margin-top: 16px;
+        }
+    }
+}
+
+.our-value {
+
+    h2 {
+        margin-bottom: 32px;
+
+        @include media-down(md) {
+            margin: 24px 0;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+    }
+
+    .flex-row {
+        flex-wrap: wrap;
+
+        & > div {
+            margin-bottom: 24px;
+
+            @include media-down(sm) {
+                margin-bottom: 16px;
+            }
+
+            & > div {
+                padding: 32px;
+                border-radius: 8px;
+                border: 1px solid $light-blue-grey;
+                height: 100%;
+
+                @include media-down(md) {
+                    padding: 24px 20px;
+                }
+
+                @include media-down(sm) {
+                    text-align: left;
+                }
+    
+                h4 {
+                    margin-bottom: 8px;
+                    line-height: 1.33;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+    
+                p {
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+}
+
+.benefits {
+    margin: 100px 0 128px;
+
+    @include media-down(md) {
+        margin: 66px 0 80px;
+    }
+
+    @include media-down(sm) {
+        margin: 32px 0 57px;
+    }
+
+    .content-middle {
+
+        @include media-down(sm) {
+            align-items: flex-start;
+        }
+    }
+    
+    img {
+        padding-right: 28px;
+
+        @include media-down(md) {
+            padding-right: 0;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 16px;
+        }
+    }
+
+    h2 {
+        margin-left: 48px;
+        margin-bottom: 16px;
+
+        @include media-down(md) {
+            margin-left: 41px;
+            margin-bottom: 12px;
+        }
+
+        @include media-down(sm) {
+            margin-left: 0;
+        }
+    }
+
+    .benefit-points {
+        margin-bottom: 6px;
+
+        @include media-down(md) {
+            margin-bottom: 4px;
+            align-items: flex-start;
+        }
+
+        span {
+            margin-left: 16px;
+            display: inline-block;
+
+            @include media-down(md) {
+                font-size: $font-size-medium;
+            }
+        }
+    }
+}
+
+.open-position {
+    background-color: $ice-blue;
+    @extend .padding;
+
+    h2 {
+        margin-bottom: 8px;
+    }
+}
+
+.employees-feedback {
+    @extend .padding;
+
+    h2 {
+        margin-bottom: 40px;
+
+        @include media-down(sm) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .feedback-box {
+        border: 1px solid $light-blue-grey;
+        border-radius: 8px;
+        padding: 40px;
+
+        @include media-down(md) {
+            padding: 24px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 17px;
+        }
+
+        img {
+            width: 96px;
+
+            @include media-down(md) {
+                width: 80px;
+            }
+        }
+
+        p, div {
+            font-size: $font-size-large;
+            line-height: 1.33;
+
+            @include media-down(md) {
+                font-size: $default-font-size;
+            }
+        }
+
+        p {
+            margin-bottom: 40px;
+
+            @include media-down(md) {
+                margin-bottom: 32px;
+            }            
+        }
+        
+        div {
+            margin-bottom: 4px;
+            font-weight: $font-weight-bold;
+
+            @include media-down(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        small {
+            font-size: $default-font-size;
+            color: $brownish-grey;
+            text-transform: none;
+        }
+    }
+}

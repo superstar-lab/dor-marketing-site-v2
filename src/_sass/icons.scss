@@ -95,4 +95,46 @@
     &.large {
         font-size: 2.875rem;
     }
+
+    &.icon-benefit {
+        background-size: contain;
+        height: 42px;
+        width: 32px;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include media-down(md) {
+            height: 32px;
+            width: 25px;
+        }
+
+        &.icon-dog {
+            background-image: url(../images/icons/dog.png);
+        }
+
+        &.icon-women {
+            background-image: url(../images/icons/women.png);
+        }
+
+        &.icon-fun {
+            background-image: url(../images/icons/fun.png);
+        }
+
+        &.icon-laptop {
+            background-image: url(../images/icons/laptop.png);
+        }
+
+        &.icon-lunch {
+            background-image: url(../images/icons/lunch.png);
+        }
+
+        &.icon-vacation {
+            background-image: url(../images/icons/vacation.png);
+        }
+
+        &.icon-sun {
+            background-image: url(../images/icons/sun.png);
+        }
+    }
 }
