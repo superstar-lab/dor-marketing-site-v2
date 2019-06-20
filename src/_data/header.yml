@@ -15,6 +15,6 @@ logo:
 rightSection:
   link:
     title: Sign In
-    url: /sign-in
+    url: https://app.getdor.com/auth/login
   button:
     title: Request Demo

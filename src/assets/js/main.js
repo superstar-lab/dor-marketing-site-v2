@@ -1,4 +1,10 @@
 $(function () {
+
+    $('.trigger').on('click', function () {
+        $(".video")[0].src += "1";
+        $(".trigger").toggleClass('hidden');
+    });
+      
     // mobile menu toggle logic
     $('.menu-tab').on('click', function() {
         $('.menu-hide').toggleClass('show');
@@ -6,17 +12,18 @@ $(function () {
     });
 
     // request demo modal
-    $('.close, .mask').on('click', function() {
-        $('.mask, body').removeClass('active');
+    $('.close, .modal').on('click', function() {
+        $('.modal, body').removeClass('active');
     });
     
-    $('.show').on('click', function() {
-        $('.mask, body').addClass('active');
+    $('.show').on('click', function(e) {
+        e.preventDefault();
+        $('.modal, body').addClass('active');
     });
 
     $(document).on('keyup', function(e) {
         if (e.keyCode == 27) {
-            $('.mask, body').removeClass('active');
+            $('.modal, body').removeClass('active');
         }
     });
 
@@ -33,4 +40,5 @@ $(function () {
         }
     });
 });
+
 

@@ -187,7 +187,7 @@ hr {
 
   // The mask
   
-.mask, .bg-mask {
+.bg-mask {
     position: fixed;
     top: 0;
     left: 0;
@@ -198,15 +198,13 @@ hr {
     visibility: hidden;
     opacity: 0;
     transition: 0.7s;
-}
-
-.bg-mask {
     z-index: 0;
 }
   
   // Modal
   
 .modal {
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 100;
     display: flex;
