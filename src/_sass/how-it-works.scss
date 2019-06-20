@@ -273,6 +273,8 @@
                     margin-left: 40px;
                     margin-bottom: 22px;
                     text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: $default-font-size;
         
                     @include media-down(md) {
                         margin-left: 28px;
