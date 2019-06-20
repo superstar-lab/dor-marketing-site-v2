@@ -1,0 +1,66 @@
+#press {
+
+    a {
+        color: $blue;
+    }
+
+    h1 {
+        margin-top: 60px;
+
+        @include media-down(md) {
+            margin-top: 35px;
+        }
+    }
+
+    .subtitle {
+        margin: 20px 0 50px;
+    }
+
+    .press-logos {
+        margin: 50px 0;
+
+        @include media-down(sm) {
+           flex-wrap: wrap;
+        }
+
+        @include media-down(md) {
+            margin: 35px 0;
+        }
+
+        @include media-down(sm) {
+            margin: 15px 0;
+        }
+
+        img {
+            transition: opacity 1.5s;
+            opacity: .78;
+            padding: 0 20px;
+
+            @include media-down(sm) {
+                padding: 15px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .press-links {
+        margin-top: 50px;
+
+        @include media-down(md) {
+            margin-top: 35px;
+        }
+
+        .press-item {
+            color: $light-black;
+            margin-bottom: 40px;
+
+            @include media-down(sm) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}

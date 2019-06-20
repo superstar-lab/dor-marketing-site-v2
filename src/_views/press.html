@@ -1,0 +1,52 @@
+---
+title: Dor | Press
+permalink: /press/
+layout: default
+---
+
+{% assign string = site.data.press-page %}
+
+<section id="press">
+    <div class="wrapper">
+        <div class="content-middle content-center text-center"> 
+            <div class="col-66 col-sm-100">
+                <h1>{{ string.header }}</h1>
+                <div class="subtitle">
+                    {{ string.subheader.pre_link }}
+                    <a href="{{ string.contact_email }}" target="_top">{{ string.subheader.link }}</a>
+                    {{ string.subheader.post_link }}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="press-logos flex-row content-middle content-center">
+            <a class="col col-sm-50" href="{{ string.inc }}">
+                <img src="/assets/images/press/inc-logo.png" alt="{{ string.alt.inc }}"/>
+            </a>
+            <a class="col col-sm-50" href="{{ string.forbes }}">
+                <img src="/assets/images/press/forbes_logo.svg.png" alt="{{ string.alt.forbes }}"/>
+            </a>
+            <a class="col col-sm-50" href="{{ string.retail_touch_points }}">
+                <img src="/assets/images/press/rt_tp-logo.png" alt="{{ string.alt.retail_touch_points }}"/>
+            </a>
+            <a class="col col-sm-50" href="{{ string.tnw }}">
+                <img src="/assets/images/press/tnw-logo.png" alt="{{ string.alt.tnw }}"/>
+            </a>
+            <a class="col col-sm-50" href="{{ string.biztech }}">
+                <img src="/assets/images/press/biztech-logo.png" alt="{{ string.alt.biztech }}"/>
+            </a>
+        </div>
+        <hr>
+        <div class="press-links flex-column content-middle">
+            <ul class="col-75 col-sm-100">
+                {% for item in site.data.press  %}
+                <li class="press-item">
+                    <strong>{{ item.date }}, </strong>
+                    <span>{{ item.publication }} <span class="desktop">-- </span></span>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
