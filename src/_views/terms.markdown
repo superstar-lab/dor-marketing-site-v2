@@ -2,6 +2,7 @@
 title: Dor - Terms of Use
 permalink: /terms/
 layout: terms
+cta: false
 ---
 
 # **DOR TECHNOLOGIES, INC.**

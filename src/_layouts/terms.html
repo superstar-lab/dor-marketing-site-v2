@@ -6,11 +6,14 @@
     </head>
     <body>
         {% include trackers/google-tag-manager-body.html %}
+        {% include header.html %}
+        {% include trackers/google-tag-manager-body.html %}
         <div class="wrapper flex-row fl-sm-col terms">
             <div class="col-75 col-sm-100">
                 {{ content }}
             </div>
         </div>
+        {% include footer.html %}
         {% include scripts/body.html %}
     </body>
 </html>

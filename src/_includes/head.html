@@ -15,10 +15,10 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{{ site.description }}">
 
-
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7380374/686868/css/fonts.css" />
-
+{% if page.url == "/how-it-works/" %}
 <link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet">
+{% endif %}
 
 <link rel=icon type=image/png href=/assets/images/favicon.png>
 <link rel="stylesheet" href="/assets/css/main.min.css"/>
