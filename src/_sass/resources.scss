@@ -1,5 +1,5 @@
 #resources {
-    background: url(../images/resources/hero.png) no-repeat center center;
+    background: url(../images/resources/hero.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -89,7 +89,6 @@
             }
 
             img {
-                object-fit: cover;
                 align-self: flex-end;
             }
 
@@ -111,6 +110,7 @@
 
         img {
             max-width: 80%;
+            object-fit: cover;
 
             @include media-down(sm) {
                 max-width: 100%;

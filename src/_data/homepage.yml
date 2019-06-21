@@ -23,17 +23,17 @@ cards:
 features:
 - title: Get visibility into every store
   subtitle: Collect the most important metrics you need to instantly understand how well your stores are performing. Make data-driven decisions with accurate foot traffic metrics that increase in value over time.
-  image: /assets/images/homepage/features1.png
+  image: /assets/images/homepage/features1.jpg
   button: See the full picture
   buttonUrl: "/resources/#accuracy&visibility"
 - title: Focus on your brand's purpose
   subtitle: Drive and engage more traffic in stores optimized for profit. With data analytics from Dor, separate what’s working from what’s clutter to keep your customers coming back.
-  image: /assets/images/homepage/features2.png
+  image: /assets/images/homepage/features2.jpg
   button: Read our vision for retail
   buttonUrl: "/resources/#retail"
 - title: Collaborate with a true partner
   subtitle: "We empower retailers to focus on what really matters: Operating efficient stores where meaningful engagement happens. We’re here to make it easier for you to be operationally excellent."
-  image: /assets/images/homepage/features3.png
+  image: /assets/images/homepage/features3.jpg
   button: Work with us
   buttonUrl: "/resources/#whydor"
 

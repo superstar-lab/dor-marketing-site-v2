@@ -16,18 +16,18 @@ tabs:
       heading:
         title: Hardware that scales with you
         subtitle: 'Get data faster with the world’s first thermal-sensing, battery-operated people counter'
-        image: /assets/images/how-it-works/hardware-1.png
+        image: /assets/images/how-it-works/hardware-1.jpg
         alt: People counter image
 
       second-section:
         title: Tech that doesn’t slow you down
         subtitle: 'With zero reliance on your in-store network, Dor sets up in minutes. Just peel and stick on your entrances and we’ll do the rest. Dor’s proprietary thermal technology and advanced machine-learning algorithms ensure consistently accurate counts with no calibration needed, so you can focus on what really matters in your stores: your customers.'
-        image: /assets/images/how-it-works/hardware-2.png
+        image: /assets/images/how-it-works/hardware-2.jpg
         alt: Installation image
       
       feautures:
         title: Tech for one or one thousand locations
-        image: /assets/images/how-it-works/hardware-3.png
+        image: /assets/images/how-it-works/hardware-3.jpg
         alt: Locations
         points:
         - title: Deployment speed
@@ -58,12 +58,12 @@ tabs:
       second-section:
         title: Equip your whole team to succeed with true visibility
         subtitle: 'Data is only valuable if you can access it on your terms. Unite your company’s stakeholders on a smart dashboard they can use to analyze multiple date ranges and stores while factoring in seasonality so they can keep their finger to the pulse of the most important metrics in your business. Foot traffic counts, conversion rates and revenue per store.'
-        image: /assets/images/how-it-works/software-2.png
+        image: /assets/images/how-it-works/software-2.jpg
         alt: Installation image
       
       feautures:
         title: Get a powerful perspective on store performance
-        image: /assets/images/how-it-works/software-3.png
+        image: /assets/images/how-it-works/software-3.jpg
         alt: Performance
         points:
         - title: Actionable Insights
@@ -88,18 +88,18 @@ tabs:
       heading:
         title: Support from a true partner
         subtitle: 'Our team is here to support your journey from discovery to data-driven decision making — and beyond. Let’s discover and replicate what works in your stores together.'
-        image: /assets/images/how-it-works/support-1.png
+        image: /assets/images/how-it-works/support-1.jpg
         alt: Apple image
 
       second-section:
         title: Don’t plan your next big initiative alone
         subtitle: Your customers are already telling you what they want. Through their engagement with your brand, they’re leaving patterns and trends behind them. With the right tool in hand to capture those trends, and the right partner dedicated to supporting your long-term operational excellence, you can meet your customer where they need you to be.'
-        image: /assets/images/how-it-works/support-2.png
+        image: /assets/images/how-it-works/support-2.jpg
         alt: Installation image
       
       feautures:
         title: Operate excellently with the right partner by your side
-        image: /assets/images/how-it-works/support-3.png
+        image: /assets/images/how-it-works/support-3.jpg
         alt: Proactive support
         points:
         - title: Proactive support

@@ -123,6 +123,9 @@
 }
 
 .tabs-stage {
+    img {
+        border-radius: 8px;
+    }
 
     .demo {
         background-color: $ice-blue;

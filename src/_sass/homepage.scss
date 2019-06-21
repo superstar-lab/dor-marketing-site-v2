@@ -1,5 +1,5 @@
 #hero {
-    background: url(../images/homepage/hero.png) no-repeat center center;
+    background: url(../images/homepage/hero.jpg) no-repeat center center;
     width: 100%;
     background-size: cover;
     min-height: 65vh;
@@ -13,7 +13,7 @@
     .hero-image {
 
         @include media-down(sm) {
-            background: url(../images/homepage/hero.png) no-repeat;
+            background: url(../images/homepage/hero.jpg) no-repeat;
             background-position: top center;
             background-size: contain;
             min-height: 250px;
@@ -150,6 +150,10 @@
                     margin-left: 0;
                 }
             }
+        }
+
+        img {
+            border-radius: 8px;
         }
 
         .col {
