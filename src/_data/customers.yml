@@ -1,10 +1,10 @@
 hero:
   title: Customer stories
   subtitle: Learn how retail leaders are using Dor to increase profitability and engagement in their stores
-  image: /assets/images/customers/hero.png
+  image: /assets/images/customers/hero.jpg
 
 feedback:
-  - image: /assets/images/customers/customer1.png
+  - image: /assets/images/customers/customer1.jpg
     category: Specialty Retail
     company: Original Mattress Factory
     aboutcompany: Original Mattress Factory traded manual traffic counting for foot traffic analytics from Dor. Simple, affordable, and scalable retail analytics help you measure marketing impact, forecast foot traffic for your stores, and eliminate the possibility of human error.
@@ -15,7 +15,7 @@ feedback:
     authorPosition: Director of Sales and Marketing, Original Mattress Factory
     authorUrl: 'https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/'
 
-  - image: /assets/images/customers/customer2.png
+  - image: /assets/images/customers/customer2.jpg
     category: RETAIL ANALYTICS
     company: Retail Toolkit
     aboutcompany: Foot traffic analytics reduces emotionally driven decision-making and guesswork in retail, freeing up shop owners to be more operationally excellent and laser-focused on making each customer interaction count.
@@ -26,7 +26,7 @@ feedback:
     authorPosition: General Manager, Retail Toolkit
     authorUrl: 'https://blog.getdor.com/2019/03/27/retail-toolkit-customer-story/'
 
-  - image: /assets/images/customers/customer3.png
+  - image: /assets/images/customers/customer3.jpg
     category: APPAREL
     company: Clothes Mentor
     aboutcompany: Clothes Mentor discovered through Dor that just a slight drop in a weekly average conversion rate was costing them thousands of dollars in lost revenue. Read how planning ahead with the right amount of staff and marketing investment can help you solve this issue.
@@ -37,7 +37,7 @@ feedback:
     authorPosition: President, Clothes Mentor
     authorUrl: 'https://blog.getdor.com/2018/01/29/clothes-mentor-case-study/'
 
-  - image: /assets/images/customers/customer4.png
+  - image: /assets/images/customers/customer4.jpg
     category: Store Management Platform
     company: HPM Building Supply
     aboutcompany: HPM Building Supply installed and integrated Dor with their business intelligence in just a few hours. The foot traffic counting solution you need to understand retail performance doesn’t have to take tons of time or money to implement well. After installing and integrating Dor with your business intelligence systems, plan staffing and marketing easily with year-over-year data.

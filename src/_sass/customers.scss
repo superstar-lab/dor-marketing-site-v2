@@ -1,5 +1,5 @@
 #customers {
-    background: url(../images/customers/hero.png) no-repeat center center;
+    background: url(../images/customers/hero.jpg) no-repeat center center;
     background-size: cover;
 
     .subtitle {
@@ -34,6 +34,8 @@
 
             img {
                 height: 100%;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
 
                 @include media-down(md) {
                     height: 100%;
@@ -45,6 +47,8 @@
                     height: calc((100vw - 32px)* (2/3));
                     width: 100vh;
                     object-fit: cover;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 8px;
                 }
             }
 
@@ -64,6 +68,18 @@
                     @include media-down(md) {
                         font-size: $font-size-xl;
                     }
+
+                    @include media-down(sm) {
+                        font-size: $font-size-large;
+                        line-height: 1.17;
+                    }
+                }
+
+                small {
+
+                    @include media-down(sm) {
+                        margin-bottom: 10px;
+                    }
                 }
 
                 p {
@@ -72,6 +88,10 @@
 
                     @include media-down(md) {
                         margin: 20px 0;
+                    }
+
+                    @include media-down(sm) {
+                        margin: 16px 0;
                     }
                 }
     
