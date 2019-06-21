@@ -17,28 +17,6 @@
         .video-section {
             position: relative;
 
-            .trigger {
-                position: relative;
-                z-index: 1;
-
-                img {
-                    width: 100%;
-                    height: 326px;
-                    object-fit: cover;
-                }
-            }
-
-            iframe {
-                padding: 0 12px;
-                position: absolute;
-                right: 0;
-                top: 0;
-
-                @include media-down(sm) {
-                    padding: 0;
-                }
-            }
-
             @include media-down(sm) {
                 width: 100%;
                 margin-bottom: 20px;                
@@ -371,6 +349,49 @@
             h2 {
                 margin-bottom: 24px;
             }
+        }
+    }
+}
+
+#vid1 {
+    border-radius: 8px;
+    outline: none;
+    width: calc(100% - 24px);
+    height: 326px;
+
+    @include media-down(md) {
+        height: 210px;
+    }
+
+    @include media-down(sm) {
+        width: 100%;
+        height: 66vw;
+    }
+
+    button:focus,
+    button:active {
+        outline: none;
+    }
+    
+    .vjs-big-play-button {
+        outline: none;
+        background-color: #df1e25;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        border: none;
+        border-radius: 100%;
+        width: 83px;
+        height: 83px;
+        position: relative;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+
+        .vjs-icon-placeholder:before {
+            font-size: 58px;
         }
     }
 }
