@@ -124,6 +124,7 @@
                 img {
                     width: 160px;
                     margin-bottom: 20px;
+                    border-radius: 100px;
 
                     @include media-down(md) {
                         width: 128px;

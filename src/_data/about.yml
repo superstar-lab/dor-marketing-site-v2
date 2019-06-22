@@ -1,48 +1,125 @@
 hero:
   title: About us
-  subtitle: Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.
+  subtitle: Empowering major retailers with actionable data about their stores with novel hardware and software.
   image: /assets/images/about/hero.jpg
 
 missions:
   - title: What we do
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+    text: Our simple data visualization and analytics solution helps hundreds of brands understand the story their foot traffic tells them, using actionable insights to grow their business and exceed customer expectations. At Dor, we've built the first-of-its-kind, battery-powered thermal foot traffic counter which empowers retailers to make informed, data-driven decisions about their stores. 
     image: /assets/images/about/mission.jpg
   - title: Why we do
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+    text: 'We believe accurate and actionable foot traffic data is paramount to thriving retail businesses. We’re passionate about unlocking more possibilities for retailers to understand the health of their businesses, driven by a desire to collect and visualize physical-world data in more inspiring ways. We’re focused on one thing: Making it easier for retailers to be operationally excellent.'
     image: /assets/images/about/mission.jpg
-  - title: Founder story
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+  - title: Founding team
+    text: Our founders met while working at Apple on the iPod and iPhone teams, then worked together at MarkOne, a nutrition analytics startup, where Michael was a founding member and engineering lead, and Gregg lead the software team. They founded Dor in 2015 when they learned that store managers were still hand-counting their visitors  — a laborious and inaccurate method. They quickly realized the need for a foot traffic sensor that provided accurate and actionable data at an affordable price. 
     image: /assets/images/about/mission.jpg
 
 team:
   title: Meet the team
-  subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
 
 members:
-  - image: /assets/images/about/brand.png
-    name: Michael Brand
-    position: Founding CEO
-  - image: /assets/images/about/golembeski.png
-    name: Gregg Golembeski
-    position: Founding CTO
-  - image: /assets/images/about/delbuck.png
-    name: Julie Delbuck
-    position: Head of Operations
-  - image: /assets/images/about/bas.png
-    name: Levent Bas
-    position: Head of Product
-  - image: /assets/images/about/abad.png
-    name: Joseph Abad
-    position: Director of Hardware
-  - image: /assets/images/about/brandes.png
-    name: Alex Brandes
-    position: Director of Software
-  - image: /assets/images/about/schneider.png
-    name: Woody Schneider
-    position: Director of Sales
-  - image: /assets/images/about/hackworth.png
-    name: Dave Hackworth
-    position: Customer Support Manager
+  mainPostions:
+    - image: /assets/images/about/Brand-Michael.jpg
+      name: Michael Brand
+      position: Founding CEO
+    - image: /assets/images/about/Golembeski-Gregg.jpg
+      name: Gregg Golembeski
+      position: Founding CTO
+  team:
+    - image: /assets/images/about/Abad-Joseph.jpg
+      name: Joseph Abad
+      position: Director of Engineering
+    - image: /assets/images/about/Apaydin-Batuhan.jpg
+      name: Batuhan Apaydin
+      position: Associate Product Manager
+    - image: /assets/images/about/Bas-Levent.jpg
+      name: Levent Bas
+      position: Head of Product
+    - image: /assets/images/about/Bennett-Camilla.jpg
+      name: Camilla Bennett
+      position: Customer Success Manager
+    - image: /assets/images/about/Brandes-Alex.jpg
+      name: Alex Brandes
+      position: Director Software Engineering
+    - image: /assets/images/about/Brown-Jason.jpg
+      name: Jason Brown
+      position: Enterprise Account Executive
+    - image: /assets/images/about/Casella-Ryan.jpg
+      name: Ryan Casella
+      position: Operations Associate
+    - image: /assets/images/about/Castillo-Jasmine.jpg
+      name: Jasmine Castillo
+      position: Sales Development Representative
+    - image: /assets/images/about/Chong-Albert.jpg
+      name: Albert Chong
+      position: Senior Product Designer
+    - image: /assets/images/about/Clendening-Scott.jpg
+      name: Scott Clendening
+      position: Software Engineer II
+    - image: /assets/images/about/Delbuck-Julie.jpg
+      name: Julie Delbuck
+      position: Head of Operations
+    - image: /assets/images/about/Golembeski-Chad.jpg
+      name: Chad Golembeski
+      position: QA Engineer
+    - image: /assets/images/about/Guimarin-Michael.jpg
+      name: Michael Guimarin
+      position: Account Executive
+    - image: /assets/images/about/Hackworth-Dave.jpg
+      name: David Hackworth
+      position: Customer Support Manager
+    - image: /assets/images/about/Huang-Tina.jpg
+      name: Tina Huang
+      position: Customer Support Representative
+    - image: /assets/images/about/Kazemian-Daniel.jpg
+      name: Daniel Kazemian
+      position: Software Engineer
+    - image: /assets/images/about/Le-Trini.jpg
+      name: Trini Le
+      position: Software Engineer
+    - image: /assets/images/about/Lee-Michelle.jpg
+      name: Michelle Lee
+      position: Customer Advocate
+    - image: /assets/images/about/Leung-Patrick.jpg
+      name: Patrick Leung
+      position: Sales Development Representative
+    - image: /assets/images/about/Lyons-Mike.jpg
+      name: Mike Lyons
+      position: Senior Software Engineer
+    - image: /assets/images/about/Mohring-Alex.jpg
+      name: Alexander Mohring
+      position: Marketing Operations Manager
+    - image: /assets/images/about/Noble-Evan.jpg
+      name: Evan Noble
+      position: Junior Firmware Engineer
+    - image: /assets/images/about/Olsen-Erik.jpg
+      name: Erik Olsen
+      position: Firmware Engineer
+    - image: /assets/images/about/Schneider-Woody.jpg
+      name: Woody Schneider
+      position: Director of Sales
+    - image: /assets/images/about/Seto-Kameron.jpg
+      name: Kameron Seto
+      position: Software Engineer
+    - image: /assets/images/about/Shahabi-Aubtin.jpg
+      name: Aubtin Shahabi
+      position: Sales Development Representative
+    - image: /assets/images/about/Simpson-Madeleine.jpg
+      name: Madeleine Simpson
+      position: Office Manager
+  dogs:
+    - image: /assets/images/about/Finn.jpg
+      name: Finn
+      position: Director of Dog
+    - image: /assets/images/about/Boomer.jpg
+      name: Boomer
+      position: Safety and Security 
+    - image: /assets/images/about/Guster.jpg
+      name: Guster
+      position: Engineering Overlord
+    - image: /assets/images/about/Murph.jpg
+      name: Murph 
+      position: Chief Knucklehead 
 
 workingDay:
   title: See what it’s like working at Dor

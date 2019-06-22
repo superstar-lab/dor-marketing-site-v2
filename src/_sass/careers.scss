@@ -32,6 +32,31 @@
     }
 }
 
+.photos {
+    margin-bottom: 128px;
+
+    @include media-down(md) {
+        margin-bottom: 80px;
+    }
+    
+    @include media-down(sm) {
+        margin-bottom: 32px;
+    }
+
+    .col {
+        justify-content: space-between;
+
+        img {
+
+            @include media-down(sm) {
+                margin-bottom: 15px;
+                max-height: 66vw;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 .our-value {
 
     h2 {
@@ -53,15 +78,33 @@
         & > div {
             margin-bottom: 24px;
 
+            
             @include media-down(sm) {
                 margin-bottom: 16px;
             }
 
+            &:nth-child(1) >div {
+                background-color: $pale-sky-blue;
+            }
+
+            &:nth-child(2) > div {
+                background-color: $light-peach;
+            }
+
+            &:nth-child(3) > div {
+                background-color: $wheat;
+            }
+
+            &:nth-child(4) > div {
+                background-color: $hospital-green;
+            }
+            
             & > div {
                 padding: 32px;
                 border-radius: 8px;
                 border: 1px solid $light-blue-grey;
                 height: 100%;
+
 
                 @include media-down(md) {
                     padding: 24px 20px;
@@ -224,6 +267,7 @@
     .feedback-box {
         border: 1px solid $light-blue-grey;
         border-radius: 8px;
+        height: 100%;
         padding: 40px;
 
         @include media-down(md) {
@@ -236,6 +280,7 @@
 
         img {
             width: 96px;
+            border-radius: 100px;
 
             @include media-down(md) {
                 width: 80px;

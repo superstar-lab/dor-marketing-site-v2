@@ -45,6 +45,21 @@ cta: false
     </div>
 </section>
 
+<section class="photos">
+    <div class="wrapper">
+        <div class="flex-row fl-sm-col">
+            {% for item in string.teamPhotos %}
+            <div class="col flex-column col-sm-100">
+                <img src="{{ item.image }}">
+                {% if item.bottomImage %}
+                <img src="{{ item.bottomImage }}">
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section class="our-value">
     <div class="wrapper">
         <h2 class="text-center">{{ string.values.title }}</h2>
@@ -79,6 +94,21 @@ cta: false
         </div>
     </div>
 </section>
+
+<section class="photos">
+        <div class="wrapper">
+            <div class="flex-row fl-sm-col">
+                {% for item in string.teamPhotos2 %}
+                <div class="col flex-column col-sm-100">
+                    <img src="{{ item.image }}">
+                    {% if item.bottomImage %}
+                    <img src="{{ item.bottomImage }}">
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
 <section class="open-positions" id="open-positions">
     <div class="wrapper text-center">
