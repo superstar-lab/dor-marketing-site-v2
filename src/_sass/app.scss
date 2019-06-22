@@ -158,7 +158,7 @@ img {
 
 // Partners
 
-#partners {
+.partners {
     @extend .padding;
     background-color: $ice-blue;
 
@@ -183,26 +183,26 @@ img {
         flex-flow: wrap;
 
         & > div {
-            margin-top: 24px;
 
             @include media-down(md) {
-                margin-top: 16px;
 
-                &:nth-child(7),
-                &:nth-child(8), {
+                &:nth-child(4),{
                     display: none;
                 }
             }
 
             @include media-down(sm) {
-                margin-top: 10px;
+
+                &:nth-child(4),{
+                    display: block;
+                }
             }
 
             img {
                 padding: 50px 24px;
 
                 @include media-down(md) {
-                    padding: 46px  35px;
+                    padding: 35px;
                 }
 
                 @include media-down(sm) {

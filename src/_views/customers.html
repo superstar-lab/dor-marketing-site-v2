@@ -20,9 +20,22 @@ layout: default
             </div>
         </div>
     </section>
+
+    <section class="partners">
+        <div class="wrapper">
+            <div class="flex-row">
+                {% for logo in string.partners1.logos %}
+                <div class="col-25">
+                    <img src="{{ logo.image }}" alt="{{ logo.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
     
     <section class="feedback">
         <div class="wrapper">
+            <h2 class="large">{{ string.feedbackTitile  }}</h2>
             {% for review in string.feedback %}
             <div class="about-company">
                 <div class="flex-row fl-sm-col bordered-box">
@@ -39,19 +52,35 @@ layout: default
                     </div>
                 </div>
             </div>
-            <div class="review content-middle content-center">
-                <div class="col-75 col-sm-100 text-center">
-                    <blockquote>
-                        <a href="{{ review.authorUrl }}">
-                            <p>{{ review.text }}</p>
-                            <footer>{{ review.author }}</footer>
-                            <div>{{ review.authorPosition }}</div>
-                        </a>
-                    </blockquote>
-                </div>
-            </div>
             {% endfor %}
+
+            <div>
+                {% for review in string.feedback %}
+                <div class="review content-middle content-center">
+                    <div class="col-75 col-sm-100 text-center">
+                        <blockquote>
+                            <a href="{{ review.authorUrl }}">
+                                <p>{{ review.text }}</p>
+                                <footer>{{ review.author }}</footer>
+                                <div>{{ review.authorPosition }}</div>
+                            </a>
+                        </blockquote>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 
-    {% include partners.html %}
+    <section class="partners">
+        <div class="wrapper">
+            <h2>{{ string.partners2.title }}</h2>
+            <div class="flex-row">
+                {% for logo in string.partners2.logos %}
+                <div class="col-25">
+                    <img src="{{ logo.image }}" alt="{{ logo.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

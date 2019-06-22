@@ -10,6 +10,7 @@
     @extend .padding;
 
     .about-company {
+        margin-bottom: 33px;
 
         .bordered-box {
             border-radius: 8px;
@@ -105,15 +106,10 @@
     }
 
     .review {
-        padding: 160px 0;
-
-        @include media-down(md) {
-            padding: 96px 0;
-        }
-
-        @include media-down(sm) {
-            padding: 64px 0;
-        }
+        padding: 48px 0;
+        border: 1px solid $light-blue-grey;
+        border-radius: 8px;
+        margin-bottom: 32px;
 
         blockquote {
             
