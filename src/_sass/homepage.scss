@@ -209,105 +209,107 @@
         align-items: center;
 
         & > div {
+            border: 1px solid $light-blue-grey;
             border-radius: 16px;
+            width: 100%;
             margin-bottom: 48px;
-            
+            padding: 66px;   
+            display: flex;
+            justify-content: center;
+
             @include media-down(md) { 
                 margin-bottom: 32px;
+                padding: 40px;
             }
-            
-            &:nth-child(1) {
-                max-width: 86%;
-                padding: 32px 64px;
-                
-                @include media-down(md) { 
-                    max-width: 100%;
-                }
-                
-                @include media-down(sm) {
-                    padding: 16px;
-                }
-            }
-            
-            &:nth-child(2) {
-                max-width: 73%;
-                padding: 32px 64px;
-                
-                @include media-down(md) { 
-                    max-width: 90%;
-                }
 
-                @include media-down(sm) {
-                    max-width: 100%;
-                    padding: 16px;
-                }
-            }
-            
-            &:nth-child(3) {
-                padding: 32px 64px;
-                max-width: 60%;
-
-                @include media-down(md) {
-                    max-width: 80%;
-                    margin-bottom: 0;
-                }
-
-                @include media-down(sm) {
-                    max-width: 100%;
-                    padding: 16px;
-                }
+            @include media-down(sm) {
+                padding: 16px;
             }
 
             & > div {
-                justify-content: space-between;
-            }
-
-            p {
-                line-height: 1.4;
-                color: $black;
-                margin-bottom: 16px;
-                padding: 0 56px;
-                font-size: $font-size-large;
-
-                @include media-down(md) {
-                    padding: 0 25px;
-                    font-size: $default-font-size;
-                }
-
-                @include media-down(sm) {
-                    padding: 0;
-                    margin-top: 16px;
-                }
-            }
-
-            cite {
-                display: inline-block;
-                font-style: normal;
-                font-size: $font-size-medium;
-                font-weight: $font-weight-bold;
-                line-height: 1.5;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                color: $black;
-
-                @include media-down(sm) {
-                    font-size: $font-size-small;
+                
+                &:nth-child(1) {
+                    max-width: 86%;
+                    
+                    @include media-down(md) { 
+                        max-width: 100%;
+                    }
                 }
                 
+                &:nth-child(2) {
+                    max-width: 73%;
+
+                    @include media-down(md) { 
+                        max-width: 90%;
+                    }
+    
+                    @include media-down(sm) {
+                        max-width: 100%;
+                    }
+                }
+                
+                &:nth-child(3) {
+                    max-width: 60%;
+    
+                    @include media-down(md) {
+                        max-width: 80%;
+                        margin-bottom: 0;
+                    }
+    
+                    @include media-down(sm) {
+                        max-width: 100%;
+                    }
+                }
+    
+                & > div {
+                    justify-content: space-between;
+                }
+    
+                p {
+                    line-height: 1.4;
+                    color: $black;
+                    margin-bottom: 16px;
+                    padding: 0 56px;
+                    font-size: $font-size-large;
+    
+                    @include media-down(md) {
+                        padding: 0 25px;
+                        font-size: $default-font-size;
+                    }
+    
+                    @include media-down(sm) {
+                        padding: 0;
+                        margin-top: 16px;
+                    }
+                }
+    
+                cite {
+                    display: inline-block;
+                    font-style: normal;
+                    font-size: $font-size-large;
+                    font-weight: $font-weight-bold;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $black;
+    
+                    @include media-down(sm) {
+                        font-size: $font-size-small;
+                    }
+                    
+                }
+
+                small {
+                    font-size: $default-font-size;
+                    margin-top: 4px;
+                    text-transform: capitalize;
+                    
+                    @include media-down(sm) {
+                        font-size: $font-size-small;
+                    }
+                }
             }
         }
-    }
-
-    .green {
-        background-color: $teal;
-    }
-
-    .peach {
-        background-color: $peach;
-    }
-
-    .pink {
-        background-color: $pink;
     }
 }
 
