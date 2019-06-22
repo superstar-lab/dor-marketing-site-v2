@@ -34,6 +34,12 @@ plans:
       title: 'All <strong>Pro</strong> features, plus:'
       lists:
         - title: Quarterly business reviews
+        - title: Custom rollout plan
         - title: Dedicated customer success representative
         - title: Marketing insights
-        - title: Enterprise Service & Custom Agreements
+        - title: Custom service-level/enterprise service agreements
+        - title: Analytics dashboard
+        - title: Unlimited users
+        - title: 3-day rapid deployment
+        - title: Sales data integration
+        - title: Unlimited customer support
