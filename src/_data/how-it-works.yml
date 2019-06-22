@@ -42,10 +42,7 @@ tabs:
             - title: Actionable data automatically available at your fingertips on your dashboard
       
       details:
-        title: 'Need more details? <br>Download the datasheet for sensor specs'
-        button: Download Sensor Datasheet
-        image: /assets/images/how-it-works/hardware-spec.png
-        alt: Details
+        title: '<a href="#">Download </a> the datasheet for detailed hardware specs'
 
   - title: software
     content:
@@ -78,10 +75,7 @@ tabs:
             - title: Invite unlimited users while having full control over role-based access within your organization
       
       details:
-        title: 'Need more details? <br>Download the datasheet for sensor specs'
-        button: Download Sensor Datasheet
-        image: /assets/images/how-it-works/software-spec.png
-        alt: Details
+        title: '<a href="#">Download </a> the datasheet for detailed hardware specs'
 
   - title: Customer Support
     content:

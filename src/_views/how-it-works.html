@@ -69,9 +69,9 @@ layout: default
         <section class="feautures">
             <div class="wrapper">
                 <h2 class="text-center">{{ tab.content.feautures.title }}</h2>
-                <div class="flex-row">
-                    <div class="col">
-                        {% for item in tab.content.feautures.points %}
+                <div class="flex-row fl-sm-col">
+                    {% for item in tab.content.feautures.points %}
+                    <div class="col col-sm-100">
                         <div class="checklist-section">
                             <h3>{{ item.title }}</h3>
                             <ul>
@@ -83,30 +83,17 @@ layout: default
                                 {% endfor %}
                             </ul>
                         </div>
-                        {% endfor %}
                     </div>
-                    <div class="col">
-                        <img src="{{ tab.content.feautures.image }}" alt="{{ tab.content.feautures.alt }}">
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
 
         {% if tab.content.details %}
         <div class="wrapper">
-            <div class="more-details">
-                <div class="flex-row fl-sm-col content-middle">
-                    <div class="col-33 col-sm-100">
-                        <img src="{{ tab.content.details.image }}" alt="{{ tab.content.details.alt }}">
-                    </div>
-                    <div class="col-66 col-sm-100">
-                        <h2>{{ tab.content.details.title }}</h2>
-                        <a class="button-link">
-                            <div class="button large blue show" aria-haspopup="true">
-                                {{ tab.content.details.button }}
-                            </div>
-                        </a>
-                    </div>
+            <div class="more-details flex-row fl-sm-col content-center text-center content-middle">
+                <div class="col-66 col-sm-100">
+                    {{ tab.content.details.title }}
                 </div>
             </div>
         </div>
