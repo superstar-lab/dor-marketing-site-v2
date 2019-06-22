@@ -1,9 +1,4 @@
 $(function () {
-
-    $('.trigger').on('click', function () {
-        $(".video")[0].src += "1";
-        $(".trigger").toggleClass('hidden');
-    });
       
     // mobile menu toggle logic
     $('.menu-tab').on('click', function() {

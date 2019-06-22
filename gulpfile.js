@@ -6,6 +6,7 @@ var autoprefixer = require( 'gulp-autoprefixer' );
 var rename = require( 'gulp-rename' );
 var size = require( 'gulp-filesize' );
 var concat = require( 'gulp-concat' );
+var sort = require( 'gulp-sort' );
 var browser_sync = require( 'browser-sync' ).create( 'jekyll' );
 var uglify = require( 'gulp-uglify' );
 var babel = require( 'gulp-babel' );
@@ -113,6 +114,7 @@ gulp.task( 'build:js-src', ( done ) => {
 
 gulp.task('build:js-vendor', done => {
     gulp.src(paths.vendor.src + '/*.js')
+        .pipe(sort())
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(size())
