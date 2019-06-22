@@ -1,7 +1,11 @@
 .demo {
     margin-top: 16px;
     padding: 80px 0;
-
+    
+    &.demo-resources {
+        margin-bottom: 30px;
+    }
+    
     @include media-down(md) {
         padding: 64px 0;
     }
