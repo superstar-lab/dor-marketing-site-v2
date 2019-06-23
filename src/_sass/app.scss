@@ -199,15 +199,6 @@ img {
             }
 
             img {
-                padding: 50px 24px;
-
-                @include media-down(md) {
-                    padding: 35px;
-                }
-
-                @include media-down(sm) {
-                    padding: 39px 22px;
-                }
             }
         }
     }
