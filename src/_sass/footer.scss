@@ -207,7 +207,8 @@ hr {
   
   // Modal
   
-.modal {
+.modal-header,
+.modal-case-study {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 100;
@@ -229,7 +230,7 @@ hr {
     }
     
     .modal-body {
-        margin: 64px;
+        margin: 64px 0;
         overflow-x: auto;
         background: $white;
         position: relative;
@@ -244,6 +245,7 @@ hr {
         }
         
         @include media-down(sm) {
+            margin: 0;
             padding: 16px;
             width: 100%;
         }

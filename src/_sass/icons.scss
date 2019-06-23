@@ -14,10 +14,15 @@
         height: 22px;
         width: 22px;
         display: inline-block;
-
+        
         @include media-down(sm) {
             width: 16px;
             height: 16px;
+        }
+        
+        &.white {
+            background: url(../images/icons/close-white.svg) no-repeat left center;
+            background-size: cover;
         }
     }
 

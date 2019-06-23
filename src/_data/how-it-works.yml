@@ -106,3 +106,13 @@ tabs:
             - title: Access insights that confirm your hunches and open new possibilities from our team
             - title: Reference and take action toward growth through custom quarterly reports
             - title: View your success anytime with an on-demand analytics dashboard
+
+modal:
+  title: "Customer story: Simple foot traffic visibility is 'table stakes' for Retail Toolkit"
+  subtitle: 'In this case study, General Manager, Daniel Kowalke, and Customer Success Manager, Justin Bolinger, share their perspective on:'
+  formTitle: Download the Case Study
+  lists:
+    - title: 'Why Retail Toolkit sees foot traffic data as “table stakes” for a successful retail business.'
+    - title: 'How Dor’s ease of deployment allows Retail Toolkit to offer a consistent, high-quality customer experience.'
+    - title: 'Why point-of-sale transaction history alone isn’t an effective metric for labor planning, especially in specialty retail.'
+    - title: 'How they use Dor to provide higher cost savings in labor management and greater nuance into inventory planning and marketing automation.'

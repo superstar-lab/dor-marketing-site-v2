@@ -6,19 +6,37 @@ $(function () {
         $('.menu-tab, .bg-mask, body').toggleClass('active');
     });
 
+
     // request demo modal
-    $('.close, .modal').on('click', function() {
-        $('.modal, body').removeClass('active');
+    $('.close, .modal-header').on('click', function() {
+        $('.modal-header, body').removeClass('active');
     });
     
     $('.show').on('click', function(e) {
         e.preventDefault();
-        $('.modal, body').addClass('active');
+        $('.modal-header, body').addClass('active');
     });
 
     $(document).on('keyup', function(e) {
         if (e.keyCode == 27) {
-            $('.modal, body').removeClass('active');
+            $('.modal-header, body').removeClass('active');
+        }
+    });
+
+
+    // request demo modal
+    $('.close, .modal-case-study').on('click', function() {
+        $('.modal-case-study, body').removeClass('active');
+    });
+    
+    $('.modal-show').on('click', function(e) {
+        e.preventDefault();
+        $('.modal-case-study, body').addClass('active');
+    });
+
+    $(document).on('keyup', function(e) {
+        if (e.keyCode == 27) {
+            $('.modal-case-study, body').removeClass('active');
         }
     });
 

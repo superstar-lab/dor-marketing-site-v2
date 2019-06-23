@@ -55,6 +55,15 @@ img {
     max-width: 100%;
 }
 
+button {
+    outline: none;
+
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+}
+
 .rotate {
     transform: rotate(180deg);
 }
