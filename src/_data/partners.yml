@@ -1,5 +1,5 @@
 title: More customers that love Dor
-logos:
+logos1:
 - image: /assets/images/partners/logo1.png
   alt: logo
 - image: /assets/images/partners/logo2.png
@@ -8,6 +8,7 @@ logos:
   alt: logo
 - image: /assets/images/partners/logo4.png
   alt: logo
+logos2:
 - image: /assets/images/partners/logo5.png
   alt: logo
 - image: /assets/images/partners/logo6.png

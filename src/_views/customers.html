@@ -24,7 +24,7 @@ layout: default
     <section class="partners">
         <div class="wrapper">
             <div class="flex-row">
-                {% for logo in string.partners1.logos %}
+                {% for logo in site.data.partners.logos1 %}
                 <div class="col-25">
                     <img src="{{ logo.image }}" alt="{{ logo.alt }}">
                 </div>
@@ -76,7 +76,7 @@ layout: default
         <div class="wrapper">
             <h2>{{ string.partners2.title }}</h2>
             <div class="flex-row">
-                {% for logo in string.partners2.logos %}
+                {% for logo in site.data.partners.logos1 %}
                 <div class="col-25">
                     <img src="{{ logo.image }}" alt="{{ logo.alt }}">
                 </div>

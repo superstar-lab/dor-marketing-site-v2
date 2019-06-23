@@ -3,17 +3,6 @@ hero:
   subtitle: Learn how retail leaders are using Dor to increase profitability and engagement in their stores
   image: /assets/images/customers/hero.jpg
 
-partners1:
-  logos:
-  - image: /assets/images/partners/logo1.png
-    alt: logo
-  - image: /assets/images/partners/logo2.png
-    alt: logo
-  - image: /assets/images/partners/logo3.png
-    alt: logo
-  - image: /assets/images/partners/logo4.png
-    alt: logo
-
 feedback-title: Read our customer case studies
 feedback:
   - image: /assets/images/customers/customer1.jpg
@@ -59,15 +48,3 @@ feedback:
     author: Tim Minick
     authorPosition: Director of IT, HPM Building Supply
     authorUrl: 'https://blog.getdor.com/2018/05/30/hpm-building-supply-case-study/'
-
-partners2:
-  title: More customers that love Dor
-  logos:
-  - image: /assets/images/partners/logo5.png
-    alt: logo
-  - image: /assets/images/partners/logo6.png
-    alt: logo
-  - image: /assets/images/partners/logo7.png
-    alt: logo
-  - image: /assets/images/partners/logo8.png
-    alt: logo
