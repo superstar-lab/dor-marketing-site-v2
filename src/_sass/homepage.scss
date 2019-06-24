@@ -193,6 +193,22 @@
     }
 }
 
+.homepage-partners {
+    .partners .flex-row {
+
+        div:nth-child(8) {
+
+            @include media-down(md) {
+                display: none;
+            }
+
+            @include media-down(sm) {
+                display: block;
+            }
+        }
+    }
+}
+
 #testimonials {
     @extend .padding;
 

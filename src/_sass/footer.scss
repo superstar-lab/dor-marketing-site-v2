@@ -207,12 +207,10 @@ hr {
   
   // Modal
   
-.modal-header,
-.modal-case-study {
+.modal {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 100;
-    display: flex;
     justify-content: center;
     align-items: baseline;
     visibility: hidden;
@@ -224,6 +222,7 @@ hr {
     height: 100%;
     width: 100%;
     overflow: auto;
+    display: flex;
     
     @include media-down(sm) {
         padding: 24px 16px;
@@ -295,12 +294,7 @@ hr {
     }
 }
   
-.active {
+.active.modal {
     visibility: visible;
     opacity: 1;
-
-    & + .modal{
-        visibility: visible;
-        opacity: 1;
-    }
 }

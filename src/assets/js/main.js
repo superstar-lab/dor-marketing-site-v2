@@ -1,42 +1,49 @@
 $(function () {
-      
+
+    var $body = $('body');
+    var $document = $(document);
+
     // mobile menu toggle logic
     $('.menu-tab').on('click', function() {
         $('.menu-hide').toggleClass('show');
         $('.menu-tab, .bg-mask, body').toggleClass('active');
     });
 
-
-    // request demo modal
-    $('.close, .modal-header').on('click', function() {
-        $('.modal-header, body').removeClass('active');
-    });
-    
-    $('.show').on('click', function(e) {
+    // modal logic
+    $('[data-modal]').on('click', function (e) {
         e.preventDefault();
-        $('.modal-header, body').addClass('active');
-    });
+        var targetSelector = $(this).data('modal');
+        var $modal = $(targetSelector);
+        var $closeButton = $modal.find('.close');
 
-    $(document).on('keyup', function(e) {
-        if (e.keyCode == 27) {
-            $('.modal-header, body').removeClass('active');
-        }
-    });
+        $modal.addClass('active');
+        $body.addClass('no-scroll');
 
+        $modal.on('click', function (e) {
+            e.preventDefault();
+            if ($modal.is(e.target)) hideModal();
+        });
 
-    // request demo modal
-    $('.close, .modal-case-study').on('click', function() {
-        $('.modal-case-study, body').removeClass('active');
-    });
-    
-    $('.modal-show').on('click', function(e) {
-        e.preventDefault();
-        $('.modal-case-study, body').addClass('active');
-    });
+        $closeButton.on('click', function (e) {
+            e.preventDefault();
+            hideModal();
+        });
+ 
+        $document.one('keyup', keyupHandler);
 
-    $(document).on('keyup', function(e) {
-        if (e.keyCode == 27) {
-            $('.modal-case-study, body').removeClass('active');
+        function hideModal() {
+            $modal.removeClass('active');
+            $body.removeClass('no-scroll');
+            $modal.off();
+            $closeButton.off();
+        };
+
+        function keyupHandler(e) {
+            if (e.keyCode == 27) {
+                hideModal();
+            } else {
+                $document.one('keyup', keyupHandler);
+            }
         }
     });
 
