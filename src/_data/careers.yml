@@ -29,6 +29,10 @@ values:
     - title: Give a damn 
       subtitle: 'We give a damn about the work we’re doing, the people we’re doing it with, and the people we do it for: our customer.'
 
+openPositions:
+  title: Open positions
+  subtitle: Excited about Dor but don’t see a role that fits your background?<br>Reach out to careers@getdor.com and we’ll keep you in mind for future roles.
+
 benefits:
   image: /assets/images/careers/benefits.jpg
   title: Benefits
@@ -56,7 +60,7 @@ teamPhotos2:
 feedbacks:
   title: Hear what our employees have to say about working at Dor
   reviews:
-    - text: “I love being able to grow in my role, take on challenging tasks, and have a supportive team behind me. Everyone is passionate about what they do and we all work well together..”
+    - text: “I love being able to grow in my role, take on challenging tasks, and have a supportive team behind me. Everyone is passionate about what they do and we all work well together...”
       authorImage: /assets/images/careers/Le-Trini.jpg
       authorName: Trini Le
       authorPosition: Software Engineer

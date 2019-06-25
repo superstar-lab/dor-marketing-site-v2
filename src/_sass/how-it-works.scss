@@ -64,22 +64,24 @@
         padding: 24px 0;
         white-space: nowrap;
         overflow-x: auto;
+
+        @include media-down(sm) {
+            padding: 15px 0;
+        }
         
         li {
             display: inline-block;
             
             &.active {
                 
-                a {
+                a span {
                     color: $blue;
-                    border: 2px solid $blue;
+                    border-color: $blue;
                     border-radius: 4px;
-
-                    
                 }
             }
             
-            a {
+            a span {
                 padding: 9px 20px;
                 color: $brownish-grey;
                 text-transform: uppercase;
@@ -87,6 +89,7 @@
                 font-weight: $font-weight-bold;
                 line-height: 1.29;
                 letter-spacing: 0.5px;
+                border: 2px solid transparent;
 
                 @include media-down(md) {
                     font-size: $font-size-xs;
@@ -106,7 +109,11 @@
     }
 
     .demo {
-        background-color: $ice-blue;
+        background: url(../images/how-it-works/empower-pattern.svg) no-repeat center;
+
+        h2, p {
+            color: $white;
+        }
     }
 
     & > div:last-child .demo {
@@ -273,12 +280,12 @@
     }
     
     .more-details {
-        margin: 40px 12px 80px 12px;
+        margin: 40px 12px;
 
         
         @include media-down(md) {
             margin-top: 46px;
-            margin-bottom: 56px;
+            margin-bottom: 46px;
         }
 
         @include media-down(sm) {

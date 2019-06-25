@@ -5,9 +5,13 @@ hero:
 
 navigation:
   - title: Why Dor?
+    mobileTitle: Why Dor?
   - title: Accuracy & Visibility
+    mobileTitle: Accuracy
   - title: Retail
+    mobileTitle: Retail
   - title: All Resources
+    mobileTitle: All
 
 allposts:
   title: All Dor resources

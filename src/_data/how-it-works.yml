@@ -7,8 +7,12 @@ hero:
 
 navigation:
   - title: Hardware
+    mobileTitle: Hardware
   - title: Software
+    mobileTitle: Software
   - title: Customer Support
+    mobileTitle: Customer
+
 
 tabs:
   - title: hardware

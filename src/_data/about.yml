@@ -6,13 +6,13 @@ hero:
 missions:
   - title: What we do
     text: Our simple data visualization and analytics solution helps hundreds of brands understand the story their foot traffic tells them, using actionable insights to grow their business and exceed customer expectations. At Dor, we've built the first-of-its-kind, battery-powered thermal foot traffic counter which empowers retailers to make informed, data-driven decisions about their stores. 
-    image: /assets/images/about/mission.jpg
+    image: /assets/images/about/aboutus-1.jpg
   - title: Why we do
     text: 'We believe accurate and actionable foot traffic data is paramount to thriving retail businesses. We’re passionate about unlocking more possibilities for retailers to understand the health of their businesses, driven by a desire to collect and visualize physical-world data in more inspiring ways. We’re focused on one thing: Making it easier for retailers to be operationally excellent.'
-    image: /assets/images/about/mission.jpg
+    image: /assets/images/about/aboutus-2.jpg
   - title: Founding team
     text: Our founders met while working at Apple on the iPod and iPhone teams, then worked together at MarkOne, a nutrition analytics startup, where Michael was a founding member and engineering lead, and Gregg lead the software team. They founded Dor in 2015 when they learned that store managers were still hand-counting their visitors  — a laborious and inaccurate method. They quickly realized the need for a foot traffic sensor that provided accurate and actionable data at an affordable price. 
-    image: /assets/images/about/mission.jpg
+    image: /assets/images/about/aboutus-3.jpg
 
 team:
   title: Meet the team
@@ -21,17 +21,17 @@ members:
   mainPostions:
     - image: /assets/images/about/Brand-Michael.jpg
       name: Michael Brand
-      position: Founding CEO
+      position: CEO, Founder
     - image: /assets/images/about/Golembeski-Gregg.jpg
       name: Gregg Golembeski
-      position: Founding CTO
+      position: CTO, Founder
   team:
     - image: /assets/images/about/Abad-Joseph.jpg
       name: Joseph Abad
       position: Director of Engineering
     - image: /assets/images/about/Apaydin-Batuhan.jpg
       name: Batuhan Apaydin
-      position: Associate Product Manager
+      position: Product Manager
     - image: /assets/images/about/Bas-Levent.jpg
       name: Levent Bas
       position: Head of Product
@@ -55,7 +55,7 @@ members:
       position: Senior Product Designer
     - image: /assets/images/about/Clendening-Scott.jpg
       name: Scott Clendening
-      position: Software Engineer II
+      position: Software Engineer
     - image: /assets/images/about/Delbuck-Julie.jpg
       name: Julie Delbuck
       position: Head of Operations
@@ -64,13 +64,13 @@ members:
       position: QA Engineer
     - image: /assets/images/about/Guimarin-Michael.jpg
       name: Michael Guimarin
-      position: Account Executive
+      position: Enterprise Account Executive
     - image: /assets/images/about/Hackworth-Dave.jpg
       name: David Hackworth
-      position: Customer Support Manager
+      position: Head of Customer Success
     - image: /assets/images/about/Huang-Tina.jpg
       name: Tina Huang
-      position: Customer Support Representative
+      position: Customer Advocate
     - image: /assets/images/about/Kazemian-Daniel.jpg
       name: Daniel Kazemian
       position: Software Engineer
@@ -91,7 +91,7 @@ members:
       position: Marketing Operations Manager
     - image: /assets/images/about/Noble-Evan.jpg
       name: Evan Noble
-      position: Junior Firmware Engineer
+      position: Firmware Engineer
     - image: /assets/images/about/Olsen-Erik.jpg
       name: Erik Olsen
       position: Firmware Engineer
@@ -108,9 +108,9 @@ members:
       name: Madeleine Simpson
       position: Office Manager
   dogs:
-    - image: /assets/images/about/Finn.jpg
-      name: Finn
-      position: Director of Dog
+    # - image: /assets/images/about/Finn.jpg
+    #   name: Finn
+    #   position: Director of Dog
     - image: /assets/images/about/Boomer.jpg
       name: Boomer
       position: Safety and Security 
@@ -124,19 +124,19 @@ members:
 workingDay:
   title: See what it’s like working at Dor
   photos:
-    - image: /assets/images/about/day1.png
-    - image: /assets/images/about/day2.png
-    - image: /assets/images/about/day3.png
-    - image: /assets/images/about/day4.png
-    - image: /assets/images/about/day5.png
-    - image: /assets/images/about/day6.png
-    - image: /assets/images/about/day7.png
-    - image: /assets/images/about/day8.png
-    - image: /assets/images/about/day9.png
-    - image: /assets/images/about/day10.png
-    - image: /assets/images/about/day11.png
-    - image: /assets/images/about/day12.png
-    - image: /assets/images/about/day13.png
-    - image: /assets/images/about/day14.png
-    - image: /assets/images/about/day15.png
-    - image: /assets/images/about/day16.png
+    - image: /assets/images/about/1.jpg
+    - image: /assets/images/about/2.jpg
+    - image: /assets/images/about/3.jpg
+    - image: /assets/images/about/4.jpg
+    - image: /assets/images/about/5.jpg
+    - image: /assets/images/about/6.jpg
+    - image: /assets/images/about/7.jpg
+    - image: /assets/images/about/8.jpg
+    - image: /assets/images/about/9.jpg
+    - image: /assets/images/about/10.jpg
+    - image: /assets/images/about/11.jpg
+    - image: /assets/images/about/12.jpg
+    - image: /assets/images/about/13.jpg
+    - image: /assets/images/about/14.jpg
+    - image: /assets/images/about/15.jpg
+    - image: /assets/images/about/16.jpg

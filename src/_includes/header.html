@@ -42,6 +42,7 @@
         <div class="menu-hide">
             <nav>
                 <ul>
+                    <a href="{{ site.baseurl }}/" class="header-menu-item link">Home</a>
                     {% for link in string.navigation %}
                     <a href="{{ site.baseurl }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
                     {% endfor %}

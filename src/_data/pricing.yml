@@ -2,7 +2,7 @@ hero:
   title: Start a pilot today
   subtitle: Get the foot traffic data you need at every single one of your locations in record time.
   button: Request Demo
-  image: /assets/images/pricing/hero.jpg
+  image: /assets/images/pricing/hero.svg
 
 plans:
   - title: PRO

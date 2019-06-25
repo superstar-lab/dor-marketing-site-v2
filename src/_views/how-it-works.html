@@ -36,7 +36,10 @@ cta: false
     <ul>
         {% for nav in string.navigation %}
         <li>
-            <a href="#{{ nav.title  | downcase | remove: ' ' }}">{{ nav.title }}</a>
+            <a href="#{{ nav.title  | downcase | remove: ' ' }}">
+                <span class="hidden-xs">{{ nav.title }}</span>
+                <span class="visible-xs">{{ nav.mobileTitle }}</span>
+            </a>
         </li>
         {% endfor %}
     </ul>
@@ -100,6 +103,6 @@ cta: false
         </div>
         {% endif %}
     </div>
-    {% include cta_resources.html %}
     {% endfor %}
+    {% include cta_resources.html %}
 </div>
