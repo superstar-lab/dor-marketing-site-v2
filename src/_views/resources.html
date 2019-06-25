@@ -64,19 +64,17 @@ layout: default
                 <div class="flex-row fl-sm-col"  id="resources-card">
                     {% for item in item.learnMore.posts %}
                     <div class="col-33 cards" data-type="{{ item.type }}">
-                        <div class="card">
-                            <a target="_blank" href="{{ item.url }}">
-                                <div>
-                                    <span>{{ item.type | upcase  }}</span>
-                                </div>
-                                {% if item.videoUrl %}
-                                <iframe width="100%" height="146" src="{{ item.videoUrl }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                {% else %}
-                                <img src="{{ item.imageurl }}">
-                                {% endif %}
-                                <h2>{{ item.title  | truncatewords: 4 }}</h2>
-                                <p>{{ item.description | truncatewords: 15 }}</p>
-                            </a>
+                        <div class="card" data-modal="#{{ item.contentID }}">
+                            <div>
+                                <span>{{ item.type | upcase  }}</span>
+                            </div>
+                            {% if item.videoUrl %}
+                            <iframe width="100%" height="146" src="{{ item.videoUrl }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            {% else %}
+                            <img src="{{ item.imageurl }}">
+                            {% endif %}
+                            <h2>{{ item.title  | truncatewords: 4 }}</h2>
+                            <p>{{ item.description | truncatewords: 15 }}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -110,19 +108,17 @@ layout: default
                 {% for item in site.data.resources %}
                 {% for item in item.learnMore.posts %}
                 <div class="col-33 cards" data-type="{{ item.type }}">
-                    <div class="card">
-                        <a target="_blank" href="{{ item.url }}">
-                            <div>
-                                <span>{{ item.type | upcase  }}</span>
-                            </div>
-                            {% if item.videoUrl %}
-                            <iframe width="100%" height="145" src="{{ item.videoUrl }}?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            {% elsif item.imageurl %}
-                            <img src="{{ item.imageurl }}">
-                            {% endif %}
-                            <h2>{{ item.title  | truncatewords: 4 }}</h2>
-                            <p>{{ item.description | truncatewords: 15 }}</p>
-                        </a>
+                    <div class="card" data-modal="#{{ item.contentID }}">
+                        <div>
+                            <span>{{ item.type | upcase  }}</span>
+                        </div>
+                        {% if item.videoUrl %}
+                        <iframe width="100%" height="145" src="{{ item.videoUrl }}?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        {% elsif item.imageurl %}
+                        <img src="{{ item.imageurl }}">
+                        {% endif %}
+                        <h2>{{ item.title  | truncatewords: 4 }}</h2>
+                        <p>{{ item.description | truncatewords: 15 }}</p>
                     </div>
                 </div>
                 {% endfor %}

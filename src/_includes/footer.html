@@ -45,7 +45,11 @@
 
 {% if page.url == "/how-it-works/" %}
 
-{% include resources-modal.html %}
+{% include modal-how-it-works.html %}
+
+{% elsif  page.url == "/resources/" %}
+
+{% include modal-resources.html %}
 
 {% endif %}
 

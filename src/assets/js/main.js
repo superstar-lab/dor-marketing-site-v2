@@ -15,6 +15,13 @@ $(function () {
         var targetSelector = $(this).data('modal');
         var $modal = $(targetSelector);
         var $closeButton = $modal.find('.close');
+        
+        var $modalInsert = $modal.find('[data-insert]');
+        if ($modalInsert.length) {
+            var insertSelector = $modalInsert.data('insert');
+            var $insertElement = $(insertSelector).clone(true);
+            $modalInsert.replaceWith($insertElement);
+        }
 
         $modal.addClass('active');
         $body.addClass('no-scroll');

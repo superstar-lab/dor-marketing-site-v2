@@ -1,0 +1,31 @@
+{% for item in site.data.resources %}
+{% for item in item.learnMore.posts %}
+
+<div class="resources-modal modal" id="{{ item.contentID }}">
+    <div class="modal-body">
+        <div class="hero">
+            <div class="content-middle">
+                <h2>{{item.title }}</h2>
+                <button class="close" role="button">
+                    <i class="icon icon-close white"></i>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper modal-text-box">
+            <div class="flex-row">
+                <div class="col">
+                    <div class="subtitle">{{ item.description }}</div>
+                    <h3 class="text-center">Download the Case Study</h3>
+                    <div data-insert="#resources-form"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endfor %}
+
+<div class="modal-form" id="resources-form">
+    <script type="text/javascript" src="https://getdor.formstack.com/forms/js.php/resource_library"></script>
+</div>

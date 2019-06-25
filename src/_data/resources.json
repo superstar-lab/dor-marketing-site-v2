@@ -28,7 +28,7 @@
 					"description": "Understand the story your foot traffic tells with actionable insights for growing your business and exceeding customer expectations",
 					"url": "https://www.youtube.com/watch?v=wNjMUDspr1k",
 					"videoUrl": "https://www.youtube.com/embed/wNjMUDspr1k",
-					"content ID": "dor_vid1"
+					"contentID": "dor_vid1"
 				},
 				{
 					"date": "10/1/2018",
@@ -37,7 +37,7 @@
 					"description": "Understand human interaction with your space by capturing foot traffic analytics",
 					"url": "https://blog.getdor.com/2018/11/07/solution-brief-foot-traffic/?utm_source=resources",
 					"imageurl": "/assets/images/resources/solution_brief.png",
-					"content ID": "solution_brief"
+					"contentID": "solution_brief"
 				},
 				{
 					"date": "4/30/2019",
@@ -47,7 +47,7 @@
 					"url": "https://blog.getdor.com/2019/05/02/webinar-the-retail-analytics-landscape/",
 					"imageurl": "/assets/images/resources/wbn-2.png",
 					"featured_bg_img": "",
-					"content ID": "wbn-2"
+					"contentID": "wbn-2"
 				}
 			]
 		}
@@ -81,7 +81,7 @@
 					"description": "What you need to know from people counting solution providers",
 					"url": "https://blog.getdor.com/2018/12/15/retail-analytics-buyers-guide/?utm_source=resources",
 					"imageurl": "/assets/images/resources/buyers_guide.png",
-					"content ID": "buyers_guide"
+					"contentID": "buyers_guide"
 				},
 				{
 					"date": "5/30/2019",
@@ -90,7 +90,7 @@
 					"description": "3 things every retailer needs but 90% don't have.",
 					"url": "https://blog.getdor.com/2019/06/05/webinar-actionable-data/?utm_source=resources",
 					"imageurl": "/assets/images/resources/wbn-3.png",
-					"content ID": "wbn-3"
+					"contentID": "wbn-3"
 				},
 				{
 					"date": "10/15/2018",
@@ -99,7 +99,7 @@
 					"description": "How to reduce lost sales and improve profitability by scheduling staff according to predicted traffic",
 					"url": "https://blog.getdor.com/2018/09/30/retail-staffing-foot-traffic-white-paper/?utm_source=resources",
 					"imageurl": "/assets/images/resources/staffing_wp.png",
-					"content ID": "staffing_wp"
+					"contentID": "staffing_wp"
 				}
 			]
 		}
@@ -133,7 +133,7 @@
 					"description": "See why this retailer calls Dor their 'secret weapon behind the scenes'",
 					"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
 					"imageurl": "/assets/images/resources/omf_cs.png",
-					"content ID": "omf_cs"
+					"contentID": "omf_cs"
 				},
 				{
 					"date": "2/22/2019",
@@ -142,7 +142,7 @@
 					"description": "How to harness in-store experience trends to deliver results that last",
 					"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
 					"imageurl": "/assets/images/resources/wbn-1.png",
-					"content ID": "wbn-1"
+					"contentID": "wbn-1"
 				},
 				{
 					"date": "12/1/2018",
@@ -151,7 +151,7 @@
 					"description": "How to evaluate true store performance beyond revenue for better decision-making",
 					"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
 					"imageurl": "/assets/images/resources/ebook_opening.png",
-					"content ID": "ebook_opening"
+					"contentID": "ebook_opening"
 				}
 			]
 		}
@@ -169,7 +169,7 @@
 					"description": "Specifications of Dor software platform including features, tools, and integrations.",
 					"url": "https://blog.getdor.com/2019/03/01/software-specifications/?utm_source=resources",
 					"imageurl": "/assets/images/resources/sw_ds.png",
-					"content ID": "sw_ds"
+					"contentID": "sw_ds"
 				},
 				{
 					"date": "2/1/2019",
@@ -178,7 +178,7 @@
 					"description": "Specifications of Dor hardware including the Dor sensor and base station.",
 					"url": "https://blog.getdor.com/2019/02/25/hardware-specifications/?utm_source=resources",
 					"imageurl": "/assets/images/resources/hw_ds.png",
-					"content ID": "hw_ds"
+					"contentID": "hw_ds"
 				},
 				{
 					"date": "2/20/2018",
@@ -187,7 +187,7 @@
 					"description": "Learn why this retailer uses Dor to identify operational effectiveness and growth opportunities",
 					"url": "https://blog.getdor.com/2018/05/30/hpm-building-supply-case-study/?utm_source=resources",
 					"imageurl": "/assets/images/resources/hpm_cs.png",
-					"content ID": "hpm_cs"
+					"contentID": "hpm_cs"
 				},
 				{
 					"date": "1/15/2018",
@@ -196,7 +196,7 @@
 					"description": "‘Without traffic data, you’re just guessing’: Calculating conversion drives Clothes Mentor’s success",
 					"url": "https://blog.getdor.com/2018/01/29/clothes-mentor-case-study/?utm_source=resources",
 					"imageurl": "/assets/images/resources/clothes_mentor.png",
-					"content ID": "clothes_mentor"
+					"contentID": "clothes_mentor"
 				}
 			]
 		}

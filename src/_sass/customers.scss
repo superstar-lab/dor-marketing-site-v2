@@ -140,6 +140,7 @@
                     font-weight: $font-weight-bold;
                     margin: 19px 0 6px;
                     line-height: 1.29;
+                    text-transform: uppercase;
     
                     @include media-down(md) {
                         font-size: $font-size-large;
