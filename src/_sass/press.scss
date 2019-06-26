@@ -71,7 +71,6 @@
     justify-content: center;
 
     @include media-down(sm) {
-        margin-top: 15px;
         margin-bottom: 25px;
     }
 
@@ -91,6 +90,7 @@
     p {
         line-height: 1.6;
         text-rendering: optimizeLegibility;
+        margin-bottom: 10px;
     }
     
     a {
@@ -100,6 +100,15 @@
     hr {
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    ul {
+        padding-left: 40px;
+        list-style: inherit;
+
+        @include media-down(sm) {
+            padding-left: 20px;
+        }
     }
 
 }

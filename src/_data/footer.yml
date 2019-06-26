@@ -43,7 +43,7 @@ navigation:
   - title: Terms of Use
     url: terms
   - title: Privacy Policy
-    url: https://app.getdor.com/privacy-policy
+    url: privacy-policy
 
 social:
 - icon: fab fa-twitter
