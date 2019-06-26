@@ -27,8 +27,10 @@ $(function () {
         $body.addClass('no-scroll');
 
         $modal.on('click', function (e) {
-            e.preventDefault();
-            if ($modal.is(e.target)) hideModal();
+            if ($modal.is(e.target)) {
+                e.preventDefault();
+                hideModal();
+            }
         });
 
         $closeButton.on('click', function (e) {
