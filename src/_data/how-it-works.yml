@@ -46,7 +46,7 @@ tabs:
             - title: Actionable data automatically available at your fingertips on your dashboard
       
       details:
-        title: '<a href="#">Download </a> the datasheet for detailed hardware specs'
+        title: 'the datasheet for detailed hardware specs'
 
   - title: software
     content:
@@ -79,7 +79,7 @@ tabs:
             - title: Invite unlimited users while having full control over role-based access within your organization
       
       details:
-        title: '<a href="#">Download </a> datasheet for detailed software specs'
+        title: 'datasheet for detailed software specs'
 
   - title: Customer Support
     content:

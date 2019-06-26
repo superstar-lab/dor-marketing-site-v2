@@ -1,4 +1,9 @@
 #press {
+    margin-bottom: 60px;
+
+    @include media-down(sm) {
+        margin-bottom: 20px;
+    }
 
     a {
         color: $blue;

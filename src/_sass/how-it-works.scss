@@ -193,6 +193,11 @@
     }
     
     .feautures {
+        margin-bottom: 80px;
+
+        @include media-down(sm) {
+            margin-bottom: 30px;
+        }
     
         h2 {
             margin-bottom: 40px;
@@ -308,6 +313,7 @@
                 color: $blue;
                 font-size: $default-font-size;
                 font-weight: $font-weight-bold;
+                cursor: pointer;
 
                 @include media-down(sm) {
                     font-size: $font-size-medium;
