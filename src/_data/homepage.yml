@@ -41,14 +41,14 @@ testimonials:
   title: Hear what customers have to say about Dor
   reviews:
   - color: green
-    text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
-    author: Daniel Kowalke
-    position: General Manager, Retail Toolkit
+    text: “Dor is our secret weapon behind the scenes.” 
+    author: ROBERT ODOM
+    position: Director Of Sales and Marketing, Original Mattress Factory
   - color: peach
-    text: If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.
-    author: Clothes Mentor
-    position: President, Clothes Mentor
+    text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.” 
+    author: DANIEL KOWALKE 
+    position: General Manager, Retail Toolkit 
   - color: pink
-    text: Dor is our secret weapon behind the scenes.
-    author: Original Mattress Factory
-    position: Director of Sales and Marketing, Original Mattress Factory
+    text: “If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.” 
+    author: ADAM SCOTT 
+    position: President, Clothes Mentor
