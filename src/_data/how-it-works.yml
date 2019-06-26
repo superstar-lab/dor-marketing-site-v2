@@ -19,6 +19,7 @@ tabs:
     content:
       heading:
         title: Hardware that scales with you
+        contentID: hard-ware
         subtitle: 'Get data faster with the world’s first thermal-sensing, battery-operated people counter'
         image: /assets/images/how-it-works/hardware-1.jpg
         alt: People counter image
@@ -52,6 +53,7 @@ tabs:
     content:
       heading:
         title: Software built for swift action
+        contentID: soft-ware
         subtitle: 'Get easy, constant access to foot traffic trends for all of your locations, then track how operational decisions create change for your business.'
         image: /assets/images/how-it-works/software-1.jpg
         alt: Apple image
