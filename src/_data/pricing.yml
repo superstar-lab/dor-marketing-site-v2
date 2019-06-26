@@ -31,7 +31,7 @@ plans:
       - title: Special requirements
       - title: Fleet-wide performance audits
     points:
-      title: 'Included'
+      title: 'Included:'
       lists:
         - title: Quarterly business reviews
         - title: Custom rollout plan
