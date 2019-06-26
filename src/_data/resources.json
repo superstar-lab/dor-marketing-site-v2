@@ -22,7 +22,7 @@
 			"title": "Learn more about what we believe",
 			"posts": [
 				{
-					"date": "1/11/2019",
+					"date": "2019-11-01",
 					"type": "VIDEO",
 					"title": "Make it count with Dor",
 					"description": "Understand the story your foot traffic tells with actionable insights for growing your business and exceeding customer expectations",
@@ -31,7 +31,7 @@
 					"contentID": "dor_vid1"
 				},
 				{
-					"date": "10/1/2018",
+					"date": "2018-01-10",
 					"type": "SOLUTION BRIEF",
 					"title": "Engage visitors more effectively with foot traffic trends",
 					"description": "Understand human interaction with your space by capturing foot traffic analytics",
@@ -40,7 +40,7 @@
 					"contentID": "solution_brief"
 				},
 				{
-					"date": "4/30/2019",
+					"date": "2019-04-30",
 					"type": "WEBINAR",
 					"title": "The Retail Analytics Landscape",
 					"description": "Choosing the best tech for counting customers.",
@@ -75,7 +75,7 @@
 			"title": "Learn more about data empowerment",
 			"posts": [
 				{
-					"date": "11/1/2018",
+					"date": "2018-01-11",
 					"type": "BUYER'S GUIDE",
 					"title": "The retail analytics buyer's guide",
 					"description": "What you need to know from people counting solution providers",
@@ -84,7 +84,7 @@
 					"contentID": "buyers_guide"
 				},
 				{
-					"date": "5/30/2019",
+					"date": "2019-05-30",
 					"type": "WEBINAR",
 					"title": "Actionable Data",
 					"description": "3 things every retailer needs but 90% don't have.",
@@ -93,7 +93,7 @@
 					"contentID": "wbn-3"
 				},
 				{
-					"date": "10/15/2018",
+					"date": "2018-10-15",
 					"type": "WHITE PAPER",
 					"title": "Foot traffic data and retail staff scheduling go hand in hand",
 					"description": "How to reduce lost sales and improve profitability by scheduling staff according to predicted traffic",
@@ -127,7 +127,7 @@
 			"title": "Keep reading about retail’s future",
 			"posts": [
 				{
-					"date": "3/4/2019",
+					"date": "2019-04-03",
 					"type": "CASE STUDY",
 					"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
 					"description": "See why this retailer calls Dor their 'secret weapon behind the scenes'",
@@ -136,7 +136,7 @@
 					"contentID": "omf_cs"
 				},
 				{
-					"date": "2/22/2019",
+					"date": "2019-02-22",
 					"type": "WEBINAR",
 					"title": "Blocking out the noise",
 					"description": "How to harness in-store experience trends to deliver results that last",
@@ -145,7 +145,7 @@
 					"contentID": "wbn-1"
 				},
 				{
-					"date": "12/1/2018",
+					"date": "2018-12-01",
 					"type": "EBOOK",
 					"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
 					"description": "How to evaluate true store performance beyond revenue for better decision-making",
@@ -163,7 +163,7 @@
 			"title": "All Dor resources",
 			"posts": [
 				{
-					"date": "2/1/2019",
+					"date": "2019-02-01",
 					"type": "DATASHEET",
 					"title": "Software specifications",
 					"description": "Specifications of Dor software platform including features, tools, and integrations.",
@@ -172,7 +172,7 @@
 					"contentID": "sw_ds"
 				},
 				{
-					"date": "2/1/2019",
+					"date": "2019-02-01",
 					"type": "DATASHEET",
 					"title": "Hardware specifications",
 					"description": "Specifications of Dor hardware including the Dor sensor and base station.",
@@ -181,7 +181,7 @@
 					"contentID": "hw_ds"
 				},
 				{
-					"date": "2/20/2018",
+					"date": "2018-02-20",
 					"type": "CASE STUDY",
 					"title": "Filling HPM Building Supply's data void",
 					"description": "Learn why this retailer uses Dor to identify operational effectiveness and growth opportunities",
@@ -190,7 +190,7 @@
 					"contentID": "hpm_cs"
 				},
 				{
-					"date": "1/15/2018",
+					"date": "2018-01-15",
 					"type": "CASE STUDY",
 					"title": "Clothes Mentor grows their success with foot traffic analytics",
 					"description": "‘Without traffic data, you’re just guessing’: Calculating conversion drives Clothes Mentor’s success",

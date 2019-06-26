@@ -1,13 +1,13 @@
 hero:
   title: Careers
-  subtitle: At Dor we’re working to empower retailers worldwide, and this starts by empowering our team. Come work at Dor - you won’t regret it. 
+  subtitle: At Dor, we empower retailers across the globe, and that starts by empowering our team. We're committed to fostering a workplace where all voices are valued and people are given the opportunity to grow. Come join us!
   button: See Open Positions
   buttonUrl: "#open-positions"
   image: /assets/images/careers/hero.jpg
 
 aboutWork:
   title: How we work
-  text: At Dor, we’re striving to empower our customers and we achieve this by empowering and supporting our employees. We work hard, and we do it together. We believe in transparency and communication - direct, honest communication is a cornerstone of how we work together. Good ideas come from everywhere, and our team reflects that in our diverse backgrounds. There will probably be one more sentence worth of words here
+  text: At Dor, we believe great products start with great people. Just like our product is adaptable and accessible, so are the team at Dor. We work hard, and we do it together. We believe in transparency and communication — direct, honest communication is a cornerstone of how we work together. Our team hails from a variety of companies like Apple, InvenSense, Samsung, Starbucks and Mixpanel. Good ideas come from everywhere; we find unity in uniqueness and have built a culture that celebrates the fact that each of us brings something to the table.
   image: /assets/images/careers/how-we-work.jpg
   button: Read More About  Us
   buttonUrl: about-us
@@ -31,7 +31,7 @@ values:
 
 openPositions:
   title: Open positions
-  subtitle: Excited about Dor but don’t see a role that fits your background?<br>Reach out to careers@getdor.com and we’ll keep you in mind for future roles.
+  subtitle: At Dor, we look for enthusiasm and talent, over perfection and pedigree. However you identify and whatever background you bring with you, we want to hear from you!<br>Excited about Dor but don’t see a role that fits your background? Apply for your dream job below and tell us why you’re our perfect match.
 
 benefits:
   image: /assets/images/careers/benefits.jpg

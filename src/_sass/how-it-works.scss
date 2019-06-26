@@ -2,6 +2,7 @@
 
     .hero {
         background-color: $dark-blue;
+        opacity: 0.95;
 
         @include media-down(sm) {
 
@@ -37,6 +38,8 @@
 
         .hero {
             padding: 64px 0;
+            background: url(../images/how-it-works/empower-pattern.svg) no-repeat center;
+            background-size: cover;
 
             @include media-down(sm) {
                 padding: 0 0 24px;
@@ -110,6 +113,7 @@
 
     .demo {
         background: url(../images/how-it-works/empower-pattern.svg) no-repeat center;
+        background-size: cover;
 
         h2, p {
             color: $white;
@@ -333,6 +337,11 @@
         outline: none;
     }
     
+    .vjs-button > .vjs-icon-placeholder:before {
+        font-size: 29px;
+        line-height: 1;
+    }
+
     .vjs-big-play-button {
         outline: none;
         background-color: #df1e25;

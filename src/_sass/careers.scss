@@ -200,6 +200,15 @@
         margin-bottom: 8px;
     }
 
+    .subtitle {
+        width: 75%;
+        display: inline-block;
+
+        @include media-down(sm) {
+            width: 100%;
+        }
+    }
+    
     #jobs-container {
         margin-top: 48px;
 
