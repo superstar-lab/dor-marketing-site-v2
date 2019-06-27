@@ -91,9 +91,9 @@
 
         p {
             margin-top: 8px;
-            margin-bottom: 36px;
+            margin-bottom: 16px;
             color: $light-black;
-            min-height: 118px;
+            min-height: 113px;
 
             @include media-down(md) {
                 margin-bottom: 12px;
