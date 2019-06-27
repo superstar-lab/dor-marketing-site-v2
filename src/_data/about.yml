@@ -27,93 +27,124 @@ members:
       position: CTO, Founder
   team:
     - image: /assets/images/about/Abad-Joseph.jpg
-      name: Joseph Abad
+      name: Joseph
+      lastName: Abad
       position: Director of Engineering
     - image: /assets/images/about/Apaydin-Batuhan.jpg
-      name: Batuhan Apaydin
+      name: Batuhan
+      lastName: Apaydin
       position: Product Manager
     - image: /assets/images/about/Bas-Levent.jpg
-      name: Levent Bas
+      name: Levent
+      lastName: Bas
       position: Head of Product
     - image: /assets/images/about/Bennett-Camilla.jpg
-      name: Camilla Bennett
+      name: Camilla
+      lastName: Bennett
       position: Customer Success Manager
     - image: /assets/images/about/Brandes-Alex.jpg
-      name: Alex Brandes
+      name: Alex
+      lastName: Brandes
       position: Director Software Engineering
     - image: /assets/images/about/Brown-Jason.jpg
-      name: Jason Brown
+      name: Jason
+      lastName: Brown
       position: Enterprise Account Executive
     - image: /assets/images/about/Casella-Ryan.jpg
-      name: Ryan Casella
+      name: Ryan
+      lastName: Casella
       position: Operations Associate
     - image: /assets/images/about/Castillo-Jasmine.jpg
-      name: Jasmine Castillo
+      name: Jasmine
+      lastName: Castillo
       position: Sales Development Representative
     - image: /assets/images/about/Chong-Albert.jpg
-      name: Albert Chong
+      name: Albert
+      lastName: Chong
       position: Senior Product Designer
     - image: /assets/images/about/Clendening-Scott.jpg
-      name: Scott Clendening
+      name: Scott
+      lastName: Clendening
       position: Software Engineer
     - image: /assets/images/about/Delbuck-Julie.jpg
-      name: Julie Delbuck
+      name: Julie
+      lastName: Delbuck
       position: Head of Operations
     - image: /assets/images/about/Golembeski-Chad.jpg
-      name: Chad Golembeski
+      name: Chad
+      lastName: Golembeski
       position: QA Engineer
     - image: /assets/images/about/Guimarin-Michael.jpg
-      name: Michael Guimarin
+      name: Michael
+      lastName: Guimarin
       position: Enterprise Account Executive
     - image: /assets/images/about/Hackworth-Dave.jpg
-      name: David Hackworth
+      name: David
+      lastName: Hackworth
       position: Head of Customer Success
+    - image: /assets/images/about/Griffin-Hammer.jpg
+      name: Griffin
+      lastName: Hammer
+      position: Senior Software Engineer
     - image: /assets/images/about/Huang-Tina.jpg
-      name: Tina Huang
+      name: Tina
+      lastName: Huang
       position: Customer Advocate
     - image: /assets/images/about/Kazemian-Daniel.jpg
-      name: Daniel Kazemian
+      name: Daniel
+      lastName: Kazemian
       position: Software Engineer
     - image: /assets/images/about/Le-Trini.jpg
-      name: Trini Le
+      name: Trini
+      lastName: Le
       position: Software Engineer
     - image: /assets/images/about/Lee-Michelle.jpg
-      name: Michelle Lee
+      name: Michelle
+      lastName: Lee
       position: Customer Advocate
     - image: /assets/images/about/Leung-Patrick.jpg
-      name: Patrick Leung
+      name: Patrick
+      lastName: Leung
       position: Sales Development Representative
     - image: /assets/images/about/Lyons-Mike.jpg
-      name: Mike Lyons
+      name: Mike
+      lastName: Lyons
       position: Senior Software Engineer
     - image: /assets/images/about/Mohring-Alex.jpg
-      name: Alexander Mohring
+      name: Alexander
+      lastName: Mohring
       position: Marketing Operations Manager
     - image: /assets/images/about/Noble-Evan.jpg
-      name: Evan Noble
+      name: Evan
+      lastName: Noble
       position: Firmware Engineer
     - image: /assets/images/about/Olsen-Erik.jpg
-      name: Erik Olsen
+      name: Erik
+      lastName: Olsen
       position: Firmware Engineer
     - image: /assets/images/about/Schneider-Woody.jpg
-      name: Woody Schneider
+      name: Woody
+      lastName: Schneider
       position: Director of Sales
     - image: /assets/images/about/Seto-Kameron.jpg
-      name: Kameron Seto
+      name: Kameron
+      lastName: Seto
       position: Software Engineer
     - image: /assets/images/about/Shahabi-Aubtin.jpg
-      name: Aubtin Shahabi
+      name: Aubtin
+      lastName: Shahabi
       position: Sales Development Representative
     - image: /assets/images/about/Simpson-Madeleine.jpg
-      name: Madeleine Simpson
+      name: Madeleine
+      lastName: Simpson
       position: Office Manager
   dogs:
-    # - image: /assets/images/about/Finn.jpg
-    #   name: Finn
-    #   position: Director of Dog
     - image: /assets/images/about/Boomer.jpg
       name: Boomer
       position: Safety and Security 
+    - image: /assets/images/about/finn.jpg
+      name: Finn
+      position: Director of Dog
     - image: /assets/images/about/Guster.jpg
       name: Guster
       position: Engineering Overlord
