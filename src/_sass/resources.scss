@@ -37,24 +37,21 @@
         border-radius: 8px;
     }
 
-    & > div:nth-child(1) .all-posts {
+    & > div:nth-child(1) .all-posts,
+    & > div:nth-child(2) .all-posts,
+    & > div:nth-child(3) .all-posts {
         background-color: $ice-blue;
     }
 
-    & > div:nth-child(2) .all-posts {
-        background-color: $light-grey;
-    }
-
-    & > div:nth-child(3) .all-posts {
-        background-color: $pink;
-    }
 
     .all-posts {
         padding-top: 64px;
         margin-bottom: 80px;
+        padding-bottom: 66px;
         
         @include media-down(md) {
             padding-top: 40px;
+            padding-bottom: 30px;
         }
         
         @include media-down(sm) {
@@ -76,6 +73,10 @@
 
         h2 {
             margin-bottom: 40px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
     }
 

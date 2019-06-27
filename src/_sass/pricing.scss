@@ -2,8 +2,24 @@
     background: url(../images/pricing/hero.svg) no-repeat center center;
     background-size: cover;
 
+    &.hero-section.page-hero {
+
+        @include media-down(sm) {
+            background: url(../images/pricing/hero.svg) no-repeat center center !important;
+            background-size: cover !important;
+            min-height: 60vh;
+            display: flex;
+            padding: 0 12px;
+        }
+    }
+    
     .hero {
         background-color: $white;
+
+        @include media-down(sm) {
+            opacity: 1;
+            border-radius: 8px;
+        }
 
         h1 {
             color: $black;
