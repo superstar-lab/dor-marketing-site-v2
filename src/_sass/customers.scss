@@ -123,42 +123,35 @@
                 color: $black;
                 
                 p {
-                    font-size: $font-size-xl;
                     line-height: 1.43;
+                    font-size: $font-size-large;
     
                     @include media-down(md) {
-                        font-size: $font-size-large;
-                    }
-    
-                    @include media-down(sm) {
                         font-size: $default-font-size;
                     }
                 }
                 
                 footer {
-                    font-size: $font-size-xl;
+                    font-size: $font-size-large;
                     display: block;
                     font-weight: $font-weight-bold;
                     margin: 19px 0 6px;
                     line-height: 1.29;
-                    text-transform: uppercase;
-    
-                    @include media-down(md) {
-                        font-size: $font-size-large;
-                    }
+                    letter-spacing: 0;
     
                     @include media-down(sm) {
                         margin: 16px 0 4px;
-                        font-size: $default-font-size;
+                        font-size: $font-size-medium;
                     }
     
                     & + div {
                         font-size: $default-font-size;
                         line-height: 1.4;
                         color: $brownish-grey;
+                        letter-spacing: .5px;
     
-                        @include media-down(md) {
-                            font-size: $font-size-medium;
+                        @include media-down(sm) {
+                            font-size: $font-size-small;
                         }
                         
                         a {
