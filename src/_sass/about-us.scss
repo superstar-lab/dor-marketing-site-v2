@@ -165,16 +165,13 @@
 .working-days {
     margin-top: 64px;
     margin-bottom: 70px;
-
-    @include media-down(sm) {
-        margin-bottom: 20px;
-    }
-
+    
     @include media-down(md) {
         margin-top: 40px;
     }
-
+    
     @include media-down(sm) {
+        margin-bottom: 20px;
         margin-top: 30px;
     }
 

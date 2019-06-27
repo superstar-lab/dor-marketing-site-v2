@@ -1,0 +1,37 @@
+---
+title: Dor | Integrations
+permalink: /integrations/
+layout: default
+---
+
+{% assign string = site.data.integrations %}
+
+<section id="integrations">
+    <div class="wrapper">
+        <div class="content-middle content-center"> 
+            <div class="col-75 col-sm-100">
+                <h1 class="text-center">{{ string.title }}</h1>
+                <div class="subtitle text-center">{{ string.subtitle }}</div>
+
+                <div class="flex-column">
+                    {% for partner in string.partners %}
+                    <div class="partners-list flex-column">
+                        <div class="content-middle content-cente flex-row fl-sm-col">
+                            <div class="col-25 col-sm-100">
+                                <img class="shopify-logo" src="{{ partner.image }}" alt="Shopify POS Logo">
+                            </div>
+                            <div class="col-75 col-sm-100">
+                                <h2>{{ partner.title }}</h2>
+                                <div class="subtitle">
+                                    {{ partner.subtitle }}
+                                </div>
+                                <a href="{{ partner.url }}" target="_blank">{{ partner.urlTitle }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+#integrations {
+    @extend .padding;
+
+    h1+.subtitle {
+        margin-bottom: 70px;
+        margin-top: 15px;
+
+        @include media-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .partners-list {
+        margin-bottom: 70px;
+
+        @include media-down(md) {
+            margin-bottom: 30px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 45px;
+        }
+
+        .col-75 {
+            padding-left: 40px;
+            
+            @include media-down(sm) {
+                padding-left: 0;
+            }
+        }
+        
+        .col-sm-100 {
+            
+            @include media-down(sm) {
+                text-align: center;
+            }   
+        }
+
+        img {
+
+            @include media-down(sm) {
+                max-width: 66%;
+                margin-bottom: 15px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        a {
+            display: block;
+            color: $blue;
+            font-weight: $font-weight-bold;
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+title: Integrations
+subtitle: Get even more value out of Dor by integrating with our preferred partner’s platforms. Interested in becoming a partner?
+partners:
+  - title: Shopify
+    subtitle: Shopify Point of Sale empowers standout retail experiences. Sell anywhere, accept any payment and grow your business. Use Shopify with Dor to automatically calculate your conversion rate and identify sales trends in your store.
+    image: /assets/images/integrations/shopify.svg
+    alt: Shopify POS Logo
+    url: https://www.shopify.com/pos
+    urlTitle: Learn More  »
+  - title: Square
+    subtitle: Square Point of Sale is designed to get your staff up and running quickly. Drag and drop items and categories, customize your items grid and bring popular items front and center. Integrating Square with Dor makes it easier to compare daily trends against a base conversion rate to make better business decisions.
+    image: /assets/images/integrations/square.svg
+    alt: Square POS logo 
+    url: https://squareup.com/pos/retail
+    urlTitle: Learn More  »
+  - title: Lightspeed
+    subtitle: Lightspeed is a complete inventory management system with all the data you need to make the right decisions, and the tools that will keep your customers coming back. Integrating Lightspeed with Dor makes it easier to compare daily trends against a base conversion rate to make better business decisions.
+    image: /assets/images/integrations/lightspeed.svg
+    alt: Lightspeed POS logo
+    url: https://www.lightspeedhq.com/pos/retail/
+    urlTitle: Learn More  »
+  - title: Star Micronics
+    subtitle: Star Micronics, one of the world's largest POS providers, has designated a portfolio of printing, secure cash management and customer engagement solutions for any retail or hospitality establishment in POS and mPOS environments. Dor adds value to your Star printers by measuring the customer traffic to your store, enabling you to increase revenue, lower CAC and maximize profits.
+    image: /assets/images/integrations/star_micronics.svg
+    alt: Star Micronics logo
+    url: http://www.starmicronics.com/
+    urlTitle: Learn More  » 
