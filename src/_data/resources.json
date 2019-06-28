@@ -157,15 +157,6 @@
 	],
 	"allresources": [
 		{
-			"date": "2019-04-03",
-			"type": "CASE STUDY",
-			"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
-			"description": "See why this retailer calls Dor their 'secret weapon behind the\nscenes'",
-			"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
-			"imageurl": "/assets/images/resources/omf_cs.png",
-			"contentID": "omf_cs"
-		},
-		{
 			"date": "2019-02-22",
 			"type": "WEBINAR",
 			"title": "Blocking out the noise",
@@ -173,15 +164,6 @@
 			"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
 			"imageurl": "/assets/images/resources/wbn-1.png",
 			"contentID": "wbn-1"
-		},
-		{
-			"date": "2018-12-01",
-			"type": "EBOOK",
-			"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
-			"description": "How to evaluate true store performance beyond revenue for better\ndecision-making",
-			"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
-			"imageurl": "/assets/images/resources/ebook_opening.png",
-			"contentID": "ebook_opening"
 		},
 		{
 			"date": "2019-11-01",
