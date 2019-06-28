@@ -239,6 +239,11 @@
                     transition:visibility 0.3s linear,opacity 0.3s linear;
                     text-transform: capitalize;
 
+                    @include media-down(sm) {
+                        margin-left: 0;
+                    }
+
+
                     li {
                         margin-bottom: 5px;
 

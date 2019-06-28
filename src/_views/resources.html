@@ -64,7 +64,7 @@ layout: default
                     {% assign sorted =  item.learnMore.posts | sort: 'date' | reverse  %}
                     {% for item in sorted %}
                     {% if item.videoUrl %}
-                    <div class="col-33 cards" data-type="{{ item.type }}">
+                    <div class="col-33">
                         <div class="card">
                             <div>
                                 <span>{{ item.type | upcase  }}</span>
@@ -77,7 +77,7 @@ layout: default
                         </div>
                     </div>
                     {% else %}
-                    <div class="col-33 cards" data-type="{{ item.type }}">
+                    <div class="col-33">
                         <div class="card" data-modal="#{{ item.contentID }}">
                             <div>
                                 <span>{{ item.type | upcase  }}</span>
@@ -104,7 +104,7 @@ layout: default
                     <span id="type-filter">
                         <span>{{ string.allposts.filterName }}</span>
                         <ul>
-                            <li><a data-type="all_filter" href="#">{{ string.filterName }}</a></li>
+                            <li><a data-type="all_filter" href="#">{{ string.allposts.filterName }}</a></li>
                             {% assign all_types = site.data.resources.allresources  | map: "type" | uniq  %}
                             {% for item in all_types  %}
                             <li><a data-type="{{ item }}" href="#">{{ item | capitalize }}</a></li>
