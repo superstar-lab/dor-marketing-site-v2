@@ -59,15 +59,13 @@ layout: default
 <section id="testimonials">
     <div class="wrapper content-wrap">
         <h2 class="text-center">{{ string.testimonials.title }}</h2>
-        <div class="flex-column col">
+        <div>
             {% for testimonial in string.testimonials.reviews %}
             <div>
-                <div class="{{ testimonial.color }} ">
-                    <div class="text-center">
-                        <p>{{ testimonial.text }}</p>
-                        <cite>{{ testimonial.author  }}</cite>
-                        <small>{{ testimonial.position }}</small>
-                    </div>
+                <div class="text-center">
+                    <p>{{ testimonial.text }}</p>
+                    <cite>{{ testimonial.author  }}</cite>
+                    <small>{{ testimonial.position }}</small>
                 </div>
             </div>
             {% endfor %}
