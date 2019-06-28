@@ -7,43 +7,43 @@ navigation:
 - name: How It Works
   links:
   - title: Hardware
-    url: how-it-works/#hardware
+    url: /how-it-works/#hardware
   - title: Software
-    url: how-it-works/#software
+    url: /how-it-works/#software
   - title: Pricing
-    url: pricing
+    url: /pricing
 - name: Resources
   links:
   - title: Why Dor?
-    url: resources/#whydor
+    url: /resources/#whydor
   - title: Accuracy & Visibility
-    url: resources/#accuracy&visibility
+    url: /resources/#accuracy&visibility
   - title: Retail
-    url: resources/#retail
+    url: /resources/#retail
   - title: Blog
     url: https://blog.getdor.com/
 - name: Company
   links:
   - title: About Us
-    url: about-us
+    url: /about-us
   - title: Customers
-    url: customers
+    url: /customers
   - title: Careers
-    url: careers
+    url: /careers
   - title: Integrations
-    url: integrations
+    url: /integrations
   - title: Press
-    url: press
+    url: /press
 - name: Support
   links:
   - title: FAQ
-    url: faq
+    url: /faq
   - title: Contact Us
     url: https://support.getdor.com/s/#contact
   - title: Terms of Use
-    url: terms
+    url: /terms
   - title: Privacy Policy
-    url: privacy-policy
+    url: /privacy-policy
 
 social:
 - icon: fab fa-twitter
