@@ -1,204 +1,306 @@
-[
-	{
-		"section": "Why dor?",
-		"allposts": false,
-		"title": "Our mission",
-		"subtitle": "Through data made easily accessible, we empower retailers to focus on what really matters: Operating efficient stores where meaningful engagement happens.",
-		"featured": [
-			{
-				"image": "/assets/images/resources/section1-1.jpg",
-				"alt": "Image",
-				"text": "Shoppers are demanding more meaningful in-store experiences than ever. We believe retailers can only keep up with those expectations when they’re equipped with accurate data about how their stores perform. So we’re focused on one thing: Making it easier for every retailer to be operationally excellent, unlocking more possibilities for teams of all sizes to understand the health of their stores.",
-				"url": null
-			},
-			{
-				"image": "/assets/images/resources/section1-2.jpg",
-				"alt": "image",
-				"text": "It’s impossible to consistently deliver a great store experience without accurate foot traffic data. Retail ops and marketing leaders lose money in guessing games. We are here to help you get out of that game with a people counting sensor that’s truly accurate — capturing the highest quality data in the widest possible variety of environments and doorways consistently, so your data can appreciate over time.",
-				"url": null
+{
+	"sections": [
+		{
+			"section": "Why dor?",
+			"title": "Our mission",
+			"subtitle": "Through data made easily accessible, we empower retailers to focus on\nwhat really matters: Operating efficient stores where meaningful engagement happens.",
+			"featured": [
+				{
+					"image": "/assets/images/resources/section1-1.jpg",
+					"alt": "Image",
+					"text": "Shoppers are demanding more meaningful in-store experiences than ever.\nWe believe retailers can only keep up with those expectations when they’re equipped\nwith accurate data about how their stores perform. So we’re focused on one thing:\nMaking it easier for every retailer to be operationally excellent, unlocking\nmore possibilities for teams of all sizes to understand the health of their\nstores.",
+					"url": null
+				},
+				{
+					"image": "/assets/images/resources/section1-2.jpg",
+					"alt": "image",
+					"text": "It’s impossible to consistently deliver a great store experience without\naccurate foot traffic data. Retail ops and marketing leaders lose money in guessing\ngames. We are here to help you get out of that game with a people counting sensor\nthat’s truly accurate — capturing the highest quality data in the widest possible\nvariety of environments and doorways consistently, so your data can appreciate\nover time.",
+					"url": null
+				}
+			],
+			"learnMore": {
+				"title": "Learn more about what we believe",
+				"posts": [
+					{
+						"date": "2019-11-01",
+						"type": "VIDEO",
+						"title": "Make it count with Dor",
+						"description": "Understand the story your foot traffic tells with actionable insights\nfor growing your business and exceeding customer expectations",
+						"url": "https://www.youtube.com/watch?v=wNjMUDspr1k",
+						"videoUrl": "https://www.youtube.com/embed/wNjMUDspr1k",
+						"contentID": "dor_vid1"
+					},
+					{
+						"date": "2018-01-10",
+						"type": "SOLUTION BRIEF",
+						"title": "Engage visitors more effectively with foot traffic trends",
+						"description": "Understand human interaction with your space by capturing foot\ntraffic analytics",
+						"url": "https://blog.getdor.com/2018/11/07/solution-brief-foot-traffic/?utm_source=resources",
+						"imageurl": "/assets/images/resources/solution_brief.png",
+						"contentID": "solution_brief"
+					},
+					{
+						"date": "2019-04-30",
+						"type": "WEBINAR",
+						"title": "The Retail Analytics Landscape",
+						"description": "Choosing the best tech for counting customers.",
+						"url": "https://blog.getdor.com/2019/05/02/webinar-the-retail-analytics-landscape/",
+						"imageurl": "/assets/images/resources/wbn-2.png",
+						"featured_bg_img": "",
+						"contentID": "wbn-2"
+					}
+				]
 			}
-		],
-		"learnMore": {
-			"title": "Learn more about what we believe",
-			"posts": [
+		},
+		{
+			"section": "Accuracy & Visibility",
+			"title": "Full visibility",
+			"subtitle": "Retailers are only as successful as the data they collect, own and enrich\nover time. The only actionable data set is accurate people counts for every revenue-generating\ndoorway in your business.",
+			"featured": [
 				{
-					"date": "2019-11-01",
-					"type": "VIDEO",
-					"title": "Make it count with Dor",
-					"description": "Understand the story your foot traffic tells with actionable insights for growing your business and exceeding customer expectations",
-					"url": "https://www.youtube.com/watch?v=wNjMUDspr1k",
-					"videoUrl": "https://www.youtube.com/embed/wNjMUDspr1k",
-					"contentID": "dor_vid1"
+					"image": "/assets/images/resources/section2-1.jpg",
+					"alt": "Image",
+					"text": "It’s impossible to make any decisions for your retail business without a\npeople counting solution delivering full visibility of every store through accurate\ncounts of the traffic relevant to your goals. Full visibility means having a\npeople counting solution in every single revenue-generating doorway in your\nbusiness. It’s knowing not just a sample size of your performance, but the whole\npicture.",
+					"url": null
 				},
 				{
-					"date": "2018-01-10",
-					"type": "SOLUTION BRIEF",
-					"title": "Engage visitors more effectively with foot traffic trends",
-					"description": "Understand human interaction with your space by capturing foot traffic analytics",
-					"url": "https://blog.getdor.com/2018/11/07/solution-brief-foot-traffic/?utm_source=resources",
-					"imageurl": "/assets/images/resources/solution_brief.png",
-					"contentID": "solution_brief"
-				},
-				{
-					"date": "2019-04-30",
-					"type": "WEBINAR",
-					"title": "The Retail Analytics Landscape",
-					"description": "Choosing the best tech for counting customers.",
-					"url": "https://blog.getdor.com/2019/05/02/webinar-the-retail-analytics-landscape/",
-					"imageurl": "/assets/images/resources/wbn-2.png",
-					"featured_bg_img": "",
-					"contentID": "wbn-2"
+					"image": "/assets/images/resources/section2-2.jpg",
+					"alt": "image",
+					"text": "Accurate foot traffic counts are only possible with full visibility, using\ntechnology that achieves the closest to 100% accurate counts with enough consistency\nto establish trends over time. In the industry of people counting, 70-85% is\nconsidered standard, and that’s using outdated technologies like cameras that\ndeploy too slowly to make full coverage and therefore true accuracy possible\nin the first place.",
+					"url": null
 				}
-			]
-		}
-	},
-	{
-		"section": "Accuracy & Visibility",
-		"allposts": false,
-		"title": "Full visibility",
-		"subtitle": "Retailers are only as successful as the data they collect, own and enrich over time. The only actionable data set is accurate people counts for every revenue-generating doorway in your business.",
-		"featured": [
-			{
-				"image": "/assets/images/resources/section2-1.jpg",
-				"alt": "Image",
-				"text": "It’s impossible to make any decisions for your retail business without a people counting solution delivering full visibility of every store through accurate counts of the traffic relevant to your goals. Full visibility means having a people counting solution in every single revenue-generating doorway in your business. It’s knowing not just a sample size of your performance, but the whole picture.",
-				"url": null
-			},
-			{
-				"image": "/assets/images/resources/section2-2.jpg",
-				"alt": "image",
-				"text": "Accurate foot traffic counts are only possible with full visibility, using technology that achieves the closest to 100% accurate counts with enough consistency to establish trends over time. In the industry of people counting, 70-85% is considered standard, and that’s using outdated technologies like cameras that deploy too slowly to make full coverage and therefore true accuracy possible in the first place.",
-				"url": null
+			],
+			"learnMore": {
+				"title": "Learn more about data empowerment",
+				"posts": [
+					{
+						"date": "2018-01-11",
+						"type": "BUYER'S GUIDE",
+						"title": "The retail analytics buyer's guide",
+						"description": "What you need to know from people counting solution providers",
+						"url": "https://blog.getdor.com/2018/12/15/retail-analytics-buyers-guide/?utm_source=resources",
+						"imageurl": "/assets/images/resources/buyers_guide.png",
+						"contentID": "buyers_guide"
+					},
+					{
+						"date": "2019-05-30",
+						"type": "WEBINAR",
+						"title": "Actionable Data",
+						"description": "3 things every retailer needs but 90% don't have.",
+						"url": "https://blog.getdor.com/2019/06/05/webinar-actionable-data/?utm_source=resources",
+						"imageurl": "/assets/images/resources/wbn-3.png",
+						"contentID": "wbn-3"
+					},
+					{
+						"date": "2018-10-15",
+						"type": "WHITE PAPER",
+						"title": "Foot traffic data and retail staff scheduling go hand in hand",
+						"description": "How to reduce lost sales and improve profitability by scheduling\nstaff according to predicted traffic",
+						"url": "https://blog.getdor.com/2018/09/30/retail-staffing-foot-traffic-white-paper/?utm_source=resources",
+						"imageurl": "/assets/images/resources/staffing_wp.png",
+						"contentID": "staffing_wp"
+					}
+				]
 			}
-		],
-		"learnMore": {
-			"title": "Learn more about data empowerment",
-			"posts": [
+		},
+		{
+			"section": "Retail",
+			"title": "Apocalypse... or renaissance?",
+			"subtitle": "Retail’s physical footprint is shrinking while consumers demand more from\nbrands than ever before. Here’s what to do about it.",
+			"featured": [
 				{
-					"date": "2018-01-11",
-					"type": "BUYER'S GUIDE",
-					"title": "The retail analytics buyer's guide",
-					"description": "What you need to know from people counting solution providers",
-					"url": "https://blog.getdor.com/2018/12/15/retail-analytics-buyers-guide/?utm_source=resources",
-					"imageurl": "/assets/images/resources/buyers_guide.png",
-					"contentID": "buyers_guide"
+					"image": "/assets/images/resources/section3-1.jpg",
+					"alt": "Image",
+					"text": "The way people interact with spaces is fundamentally shifting. Customers\nare demanding more value from their experiences in your stores. They also happen\nto be giving you all the data you need to pivot, simply through their own engagement\nwith your brand. Retail leaders are listening and responding, creating the consistent\nmeaningful experiences necessary for them to survive — and thrive.",
+					"url": null
 				},
 				{
-					"date": "2019-05-30",
-					"type": "WEBINAR",
-					"title": "Actionable Data",
-					"description": "3 things every retailer needs but 90% don't have.",
-					"url": "https://blog.getdor.com/2019/06/05/webinar-actionable-data/?utm_source=resources",
-					"imageurl": "/assets/images/resources/wbn-3.png",
-					"contentID": "wbn-3"
-				},
-				{
-					"date": "2018-10-15",
-					"type": "WHITE PAPER",
-					"title": "Foot traffic data and retail staff scheduling go hand in hand",
-					"description": "How to reduce lost sales and improve profitability by scheduling staff according to predicted traffic",
-					"url": "https://blog.getdor.com/2018/09/30/retail-staffing-foot-traffic-white-paper/?utm_source=resources",
-					"imageurl": "/assets/images/resources/staffing_wp.png",
-					"contentID": "staffing_wp"
+					"image": "/assets/images/resources/section3-2.jpg",
+					"alt": "image",
+					"text": "The data shows that retail’s physical footprint is shrinking while consumers\ndemand more from brands than ever before. Customers no longer want or need millions\nof retail square footage to have a meaningful interaction with a brand in person,\nand retail has been reacting far too slowly. To compete, retailers must create\nthe experiences their shoppers desire in the spaces that make those experiences\nprofitable, driving revenue in spaces that are optimized for efficiency.",
+					"url": null
 				}
-			]
-		}
-	},
-	{
-		"section": "Retail",
-		"allposts": false,
-		"title": "Apocalypse... or renaissance?",
-		"subtitle": "Retail’s physical footprint is shrinking while consumers demand more from brands than ever before. Here’s what to do about it.",
-		"featured": [
-			{
-				"image": "/assets/images/resources/section3-1.jpg",
-				"alt": "Image",
-				"text": "The way people interact with spaces is fundamentally shifting. Customers are demanding more value from their experiences in your stores. They also happen to be giving you all the data you need to pivot, simply through their own engagement with your brand. Retail leaders are listening and responding, creating the consistent meaningful experiences necessary for them to survive — and thrive.",
-				"url": null
-			},
-			{
-				"image": "/assets/images/resources/section3-2.jpg",
-				"alt": "image",
-				"text": "The data shows that retail’s physical footprint is shrinking while consumers demand more from brands than ever before. Customers no longer want or need millions of retail square footage to have a meaningful interaction with a brand in person, and retail has been reacting far too slowly. To compete, retailers must create the experiences their shoppers desire in the spaces that make those experiences profitable, driving revenue in spaces that are optimized for efficiency.",
-				"url": null
+			],
+			"learnMore": {
+				"title": "Keep reading about retail’s future",
+				"posts": [
+					{
+						"date": "2019-04-03",
+						"type": "CASE STUDY",
+						"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
+						"description": "See why this retailer calls Dor their 'secret weapon behind the\nscenes'",
+						"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
+						"imageurl": "/assets/images/resources/omf_cs.png",
+						"contentID": "omf_cs"
+					},
+					{
+						"date": "2019-02-22",
+						"type": "WEBINAR",
+						"title": "Blocking out the noise",
+						"description": "How to harness in-store experience trends to deliver results that\nlast",
+						"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
+						"imageurl": "/assets/images/resources/wbn-1.png",
+						"contentID": "wbn-1"
+					},
+					{
+						"date": "2018-12-01",
+						"type": "EBOOK",
+						"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
+						"description": "How to evaluate true store performance beyond revenue for better\ndecision-making",
+						"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
+						"imageurl": "/assets/images/resources/ebook_opening.png",
+						"contentID": "ebook_opening"
+					}
+				]
 			}
-		],
-		"learnMore": {
-			"title": "Keep reading about retail’s future",
-			"posts": [
-				{
-					"date": "2019-04-03",
-					"type": "CASE STUDY",
-					"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
-					"description": "See why this retailer calls Dor their 'secret weapon behind the scenes'",
-					"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
-					"imageurl": "/assets/images/resources/omf_cs.png",
-					"contentID": "omf_cs"
-				},
-				{
-					"date": "2019-02-22",
-					"type": "WEBINAR",
-					"title": "Blocking out the noise",
-					"description": "How to harness in-store experience trends to deliver results that last",
-					"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
-					"imageurl": "/assets/images/resources/wbn-1.png",
-					"contentID": "wbn-1"
-				},
-				{
-					"date": "2018-12-01",
-					"type": "EBOOK",
-					"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
-					"description": "How to evaluate true store performance beyond revenue for better decision-making",
-					"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
-					"imageurl": "/assets/images/resources/ebook_opening.png",
-					"contentID": "ebook_opening"
-				}
-			]
 		}
-	},
-	{
-		"section": "All Resources",
-		"allposts": true,
-		"learnMore": {
-			"title": "All Dor resources",
-			"posts": [
-				{
-					"date": "2019-02-01",
-					"type": "DATASHEET",
-					"title": "Software specifications",
-					"description": "Specifications of Dor software platform including features, tools, and integrations.",
-					"url": "https://blog.getdor.com/2019/03/01/software-specifications/?utm_source=resources",
-					"imageurl": "/assets/images/resources/sw_ds.png",
-					"contentID": "sw_ds"
-				},
-				{
-					"date": "2019-02-01",
-					"type": "DATASHEET",
-					"title": "Hardware specifications",
-					"description": "Specifications of Dor hardware including the Dor sensor and base station.",
-					"url": "https://blog.getdor.com/2019/02/25/hardware-specifications/?utm_source=resources",
-					"imageurl": "/assets/images/resources/hw_ds.png",
-					"contentID": "hw_ds"
-				},
-				{
-					"date": "2018-02-20",
-					"type": "CASE STUDY",
-					"title": "Filling HPM Building Supply's data void",
-					"description": "Learn why this retailer uses Dor to identify operational effectiveness and growth opportunities",
-					"url": "https://blog.getdor.com/2018/05/30/hpm-building-supply-case-study/?utm_source=resources",
-					"imageurl": "/assets/images/resources/hpm_cs.png",
-					"contentID": "hpm_cs"
-				},
-				{
-					"date": "2018-01-15",
-					"type": "CASE STUDY",
-					"title": "Clothes Mentor grows their success with foot traffic analytics",
-					"description": "‘Without traffic data, you’re just guessing’: Calculating conversion drives Clothes Mentor’s success",
-					"url": "https://blog.getdor.com/2018/01/29/clothes-mentor-case-study/?utm_source=resources",
-					"imageurl": "/assets/images/resources/clothes_mentor.png",
-					"contentID": "clothes_mentor"
-				}
-			]
+	],
+	"allresources": [
+		{
+			"date": "2019-04-03",
+			"type": "CASE STUDY",
+			"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
+			"description": "See why this retailer calls Dor their 'secret weapon behind the\nscenes'",
+			"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
+			"imageurl": "/assets/images/resources/omf_cs.png",
+			"contentID": "omf_cs"
+		},
+		{
+			"date": "2019-02-22",
+			"type": "WEBINAR",
+			"title": "Blocking out the noise",
+			"description": "How to harness in-store experience trends to deliver results that\nlast",
+			"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
+			"imageurl": "/assets/images/resources/wbn-1.png",
+			"contentID": "wbn-1"
+		},
+		{
+			"date": "2018-12-01",
+			"type": "EBOOK",
+			"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
+			"description": "How to evaluate true store performance beyond revenue for better\ndecision-making",
+			"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
+			"imageurl": "/assets/images/resources/ebook_opening.png",
+			"contentID": "ebook_opening"
+		},
+		{
+			"date": "2019-11-01",
+			"type": "VIDEO",
+			"title": "Make it count with Dor",
+			"description": "Understand the story your foot traffic tells with actionable insights\nfor growing your business and exceeding customer expectations",
+			"url": "https://www.youtube.com/watch?v=wNjMUDspr1k",
+			"videoUrl": "https://www.youtube.com/embed/wNjMUDspr1k",
+			"contentID": "dor_vid1"
+		},
+		{
+			"date": "2018-01-10",
+			"type": "SOLUTION BRIEF",
+			"title": "Engage visitors more effectively with foot traffic trends",
+			"description": "Understand human interaction with your space by capturing foot\ntraffic analytics",
+			"url": "https://blog.getdor.com/2018/11/07/solution-brief-foot-traffic/?utm_source=resources",
+			"imageurl": "/assets/images/resources/solution_brief.png",
+			"contentID": "solution_brief"
+		},
+		{
+			"date": "2019-04-30",
+			"type": "WEBINAR",
+			"title": "The Retail Analytics Landscape",
+			"description": "Choosing the best tech for counting customers.",
+			"url": "https://blog.getdor.com/2019/05/02/webinar-the-retail-analytics-landscape/",
+			"imageurl": "/assets/images/resources/wbn-2.png",
+			"featured_bg_img": "",
+			"contentID": "wbn-2"
+		},
+		
+		{
+			"date": "2019-04-03",
+			"type": "CASE STUDY",
+			"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
+			"description": "See why this retailer calls Dor their 'secret weapon behind the\nscenes'",
+			"url": "https://blog.getdor.com/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
+			"imageurl": "/assets/images/resources/omf_cs.png",
+			"contentID": "omf_cs"
+		},
+		{
+			"date": "2019-02-22",
+			"type": "WEBINAR",
+			"title": "Blocking out the noise",
+			"description": "How to harness in-store experience trends to deliver results that\nlast",
+			"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
+			"imageurl": "/assets/images/resources/wbn-1.png",
+			"contentID": "wbn-1"
+		},
+		{
+			"date": "2018-01-11",
+			"type": "BUYER'S GUIDE",
+			"title": "The retail analytics buyer's guide",
+			"description": "What you need to know from people counting solution providers",
+			"url": "https://blog.getdor.com/2018/12/15/retail-analytics-buyers-guide/?utm_source=resources",
+			"imageurl": "/assets/images/resources/buyers_guide.png",
+			"contentID": "buyers_guide"
+		},
+		{
+			"date": "2019-05-30",
+			"type": "WEBINAR",
+			"title": "Actionable Data",
+			"description": "3 things every retailer needs but 90% don't have.",
+			"url": "https://blog.getdor.com/2019/06/05/webinar-actionable-data/?utm_source=resources",
+			"imageurl": "/assets/images/resources/wbn-3.png",
+			"contentID": "wbn-3"
+		},
+		{
+			"date": "2018-10-15",
+			"type": "WHITE PAPER",
+			"title": "Foot traffic data and retail staff scheduling go hand in hand",
+			"description": "How to reduce lost sales and improve profitability by scheduling\nstaff according to predicted traffic",
+			"url": "https://blog.getdor.com/2018/09/30/retail-staffing-foot-traffic-white-paper/?utm_source=resources",
+			"imageurl": "/assets/images/resources/staffing_wp.png",
+			"contentID": "staffing_wp"
+		},
+		{
+			"date": "2018-12-01",
+			"type": "EBOOK",
+			"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
+			"description": "How to evaluate true store performance beyond revenue for better\ndecision-making",
+			"url": "https://blog.getdor.com/2018/12/26/opening-and-closing-stores/?utm_source=resources",
+			"imageurl": "/assets/images/resources/ebook_opening.png",
+			"contentID": "ebook_opening"
+		},
+		{
+			"date": "2019-02-01",
+			"type": "DATASHEET",
+			"title": "Software specifications",
+			"description": "Specifications of Dor software platform including features, tools,\nand integrations.",
+			"url": "https://blog.getdor.com/2019/03/01/software-specifications/?utm_source=resources",
+			"imageurl": "/assets/images/resources/sw_ds.png",
+			"contentID": "sw_ds"
+		},
+		{
+			"date": "2019-02-01",
+			"type": "DATASHEET",
+			"title": "Hardware specifications",
+			"description": "Specifications of Dor hardware including the Dor sensor and base\nstation.",
+			"url": "https://blog.getdor.com/2019/02/25/hardware-specifications/?utm_source=resources",
+			"imageurl": "/assets/images/resources/hw_ds.png",
+			"contentID": "hw_ds"
+		},
+		{
+			"date": "2018-02-20",
+			"type": "CASE STUDY",
+			"title": "Filling HPM Building Supply's data void",
+			"description": "Learn why this retailer uses Dor to identify operational effectiveness\nand growth opportunities",
+			"url": "https://blog.getdor.com/2018/05/30/hpm-building-supply-case-study/?utm_source=resources",
+			"imageurl": "/assets/images/resources/hpm_cs.png",
+			"contentID": "hpm_cs"
+		},
+		{
+			"date": "2018-01-15",
+			"type": "CASE STUDY",
+			"title": "Clothes Mentor grows their success with foot traffic analytics",
+			"description": "‘Without traffic data, you’re just guessing’: Calculating conversion\ndrives Clothes Mentor’s success",
+			"url": "https://blog.getdor.com/2018/01/29/clothes-mentor-case-study/?utm_source=resources",
+			"imageurl": "/assets/images/resources/clothes_mentor.png",
+			"contentID": "clothes_mentor"
 		}
-	}
-]
+	]
+}

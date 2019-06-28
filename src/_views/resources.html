@@ -35,8 +35,7 @@ layout: default
 </nav>
 
 <section class="resource-stages">
-    {% for item in site.data.resources %}
-    {% if item.allposts == false %}
+    {% for item in site.data.resources.sections %}
     <div id="{{ item.section | downcase | remove: ' ' | remove: '?'  }}" >
         <div class="wrapper content-middle content-center">
             <div class="col-75 col-sm-100">
@@ -62,11 +61,13 @@ layout: default
             <div class="wrapper">
                 <h2 class="text-center">{{ item.learnMore.title }}</h2>
                 <div class="flex-row fl-sm-col"  id="resources-card">
-                    {% for item in item.learnMore.posts %}
+                    {% assign sorted =  item.learnMore.posts | sort: 'date' | reverse  %}
+                    {% for item in sorted %}
                     <div class="col-33 cards" data-type="{{ item.type }}">
                         <div class="card" data-modal="#{{ item.contentID }}">
                             <div>
                                 <span>{{ item.type | upcase  }}</span>
+                                <span>{{ item.date | upcase  }}</span>
                             </div>
                             {% if item.videoUrl %}
                             <iframe width="100%" height="146" src="{{ item.videoUrl }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -82,7 +83,6 @@ layout: default
             </div>
         </div>
     </div>
-    {% endif %}
     {% endfor %}
 
     <div id="allresources" >
@@ -95,18 +95,15 @@ layout: default
                         <span>{{ string.allposts.filterName }}</span>
                         <ul>
                             <li><a data-type="all_filter" href="#">{{ string.filterName }}</a></li>
-                            {% for item in site.data.resources %}
-                            {% assign all_types = item.learnMore.posts  | map: "type" | uniq  %}
+                            {% assign all_types = site.data.resources.allresources  | map: "type" | uniq  %}
                             {% for item in all_types  %}
                             <li><a data-type="{{ item }}" href="#">{{ item | capitalize }}</a></li>
-                            {% endfor %}
                             {% endfor %}
                         </ul>
                     </span>
                 </div>
                 <div class="flex-row fl-sm-col"  id="resources-card">
-                {% for item in site.data.resources %}
-                {% assign sorted = item.learnMore.posts | sort: 'date' | reversed  %}
+                {% assign sorted = site.data.resources.allresources | sort: 'date' | reverse  %}
                 {% for item in sorted %}
                 <div class="col-33 cards" data-type="{{ item.type }}">
                     <div class="card" data-modal="#{{ item.contentID }}">
@@ -123,7 +120,6 @@ layout: default
                         <p>{{ item.description | truncatewords: 15 }}</p>
                     </div>
                 </div>
-                {% endfor %}
                 {% endfor %}
             </div>
         </div>
