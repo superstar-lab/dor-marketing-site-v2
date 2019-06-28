@@ -157,15 +157,6 @@
 	],
 	"allresources": [
 		{
-			"date": "2019-02-22",
-			"type": "WEBINAR",
-			"title": "Blocking out the noise",
-			"description": "How to harness in-store experience trends to deliver results that\nlast",
-			"url": "https://blog.getdor.com/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
-			"imageurl": "/assets/images/resources/wbn-1.png",
-			"contentID": "wbn-1"
-		},
-		{
 			"date": "2019-11-01",
 			"type": "VIDEO",
 			"title": "Make it count with Dor",
