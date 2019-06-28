@@ -40,43 +40,43 @@
         @include media-down(md) {
             margin-bottom: 80px;
         }
-
+        
         @include media-down(sm) {
             margin-bottom: 32px;
         }
-
+        
         p {
             margin-top: 12px;
             color: $dark-grey;
-
+            
             @include media-down(sm) {
                 margin-top: 4px;
             }
         }
-
+        
         img {
-            padding-right: 16px;
-
+            padding-left: 32px;
+            
             @include media-down(sm) {
-                padding-right: 0;
                 margin-bottom: 16px;
                 display: block;
+                padding-left: 0;
             }
         }
-
+        
         &:nth-child(2n) {
             flex-direction: row-reverse;
-
+            
             @include media-down(sm) {
                 flex-direction: column-reverse;
             }
-
+            
             img {
-                padding-right: 0;
-                padding-left: 16px;
-
+                padding-left: 0;
+                padding-right: 32px;
+                
                 @include media-down(sm) {
-                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }

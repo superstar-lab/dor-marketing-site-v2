@@ -21,6 +21,14 @@
 }
 
 .career {
+
+    .wrapper>div img {
+        padding-left: 40px;
+
+        @include media-down(sm) {
+            padding-left: 0;
+        }
+    }
     
     .button-link {
         margin-top: 20px;
