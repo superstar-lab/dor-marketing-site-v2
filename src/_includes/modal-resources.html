@@ -1,5 +1,4 @@
-{% for item in site.data.resources %}
-{% for item in item.learnMore.posts %}
+{% for item in site.data.resources.allresources %}
 
 <div class="resources-modal modal" id="{{ item.contentID }}">
     <div class="modal-body">
@@ -23,7 +22,6 @@
     </div>
 </div>
 
-{% endfor %}
 {% endfor %}
 
 <div class="modal-form" id="resources-form">
