@@ -23,6 +23,15 @@ $(function () {
             $modalInsert.replaceWith($insertElement);
         }
 
+        var modalId = $modal.attr('id');
+        if (modalId) {
+            var $contentLabel = $modal.find('.fsLabel').filter(function () {
+                return this.innerHTML.trim() === 'content';
+            });
+            $contentLabel.next('input.fsField').val(modalId);
+            $contentLabel.closest('.fsRow').addClass('hidden');
+        }
+
         $modal.addClass('active');
         $body.addClass('no-scroll');
 
