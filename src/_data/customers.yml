@@ -4,6 +4,7 @@ hero:
   image: /assets/images/customers/hero.jpg
 
 feedback-title: Read our customer case studies
+review-title: Hear what customers have to say about Dor 
 feedback:
   - image: /assets/images/customers/customer1.jpg
     category: Specialty Retail
