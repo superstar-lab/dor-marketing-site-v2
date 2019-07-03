@@ -304,8 +304,7 @@
                         font-size: $font-size-large;
                         font-weight: $font-weight-bold;
                         line-height: 1.5;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         color: $black;
         
                         @include media-down(sm) {
