@@ -7,9 +7,8 @@
         @include media-down(sm) {
             background: url(../images/pricing/hero.svg) no-repeat center center !important;
             background-size: cover !important;
-            min-height: 60vh;
             display: flex;
-            padding: 0 12px;
+            padding: 45px 16px;
         }
     }
     

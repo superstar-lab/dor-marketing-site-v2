@@ -43,6 +43,7 @@
 
             @include media-down(sm) {
                 padding: 0 0 24px;
+                background: $dark-blue;
             }
     
             .subtitle {
