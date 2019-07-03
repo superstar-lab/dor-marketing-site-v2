@@ -2,9 +2,14 @@
     background: url(../images/homepage/hero.jpg) no-repeat center center;
     width: 100%;
     background-size: cover;
-    min-height: 65vh;
+    padding: 128px 0;
+
+    @include media-down(md) {
+        padding: 96px 0;
+    } 
 
     @include media-down(sm) {
+        padding: 0;
         background: none;
         min-height: auto;
         align-items: flex-end;
