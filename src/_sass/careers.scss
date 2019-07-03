@@ -212,6 +212,10 @@
         width: 75%;
         display: inline-block;
 
+        br {
+            line-height: 45px;
+        }
+
         @include media-down(sm) {
             width: 100%;
         }
