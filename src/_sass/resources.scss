@@ -183,9 +183,15 @@
             font-size: $font-size-large;
             font-weight: $font-weight-bold;
             color: $black;
-
+            min-height: 57px;
+            
             @include media-down(md) {
+                min-height: 48px;
                 font-size: $default-font-size;
+            }
+
+            @include media-down(sm) {
+                min-height: auto;
             }
         }
 

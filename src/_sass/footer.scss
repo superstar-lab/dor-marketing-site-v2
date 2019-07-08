@@ -235,13 +235,12 @@ hr {
         overflow-x: auto;
         background: $white;
         position: relative;
-        padding: 32px;
+        padding: 35px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 9px;
         width: 600px;
 
         @include media-down(md) {
-            padding: 24px;
             width: 576px;
         }
         
@@ -270,7 +269,7 @@ hr {
     
             .close {
                 position: absolute;
-                right: 24px;
+                right: 32px;
                 background: $white;
                 color: $black;
                 cursor: pointer;
@@ -286,6 +285,8 @@ hr {
         .consent-text {
             font-size: $font-size-small;
             color: $brownish-grey;
+            display: inherit;
+            text-align: center;
             
             a {
                 font-size: $font-size-small;
