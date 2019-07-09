@@ -37,7 +37,7 @@ navigation:
 - name: Support
   links:
   - title: FAQ
-    url: /faq
+    url: https://support.getdor.com/s/
   - title: Contact Us
     url: https://support.getdor.com/s/#contact
   - title: Terms of Use
