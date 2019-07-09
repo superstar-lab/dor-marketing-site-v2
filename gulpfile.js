@@ -185,6 +185,7 @@ gulp.task( 'deploy:staging', gulp.series( 'build-all:staging', 'publish:staging'
 var aws_cloudfront_invalidate = {
     accessKeyId: process.env.AWS_KEY,
     secretAccessKey: process.env.AWS_SECRET,
+    bucket: process.env.AWS_S3_BUCKET_NAME,
     distribution: process.env.AWS_CLOUDFRONT_DIST_ID,
     paths: [
         '/*'
@@ -195,10 +196,10 @@ var aws_cloudfront_invalidate = {
 gulp.task( 'publish:production', ( done ) => {
     var publisher = awspublish.create( {
         params: {
-            Bucket: aws.bucket
+            Bucket: aws_cloudfront_invalidate.bucket
         },
-        accessKeyId: aws.key,
-        secretAccessKey: aws.secret
+        accessKeyId: aws_cloudfront_invalidate.accessKeyId,
+        secretAccessKey: aws_cloudfront_invalidate.secretAccessKey
     } );
 
     return gulp
