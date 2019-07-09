@@ -337,11 +337,11 @@
     }
 }
 
-#vid1 {
-    border-radius: 8px;
-    outline: none;
-    width: calc(100% - 24px);
-    height: 326px;
+.video-section {
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include media-down(md) {
         height: 210px;
@@ -352,35 +352,51 @@
         height: 66vw;
     }
 
-    button:focus,
-    button:active {
+    .plyr {
+        border-radius: 8px;
         outline: none;
-    }
-    
-    .vjs-button > .vjs-icon-placeholder:before {
-        font-size: 29px;
-        line-height: 1;
-    }
-
-    .vjs-big-play-button {
-        outline: none;
-        background-color: #df1e25;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        border: none;
-        border-radius: 100%;
-        width: 83px;
-        height: 83px;
+        width: calc(100% - 24px);
         position: relative;
+    
+        @include media-down(sm) {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
 
-        &:focus,
-        &:active {
+    #player {
+    
+        button:focus,
+        button:active {
             outline: none;
         }
+        
+        button {
+            outline: none;
+            background-color: #df1e25;  
+        }
+    }
 
-        .vjs-icon-placeholder:before {
-            font-size: 58px;
+    .plyr__volume input[type=range],
+    .plyr__progress input[type=range] {
+        color: #df1e25 !important;
+    }
+    
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+        padding: 27px; 
+        background-color: #df1e25 !important;   
+    }
+    
+    .plyr--video .plyr__control.plyr__tab-focus, 
+    .plyr--video .plyr__control:hover, 
+    .plyr--video .plyr__control[aria-expanded=true] {
+        background-color: #df1e25;
+    
+        &:hover, 
+        &:focus, 
+        &:active {
+            background-color: #df1e25;
+            box-shadow: none;
         }
     }
 }

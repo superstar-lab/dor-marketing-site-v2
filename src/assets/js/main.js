@@ -77,6 +77,12 @@ $(function () {
             return mainHeader.getBoundingClientRect().height + stickyHeader.getBoundingClientRect().height;
         }
     });
+
+
+    const player = new Plyr('#player');
+    player.on('ready', () => { 
+        player.toggleControls(false); 
+    });
 });
 
 
