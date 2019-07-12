@@ -58,7 +58,8 @@
 
             @include media-down(sm) {
                 margin-bottom: 15px;
-                max-height: 66vw;
+                max-height: 100vw;
+                object-position: top;
                 object-fit: cover;
             }
         }
