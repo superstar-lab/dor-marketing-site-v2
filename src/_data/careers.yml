@@ -7,7 +7,7 @@ hero:
 
 aboutWork:
   title: How we work
-  text: At Dor, we believe great products start with great people. Just like our product is adaptable and accessible, so are the team at Dor. We work hard, and we do it together. We believe in transparency and communication — direct, honest communication is a cornerstone of how we work together. Our team hails from a variety of companies like Apple, InvenSense, Samsung, Starbucks and Mixpanel. Good ideas come from everywhere; we find unity in uniqueness and have built a culture that celebrates the fact that each of us brings something to the table.
+  text: Just like our product is adaptable and accessible, so is the team at Dor. We work hard, and we do it together. We believe in transparency and communication — direct, honest communication is a cornerstone of how we work together. Our team hails from a variety of companies like Apple, InvenSense, Samsung, Starbucks and Mixpanel. Good ideas come from everywhere; we find unity in uniqueness and have built a culture that celebrates the fact that each of us brings something to the table.
   image: /assets/images/careers/how-we-work.jpg
   button: Read More About  Us
   buttonUrl: about-us
@@ -23,11 +23,11 @@ values:
     - title: Win together
       subtitle: “That’s not my job” is not in our vocabulary; we work hard and support each other to achieve big wins. We try new things and solve difficult problems - our failures count as wins if we learn from them.
     - title: Say it
-      subtitle: Growth is our goal. We seek and give feedback to help each other grow, and communicate early, often, and directly to get there.
+      subtitle: Growth is our goal. We seek and give feedback to help each other grow, and we communicate early, often, and directly to get there.
     - title: Simplify
       subtitle: We stay focused on what’s important to achieve our goal of delighting the customer with a well thought out and easy to understand solution.
     - title: Give a damn 
-      subtitle: 'We give a damn about the work we’re doing, the people we’re doing it with, and the people we do it for: our customer.'
+      subtitle: 'We give a damn about the work we’re doing, the people we’re doing it with, and the people we do it for: our customers.'
 
 openPositions:
   title: Open positions
