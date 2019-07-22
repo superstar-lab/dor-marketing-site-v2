@@ -36,11 +36,15 @@ var paths = {
 var buildJekyll = ( env, cb ) => {
     var config_file = env === 'development' ? '_config.yml' : `_config.${ env }.yml`;
 
-    var jekyll_options = [ 'build', '--config', config_file ];
+    var jekyll_options = [];
 
     if( env === 'development' ) {
-        jekyll_options.push( '--watch' );
+        jekyll_options.push( 'serve', '--force-polling' );
+    } else {
+        jekyll_options.push( 'build' );
     }
+
+    jekyll_options.push( '--config', config_file );
 
     var jekyll = child.spawn( 'jekyll', jekyll_options );
 
@@ -137,7 +141,7 @@ gulp.task( 'watch:assets', ( done ) => {
 } );
 
 // default task for development
-gulp.task( 'default', gulp.series( 'build:development', 'jekyll:serve', 'build:assets', 'watch:assets' ) );
+gulp.task( 'default', gulp.series( 'build:development', 'build:assets', 'watch:assets' ) );
 
 var aws_cloudfront_invalidate_staging = {
     accessKeyId: process.env.AWS_KEY,

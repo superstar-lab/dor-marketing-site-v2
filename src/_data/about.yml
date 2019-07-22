@@ -138,6 +138,10 @@ members:
       name: Madeleine
       lastName: Simpson
       position: Office Manager
+    - image: /assets/images/about/kimberly.jpg
+      name: Kimberly
+      lastName: Johnson
+      position: Customer Success Lead
   dogs:
     - image: /assets/images/about/Boomer.jpg
       name: Boomer
@@ -151,6 +155,9 @@ members:
     - image: /assets/images/about/Murph.jpg
       name: Murph 
       position: Chief Knucklehead 
+    - image: /assets/images/about/titan.jpg
+      name: Titan
+      position: Head of Jollies
 
 workingDay:
   title: See what it’s like working at Dor
