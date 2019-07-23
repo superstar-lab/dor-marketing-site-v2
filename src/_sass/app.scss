@@ -27,7 +27,7 @@ body.no-scroll {
 body {
     font-family: $font-family;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 57px);
     max-width: 100vw;
     overflow-x: hidden;
     margin: 0;

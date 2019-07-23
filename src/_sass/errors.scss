@@ -1,0 +1,52 @@
+.error-page {
+    background-color: #f2f6ff;
+    min-height: calc(100vh - 57px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-section {
+
+        @include media-down(sm) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            line-height: 1.25;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #002a81;
+    
+            & + .subtitle {
+                line-height: 1.4;
+                margin-bottom: 26px;
+                color: #002a81;
+            }
+        }
+
+        .button {
+            min-width: 75%;
+        }
+    }
+
+    .image-section {
+        display: inline-block;
+
+        @include media-down(sm) {
+            text-align: center;
+        }
+
+        img {
+            height: 200px;
+            width: auto;
+            margin-left: 50px;
+
+            @include media-down(sm) {
+                width: 70%;
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
+}
