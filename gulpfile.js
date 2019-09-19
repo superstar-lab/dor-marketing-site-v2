@@ -1,21 +1,21 @@
-var gulp = require( 'gulp' );
-var child = require( 'child_process' );
-var clean_css = require( 'gulp-clean-css' );
-var sass = require( 'gulp-sass' );
-var autoprefixer = require( 'gulp-autoprefixer' );
-var rename = require( 'gulp-rename' );
-var size = require( 'gulp-filesize' );
-var concat = require( 'gulp-concat' );
-var sort = require( 'gulp-sort' );
-var browser_sync = require( 'browser-sync' ).create( 'jekyll' );
-var uglify = require( 'gulp-uglify' );
-var babel = require( 'gulp-babel' );
-var RevAll = require( 'gulp-rev-all' );
-var log = require( 'fancy-log' );
-var awspublish = require( 'gulp-awspublish' );
-var cloudfront_invalidate = require( 'gulp-cloudfront-invalidate' );
+let gulp = require( 'gulp' );
+let child = require( 'child_process' );
+let clean_css = require( 'gulp-clean-css' );
+let sass = require( 'gulp-sass' );
+let autoprefixer = require( 'gulp-autoprefixer' );
+let rename = require( 'gulp-rename' );
+let size = require( 'gulp-filesize' );
+let concat = require( 'gulp-concat' );
+let sort = require( 'gulp-sort' );
+let browser_sync = require( 'browser-sync' ).create( 'jekyll' );
+let uglify = require( 'gulp-uglify' );
+let babel = require( 'gulp-babel' );
+let RevAll = require( 'gulp-rev-all' );
+let log = require( 'fancy-log' );
+let awspublish = require( 'gulp-awspublish' );
+let cloudfront_invalidate = require( 'gulp-cloudfront-invalidate' );
 
-var paths = {
+let paths = {
     css: {
         src: 'src/assets/css/*.scss',
         dest: '_dist/assets/css'
@@ -33,10 +33,10 @@ var paths = {
     }
 }
 
-var buildJekyll = ( env, cb ) => {
-    var config_file = env === 'development' ? '_config.yml' : `_config.${ env }.yml`;
+let buildJekyll = ( env, cb ) => {
+    let config_file = env === 'development' ? '_config.yml' : `_config.${ env }.yml`;
 
-    var jekyll_options = [];
+    let jekyll_options = [];
 
     if( env === 'development' ) {
         jekyll_options.push( 'serve', '--force-polling' );
@@ -46,9 +46,9 @@ var buildJekyll = ( env, cb ) => {
 
     jekyll_options.push( '--config', config_file );
 
-    var jekyll = child.spawn( 'jekyll', jekyll_options );
+    let jekyll = child.spawn( 'jekyll', jekyll_options );
 
-    var jekyll_logger = ( buffer ) => {
+    let jekyll_logger = ( buffer ) => {
         buffer.toString()
             .split( /\n/ )
             .forEach( ( message ) => log( 'Jekyll: ' + message ) );
@@ -78,7 +78,7 @@ gulp.task( 'build:production', ( done ) => {
 } );
 
 gulp.task( 'jekyll:serve', ( done ) => {
-    var jekyll = child.spawn( 'jekyll', [
+    let jekyll = child.spawn( 'jekyll', [
         'serve'
     ] );
 
@@ -143,7 +143,7 @@ gulp.task( 'watch:assets', ( done ) => {
 // default task for development
 gulp.task( 'default', gulp.series( 'build:development', 'build:assets', 'watch:assets' ) );
 
-var aws_cloudfront_invalidate_staging = {
+let aws_cloudfront_invalidate_staging = {
     accessKeyId: process.env.AWS_KEY,
     secretAccessKey: process.env.AWS_SECRET,
     staging_bucket: process.env.AWS_S3_BUCKET_NAME_STAGING,
@@ -156,7 +156,7 @@ var aws_cloudfront_invalidate_staging = {
 // STAGING - PUBLISH TO S3
 gulp.task( 'publish:staging', ( done ) => {
 
-    var publisher = awspublish.create( {
+    let publisher = awspublish.create( {
         params: {
             Bucket: aws_cloudfront_invalidate_staging.staging_bucket
         },
@@ -186,7 +186,7 @@ gulp.task( 'publish:staging', ( done ) => {
 
 gulp.task( 'deploy:staging', gulp.series( 'build-all:staging', 'publish:staging' ) );
 
-var aws_cloudfront_invalidate = {
+let aws_cloudfront_invalidate = {
     accessKeyId: process.env.AWS_KEY,
     secretAccessKey: process.env.AWS_SECRET,
     bucket: process.env.AWS_S3_BUCKET_NAME,
@@ -198,7 +198,7 @@ var aws_cloudfront_invalidate = {
 
 // PRODUCTION - PUBLISH TO S3 AND INVALIDATE CLOUDFRONT
 gulp.task( 'publish:production', ( done ) => {
-    var publisher = awspublish.create( {
+    let publisher = awspublish.create( {
         params: {
             Bucket: aws_cloudfront_invalidate.bucket
         },

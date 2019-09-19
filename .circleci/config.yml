@@ -23,7 +23,7 @@ jobs:
     working_directory: ~/dor-marketing-site
     steps:
       - checkout
-      - run: gem install jekyll bundler
+      - run: gem install jekyll:3.8.1 bundler
       - run: gem install minima
       - run: gem install jekyll-feed
       - run: npm install -g gulp-cli@2.0.1
