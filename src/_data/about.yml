@@ -54,14 +54,6 @@ members:
       name: Ryan
       lastName: Casella
       position: Operations Associate
-    - image: /assets/images/about/Castillo-Jasmine.jpg
-      name: Jasmine
-      lastName: Castillo
-      position: Sales Development Representative
-    - image: /assets/images/about/Chong-Albert.jpg
-      name: Albert
-      lastName: Chong
-      position: Senior Product Designer
     - image: /assets/images/about/Clendening-Scott.jpg
       name: Scott
       lastName: Clendening
@@ -74,10 +66,6 @@ members:
       name: Chad
       lastName: Golembeski
       position: QA Engineer
-    - image: /assets/images/about/Guimarin-Michael.jpg
-      name: Michael
-      lastName: Guimarin
-      position: Enterprise Account Executive
     - image: /assets/images/about/Hackworth-Dave.jpg
       name: David
       lastName: Hackworth
@@ -110,10 +98,6 @@ members:
       name: Mike
       lastName: Lyons
       position: Senior Software Engineer
-    - image: /assets/images/about/Mohring-Alex.jpg
-      name: Alexander
-      lastName: Mohring
-      position: Marketing Operations Manager
     - image: /assets/images/about/Noble-Evan.jpg
       name: Evan
       lastName: Noble
@@ -122,10 +106,6 @@ members:
       name: Erik
       lastName: Olsen
       position: Firmware Engineer
-    - image: /assets/images/about/Schneider-Woody.jpg
-      name: Woody
-      lastName: Schneider
-      position: Director of Sales
     - image: /assets/images/about/Seto-Kameron.jpg
       name: Kameron
       lastName: Seto
@@ -138,10 +118,6 @@ members:
       name: Madeleine
       lastName: Simpson
       position: Office Manager
-    - image: /assets/images/about/kimberly.jpg
-      name: Kimberly
-      lastName: Johnson
-      position: Customer Success Lead
   dogs:
     - image: /assets/images/about/Boomer.jpg
       name: Boomer
