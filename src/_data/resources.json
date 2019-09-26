@@ -157,6 +157,15 @@
 	],
 	"allresources": [
 		{
+			"date": "2019-08-12",
+			"type": "CASE STUDY",
+			"title": "From operating blind to counting every customer",
+			"description": "See how Dor’s easy installation process allowed 4WP insight on data within 24 hours",
+			"url": "https://go.getdor.com/4wp-case-study/",
+			"imageurl": "/assets/images/resources/4wp-resource-image.jpg",
+			"contentID": "4wp-cs"
+		},
+		{
 			"date": "2019-11-01",
 			"type": "VIDEO",
 			"title": "Make it count with Dor",
