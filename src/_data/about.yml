@@ -62,6 +62,10 @@ members:
       name: Julie
       lastName: Delbuck
       position: Head of Operations
+    - image: /assets/images/about/Jamirsen-Ezell.jpg
+      name: Jamirsen
+      lastName: Ezell
+      position: Firmware Engineer
     - image: /assets/images/about/Golembeski-Chad.jpg
       name: Chad
       lastName: Golembeski
@@ -70,10 +74,6 @@ members:
       name: David
       lastName: Hackworth
       position: Head of Customer Success
-    - image: /assets/images/about/Griffin-Hammer.jpg
-      name: Griffin
-      lastName: Hammer
-      position: Senior Software Engineer
     - image: /assets/images/about/Huang-Tina.jpg
       name: Tina
       lastName: Huang
