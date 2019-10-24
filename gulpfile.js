@@ -149,7 +149,8 @@ let aws_cloudfront_invalidate_staging = {
     staging_bucket: process.env.AWS_S3_BUCKET_NAME_STAGING,
     distribution: process.env.AWS_CLOUDFRONT_DIST_ID_STAGING,
     paths: [
-        '*'
+        '/*',
+        '/**'
     ]
 };
 
@@ -192,7 +193,8 @@ let aws_cloudfront_invalidate = {
     bucket: process.env.AWS_S3_BUCKET_NAME,
     distribution: process.env.AWS_CLOUDFRONT_DIST_ID,
     paths: [
-        '*'
+        '/*',
+        '/**'
     ]
 };
 
