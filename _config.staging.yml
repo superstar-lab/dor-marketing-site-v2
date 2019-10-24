@@ -18,6 +18,8 @@ forms:
   press: "e7418bfb-0790-4636-816d-c28421420503"
 urls:
   app: "https://app-staging.getdor.com/dashboard"
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

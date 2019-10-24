@@ -19,6 +19,8 @@ forms:
   press: "e7418bfb-0790-4636-816d-c28421420503"
 urls:
   app: "http://localhost:3000/dashboard"
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
