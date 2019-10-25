@@ -2,7 +2,7 @@ title: Dor Technologies
 email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
-url: "http://staging.getdor.com/"
+url: "http://staging.getdor.com"
 source: src
 destination: _dist
 include:
