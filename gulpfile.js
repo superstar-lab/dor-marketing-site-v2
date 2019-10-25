@@ -171,7 +171,7 @@ gulp.task( 'publish:staging', ( done ) => {
         .pipe( RevAll.revision( {
             dontSearchFile: [ /.*\.pdf/g ],
             dontGlobal: [],
-            dontRenameFile: [ /.*\.html$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
+            dontRenameFile: [ /.*\.html$/g, /.*\.xml$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
             dontUpdateReference: [ /^.*\.html$/g, /^\/favicon.ico$/g ]
         } ) )
         .pipe( awspublish.gzip() )
