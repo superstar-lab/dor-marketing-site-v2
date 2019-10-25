@@ -26,6 +26,7 @@ jobs:
       - run: gem install jekyll:3.8.1 bundler
       - run: gem install minima
       - run: gem install jekyll-feed
+      - run: gem install jekyll-sitemap
       - run: npm install -g gulp-cli@2.0.1
       - run: npm install -g gulp@4.0.0
       - run: npm install
@@ -40,6 +41,7 @@ jobs:
       - run: gem install jekyll:3.8.1 bundler
       - run: gem install minima
       - run: gem install jekyll-feed
+      - run: gem install jekyll-sitemap
       - run: npm install -g gulp-cli@2.0.1
       - run: npm install -g gulp@4.0.0
       - run: npm install

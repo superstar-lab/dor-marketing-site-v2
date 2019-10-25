@@ -2,7 +2,7 @@ title: Dor Technologies
 email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
-url: "https://getdor.com/"
+url: "https://getdor.com"
 source: src
 destination: _dist
 include:
@@ -18,6 +18,8 @@ forms:
   press: "2d610ce2-58ab-4623-8544-927fe358a97a"
 urls:
   app: "https://app.getdor.com/dashboard"
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

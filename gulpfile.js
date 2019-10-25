@@ -149,7 +149,8 @@ let aws_cloudfront_invalidate_staging = {
     staging_bucket: process.env.AWS_S3_BUCKET_NAME_STAGING,
     distribution: process.env.AWS_CLOUDFRONT_DIST_ID_STAGING,
     paths: [
-        '/*'
+        '/*',
+        '/**'
     ]
 };
 
@@ -170,7 +171,7 @@ gulp.task( 'publish:staging', ( done ) => {
         .pipe( RevAll.revision( {
             dontSearchFile: [ /.*\.pdf/g ],
             dontGlobal: [],
-            dontRenameFile: [ /.*\.html$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
+            dontRenameFile: [ /.*\.html$/g, /.*\.xml$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
             dontUpdateReference: [ /^.*\.html$/g, /^\/favicon.ico$/g ]
         } ) )
         .pipe( awspublish.gzip() )
@@ -192,7 +193,8 @@ let aws_cloudfront_invalidate = {
     bucket: process.env.AWS_S3_BUCKET_NAME,
     distribution: process.env.AWS_CLOUDFRONT_DIST_ID,
     paths: [
-        '/*'
+        '/*',
+        '/**'
     ]
 };
 
@@ -211,7 +213,7 @@ gulp.task( 'publish:production', ( done ) => {
         .pipe( RevAll.revision( {
             dontSearchFile: [ /.*\.pdf/g ],
             dontGlobal: [],
-            dontRenameFile: [ /.*\.html$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
+            dontRenameFile: [ /.*\.html$/g, /.*\.xml$/g, /^\/favicon.ico$/g, /.*\/images\/meta\/.*/g ],
             dontUpdateReference: [ /^.*\.html$/g, /^\/favicon.ico$/g ]
         } ) )
         .pipe( awspublish.gzip() )
