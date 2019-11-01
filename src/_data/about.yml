@@ -118,10 +118,11 @@ members:
       name: Madeleine
       lastName: Simpson
       position: Office Manager
+    - image: /assets/images/about/wei-wang.jpg
+      name: Wei
+      lastName: Wang
+      position: Machine Learning Engineer
   dogs:
-    - image: /assets/images/about/Boomer.jpg
-      name: Boomer
-      position: Safety and Security 
     - image: /assets/images/about/finn.jpg
       name: Finn
       position: Director of Dog
@@ -131,9 +132,6 @@ members:
     - image: /assets/images/about/Murph.jpg
       name: Murph 
       position: Chief Knucklehead 
-    - image: /assets/images/about/titan.jpg
-      name: Titan
-      position: Head of Jollies
 
 workingDay:
   title: See what it’s like working at Dor
