@@ -90,10 +90,6 @@ members:
       name: Michelle
       lastName: Lee
       position: Customer Advocate
-    - image: /assets/images/about/Leung-Patrick.jpg
-      name: Patrick
-      lastName: Leung
-      position: Sales Development Representative
     - image: /assets/images/about/Lyons-Mike.jpg
       name: Mike
       lastName: Lyons
@@ -113,7 +109,7 @@ members:
     - image: /assets/images/about/Shahabi-Aubtin.jpg
       name: Aubtin
       lastName: Shahabi
-      position: Sales Development Representative
+      position: SMB Sales Representative
     - image: /assets/images/about/Simpson-Madeleine.jpg
       name: Madeleine
       lastName: Simpson
