@@ -1,5 +1,6 @@
 ---
-title: Dor - Privacy Policy
+title: Dor | People Counting | Privacy Policy
+description: Please check out our Privacy Policy to understand collection and disclosure of personal information and more.
 permalink: /privacy-policy/
 layout: terms
 cta: false
