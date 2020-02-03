@@ -1,5 +1,6 @@
 ---
-title: Dor - Terms of Use
+title: Dor | People Counting | Terms of Use
+description: Please check out our Terms of Use to understand account registration, ownership of hardware and more.
 permalink: /terms/
 layout: terms
 cta: false
