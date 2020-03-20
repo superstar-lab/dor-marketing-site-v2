@@ -1,53 +1,79 @@
 {% assign string = site.data.header %}
 
 <div id="header" class="sticky content-center content-middle">
-    <div class="content-wrap wrapper">
-        <nav class="header-menu flex-row">
-            <a href="{{ site.baseurl }}/" class="header-logo hidden-xs" id="home-logo-desktop-header">
-                <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
-            </a>
-            <a href="{{ site.baseurl }}/" class="header-logo-1 visible-xs">
-                <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
-            </a>
-            {% for link in string.navigation %}
+  <div class="content-wrap wrapper">
+    <nav class="header-menu flex-row">
+      <a href="{{ site.baseurl }}/" class="header-logo hidden-xs" id="home-logo-desktop-header">
+        <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
+      </a>
+      <a href="{{ site.baseurl }}/" class="header-logo-1 visible-xs">
+        <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
+      </a>
+      {% for link in string.navigation %}
 
-            {% assign class = nil %}
-            {% if page.url == link.url %}
-                {% assign class = 'active' %} 
-            {% elsif page.url != '/' and page.url contains link.url %} 
-                {% assign class = 'active' %} 
-            {% endif %}
-            <a href="{{ site.baseurl }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
-            {% endfor %}
-        </nav>
-        <div class="header-menu flex-row right-group">
-            <a href="{{ string.rightSection.link.url }}" class="header-menu-item sign-in">
-                {{ string.rightSection.link.title }}
-            </a>
-            <a class="header-menu-item button-link" data-modal="#modal-header">
-                <div class="button small blue">
-                    {{ string.rightSection.button.title }}
-                </div>
-            </a>
+      {% assign class = nil %}
+      {% if page.url == link.url %}
+        {% assign class = 'active' %} 
+      {% elsif page.url != '/' and page.url contains link.url %} 
+        {% assign class = 'active' %} 
+      {% endif %}
+      <a href="{{ site.baseurl }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+    <div class="header-menu flex-row right-group">
+      <a href="{{ string.rightSection.link.url }}" class="header-menu-item sign-in">
+        {{ string.rightSection.link.title }}
+      </a>
+      <a class="header-menu-item button-link" data-modal="#modal-header">
+        <div class="button small blue">
+          {{ string.rightSection.button.title }}
         </div>
+      </a>
     </div>
-    
-    <div class="bg-mask"></div>
-    <div class="mobile-header st-menu st-effect-1 visible-xs" id="menu-1" >
-        <div class="menu-tab">
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-        </div>
-        <div class="menu-hide">
-            <nav>
-                <ul>
-                    <a href="{{ site.baseurl }}/" class="header-menu-item link">Home</a>
-                    {% for link in string.navigation %}
-                    <a href="{{ site.baseurl }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
+  </div>
+  
+  <div class="bg-mask"></div>
+  <div class="mobile-header st-menu st-effect-1 visible-xs" id="menu-1" >
+    <div class="menu-tab">
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
     </div>
+    <div class="menu-hide">
+      <nav>
+        <ul>
+          <a href="{{ site.baseurl }}/" class="header-menu-item link">Home</a>
+          {% for link in string.navigation %}
+          <a href="{{ site.baseurl }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="header-bottom-menu">
+	<nav>
+  	<ul>
+      <li>
+      	<a href="/how-it-works" class="header-menu-item link">How it Works</a>
+      </li>
+      <li>
+				<a href="/pricing" class="header-menu-item link">Pricing</a>
+			</li>
+			<li class="dropdown">
+				<button class="header-menu-item link dropdown-toggle" type="button">Company</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/about-us">ABOUT US</a>
+					<a class="dropdown-item" href="https://support.getdor.com/s/#faq-contact">CONTACT US</a>
+					<a class="dropdown-item" href="https://support.getdor.com/s/">FAQ</a>
+					<a class="dropdown-item" href="/customers">CUSTOMERS</a>
+					<a class="dropdown-item" href="/integrations">PARTNERS</a>
+				</div>
+			</li>
+			<li>
+				<a href="/resources" class="header-menu-item link">Resources</a>
+			</li>
+    </ul>
+  </nav>
 </div>
