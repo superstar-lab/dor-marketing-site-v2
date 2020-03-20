@@ -7,73 +7,73 @@ layout: default
 {% assign string = site.data.homepage %}
 
 <section id="hero" class="content-middle">
-    <div class="wrapper content-middle content-center">
-        <div class="hero-image"></div>
-        <div class="hero-text text-center col-50">
-            <h1 class="text-title">
-                {{ string.hero.title }}
-            </h1>
-            <div class="subtitle">{{ string.hero.subtitle }}</div>
-            <a class="button-link"  data-modal="#modal-header">
-                <div class="button large white">
-                    {{ string.hero.button }}
-                </div>
-            </a>
+  <div class="wrapper content-middle content-center">
+    <div class="hero-image"></div>
+    <div class="hero-text text-center col-50">
+      <h1 class="text-title">
+        {{ string.hero.title }}
+      </h1>
+      <div class="subtitle">{{ string.hero.subtitle }}</div>
+      <a class="button-link"  data-modal="#modal-header">
+        <div class="button large white">
+          {{ string.hero.button }}
         </div>
+      </a>
     </div>
+  </div>
 </section>
 
 <section id="homepage-cards">
-    <div class="flex-row fl-sm-col wrapper">
-        {% for card in string.cards %}
-        <div class="card col col-sm-100 flex-column">
-            <img src="{{ card.image }}">
-            <h3>{{ card.title }}</h3>
-            <p>{{ card.subtitle }}</p>
-            <a href="{{ site.baseurl }}{{ card.buttonUrl }}">{{ card.button }}</a>
-        </div>
-        {% endfor %}
+  <div class="flex-row fl-sm-col wrapper">
+    {% for card in string.cards %}
+    <div class="card col col-sm-100 flex-column">
+      <img src="{{ card.image }}">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.subtitle }}</p>
+      <a href="{{ site.baseurl }}{{ card.buttonUrl }}">{{ card.button }}</a>
     </div>
+    {% endfor %}
+  </div>
 </section>
 
 <section id="features">
-    <div class="wrapper content-wrap">
-        {% for feature in string.features %}
-        <div class="flex-row fl-sm-col content-middle">
-            <div class="col col-sm-100">
-                <h2>{{ feature.title }}</h2>
-                <p>{{ feature.subtitle }}</p>
-                <a href="{{ feature.buttonUrl }}" class="button-link">
-                    <div class="button large blue">
-                        {{ feature.button }}
-                    </div>
-                </a>
-            </div>
-            <div class="col col-sm-100">
-                <img src="{{ feature.image }}">
-            </div>
-        </div>
-        {% endfor %}
+  <div class="wrapper content-wrap">
+    {% for feature in string.features %}
+    <div class="flex-row fl-sm-col content-middle">
+      <div class="col col-sm-100">
+        <h2>{{ feature.title }}</h2>
+        <p>{{ feature.subtitle }}</p>
+        <a href="{{ feature.buttonUrl }}" class="button-link">
+          <div class="button large blue">
+            {{ feature.button }}
+          </div>
+        </a>
+      </div>
+      <div class="col col-sm-100">
+        <img src="{{ feature.image }}">
+      </div>
     </div>
+    {% endfor %}
+  </div>
 </section>
 
 <section id="testimonials">
-    <div class="wrapper content-wrap">
-        <h2 class="text-center">{{ string.testimonials.title }}</h2>
-        <div>
-            {% for testimonial in string.testimonials.reviews %}
-            <div>
-                <div class="text-center">
-                    <p>{{ testimonial.text }}</p>
-                    <cite>{{ testimonial.author  | capitalize }}</cite>
-                    <small>{{ testimonial.position }}</small>
-                </div>
-            </div>
-            {% endfor %}
+  <div class="wrapper content-wrap">
+    <h2 class="text-center">{{ string.testimonials.title }}</h2>
+    <div>
+      {% for testimonial in string.testimonials.reviews %}
+      <div>
+        <div class="text-center">
+          <p>{{ testimonial.text }}</p>
+          <cite>{{ testimonial.author  | capitalize }}</cite>
+          <small>{{ testimonial.position }}</small>
         </div>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
 
 <div class="homepage-partners">
-    {% include partners.html %}
+  {% include partners.html %}
 </div>

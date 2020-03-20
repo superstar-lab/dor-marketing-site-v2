@@ -9,6 +9,21 @@ $(function () {
         $('.menu-tab, .bg-mask, body').toggleClass('active');
     });
 
+    //Mobile Dropdown menu
+    $('.header-bottom-menu .dropdown').click(function() {
+        $('.header-bottom-menu .dropdown-menu').toggleClass('active');
+    });
+
+    $(window).scroll(function() {
+        $('.header-bottom-menu .dropdown-menu').removeClass('active');
+    });
+
+    $(document).mouseup(function(e) {
+        if (!$('.header-bottom-menu .dropdown-menu').is(e.target) && $('.header-bottom-menu .dropdown-menu').has(e.target).length === 0) {
+            $('.header-bottom-menu .dropdown-menu').removeClass('active');
+        }
+    });
+
     // modal logic
     $('[data-modal]').on('click', function (e) {
         e.preventDefault();
