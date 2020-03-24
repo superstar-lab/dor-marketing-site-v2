@@ -3,10 +3,20 @@ navigation:
   url: how-it-works
 - title: Pricing
   url: pricing
+- title: Company
+  dropdown:
+    - title: About Us
+      url: /about-us
+    - title: Contact Us
+      url: https://support.getdor.com/s/#faq-contact
+    - title: FAQ
+      url: https://support.getdor.com/s/
+    - title: Customers
+      url: /customers
+    - title: Partners
+      url: /partners
 - title: Resources
   url: resources
-- title: Customers
-  url: customers
 
 logo:
   description: Dor Logo

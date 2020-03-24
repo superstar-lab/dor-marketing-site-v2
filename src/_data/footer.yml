@@ -24,22 +24,22 @@ navigation:
     url: https://blog.getdor.com/
 - name: Company
   links:
-  - title: About Us
-    url: /about-us
-  - title: Customers
-    url: /customers
+  # - title: About Us
+  #   url: /about-us
+  # - title: Customers
+  #   url: /customers
   - title: Careers
     url: /careers
-  - title: Integrations
-    url: /integrations
+  # - title: Integrations
+  #   url: /integrations
   - title: Press
     url: /press
 - name: Support
   links:
-  - title: FAQ
-    url: https://support.getdor.com/s/
-  - title: Contact Us
-    url: https://support.getdor.com/s/#faq-contact
+  # - title: FAQ
+  #   url: https://support.getdor.com/s/
+  # - title: Contact Us
+  #   url: https://support.getdor.com/s/#faq-contact
   - title: Terms of Use
     url: /terms
   - title: Privacy Policy
