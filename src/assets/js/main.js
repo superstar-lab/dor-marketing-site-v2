@@ -11,16 +11,24 @@ $(function () {
 
     //Mobile Dropdown menu
     $('.header-bottom-menu .dropdown').click(function() {
-        $('.header-bottom-menu .dropdown-menu').toggleClass('active');
+        $('.dropdown-menu').toggleClass('active');
+    });
+
+    $('#header .dropdown').mouseover(function() {
+        $('.dropdown-menu').addClass('active');
+    });
+
+    $('#header .dropdown').mouseout(function() {
+        $('.dropdown-menu').removeClass('active');
     });
 
     $(window).scroll(function() {
-        $('.header-bottom-menu .dropdown-menu').removeClass('active');
+        $('.dropdown-menu').removeClass('active');
     });
 
     $(document).mouseup(function(e) {
-        if (!$('.header-bottom-menu .dropdown-menu').is(e.target) && $('.header-bottom-menu .dropdown-menu').has(e.target).length === 0) {
-            $('.header-bottom-menu .dropdown-menu').removeClass('active');
+        if (!$('.dropdown-menu').is(e.target) && $('.dropdown-menu').has(e.target).length === 0) {
+            $('.dropdown-menu').removeClass('active');
         }
     });
 

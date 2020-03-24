@@ -9,15 +9,26 @@
       <a href="{{ site.baseurl }}/" class="header-logo-1 visible-xs">
         <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
       </a>
-      {% for link in string.navigation %}
 
-      {% assign class = nil %}
-      {% if page.url == link.url %}
-        {% assign class = 'active' %} 
-      {% elsif page.url != '/' and page.url contains link.url %} 
-        {% assign class = 'active' %} 
-      {% endif %}
-      <a href="{{ site.baseurl }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
+      {% for link in string.navigation %}
+        {% assign class = nil %}
+        {% if page.url == link.url %}
+          {% assign class = 'active' %} 
+        {% elsif page.url != '/' and page.url contains link.url %} 
+          {% assign class = 'active' %} 
+        {% endif %}
+          {% if link.title == 'Company' %}
+            <div class="dropdown">
+              <button type="button" class="hidden-xs header-menu-item link dropdown-toggle">{{ link.title }}</button>
+              <div class="dropdown-menu">
+                {% for dropdown in link.dropdown %}
+                  <a href="{{ dropdown.url }}" class="{{class}} dropdown-item">{{ dropdown.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% elsif link.title != 'Company' %}
+            <a href="{{ site.baseurl }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
+          {% endif %}
       {% endfor %}
     </nav>
     <div class="header-menu flex-row right-group">
@@ -33,7 +44,7 @@
   </div>
   
   <div class="bg-mask"></div>
-  <div class="mobile-header st-menu st-effect-1 visible-xs" id="menu-1" >
+  <div class="mobile-header st-menu st-effect-1 visible-xs" id="menu-1">
     <div class="menu-tab">
       <div id="one"></div>
       <div id="two"></div>
