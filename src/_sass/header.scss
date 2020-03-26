@@ -257,7 +257,7 @@
 	.header-bottom-menu nav ul {
   	width: 100%;
   	align-items: center;
-  	justify-content: space-between;
+  	justify-content: space-evenly;
   	display: flex;
 	}
 
@@ -354,5 +354,11 @@
 
   #header .dropdown-item {
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body #hero {
+    padding-top: 103px;
   }
 }
