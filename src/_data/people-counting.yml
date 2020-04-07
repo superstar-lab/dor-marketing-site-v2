@@ -1,0 +1,69 @@
+hero:
+  heading: People Counters & People Counting&#58;
+  title: Everything You Need to Know
+  subtitle: People counters (or door counters) help retail stores collect foot traffic data to gain valuable business insights about their customers and businesses. Here, you’ll find everything you need to know about the importance of people counting for your business, the different types of people counters on the market, and practical ways to use foot traffic data to make better business decisions.s
+  image: /assets/images/people-counting/hero.jpg
+  icon: /assets/images/icons/hero-cursor.svg
+
+features:
+- title: Already know about people counting and looking for the right technology?
+  subtitle: Meet the world’s first thermal-sensing, battery-operated people counter. Leave your contact information and we’ll be in touch shortly for a quick product demo.
+  image: /assets/images/people-counting/demo-request.jpg
+  button: Request Demo
+  buttonUrl: "#"
+
+cards:
+  title: Why is counting door traffic important?
+  content:
+    - title: Tracking conversion rates
+      image: /assets/images/people-counting/tracking-conversion-rates.png
+      subtitle: Only 9% of retailers know their stores’ conversion rates. <br><br> It’s not enough to know your sales numbers or revenue to understand your store’s overall performance. Conversion rate of customers is a crucial factor in determining the success of your store. Having a people counter in your store, allows retailers to measure conversion rates and learn about store performance.
+    - title: Optimizing staff scheduling
+      image: /assets/images/people-counting/optimizing-staff-scheduling.png
+      subtitle: Retail stores are over or under staffed 86% of the time. <br><br> This means that most retailers determine their staff scheduling without foot traffic data. Tackling staffing problems cannot be solved without vital information about your stores door traffic and peak hours. Knowing your store’s daily traffic trends and rethinking your staffing strategy will help you decrease labor costs and increase customer satisfaction.
+    - title: Increasing marketing effectiveness
+      image: /assets/images/people-counting/increasing-marketing-effectiveness.png
+      subtitle: 47% of marketing spend is left unjustified. <br><br> There are so many advertising and marketing channels available to retailers, but which one is most effective and profitable for your business? The smartest way to decide where and how to spend your marketing budget is to track your foot traffic and see the correlation.
+
+list:
+    title: Pros and cons of different people counters
+    content:
+      - title: Technology
+        zindex: 7
+        image: /assets/images/logos/dor_logo.svg
+        prop1: Thermal Sensor
+        prop2: Camera Sensor
+        prop3: WiFi / Beacon Sensor
+      - title: Machine Learning
+        zindex: 6
+        prop1: '&#43;'
+        prop2: '&#45;'
+        prop3: '&#45;'
+      - title: Installation
+        zindex: 5
+        prop1: Peel-and-stick
+        prop2: Site Survey <br> Professional Installation
+        prop3: Professional <br> Installation
+      - title: Personal Data
+        zindex: 4
+        prop1: 100% Anonymous
+        prop2: Captures Personally <br> Identifiable Information(PII)
+        prop3: Captures Personally <br> Identifiable Information(PII)
+      - title: Accuracy
+        zindex: 3
+        prop1: '&#10003; &#10003; &#10003;'
+        prop2: '&#10003; &#10003; &#10003;'
+        prop3: '&#10003;'
+      - title: Pricing
+        zindex: 2
+        prop1: $
+        prop2: $$$
+        prop3: $$
+      - title: IT Requirements
+        zindex: 1
+        prop1: No Requirements
+        prop2: Ethernet / WiFi<br>Power Cabling<br>Security Study<br>Router Configuration<br>Mounting Solution<br>Employee Opt-in /<br>Compliance Check
+        prop3: Ethernet / WiFi<br>Security Study<br>Router Configuration<br>Mounting Solution<br>Compliance Check
+
+faq:
+  title: Frequently asked questions about people counting

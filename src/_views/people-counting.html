@@ -1,0 +1,520 @@
+---
+title: People Counters & People Counting&#58; Everything You Need to Know - GetDor.com
+description: People counters (or door counters) help retail stores collect foot traffic data to gain valuable insights about their customers and businesses as a whole.
+permalink: /solutions/people-counting/
+layout: default
+cta: false
+---
+
+{% assign string = site.data.people-counting %}
+
+<div id="people-counting-page">
+  <section id="people-counting" class="page-hero hero-section content-center content-middle">
+      <div class="hero col-50 col-sm-100">
+          <div class="wrapper flex-row fl-sm-reverse content-middle">
+              <div class="col text-center">
+                  <h1>{{ string.hero.heading }} <br> {{ string.hero.title }}</h1>
+                  <p class="subtitle">{{ string.hero.subtitle }}</p>
+                  <div class="hero__more-context">
+                    <p class="subtitle">Independent retailer striving to better understand your customers behavior? Enterprise retailer looking to compare foot traffic and conversion rate performance across different locations?</p>
+                    <p class="subtitle">Is your goal to discover your stores 'peak hours' in order to optimize staff scheduling for increased customer satisfaction?</p>
+                    <p class="subtitle">Recently rolled out a new marketing campaign and curious about the impact of your spending in your store’s foot traffic?</p>
+                    <p class="subtitle">Utilizing people counters and measuring foot traffic allow businesses to achieve these goals.</p>
+                    <p class="subtitle">People counters and foot traffic data are the only way to see the bigger picture for your business when it comes to understanding customer behavior, sales associate performance and the effectiveness of marketing campaigns.</p>
+                    <p class="subtitle">At Dor, our mission is to empower retailers with actionable data about their stores using novel hardware and software. On this page, you’ll find everything you need to know about people counters and foot traffic counting. If you have more questions, we encourage you to reach out! (email link to “reach out to us”: support@getdor.com).</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <button class="page-hero__button js-hero" type="button">
+        <img src="{{ string.hero.icon }}" alt="">
+      </button>
+  </section>
+
+  <section id="features" class="people-counting-section">
+    <div class="wrapper content-wrap">
+      {% for feature in string.features %}
+      <div class="flex-row fl-sm-col content-middle">
+        <div class="col col-sm-100">
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.subtitle }}</p>
+          <a href="{{ feature.buttonUrl }}" class="button-link" data-modal="#modal-header">
+            <div class="button large red">
+              {{ feature.button }}
+            </div>
+          </a>
+        </div>
+        <div class="col col-sm-100">
+          <figure class="figure-wrapper">
+            <span>
+              <img src="{{ feature.image }}" alt="">
+            </span>
+          </figure>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="people-counting-section people-counting-cards">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">{{ string.cards.title }}</h2>
+    </header>
+    <div class="flex-row fl-sm-col wrapper slider-on-mobile">
+      {% for card in string.cards.content %}
+      <div class="col col-sm-100 flex-column">
+        <div class="card">
+          <figure class="card__media">
+            <span>
+              <img src="{{ card.image }}" alt="{{ card.title }}">
+            </span>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title color-dark-blue">{{ card.title }}</h3>
+            <p>{{ card.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="props-cons" class="people-counting-section">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">{{ string.list.title }}</h2>
+      <small>Scroll horizontally to see the full chart</small>
+    </header>
+    <div class="flex-row fl-sm-col wrapper">
+      <div class="list-wrapper">
+        <ul class="list">
+          {% for item in string.list.content %}
+          <ol style="z-index: {{ item.zindex }}">
+            <li class="list__item">{{ item.title }}</li>
+            <li class="list__item">
+              <img src="{{ item.image }}" alt="">
+              {{ item.prop1 }}
+            </li>
+            <li class="list__item">{{ item.prop2 }}</li>
+            <li class="list__item">{{ item.prop3 }}</li>
+          </ol>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section accurate" id="accurate">
+    <div class="wrapper">
+      <div class="flex-row fl-sm-col flex-xs-row flex-wrap">
+        <div class="col col-sm-100 flex-column">
+          <div class="accurate__item accurate__item-beacon">
+            <img src="/assets/images/people-counting/beacon-sensors.png" alt="">
+          </div>
+        </div>
+
+        <div class="col col-sm-100 flex-column">
+          <div class="accurate__item accurate__item-dor">
+            <img src="/assets/images/people-counting/accurate-dor.png" alt="">
+          </div>
+        </div>
+
+        <div class="col col-sm-100 flex-column">
+          <div class="accurate__item accurate__item-wifi">
+            <img src="/assets/images/people-counting/wifi-sensors.png" alt="">
+          </div>
+        </div>
+        <div class="col col-sm-100 flex-column">
+          <div class="accurate__item accurate__item-camera">
+            <img src="/assets/images/people-counting/camera-sensors.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="accurate__bottom">
+        <img src="/assets/images/people-counting/accurate-bottom.png" width="1086" height="51" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="people-counting-faq" class="people-counting-section">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">{{ string.faq.title }}</h2>
+    </header>
+    <div class="flex-row fl-sm-col wrapper slider">
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/foot-traffic-people-counting-min.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">What is foot traffic and why is it so important for retailers?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Foot traffic, door traffic, store traffic, and customer traffic is the measure of people walking into a physical space such as a retail store, facility, office etc. Simply put, it measures how many people are in a given space at any time. <br><br> Collecting foot traffic metrics allows you to start tracking other business metrics such as conversion rate and start optimizing your business activities like employee scheduling and marketing effectiveness.</p>
+              <a href="https://blog.getdor.com/2019/11/11/foot-traffic-people-counting/" target="_blank" class="button large red">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/factors-affect-foot-traffic.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">What are the factors that affect foot traffic for retailers?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">There are numerous factors that influence the number of people that visit your store every day including seasonality, marketing spending and type of business.</p>
+              <p itemprop="text">Weather is one of the most important factors to consider. Every location has different weather conditions and they can often drive foot traffic up or down. Location is another prominent factor. It is worth noting how foot traffic is varied in locations in higher density areas versus locations in lesser trafficked places.</p>
+              <a href="https://blog.getdor.com/2019/12/05/factors-affect-foot-traffic/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/small-business-retail-foot-traffic.jpg);background-position:right;"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">How can independent retailers use door counters?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Unlike enterprise retailers with hundreds of physical stores, independent retailers (or small businesses - SMBs) usually have between one and five stores.</p>
+              <p itemprop="text">Independent retailers should be tracking their stores’ foot traffic in order to have an in-depth understanding about their stores’ performance. By integrating a people counter to their POS, small business owners can easily see their conversion rates. Understanding individual store performance, allows them to make strategic and data driven decisions. Moreover, traffic counters show retailers store peak hours in order to optimize staff scheduling.</p>
+              <a href="https://blog.getdor.com/2019/12/04/retail-small-businesses-people-counting/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/enterprise-retail-foot-traffic-solutions.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">How can enterprise retailers use people counting technologies?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">With dozens or hundreds of stores, enterprise retailers have no choice but to use foot traffic counters to make strategic data driven decisions.</p>
+              <p itemprop="text">One of the key ways enterprise retailers can utilize a customer counter is by comparing foot traffic and conversion rates across different store locations to see overall performance. With this information, retailers can change retail strategy where needed and determine store openings and closures based on their own foot traffic data.</p>
+              <p itemprop="text">Some people counters allow you to use their API to connect the traffic data to your own data hubs.</p>
+              <a href="https://blog.getdor.com/2019/12/17/how-enterprise-retailers-utilize-people-counting/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/office-facilities-foot-traffic.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">How can facilities and offices use people counting systems?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Foot traffic for facilities, offices and buildings can be tracked by the same hardware as retailers, but gather completely different insights.</p>
+              <p itemprop="text">Building, office and facility owners or managers use people counters to understand how spaces are being occupied and how they can make smarter decisions to optimize space usage. Furthermore, people counting solutions can be used for property and real-estate management decisions as it’s a great way to decrease your costs based on your space usage data.</p>
+              <p itemprop="text">People counters can also be used for restroom maintenance, lunch area and meeting room usage.</p>
+              <a href="https://blog.getdor.com/2019/11/19/offices-facilities-foot-traffic-data/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/people-counting-solutions.jpg);background-position:left;"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">What are the different foot traffic solutions for businesses?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Customer counters help retail businesses measure their stores’ foot traffic and purchasing trends to optimize their operations.</p>
+              <p itemprop="text">There are numerous people counter technologies on the market including thermal sensors, camera sensors, WiFi sensors, break-beam sensors and bluetooth beacons. Every sensor has its own limitations - price point, accuracy, and installations costs all differ.</p>
+              <p itemprop="text">Thermal sensors with machine learning algorithms, like Dor, have the highest accuracy rates with reasonable pricing and minimal installation requirements.</p>
+              <a href="https://blog.getdor.com/2019/11/19/people-counting-door-counter-sensors/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/questions-to-ask-people-counting.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">How can you decide which people counting solution is right for your business?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">It is important to consider the questions your business needs answered before choosing the people counting technology that is best suited for your store.</p>
+              <p itemprop="text">How long does it take to install the sensor and start tracking the foot traffic? How much does it cost to install and are there any extra costs? Do I have direct control over accessing the data? Can the door counter be integrated with third-party solutions such as POS systems?</p>
+              <p itemprop="text">There are a lot of people counter options and you deserve to know everything before purchasing the one that is right for you.</p>
+              <a href="https://blog.getdor.com/2019/11/22/questions-to-ask-people-counting/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="col flex-column">
+          <figure class="slider__figure">
+            <span style="background-image:url(/assets/images/people-counting/retail-increase-foot-traffic-sales.jpg);"></span>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="slider__content">
+            <h3 itemprop="name">How can you increase foot traffic?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">At Dor, we know that increasing foot traffic for retailers is a huge challenge.</p>
+              <p itemprop="text">There are so many different and creative ways to increase retail foot traffic. Set up sandwich boards or creative displays, have an social media influencer promote your location, offer in-store classes and keep up with pop-culture trends when it comes to store design. </p>
+              <p itemprop="text">Want more ideas? Check out ourlist of 40 different ideas to increase your customer traffic.</p>
+              <a href="https://blog.getdor.com/2019/10/14/how-to-increase-retail-foot-traffic-sales/" target="_blank" class="button large red">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">Why Dor?</h2>
+    </header>
+    <div class="wrapper p-sm-0">
+      <div class='embed-container'>
+        <iframe src='https://www.youtube.com/embed/wNjMUDspr1k' frameborder='0' allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">About Hardware</h2>
+    </header>
+    <div class="flex-row fl-sm-col wrapper col-p40 d-flex align-items-center">
+      <div class="col col-sm-100 flex-column flex-column--static">
+        <figure class="figure-wrapper">
+          <span>
+            <img src="/assets/images/people-counting/about-hardware.jpg" alt="">
+          </span>
+        </figure>
+      </div>
+      <div class="col col-sm-100 flex-column col-list-container">
+        <ul class="list list--content">
+          <li class="list__item">Dor uses proprietary low-power thermal detection and machine learning algorithms, ensuring industry-leading accuracy.</li>
+          <li class="list__item">Dor requires no professional installation, no drilling holes, no in-store Wi-Fi, and no running ethernet or power.</li>
+          <li class="list__item">Simply peel and stick on your door. Dor runs on its own secure cellular network, so there is no need to worry about setting up network access or firewalls.</li>
+          <li class="list__item">Dor uses thermal sensors which protects customer privacy and is GDPR compliant.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section about-software">
+    <header class="header wrapper content-wrap">
+      <h2 class="h1 text-center color-dark-blue">About Software</h2>
+    </header>
+    <div class="flex-row flex-row--reverse fl-sm-col wrapper col-p40 d-flex align-items-center">
+      <div class="col col-sm-100 flex-column flex-column--static">
+        <figure class="figure-wrapper">
+          <span>
+            <img src="/assets/images/people-counting/about-software.png" alt="">
+          </span>
+        </figure>
+      </div>
+      <div class="col col-sm-100 flex-column">
+        <ul class="list list--content">
+          <li class="list__item">See your foot traffic, conversion rate, revenue, transactions and average transaction value on the same screen.</li>
+          <li class="list__item">Easily view and compare all of your locations’ performance.</li>
+          <li class="list__item">Integrate your data with your POS or any BI tool you are using or export it for reporting purposes.</li>
+          <li class="list__item">Check your stores performance from your desktop, smartphone or tablet: any device, anytime, anywhere.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section slider-quote">
+    <div class="flex-row flex-row--reverse fl-sm-col wrapper col-p40">
+      <div class="slider wrapper">
+        <div class="slider__item">
+          <p>In retail, you’ve got to know your traffic and your conversion of that traffic. Without it, you leave way too many things to assumption. <br><br>I can actually look at my managers now and say, ‘You dropped six percent in conversions.’ They understand now the cost of people walking out without getting to the register. I’m actually putting financial reasoning behind this stuff.</p>
+          <div class="slider__author">
+            <span class="wrap">
+              <strong>Adam Scott</strong>
+              <small>Francisee, Clothes Mentor</small>
+            </span>
+          </div>
+        </div>
+        <div class="slider__item">
+          <p>I just installed another one of our Dor sensors today, took me not even five minutes. I don’t know anybody who couldn’t install it. <br><br> So far it’s been incredibly reliable. I have zero complaints and I’m just excited to continue to get data and be able to do something with it.</p>
+          <div class="slider__author">
+            <span class="wrap">
+              <strong>Robert Odom</strong>
+              <small>Director of Sales and Marketing, Original Mattress Factory</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <p>Our challenge as a 95-store operation, we don’t have a lot of infrastructure to make meaning out of all that data… [when needing to know how many people would be coming through the door] you wind up investing into a tool that would take us into foot traffic warp speed.</p>
+          <p>I am very satisfied with Dor… based on the ease of install and ease of management.</p>
+          <div class="slider__author">
+            <span class="wrap">
+              <strong>Evan Keller</strong>
+              <small>Senior Director, 4 Wheel Parts</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section people-counting-cta">
+    <div class="flex-row fl-sm-col wrapper col-p40 column-reverse">
+      <div class="col col-sm-100 flex-column d-flex justify-content-center">
+        <h3>Empower <br> your business today</h3>
+        <p>Request a demo to have an account executive show you just how easy it is to get started with Dor.</p>
+        <a href="#" class="button-link" data-modal="#modal-header">
+          <div class="button large white">Request Demo</div>
+        </a>
+      </div>
+      <div class="col col-sm-100 flex-column">
+        <figure class="cta-figure">
+          <span style="background-image: url(/assets/images/people-counting/request-demo-2.jpg);"></span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-counting-section people-counting-cards people-counting-cards-blog">
+    <header class="header wrapper content-wrap">
+      <h3 class="h1 text-center color-dark-blue">Recommended from Dor Blog</h3>
+    </header>
+    <div class="flex-row fl-sm-col wrapper slider-3">
+      <a href="https://blog.getdor.com/2020/03/04/retail-digital-marketing/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image1.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">Digital Marketing for Retailers: Every Tactic and Channel You Must Know</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2019/12/17/how-to-calculate-and-increase-retail-conversion-rate/" class="col col-sm-100 flex-column"  target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image2.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">How to Calculate (and Increase) Retail Conversion Rate</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/03/26/retail-stats-numbers-and-benchmarks/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image3.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">Retail Stats: All the Numbers and Benchmarks You Need to Know (2020)</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/02/29/successful-retail-pricing-strategies/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image4.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">12 Successful Retail Pricing Strategies Every Retailer Should Know</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/01/23/the-ultimate-guide-to-retail-analytics/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image5.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">The Ultimate Guide to Retail Analytics and The Future of Retail (2020)</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/01/10/how-to-increase-profit-margins-in-retail/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image6.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">7 Proven and Working Ways to Increase Profit Margins in Retail</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2019/12/11/key-metrics-to-measure-retail-store-performance/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image7.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">15 Key Metrics (KPIs) to Measure Retail Store Performance</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/03/23/real-life-examples-of-amazing-customer-service/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image8.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">14 Real-Life Examples of Amazing Customer Service in Retail</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+      <a href="https://blog.getdor.com/2020/03/23/creative-retail-display-examples/" class="col col-sm-100 flex-column" target="_blank">
+        <div class="card">
+          <figure class="card__media" style="background-image: url(/assets/images/people-counting/blog-image9.jpg);"></figure>
+          <div class="card__body">
+            <h3 class="card__title">15 Creative Retail Display Examples to Increase Foot Traffic and Sales</h3>
+          </div>
+          <span class="button button--more">
+            <span>Read more</span>
+            <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.05469 7.66959L24.3907 7.66959L21.7665 10.2759C21.3537 10.6868 21.3521 11.3546 21.763 11.7674C22.1739 12.1803 22.8417 12.1819 23.2546 11.771L27.6897 7.36247L27.6906 7.36146C28.1024 6.95056 28.1038 6.28062 27.6907 5.86834L27.6898 5.86734L23.2547 1.45881C22.8419 1.04801 22.174 1.04943 21.7631 1.46239C21.3522 1.87525 21.3538 2.54302 21.7666 2.95393L24.3907 5.56022L2.05469 5.56022C1.47218 5.56022 1 6.0324 1 6.6149C1 7.19741 1.47218 7.66959 2.05469 7.66959Z" fill="#205ED8" stroke="#205ED8" stroke-width="0.8"/></svg>            
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
