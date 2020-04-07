@@ -20,6 +20,15 @@
         }
     }
 
+    &.red {
+        background-color: $red;
+        color: $white;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
     &.dark-blue {
         background-color: #0643bb;
         color: $white;

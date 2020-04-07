@@ -1,0 +1,818 @@
+#people-counting {
+  background: url(../images/people-counting/hero.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 56px;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 105px;
+
+    &.page-hero {
+      background: url(../images/people-counting/hero.jpg) no-repeat center center !important;
+    }
+
+    .hero {
+      padding: 100px 30px;
+      background: rgba(0, 0, 0, 0.3);
+
+      h1 {
+        padding-bottom: 20px;
+        font-size: 28px;
+      }
+    }
+
+    .col.text-center {
+      text-align: center !important;
+    }
+    
+    .mobile-image {
+      display: none;
+    }
+  }
+
+  .page-hero__button {
+    background: transparent;
+    border: 0;
+    width: 96px;
+    height: 96px;
+    bottom: -53px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .hero {
+    background: transparent;
+    h1 {
+      @include media-down(sm) {
+        font-size: $font-size-large;
+      }
+    }
+    
+    .subtitle {
+      margin: 7px 0 14px;
+      @include media-down(sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.people-counting-section {
+  padding-top: 150px;
+
+  &#features {
+    padding: 150px 0;
+  }
+
+  p {
+    color: #002063 !important;
+  }
+
+  .image-base {
+    border-radius: 30px;
+  }
+
+  .col-p40 .col:first-child {
+    padding-right: 80px;
+  }
+
+  .list--content {
+    .list__item {
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 29px;
+      letter-spacing: 0.04em;
+      color: #002063;
+      border-left: 4px solid #0075FF;
+      padding-left: 25px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .list-wrapper {
+    width: 100%;
+    background: rgba(236, 241, 255, 0.3);
+    border-radius: 40px;
+    padding: 20px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    ol {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      list-style: none;
+      border-radius: 26px;
+      background: #fff;
+      box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.04);
+      position: relative;
+    }
+
+    .list__item {
+      width: 25%;
+      height: 100%;
+      padding: 30px 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+      letter-spacing: 0.02em;
+      color: #002063;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 55px;
+        height: 41px;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      
+      &:not(:last-child) {
+        border-right: 1px solid #EAEDFB;
+      }
+
+      &:first-child {
+        font-weight: 600;
+        color: #043D75;
+      }
+
+      &.text-center {
+        text-align: center !important;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      overflow-x: auto;
+      
+      .list {
+        width: 100%;
+        display: table;
+        padding: 0 20px;
+
+        ol {
+          display: table;
+        }
+
+        &__item {
+          width: 300px;
+          min-width: 300px;
+          display: table-cell;
+        }
+      }
+    }
+  }
+
+  .accurate__item {
+    width: 100%;
+    height: 274px;
+    background: rgba(204, 53, 49, 0.3);
+    box-shadow: 0px 25px 60px rgba(28, 44, 85, 0.04);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+
+    &-beacon {
+      img {
+        left: 50px;
+        bottom: 50px;
+      }
+    }
+
+    &-dor {
+      img {
+        right: 50px;
+        top: 25px;
+      }
+    }
+
+    &-wifi {
+      img {
+        right: 100px;
+        top: 30px;
+      }
+    }
+
+    &-camera {
+      img {
+        right: 40px;
+        bottom: 40px;
+      }
+    }
+
+    img {
+      position: absolute;
+      width: auto;
+    }
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-wrap .col {
+    flex: 50%;
+    margin-bottom: 25px;
+    padding: 0 25px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 0 !important;
+
+    .header {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+    }
+
+    .button.large, .fsBody .fsNextButton, .fsBody .fsPreviousButton, .fsBody .fsSubmitButton {
+      padding: 0 40px;
+      font-size: 18px;
+    }
+
+    .col {
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    .figure-wrapper {
+      margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+      font-size: 27px;
+      line-height: 34px;
+    }
+  }
+}
+
+.people-counting-cards {
+  .flex-row.wrapper {
+    position: relative;
+  }
+
+  .flex-row.wrapper:before {
+    background: transparent url(../images/people-counting/figure-points.svg) no-repeat 0 0;
+    width: 130px;
+    height: 145px;
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -15px;
+
+    @media screen and (max-width: 767px) {
+      left: 0;
+    }
+  }
+
+  .card {
+    padding: 20px 20px 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.05);
+    border-radius: 40px;
+    height: 100%;
+    text-align: left;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      .card__title {
+        height: auto;
+      }
+
+      .card__body {
+        padding: 0 20px;
+      }
+    }
+    
+    &__body {
+      padding: 0 25px;
+
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #2C3B59;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      max-width: 100%;
+      padding-bottom: 15px;
+      font-size: 24px;
+      letter-spacing: 0.025em;
+      height: 80px;
+    }
+
+    &__media {
+      width: 100%;
+      height: 300px;
+      margin: 0 0 30px;
+      border-radius: 24px;
+      padding: 0;
+      background: #0075FF;
+      position: relative;
+
+      img {
+        width: 134px;
+        height: 134px;
+      }
+
+      span {
+        width: 100%;
+        height: 98%;
+        background: #EDF2FA;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+#accurate {
+  position: relative;
+  min-height: 900px;
+  padding-bottom: 400px;
+  
+  .accurate__bottom {
+    width: 85%;
+    margin: auto;
+  }
+
+  .accurate__bottom img {
+    width: auto;
+    height: auto;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .wrapper:before {
+    width: 53px;
+    height: 912px;
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -125px;
+    background: transparent url(../images/people-counting/accurate-left.png) no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: 767px) {
+      height: 512px;
+      margin-top: -280px;
+      top: 50%;
+      left: 5px;
+    }
+  }
+}
+
+#people-counting-faq {
+  .slider {
+    img {
+      width: auto;
+    }
+    
+    &__figure {
+      border-radius: 40px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+
+      span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 40px;
+        z-index: 2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    
+    &__figure:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: rgba(236, 241, 255, 0.6);
+      border-radius: 65px;
+      position: absolute;
+      left: -50px;
+      top: 50px;
+    }
+
+    &__content {
+      height: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.05);
+      border-radius: 40px;
+      padding: 60px;
+
+      h3 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        margin-bottom: 30px;
+        color: #043D75;
+      }
+
+      p {
+        padding: 0;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        letter-spacing: 0.04em;
+        color: #002063;
+        strong {
+          font-weight: 600;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        padding: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #features.people-counting-section {
+    padding: 170px 0;
+  }
+}
+
+.flex-row--reverse {
+  flex-direction: row-reverse;
+  .col:last-child {
+    padding-right: 80px;
+  }
+
+  .col:first-child {
+    padding-right: 0;
+  }
+}
+
+.slider-quote {
+  margin-top: 200px;
+  border-top: 1px solid #eee;
+  position: relative;
+  padding-top: 100px;
+  width: 100%;
+
+  .wrapper {
+    position: relative;
+  }
+
+  &:before {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -44px;
+    background: #fff url(../images/people-counting/quote.svg) no-repeat center 0;
+    background-size: 88px 88px;
+    content: "";
+    margin: auto;
+  }
+
+  .slider__item {
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  p {
+    color: #043D75;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .slider__author {
+    margin-top: 50px;
+    position: relative;
+
+    strong,
+    small {
+      font-size: 20px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      color: #043D75;
+    }
+
+    small {
+      color: #CC3531;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .wrap {
+      padding-top: 40px;
+      display: block;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: transparent url(../images/people-counting/author-top-border.svg) no-repeat 0 0;
+      width: 322px;
+      height: 19px;
+      content: "";
+    }
+  }
+}
+
+.people-counting-cta {
+  margin-top: 50px;
+}
+
+.people-counting-cta .wrapper {
+  width: 100%;
+  background: #2D59C9;
+  border-radius: 40px;
+  padding: 40px;
+  color: #fff;
+
+  h3, p {
+    margin-bottom: 20px;
+    color: #fff !important;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    h3 {
+      font-size: 27px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 27px;
+    }
+  }
+}
+
+.people-counting-cta .cta-figure {
+  width: 100%;
+  padding: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.1);
+  border-radius: 40px;
+  margin: -150px 0 0;
+
+  img {
+    border-radius: 30px;
+  }
+}
+
+// .max-width-80 p {
+//   max-width: 80%;
+// }
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.people-counting-cards-blog {
+  padding-bottom: 150px;
+  background: #F8FAFF;
+
+  @media screen and (max-width: 767px) {
+    .col {
+      padding: 0 15px;
+    }
+  }
+
+  .card {
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  .card__media {
+    width: 100%;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      max-height: 450px;
+    }
+  }
+
+  .button--more {
+    color: #205ED8;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    position: absolute;
+    bottom: 0;
+
+    span {
+      text-decoration: underline;
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  .card__title {
+    color: #043D75;
+    max-width: 100%;
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-sm-0 {
+    padding: 0;
+  }
+
+  .col-list-container.col {
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .people-counting-section .col-p40 .col:first-child {
+    padding: 0 0 30px;
+  }
+
+  #props-cons .fl-sm-col.wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flex-xs-row {
+    flex-direction: row;
+  }
+
+  #accurate {
+    min-height: auto;
+  }
+
+  #accurate .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+
+    .col {
+      padding: 0 5px;
+      margin-bottom: 10px;
+    }
+
+    .accurate__item-beacon img {
+      left: 10px;
+      width: 90%;
+      bottom: 30px;
+    }
+
+    .accurate__item-wifi img {
+      right: 0;
+    }
+
+    .accurate__item-camera img {
+      right: 10px;
+      width: 80%;
+    }
+
+    .accurate__item-dor img {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  #people-counting-faq {
+    .col {
+      padding: 0;
+    }
+
+    .slider__item {
+      background-color: #fff;
+      box-shadow: 0 25px 40px rgba(19,31,63,.05);
+      border-radius: 40px;
+      padding: 15px;
+      margin: 15px;
+      width: auto;
+    }
+
+    .slider__figure {
+      margin: 0;
+    }
+
+    .slider__content {
+      height: auto;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 30px 15px;
+      text-align: left;
+      
+      .button {
+        width: 100%;
+      }
+    }
+
+    .slider__figure:before {
+      display: none;
+    }
+  }
+}
+
+.slick-track {
+  padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    height: inherit !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .people-counting-cta {
+    margin-top: 100px;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.people-counting-section {
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
