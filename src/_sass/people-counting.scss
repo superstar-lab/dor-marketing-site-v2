@@ -73,7 +73,8 @@
     }
     
     .subtitle {
-      font-size: 20px;
+      font-size: 15px;
+      line-height: 20px;
       margin: 7px 0 14px;
       @include media-down(sm) {
         margin-bottom: 0;
@@ -105,8 +106,10 @@
     border-radius: 30px;
   }
 
-  .figure-wrapper {
-    max-width: 85%;
+  @media screen and (min-width: 768px) {
+    .figure-wrapper {
+      max-width: 85%;
+    }
   }
 
   .col-p40 .col:first-child {
@@ -271,7 +274,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding: 40px 0 !important;
+    padding: 80px 0 !important;
 
     .header {
       max-width: 80%;
@@ -296,8 +299,8 @@
 
     h1,
     h2 {
-      font-size: 27px;
-      line-height: 34px;
+      font-size: 25px;
+      line-height: 35px;
     }
   }
 }
@@ -334,10 +337,18 @@
 
       .card__title {
         height: auto;
+        font-size: 22px;
+        line-height: 28px;
       }
 
       .card__body {
         padding: 0 20px;
+
+        p {
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+        }
       }
     }
     
@@ -430,11 +441,13 @@
 }
 
 #people-counting-faq {
-  .slider {
-    &__item {
-      // height: 500px !important;
+  @media screen and (max-width: 767px) {
+    .slick-dots {
+      bottom: -50px;
     }
+  }
 
+  .slider {
     img {
       width: auto;
     }
@@ -457,6 +470,13 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .slider__figure {
+        width: 100%;
+        height: 400px;
       }
     }
     
@@ -502,6 +522,20 @@
 
         strong {
           font-weight: 600;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        h3 {
+          font-size: 23px;
+        }
+        
+        p {
+          font-size: 17px;
+        }
+
+        h3, p {
+          max-width: 100%;
         }
       }
     }
@@ -909,4 +943,22 @@
 
 .align-items-center {
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-row--reverse .col:last-child {
+    text-align: left;
+  }
+
+  .about-software .wrapper {
+    flex-direction: column !important;
+  }
+
+  .flex-column--static .figure-wrapper {
+    min-height: 300px;
+  }
+
+  .people-counting-section .col-p40 .col:first-child {
+    padding-right: 0 !important;
+  }
 }
