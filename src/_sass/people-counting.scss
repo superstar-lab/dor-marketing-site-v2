@@ -2,9 +2,13 @@
   max-width: 1140px;
 }
 
+#people-counting-page {
+  position: relative;
+  overflow-x: hidden;
+}
+
 #people-counting {
-  background: url(../images/people-counting/hero.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(../images/people-counting/hero.jpg) no-repeat center center / cover !important;
   padding-top: 56px;
   position: relative;
 
@@ -12,7 +16,7 @@
     padding-top: 105px;
 
     &.page-hero {
-      background: url(../images/people-counting/hero.jpg) no-repeat center center !important;
+      background: url(../images/people-counting/hero.jpg) no-repeat center center;
       background-color: rgba(0, 0, 0, 0.6);
     }
 
@@ -692,6 +696,13 @@
   margin: -150px 0 0;
   min-height: 450px;
 
+  @media screen and (max-width: 767px) {
+    width: 100% !important;
+    span {
+      height: 430px !important;
+    }
+  }
+
   span {
     display: block;
     border-radius: 30px;
@@ -813,6 +824,9 @@
 
     .accurate__item-wifi img {
       right: 0;
+      @media screen and (max-width:767px) {
+        width: 80%;
+      }
     }
 
     .accurate__item-camera img {
@@ -961,4 +975,41 @@
   .people-counting-section .col-p40 .col:first-child {
     padding-right: 0 !important;
   }
+}
+
+#props-cons header small {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .people-counting-cards-blog .slick-slide {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+
+  .people-counting-cards-blog .card {
+    min-height: 600px;
+    height: 100%;
+  }
+
+  #props-cons header small {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-transform: inherit;
+    display: block;
+  }
+
+  #accurate .accurate__bottom {
+    width: 100%;
+    transform: scale(1.1);
+  }
+}
+
+img[src=""] {
+  display: none;
 }
