@@ -5,6 +5,8 @@ navigation:
   url: pricing
 - title: Company
   dropdown:
+    - title: People Counting
+      url: /solutions/people-counting
     - title: About Us
       url: /about-us
     - title: Contact Us

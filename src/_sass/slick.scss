@@ -307,3 +307,9 @@
 .slick-dots li:only-child {
 	display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .slick-dots {
+    bottom: 25px;
+  }
+}
