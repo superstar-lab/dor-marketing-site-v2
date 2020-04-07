@@ -9,24 +9,11 @@
 
     &.page-hero {
       background: url(../images/people-counting/hero.jpg) no-repeat center center !important;
-    }
-
-    .hero {
-      padding: 100px 30px;
-      background: rgba(0, 0, 0, 0.3);
-
-      h1 {
-        padding-bottom: 20px;
-        font-size: 28px;
-      }
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     .col.text-center {
       text-align: center !important;
-    }
-    
-    .mobile-image {
-      display: none;
     }
   }
 
@@ -41,17 +28,42 @@
     margin: auto;
     position: absolute;
     cursor: pointer;
+
+    &.active {
+      transform: rotate(60deg);
+    }
   }
 
   .hero {
     background: transparent;
+    padding: 125px 30px;
+    margin: 0;
+    max-width: 100%;
+
+    &__more-context {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      transition: all 0.5s ease-in;
+      
+      &.active {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    
     h1 {
+      padding-bottom: 20px;
+      font-size: 24px;
+
       @include media-down(sm) {
         font-size: $font-size-large;
       }
     }
     
     .subtitle {
+      font-size: 20px;
       margin: 7px 0 14px;
       @include media-down(sm) {
         margin-bottom: 0;
@@ -61,18 +73,30 @@
 }
 
 .people-counting-section {
-  padding-top: 150px;
+  padding: 100px 0 75px!important;
 
-  &#features {
-    padding: 150px 0;
+  h2 {
+    font-size: 28px;
+    line-height: 38px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
+  &#features .flex-row .col p,
   p {
+    font-size: 18px;
+    line-height: 24px;
     color: #002063 !important;
   }
 
   .image-base {
     border-radius: 30px;
+  }
+
+  .figure-wrapper {
+    max-width: 85%;
   }
 
   .col-p40 .col:first-child {
@@ -82,8 +106,8 @@
   .list--content {
     .list__item {
       font-weight: 300;
-      font-size: 19px;
-      line-height: 29px;
+      font-size: 18px;
+      line-height: 28px;
       letter-spacing: 0.04em;
       color: #002063;
       border-left: 4px solid #0075FF;
@@ -93,7 +117,7 @@
   }
 
   .header {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .list-wrapper {
@@ -285,15 +309,16 @@
   }
 
   .card {
-    padding: 20px 20px 55px;
+    padding: 20px 20px 25px;
     background: #FFFFFF;
     box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.05);
-    border-radius: 40px;
+    border-radius: 30px;
     height: 100%;
     text-align: left;
 
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
+
       .card__title {
         height: auto;
       }
@@ -308,8 +333,8 @@
 
       p {
         font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 26px;
         letter-spacing: 0.04em;
         color: #2C3B59;
       }
@@ -320,15 +345,16 @@
       max-width: 100%;
       padding-bottom: 15px;
       font-size: 24px;
+      line-height: 32px;
       letter-spacing: 0.025em;
       height: 80px;
     }
 
     &__media {
       width: 100%;
-      height: 300px;
-      margin: 0 0 30px;
-      border-radius: 24px;
+      height: 250px;
+      margin: 0 0 20px;
+      border-radius: 25px;
       padding: 0;
       background: #0075FF;
       position: relative;
@@ -398,7 +424,7 @@
     &__figure {
       border-radius: 40px;
       position: relative;
-      width: 100%;
+      width: 90%;
       height: 100%;
       margin: 0;
 
@@ -433,41 +459,34 @@
       height: 100%;
       background: #FFFFFF;
       box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.05);
-      border-radius: 40px;
-      padding: 60px;
+      border-radius: 30px;
+      padding: 40px;
 
       h3 {
+        max-width: 80%;
         font-weight: 600;
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 34px;
         letter-spacing: 0.02em;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         color: #043D75;
       }
 
       p {
+        max-width: 85%;
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         font-weight: 300;
-        font-size: 19px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 30px;
         letter-spacing: 0.04em;
         color: #002063;
+
         strong {
           font-weight: 600;
         }
       }
-
-      @media (min-width: 1280px) {
-        padding: 60px;
-      }
     }
-  }
-}
-
-@media (min-width: 1280px) {
-  #features.people-counting-section {
-    padding: 170px 0;
   }
 }
 
@@ -483,7 +502,7 @@
 }
 
 .slider-quote {
-  margin-top: 200px;
+  margin-top: 100px;
   border-top: 1px solid #eee;
   position: relative;
   padding-top: 100px;
@@ -517,6 +536,7 @@
   p {
     color: #043D75;
     font-size: 30px;
+    line-height: 40px;
     font-weight: 600;
     padding-bottom: 30px;
 
@@ -544,6 +564,10 @@
       color: #CC3531;
       padding-top: 0;
       margin-top: 0;
+      display: block;
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .wrap {
@@ -604,7 +628,7 @@
 }
 
 .people-counting-cta .cta-figure {
-  width: 100%;
+  width: 85%;
   padding: 12px;
   background: #FFFFFF;
   box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.1);
@@ -629,7 +653,7 @@
 }
 
 .people-counting-cards-blog {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background: #F8FAFF;
 
   @media screen and (max-width: 767px) {
@@ -641,6 +665,12 @@
   .card {
     position: relative;
     padding-bottom: 100px;
+    min-height: 400px;
+  }
+
+  .slick-slide {
+    min-height: 600px !important;
+    height: auto !important;
   }
 
   .card__media {
@@ -651,7 +681,7 @@
     background-size: cover;
 
     @media screen and (min-width: 768px) {
-      max-height: 450px;
+      max-height: 350px !important;
     }
   }
 

@@ -3,6 +3,11 @@ $(function () {
   var $body = $('body');
   var $document = $(document);
 
+  $('.js-hero').click(function() {
+    $('.hero__more-context').toggleClass('active');
+    $(this).toggleClass('active');
+  });
+
   $('.slider-on-mobile').slick({
 		dots: true,
 		arrows: false,
