@@ -295,11 +295,15 @@
 
 	@media screen and (min-width: 1200px) {
 		&.button-prev {
-			left: 30px;
+			left: 0;
 		}
 		
 		&.button-next {
-			right: 80px;
+			right: 0;
 		}
 	}
+}
+
+.slick-dots li:only-child {
+	display: none;
 }
