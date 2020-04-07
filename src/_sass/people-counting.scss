@@ -445,21 +445,27 @@
 }
 
 #people-counting-faq {
+  .slick-slider:after {
+    background: transparent url(../images/people-counting/figure-points.svg) no-repeat 0 0;
+    width: 130px;
+    height: 145px;
+    content: "";
+    position: absolute;
+    left: 150px;
+    top: -20px;
+    margin-top: 0;
+    z-index: -1;
+  }
+
   @media screen and (max-width: 767px) {
     .slick-dots {
       bottom: -50px;
     }
 
     .slick-slider:after {
-      background: transparent url(../images/people-counting/figure-points.svg) no-repeat 0 0;
-      width: 130px;
-      height: 145px;
-      content: "";
-      position: absolute;
+      left: auto;
       right: 0;
       top: 50px;
-      margin-top: 0;
-      z-index: -1;
     }
   }
 
