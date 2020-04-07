@@ -9,19 +9,24 @@ cta: false
 {% assign string = site.data.people-counting %}
 
 <section id="people-counting" class="page-hero hero-section content-center content-middle">
-    <div class="mobile-image">
-        <img src="{{ string.hero.image }}">
-    </div>
     <div class="hero col-50 col-sm-100">
         <div class="wrapper flex-row fl-sm-reverse content-middle">
             <div class="col text-center">
                 <h1>{{ string.hero.heading }} <br> {{ string.hero.title }}</h1>
-                <div class="subtitle">{{ string.hero.subtitle }}</div>
+                <p class="subtitle">{{ string.hero.subtitle }}</p>
+                <div class="hero__more-context">
+                  <p class="subtitle">Independent retailer striving to better understand your customers behavior? Enterprise retailer looking to compare foot traffic and conversion rate performance across different locations?</p>
+                  <p class="subtitle">Is your goal to discover your stores 'peak hours' in order to optimize staff scheduling for increased customer satisfaction?</p>
+                  <p class="subtitle">Recently rolled out a new marketing campaign and curious about the impact of your spending in your store’s foot traffic?</p>
+                  <p class="subtitle">Utilizing people counters and measuring foot traffic allow businesses to achieve these goals.</p>
+                  <p class="subtitle">People counters and foot traffic data are the only way to see the bigger picture for your business when it comes to understanding customer behavior, sales associate performance and the effectiveness of marketing campaigns.</p>
+                  <p class="subtitle">At Dor, our mission is to empower retailers with actionable data about their stores using novel hardware and software. On this page, you’ll find everything you need to know about people counters and foot traffic counting. If you have more questions, we encourage you to reach out! (email link to “reach out to us”: support@getdor.com).</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <button class="page-hero__button" type="button">
+    <button class="page-hero__button js-hero" type="button">
       <img src="{{ string.hero.icon }}" alt="">
     </button>
 </section>
@@ -135,7 +140,7 @@ cta: false
     <h2 class="h1 text-center color-dark-blue">{{ string.faq.title }}</h2>
   </header>
   <div class="slider">
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/foot-traffic-people-counting-min.jpg);"></span>
@@ -143,14 +148,16 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>What is foot traffic and why is it so important for retailers?</h3>
-          <p>Foot traffic, door traffic, store traffic, and customer traffic is the measure of people walking into a physical space such as a retail store, facility, office etc. Simply put, it measures how many people are in a given space at any time. Collecting foot traffic metrics allows you to start tracking other business metrics such as conversion rate and start optimizing your business activities like employee scheduling and marketing effectiveness.</p>
-          <a href="https://blog.getdor.com/2019/11/11/foot-traffic-people-counting/" class="button large red">Learn more</a>
+          <h3 itemprop="name">What is foot traffic and why is it so important for retailers?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Foot traffic, door traffic, store traffic, and customer traffic is the measure of people walking into a physical space such as a retail store, facility, office etc. Simply put, it measures how many people are in a given space at any time. Collecting foot traffic metrics allows you to start tracking other business metrics such as conversion rate and start optimizing your business activities like employee scheduling and marketing effectiveness.</p>
+            <a href="https://blog.getdor.com/2019/11/11/foot-traffic-people-counting/" class="button large red">Learn more</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/factors-affect-foot-traffic.jpg);"></span>
@@ -158,15 +165,17 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>What are the factors that affect foot traffic for retailers?</h3>
-          <p>There are numerous factors that influence the number of people that visit your store every day including seasonality, marketing spending and type of business.</p>
-          <p>Weather is one of the most important factors to consider. Every location has different weather conditions and they can often drive foot traffic up or down. Location is another prominent factor. It is worth noting how foot traffic is varied in locations in higher density areas versus locations in lesser trafficked places.</p>
-          <a href="https://blog.getdor.com/2019/12/05/factors-affect-foot-traffic/" class="button large red">Learn More</a>
+          <h3 itemprop="name">What are the factors that affect foot traffic for retailers?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">There are numerous factors that influence the number of people that visit your store every day including seasonality, marketing spending and type of business.</p>
+            <p itemprop="text">Weather is one of the most important factors to consider. Every location has different weather conditions and they can often drive foot traffic up or down. Location is another prominent factor. It is worth noting how foot traffic is varied in locations in higher density areas versus locations in lesser trafficked places.</p>
+            <a href="https://blog.getdor.com/2019/12/05/factors-affect-foot-traffic/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/small-business-retail-foot-traffic.jpg);"></span>
@@ -174,15 +183,17 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>How can independent retailers use door counters?</h3>
-          <p>Unlike enterprise retailers with hundreds of physical stores, independent retailers (or small businesses - SMBs) usually have between one and five stores.</p>
-          <p>Independent retailers should be tracking their stores’ foot traffic in order to have an in-depth understanding about their stores’ performance. By integrating a people counter to their POS, small business owners can easily see their conversion rates. Understanding individual store performance, allows them to make strategic and data driven decisions. Moreover, traffic counters show retailers store peak hours in order to optimize staff scheduling.</p>
-          <a href="https://blog.getdor.com/2019/12/04/retail-small-businesses-people-counting/" class="button large red">Learn More</a>
+          <h3 itemprop="name">How can independent retailers use door counters?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Unlike enterprise retailers with hundreds of physical stores, independent retailers (or small businesses - SMBs) usually have between one and five stores.</p>
+            <p itemprop="text">Independent retailers should be tracking their stores’ foot traffic in order to have an in-depth understanding about their stores’ performance. By integrating a people counter to their POS, small business owners can easily see their conversion rates. Understanding individual store performance, allows them to make strategic and data driven decisions. Moreover, traffic counters show retailers store peak hours in order to optimize staff scheduling.</p>
+            <a href="https://blog.getdor.com/2019/12/04/retail-small-businesses-people-counting/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/enterprise-retail-foot-traffic-solutions.jpg);"></span>
@@ -190,16 +201,18 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>How can enterprise retailers use people counting technologies?</h3>
-          <p>With dozens or hundreds of stores, enterprise retailers have no choice but to use foot traffic counters to make strategic data driven decisions.</p>
-          <p>One of the key ways enterprise retailers can utilize a customer counter is by comparing foot traffic and conversion rates across different store locations to see overall performance. With this information, retailers can change retail strategy where needed and determine store openings and closures based on their own foot traffic data.</p>
-          <p>Some people counters allow you to use their API to connect the traffic data to your own data hubs.</p>
-          <a href="https://blog.getdor.com/2019/12/17/how-enterprise-retailers-utilize-people-counting/" class="button large red">Learn More</a>
+          <h3 itemprop="name">How can enterprise retailers use people counting technologies?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">With dozens or hundreds of stores, enterprise retailers have no choice but to use foot traffic counters to make strategic data driven decisions.</p>
+            <p itemprop="text">One of the key ways enterprise retailers can utilize a customer counter is by comparing foot traffic and conversion rates across different store locations to see overall performance. With this information, retailers can change retail strategy where needed and determine store openings and closures based on their own foot traffic data.</p>
+            <p itemprop="text">Some people counters allow you to use their API to connect the traffic data to your own data hubs.</p>
+            <a href="https://blog.getdor.com/2019/12/17/how-enterprise-retailers-utilize-people-counting/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/office-facilities-foot-traffic.jpg);"></span>
@@ -207,16 +220,18 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>How can facilities and offices use people counting systems?</h3>
-          <p>Foot traffic for facilities, offices and buildings can be tracked by the same hardware as retailers, but gather completely different insights.</p>
-          <p>Building, office and facility owners or managers use people counters to understand how spaces are being occupied and how they can make smarter decisions to optimize space usage. Furthermore, people counting solutions can be used for property and real-estate management decisions as it’s a great way to decrease your costs based on your space usage data.</p>
-          <p>People counters can also be used for restroom maintenance, lunch area and meeting room usage.</p>
-          <a href="https://blog.getdor.com/2019/11/19/offices-facilities-foot-traffic-data/" class="button large red">Learn More</a>
+          <h3 itemprop="name">How can facilities and offices use people counting systems?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Foot traffic for facilities, offices and buildings can be tracked by the same hardware as retailers, but gather completely different insights.</p>
+            <p itemprop="text">Building, office and facility owners or managers use people counters to understand how spaces are being occupied and how they can make smarter decisions to optimize space usage. Furthermore, people counting solutions can be used for property and real-estate management decisions as it’s a great way to decrease your costs based on your space usage data.</p>
+            <p itemprop="text">People counters can also be used for restroom maintenance, lunch area and meeting room usage.</p>
+            <a href="https://blog.getdor.com/2019/11/19/offices-facilities-foot-traffic-data/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/people-counting-solutions.jpg);background-position:left;"></span>
@@ -224,16 +239,18 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>What are the different foot traffic solutions for businesses?</h3>
-          <p>Customer counters help retail businesses measure their stores’ foot traffic and purchasing trends to optimize their operations.</p>
-          <p>There are numerous people counter technologies on the market including thermal sensors, camera sensors, WiFi sensors, break-beam sensors and bluetooth beacons. Every sensor has its own limitations - price point, accuracy, and installations costs all differ.</p>
-          <p>Thermal sensors with machine learning algorithms, like Dor, have the highest accuracy rates with reasonable pricing and minimal installation requirements.</p>
-          <a href="https://blog.getdor.com/2019/11/19/people-counting-door-counter-sensors/" class="button large red">Learn More</a>
+          <h3 itemprop="name">What are the different foot traffic solutions for businesses?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Customer counters help retail businesses measure their stores’ foot traffic and purchasing trends to optimize their operations.</p>
+            <p itemprop="text">There are numerous people counter technologies on the market including thermal sensors, camera sensors, WiFi sensors, break-beam sensors and bluetooth beacons. Every sensor has its own limitations - price point, accuracy, and installations costs all differ.</p>
+            <p itemprop="text">Thermal sensors with machine learning algorithms, like Dor, have the highest accuracy rates with reasonable pricing and minimal installation requirements.</p>
+            <a href="https://blog.getdor.com/2019/11/19/people-counting-door-counter-sensors/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/questions-to-ask-people-counting.jpg);"></span>
@@ -241,16 +258,18 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>How can you decide which people counting solution is right for your business?</h3>
-          <p>It is important to consider the questions your business needs answered before choosing the people counting technology that is best suited for your store.</p>
-          <p>How long does it take to install the sensor and start tracking the foot traffic? How much does it cost to install and are there any extra costs? Do I have direct control over accessing the data? Can the door counter be integrated with third-party solutions such as POS systems?</p>
-          <p>There are a lot of people counter options and you deserve to know everything before purchasing the one that is right for you.</p>
-          <a href="https://blog.getdor.com/2019/11/22/questions-to-ask-people-counting/" class="button large red">Learn More</a>
+          <h3 itemprop="name">How can you decide which people counting solution is right for your business?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">It is important to consider the questions your business needs answered before choosing the people counting technology that is best suited for your store.</p>
+            <p itemprop="text">How long does it take to install the sensor and start tracking the foot traffic? How much does it cost to install and are there any extra costs? Do I have direct control over accessing the data? Can the door counter be integrated with third-party solutions such as POS systems?</p>
+            <p itemprop="text">There are a lot of people counter options and you deserve to know everything before purchasing the one that is right for you.</p>
+            <a href="https://blog.getdor.com/2019/11/22/questions-to-ask-people-counting/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex-row fl-sm-col wrapper slider__item">
+    <div class="flex-row fl-sm-col wrapper slider__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <div class="col flex-column">
         <figure class="slider__figure">
           <span style="background-image:url(/assets/images/people-counting/retail-increase-foot-traffic-sales.jpg);"></span>
@@ -258,11 +277,13 @@ cta: false
       </div>
       <div class="col">
         <div class="slider__content">
-          <h3>How can you increase foot traffic?</h3>
-          <p>At Dor, we know that increasing foot traffic for retailers is a huge challenge.</p>
-          <p>There are so many different and creative ways to increase retail foot traffic. Set up sandwich boards or creative displays, have an social media influencer promote your location, offer in-store classes and keep up with pop-culture trends when it comes to store design. </p>
-          <p>Want more ideas? Check out ourlist of 40 different ideas to increase your customer traffic.</p>
-          <a href="https://blog.getdor.com/2019/10/14/how-to-increase-retail-foot-traffic-sales/" class="button large red">Learn More</a>
+          <h3 itemprop="name">How can you increase foot traffic?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">At Dor, we know that increasing foot traffic for retailers is a huge challenge.</p>
+            <p itemprop="text">There are so many different and creative ways to increase retail foot traffic. Set up sandwich boards or creative displays, have an social media influencer promote your location, offer in-store classes and keep up with pop-culture trends when it comes to store design. </p>
+            <p itemprop="text">Want more ideas? Check out ourlist of 40 different ideas to increase your customer traffic.</p>
+            <a href="https://blog.getdor.com/2019/10/14/how-to-increase-retail-foot-traffic-sales/" class="button large red">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
