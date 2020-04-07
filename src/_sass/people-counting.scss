@@ -44,6 +44,12 @@
     margin: 0;
     max-width: 100%;
 
+    .col {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      padding: 30px;
+    }
+
     &__more-context {
       opacity: 0;
       visibility: hidden;
@@ -117,6 +123,9 @@
       border-left: 4px solid #0075FF;
       padding-left: 25px;
       margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -157,7 +166,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
-      text-align: left;
+      text-align: center;
       letter-spacing: 0.02em;
       color: #002063;
       position: relative;
@@ -211,7 +220,7 @@
   .accurate__item {
     width: 100%;
     height: 274px;
-    background: rgba(204, 53, 49, 0.3);
+    background: rgba(204, 53, 49, 0.1);
     box-shadow: 0px 25px 60px rgba(28, 44, 85, 0.04);
     border-radius: 40px;
     position: relative;
@@ -407,7 +416,7 @@
     position: absolute;
     left: 50px;
     top: 50%;
-    margin-top: -400px;
+    margin-top: -390px;
     background: transparent url(../images/people-counting/accurate-left.png) no-repeat;
     background-size: contain;
 
@@ -423,7 +432,7 @@
 #people-counting-faq {
   .slider {
     &__item {
-      height: 500px !important;
+      // height: 500px !important;
     }
 
     img {
@@ -544,10 +553,12 @@
 
   p {
     color: #043D75;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 36px;
     font-weight: 600;
     padding-bottom: 30px;
+    max-width: 85%;
+    margin: auto;
 
     @media screen and (max-width: 767px) {
       font-size: 24px;
@@ -577,6 +588,7 @@
       max-width: 60%;
       margin-left: auto;
       margin-right: auto;
+      font-size: 14px;
     }
 
     .wrap {
@@ -638,20 +650,24 @@
 
 .people-counting-cta .cta-figure {
   width: 85%;
+  height: 100%;
   padding: 12px;
   background: #FFFFFF;
   box-shadow: 0px 25px 40px rgba(19, 31, 63, 0.1);
   border-radius: 40px;
   margin: -150px 0 0;
+  min-height: 450px;
 
-  img {
+  span {
+    display: block;
     border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
-
-// .max-width-80 p {
-//   max-width: 80%;
-// }
 
 .d-flex {
   display: flex;
@@ -777,6 +793,7 @@
   }
 
   #people-counting-faq {
+    padding: 50px 0 !important;
     .col {
       padding: 0;
     }
@@ -867,4 +884,29 @@
     padding: 10px 40px;
     line-height: 30px;
   }
+}
+
+.flex-column--static {
+  padding-right: 30px !important;
+
+  .figure-wrapper {
+    background: #FDF7F7;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    min-height: 500px;
+
+    span {
+      background: #FDF7F7;
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
 }
