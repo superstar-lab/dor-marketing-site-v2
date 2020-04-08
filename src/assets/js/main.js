@@ -28,7 +28,7 @@ $(function () {
     $('#modal-video').addClass('active');
     $('.modal-backdrop').show();
     $('#modal-video .col div').remove();
-    $('#modal-video .col').append('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/346954831?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>');
+    $('#modal-video .col').append('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/wNjMUDspr1k" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
   });
 
   $('.js-hero').click(function() {
