@@ -3,6 +3,34 @@ $(function () {
   var $body = $('body');
   var $document = $(document);
 
+  $('#requestDemo').on('click', function() {
+    dataLayer.push({
+      'event': 'RequestHome'
+    });
+  });
+    
+  $('#modal-video .close').on('click', function() {
+    $('.modal-backdrop').hide();
+    $('#modal-video .col div').remove();
+    $('body').removeClass('no-scroll');
+    $('#modal-video').removeClass('active');
+  });
+    
+  $('.modal-backdrop').on('click', function() {
+    $(this).hide();
+    $('#modal-video').removeClass('active');
+    $('#modal-video .col div').remove();
+    $('body').removeClass('no-scroll');
+  });
+    
+  $('[data-modal="#modal-video"]').on('click', function() {
+    $('body').addClass('no-scroll');
+    $('#modal-video').addClass('active');
+    $('.modal-backdrop').show();
+    $('#modal-video .col div').remove();
+    $('#modal-video .col').append('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/346954831?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>');
+  });
+
   $('.js-hero').click(function() {
     $('.hero__more-context').toggleClass('active');
     $(this).toggleClass('active');

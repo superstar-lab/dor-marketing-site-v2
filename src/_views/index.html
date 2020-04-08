@@ -6,20 +6,60 @@ layout: default
 ---
 {% assign string = site.data.homepage %}
 
-<section id="hero" class="content-middle">
-  <div class="wrapper content-middle content-center">
-    <div class="hero-image"></div>
+<section id="hero" class="hero-homepage">
+  <div class="wrapper content-center">
     <div class="hero-text text-center col-50">
-      <h1 class="text-title">
-        {{ string.hero.title }}
-      </h1>
-      <div class="subtitle">{{ string.hero.subtitle }}</div>
-      <a class="button-link"  data-modal="#modal-header">
-        <div class="button large white">
-          {{ string.hero.button }}
-        </div>
+      <h1 class="text-title">{{ string.hero.title }}</h1>
+      <div class="subtitle">
+        <p>{{ string.hero.subtitle }}</p>
+        <p>{{ string.hero.subtitle2 }}</p>
+      </div>
+      <a class="button-link" id="requestDemo" data-modal="#modal-header">
+        <div class="button large blue">{{ string.hero.button }}</div>
       </a>
     </div>
+  </div>
+
+  <div class="hero__right">
+    <div class="hero-image"></div>
+    <a data-modal="#modal-video" class="modal-button">
+      <img src="https://assets.getdor.com/optimize/hero-icon-play.png" width="64" height="64" alt="">
+      Watch How Dor Works
+    </a>
+  </div>
+
+  <div class="hero__media">
+    <img src="https://assets.getdor.com/optimize/hero-image.png" width="297" height="170" alt="">
+  </div>
+
+  <div class="hero-dark">
+    <div class="item">
+      <span class="icon">
+        <img src="https://assets.getdor.com/optimize/icon1.png" width="64" height="64">
+      </span>
+      <span>Store <br>Traffic</span>
+    </div>
+    
+    <div class="item">
+      <span class="icon">
+        <img src="https://assets.getdor.com/optimize/icon2.png" width="64" height="64">
+      </span>
+      <span>Peak <br>Hours</span>
+    </div>
+
+    <div class="item">
+      <span class="icon">
+        <img src="https://assets.getdor.com/optimize/icon3.png" width="64" height="64">
+      </span>
+      <span>Conversion <br>Rates</span>
+    </div>
+  </div>
+
+  <div class="hero-button">
+    <a data-modal="#modal-video" class="modal-button">
+      <img src="https://assets.getdor.com/optimize/hero-icon-play.png" width="64" height="64" alt="">
+      Watch How Dor Works
+    </a>
   </div>
 </section>
 
