@@ -8,6 +8,18 @@ $(function () {
     $(this).toggleClass('active');
   });
 
+  var $status = $('.slider-count');
+  var $slickElement = $('#people-counting-faq .slider');
+
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    if(!slick.$dots) {
+  	  return;
+    }
+  
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.text(i + '/' + (slick.$dots[0].children.length));
+  });
+
   $('.slider-on-mobile').slick({
     dots: true,
     arrows: false,
@@ -25,7 +37,7 @@ $(function () {
   });
 
 	$('.slider').slick({
-		dots: false,
+		dots: true,
 		infinite: true,
     speed: 300,
     adaptiveHeight: true,
