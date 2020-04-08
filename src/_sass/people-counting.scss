@@ -48,6 +48,10 @@
     margin: 0;
     max-width: 100%;
 
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      flex: 0 0 85%;
+    }
+
     .col {
       background: rgba(0, 0, 0, 0.4);
       border-radius: 20px;
@@ -478,7 +482,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .slick-dots {
       display: none !important;
     }
@@ -1078,4 +1082,49 @@
 
 img[src=""] {
   display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .slider-quote .slick-arrow {
+    display: none !important;
+  }
+
+  #people-counting-faq .slick-slide {
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  #people-counting-faq .slider .slider__figure {
+    width: 100%;
+    height: 400px;
+
+    &:before { display: none;}
+  }
+
+  .people-counting-cards .card__title {
+    height: auto;
+  }
+
+  .people-counting-cards-blog .card {
+    min-height: inherit !important;
+  }
+
+  #people-counting-faq .slick-dots {
+    bottom: 50px;
+  }
+
+  #people-counting-faq .slider .col {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 0;
+    padding: 0;
+  }
+}
+
+.slider-quote .slick-arrow { display: none !important; }
+
+@media screen and (min-width: 921px) {
+  #people-counting-faq .slick-dots { display: none !important; }
 }
