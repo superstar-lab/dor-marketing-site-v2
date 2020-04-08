@@ -56,7 +56,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-      breakpoint: 767,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 1,
         slidesToShow: 1
@@ -66,21 +66,21 @@ $(function () {
 
 	$('.slider').slick({
 		dots: true,
-		infinite: true,
+    infinite: true,
     speed: 300,
     adaptiveHeight: true,
 		prevArrow: '<svg class="button-prev" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="white"/><path d="M44 27L31 40.5L44 54" stroke="#002063" stroke-width="4" stroke-linejoin="round"/></svg>',
 		nextArrow: '<svg class="button-next" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="white"/><path d="M35 54L48 40.5L35 27" stroke="#002063" stroke-width="4" stroke-linejoin="round"/></svg>',
     slidesToShow: 1,
     responsive: [{
-      breakpoint: 767,
+      breakpoint: 1024,
       settings: {
-				dots: true,
-				arrows: false,
+        dots: true,
+        arrows: false,
     		slidesToShow: 1,
     		slidesToScroll: 1
     	}
-  	}]
+    }]
   });
   
   $('.slider-3').slick({
@@ -92,7 +92,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [{
-      breakpoint: 767,
+      breakpoint: 1024,
       settings: {
 				dots: true,
 				arrows: false,
