@@ -362,3 +362,253 @@
     padding-top: 103px;
   }
 }
+
+//new hero
+
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  position: fixed;
+  left: 0;
+  display: none;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 190;
+}
+
+#modal-video {
+  background: transparent;
+  position: fixed;
+  transform: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  height: auto;
+}
+
+#modal-video .col div {
+  display: none;
+  visibility: hidden;
+}
+
+#modal-video.active .col > div:first-child {
+  display: block;
+  visibility: visible;
+}
+
+body #hero.hero-homepage {
+  background: #F2F6FF;
+  padding: 130px 0px;
+  position: relative;
+}
+
+body #hero.hero-homepage .hero__right {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(https://assets.getdor.com/optimize/hero-right.png) no-repeat 0 0 / cover;
+  z-index: 2;
+  background-position: left;
+}
+
+body #hero.hero-homepage .hero-image {
+  background: transparent url(https://assets.getdor.com/optimize/hero-primary.png) no-repeat 0 0;
+  background-size: cover;
+  width:898px;
+  height: 464px;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-position: right center;
+  z-index: 4;
+}
+
+body #hero.hero-homepage .hero-text {
+  max-width: 40%;
+  text-align: left;
+  opacity: 1;
+  background-color: transparent;
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  z-index: 3;
+  position: relative;
+}
+
+body #hero.hero-homepage .text-title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+body #hero.hero-homepage .hero-text p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+body #hero.hero-homepage .modal-button {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 5;
+  margin-right: 15px;
+  img {
+    width: auto;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  body #hero.hero-homepage .hero-image {
+    right: 150px;
+  }
+
+  // body #hero.hero-homepage .hero__right {
+  //   background-position: bottom;
+  // }
+}
+
+// new hero mobile
+
+@media screen and (max-width: 767px) {
+  body #hero.hero-homepage {
+    padding-bottom: 0;
+  }
+
+  body #hero.hero-homepage .hero-button {
+    padding: 20px 0;
+    background: #F2F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero.hero-homepage .hero-button a {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #205ED8;
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  #hero.hero-homepage img {
+    width: auto !important;
+  }
+
+  #hero.hero-homepage .hero__right {
+    display: none;
+  }
+  
+  #hero.hero-homepage .hero__media {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #hero.hero-homepage .hero-dark {
+    background: #205ED8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero.hero-homepage .hero-dark .item {
+    display: flex;
+    width: 33.33%;
+    color:#fff;
+    font-weight:500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:-50px;
+  }
+  
+  #hero.hero-homepage .hero-dark .item span {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  
+  #hero.hero-homepage .hero-dark .item .icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  body #hero.hero-homepage .hero-text {
+    max-width: 100%;
+    text-align: center;
+    opacity: 1;
+    background: #F2F6FF;
+    padding: 0px;
+    color: #000;
+    z-index: 3;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  #hero.hero-homepage .text-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #hero.hero-homepage p {
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hero.hero-homepage .hero__media,
+  #hero.hero-homepage .hero-dark,
+  #hero.hero-homepage .hero-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body #hero.hero-homepage .hero-image {
+    right: -140px;
+    transform: scale(0.7);
+  }
+}
+
+.active.modal {
+  z-index: 210;
+}
+
+#modal-video {
+  max-width: 100%;
+}
