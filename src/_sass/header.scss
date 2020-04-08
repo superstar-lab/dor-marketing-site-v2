@@ -483,7 +483,7 @@ body #hero.hero-homepage .modal-button {
 
 // new hero mobile
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   body #hero.hero-homepage {
     padding-bottom: 0;
   }
@@ -590,7 +590,7 @@ body #hero.hero-homepage .modal-button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #hero.hero-homepage .hero__media,
   #hero.hero-homepage .hero-dark,
   #hero.hero-homepage .hero-button {
@@ -598,7 +598,7 @@ body #hero.hero-homepage .modal-button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   body #hero.hero-homepage .hero-image {
     right: -140px;
     transform: scale(0.7);
