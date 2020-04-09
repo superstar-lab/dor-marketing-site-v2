@@ -110,25 +110,29 @@ $(function () {
 
   //Mobile Dropdown menu
   $('.header-bottom-menu .dropdown').click(function() {
+    console.log( 'click' );
   $('.dropdown-menu').toggleClass('active');
   });
 
   $('#header .dropdown').mouseover(function() {
+    conosle.log( 'mouseover' );
   $('.dropdown-menu').addClass('active');
   });
 
   $('#header .dropdown').mouseout(function() {
+    console.log( 'mouseout' );
   $('.dropdown-menu').removeClass('active');
   });
 
   //start of ipad touch events
-  $('#header .dropdown').touchstart(function() {
-    $('.dropdown-menu').addClass('active');
+  $('#header .dropdown').bind( 'touchstart', function( e ) {
+        $('.dropdown-menu').addClass('active');
     });
 
-  $('#header .dropdown').touchend(function() {
-    $('.dropdown-menu').removeClass('active');
-    });
+  // $('#header .dropdown').bind( 'touchend', function() {
+  //   console.log( 'on touchend' );
+  //     $('.dropdown-menu').removeClass('active');
+  //   });
   //end of ipad touch events
 
   $(window).scroll(function() {
