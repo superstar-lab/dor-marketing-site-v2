@@ -8,21 +8,21 @@ $(function () {
       'event': 'RequestHome'
     });
   });
-    
+
   $('#modal-video .close').on('click', function() {
     $('.modal-backdrop').hide();
     $('#modal-video .col div').remove();
     $('body').removeClass('no-scroll');
     $('#modal-video').removeClass('active');
   });
-    
+
   $('.modal-backdrop').on('click', function() {
     $(this).hide();
     $('#modal-video').removeClass('active');
     $('#modal-video .col div').remove();
     $('body').removeClass('no-scroll');
   });
-    
+
   $('[data-modal="#modal-video"]').on('click', function() {
     $('body').addClass('no-scroll');
     $('#modal-video').addClass('active');
@@ -43,7 +43,7 @@ $(function () {
     if(!slick.$dots) {
   	  return;
     }
-  
+
     var i = (currentSlide ? currentSlide : 0) + 1;
     $status.text(i + '/' + (slick.$dots[0].children.length));
   });
@@ -82,7 +82,7 @@ $(function () {
     	}
     }]
   });
-  
+
   $('.slider-3').slick({
 		dots: false,
 		infinite: true,
@@ -121,6 +121,16 @@ $(function () {
   $('.dropdown-menu').removeClass('active');
   });
 
+  //start of ipad touch events
+  $('#header .dropdown').touchstart(function() {
+    $('.dropdown-menu').addClass('active');
+    });
+
+  $('#header .dropdown').touchend(function() {
+    $('.dropdown-menu').removeClass('active');
+    });
+  //end of ipad touch events
+
   $(window).scroll(function() {
   $('.dropdown-menu').removeClass('active');
   });
@@ -137,7 +147,7 @@ $(function () {
   var targetSelector = $(this).data('modal');
   var $modal = $(targetSelector);
   var $closeButton = $modal.find('.close');
-  
+
   var $modalInsert = $modal.find('[data-insert]');
   if ($modalInsert.length) {
     var insertSelector = $modalInsert.data('insert');
@@ -168,7 +178,7 @@ $(function () {
     e.preventDefault();
     hideModal();
   });
- 
+
   $document.one('keyup', keyupHandler);
 
   function hideModal() {
@@ -202,9 +212,7 @@ $(function () {
 
 
   const player = new Plyr('#player');
-  player.on('ready', () => { 
-  player.toggleControls(false); 
+  player.on('ready', () => {
+  player.toggleControls(false);
   });
 });
-
-

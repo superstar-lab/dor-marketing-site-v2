@@ -1,3 +1,6 @@
+$padding-top-tablet: 72px; //height of dor header + 16px padding
+$padding-top-mobile: 112px; //height of dor header + subheader + 8px padding
+
 #integrations {
     @extend .padding;
 
@@ -23,17 +26,17 @@
 
         .col-75 {
             padding-left: 40px;
-            
+
             @include media-down(sm) {
                 padding-left: 0;
             }
         }
-        
+
         .col-sm-100 {
-            
+
             @include media-down(sm) {
                 text-align: center;
-            }   
+            }
         }
 
         img {
@@ -53,6 +56,18 @@
             color: $blue;
             font-weight: $font-weight-bold;
             margin-top: 15px;
+        }
+    }
+
+    @include media-down(md) {
+        padding-top: $padding-top-tablet;
+    }
+
+    @include media-down(sm) {
+        padding-top: $padding-top-mobile;
+
+        .wrapper {
+            padding-top: 0px;
         }
     }
 }
