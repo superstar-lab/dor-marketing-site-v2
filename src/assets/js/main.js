@@ -124,17 +124,6 @@ $(function () {
   $('.dropdown-menu').removeClass('active');
   });
 
-  //start of ipad touch events
-  $('#header .dropdown').bind( 'touchstart', function( e ) {
-        $('.dropdown-menu').addClass('active');
-    });
-
-  // $('#header .dropdown').bind( 'touchend', function() {
-  //   console.log( 'on touchend' );
-  //     $('.dropdown-menu').removeClass('active');
-  //   });
-  //end of ipad touch events
-
   $(window).scroll(function() {
   $('.dropdown-menu').removeClass('active');
   });
