@@ -117,9 +117,15 @@ $(function () {
   $('.dropdown-menu').addClass('active');
   });
 
+  $('#header .dropdown').bind( 'touchstart', function( e ) {
+    $('.dropdown-menu').toggleClass('active');
+    });
+
+
   $('#header .dropdown').mouseout(function() {
   $('.dropdown-menu').removeClass('active');
   });
+
 
   $(window).scroll(function() {
   $('.dropdown-menu').removeClass('active');
