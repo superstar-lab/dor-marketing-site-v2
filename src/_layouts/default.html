@@ -3,6 +3,9 @@
     <head>
         {% include head.html %}
         {% include scripts/head.html %}
+        {% if page.url == "/solutions/people-counting/" %}
+            {% include scripts/faq-ld.html %}
+        {% endif %}
     </head>
     <body>
         {% include trackers/google-tag-manager-body.html %}

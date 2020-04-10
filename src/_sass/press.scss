@@ -1,3 +1,6 @@
+$padding-top-tablet: 56px; //height of dor header
+$padding-top-mobile: 104px; //height of dor header + subheader
+
 #press {
     margin-bottom: 60px;
 
@@ -25,7 +28,7 @@
         margin: 50px 0;
 
         @include media-down(sm) {
-           flex-wrap: wrap;
+            flex-wrap: wrap;
         }
 
         @include media-down(md) {
@@ -68,6 +71,13 @@
         }
     }
 
+    @include media-down( md ) {
+        padding-top: $padding-top-tablet;
+    }
+
+    @include media-down( sm ) {
+        padding-top: $padding-top-mobile;
+    }
 }
 
 .terms {
@@ -82,7 +92,7 @@
     h1, h2, h3,h4 {
         color: $light-black;
         margin: 30px 0 10px;
-        
+
         @include media-down(md) {
             margin: 20px 0 10px;
         }
@@ -97,7 +107,7 @@
         text-rendering: optimizeLegibility;
         margin-bottom: 10px;
     }
-    
+
     a {
         color: $blue;
     }
