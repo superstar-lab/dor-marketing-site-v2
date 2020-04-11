@@ -16,7 +16,6 @@
     }
     
     .hero-image {
-
         @include media-down(sm) {
             background: url(../images/homepage/hero.jpg) no-repeat;
             background-position: top center;
