@@ -553,11 +553,11 @@ body #hero.hero-homepage .modal-button {
     }
 
     #hero.hero-homepage .hero-dark .item .icon {
-        width: 64px;
+        width: auto;
         height: 64px;
         display: block;
         text-align: center;
-        margin: auto;
+        margin: 0 -8px 0 0;
         padding-bottom: 0;
         padding-top: 0;
     }
