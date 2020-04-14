@@ -19,7 +19,6 @@
         @include media-down(sm) {
             background: url(../images/homepage/hero.jpg) no-repeat;
             background-position: top center;
-            background-size: contain;
             min-height: 250px;
             width: 100%;
             background-size: cover;
@@ -27,7 +26,6 @@
     }
 
     .wrapper {
-
         @include media-down(sm) {
             padding: 0;
             display: block;
