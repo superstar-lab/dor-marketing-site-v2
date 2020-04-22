@@ -92,7 +92,12 @@ cta: false
         <div class="wrapper">
             <div class="more-details flex-row fl-sm-col content-center text-center content-middle">
                 <div class="col-66 col-sm-100">
-                    <a data-modal="#{{ tab.content.heading.contentID }}">Download</a> {{ tab.content.details.title }}
+                    {% if tab.content.details.href %}
+                        <a href="{{tab.content.details.href}}">{{tab.content.details.link_text}}</a>
+                    {% else %}
+                        <a data-modal="#{{ tab.content.heading.contentID }}">Download</a>
+                    {% endif %}
+                    {{ tab.content.details.title }}
                 </div>
             </div>
         </div>
