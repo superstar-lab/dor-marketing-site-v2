@@ -92,12 +92,12 @@ tabs:
         class: no-bottom-padding
       second-section:
         title: Get up and running quickly
-        subtitle: 'Integrate with our REST API to access to all your data in one place. Easily integrate with BI tools or on-premise software to get the most out of your data. '
+        subtitle: 'Integrate with our REST API to access all of your data in one place. Easily integrate with BI tools or on-premise software to get the most out of your data. '
         image: /assets/images/how-it-works/api-json-optimized.svg
         alt: Dor API
         class: no-bottom-margin
       details:
-        title: the API docs to get started
+        title: the API documentation to get started
         href: https://assets.getdor.com/api-docs/v2/index.html
         link_text: View
 
