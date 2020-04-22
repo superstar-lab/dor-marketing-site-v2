@@ -20,11 +20,11 @@
 
             @include media-down(sm) {
                 width: 100%;
-                margin-bottom: 20px;                
+                margin-bottom: 20px;
             }
         }
 
-        h1, 
+        h1,
         .subtitle {
             color: $white;
         }
@@ -45,7 +45,7 @@
                 padding: 0 0 24px;
                 background: $dark-blue;
             }
-    
+
             .subtitle {
                 opacity: 0.8;
             }
@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    
+
     ul {
         padding: 24px 0;
         white-space: nowrap;
@@ -72,19 +72,19 @@
         @include media-down(sm) {
             padding: 15px 0;
         }
-        
+
         li {
             display: inline-block;
-            
+
             &.active {
-                
+
                 a span {
                     color: $blue;
                     border-color: $blue;
                     border-radius: 4px;
                 }
             }
-            
+
             a span {
                 padding: 9px 20px;
                 color: $brownish-grey;
@@ -121,6 +121,7 @@
 
 .tabs-stage {
 
+
     img {
         border-radius: 8px;
     }
@@ -140,93 +141,101 @@
 
     .heading {
         @extend .padding;
-        
+
         @include media-down(md) {
             padding-top: 56px;
         }
-    
+
         .subtitle {
             margin: 12px 0 40px;
             max-width: 75%;
             display: inline-block;
-    
+
             @include media-down(md) {
                 margin: 8px 0 24px;
             }
-    
+
             @include media-down(sm) {
                 max-width: 100%;
                 font-size: $font-size-medium;
-    
+
             }
         }
+
+        &.no-bottom-padding {
+            padding-bottom: 0;
+        }
     }
-    
-    .second-section{
+
+    .second-section {
         margin: 48px 0 128px;
-    
+
         @include media-down(md) {
             margin: 9px 0 64px;
         }
-    
+
         @include media-down(sm) {
             margin: 0 0 48px;
         }
-    
+
         h2 {
             margin-bottom: 12px;
         }
-    
+
         p {
             color: $dark-grey;
         }
-    
-        .flex-row  {
-    
+
+        .flex-row {
+
             .col {
-                
+
                 &:first-child {
                     padding-right: 28px;
-                    
+
                     @include media-down(sm) {
                         padding: 0;
                     }
                 }
-                
+
                 &:last-child {
                     padding-right: 28px;
-    
+
                     @include media-down(sm) {
                         padding: 0;
                         margin-bottom: 16px;
                     }
                 }
-    
+
             }
         }
+
+        &.no-bottom-margin {
+            margin-bottom: 0;
+        }
     }
-    
+
     .feautures {
         margin-bottom: 50px;
 
         @include media-down(sm) {
             margin-bottom: 20px;
         }
-    
+
         h2 {
             margin-bottom: 40px;
-    
+
             @include media-down(md) {
                 margin-bottom: 24px;
             }
-    
+
             @include media-down(sm) {
                 margin-bottom: 15px;
             }
         }
-        
+
         .wrapper > .flex-row {
-            
+
             .col {
 
                 & > .checklist-section {
@@ -237,7 +246,7 @@
                     }
                 }
             }
-    
+
             .checklist-section {
                 padding: 32px;
                 border-radius: 8px;
@@ -248,33 +257,33 @@
                     padding: 24px 16px;
                     margin-bottom: 15px;
                 }
-        
+
                 h3 {
                     margin-left: 40px;
                     margin-bottom: 22px;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     font-size: $default-font-size;
-        
+
                     @include media-down(md) {
                         margin-left: 28px;
                         font-size: $font-size-medium;
                     }
                 }
-        
+
                 ul {
-        
+
                     li {
                         margin-bottom: 22px;
-                        
+
                         @include media-down(md) {
                             margin-bottom: 12px;
                         }
-                        
+
                         span {
                             width: calc(100% - 24px);
                             font-size: $default-font-size;
-        
+
                             @include media-down(md) {
                                 font-size: $font-size-medium;
                             }
@@ -283,29 +292,29 @@
                 }
             }
         }
-        
+
         img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
-    
+
             @include media-down(md) {
-                height: calc((100vw - 64px)* (2/3));
+                height: calc((100vw - 64px) * (2 / 3));
             }
 
             @include media-down(sm) {
-                height: calc((100vw - 32px)* (2/3));
+                height: calc((100vw - 32px) * (2 / 3));
             }
-    
+
         }
     }
-    
+
     .more-details {
         margin: 40px 12px;
 
-        
+
         @include media-down(md) {
             margin-top: 0;
             margin-bottom: 0;
@@ -314,7 +323,7 @@
         @include media-down(sm) {
             margin: 0;
         }
-    
+
         .col-66 {
             font-size: $default-font-size;
             color: $brownish-grey;
@@ -322,7 +331,7 @@
             @include media-down(sm) {
                 font-size: $font-size-medium;
             }
-            
+
             a {
                 color: $blue;
                 font-size: $default-font-size;
@@ -357,7 +366,7 @@
         outline: none;
         width: calc(100% - 24px);
         position: relative;
-    
+
         @include media-down(sm) {
             width: 100%;
             border-radius: 0;
@@ -365,15 +374,15 @@
     }
 
     #player {
-    
+
         button:focus,
         button:active {
             outline: none;
         }
-        
+
         button {
             outline: none;
-            background-color: #df1e25;  
+            background-color: #df1e25;
         }
     }
 
@@ -381,19 +390,19 @@
     .plyr__progress input[type=range] {
         color: #df1e25 !important;
     }
-    
+
     .plyr--full-ui.plyr--video .plyr__control--overlaid {
-        padding: 27px; 
-        background-color: #df1e25 !important;   
+        padding: 27px;
+        background-color: #df1e25 !important;
     }
-    
-    .plyr--video .plyr__control.plyr__tab-focus, 
-    .plyr--video .plyr__control:hover, 
+
+    .plyr--video .plyr__control.plyr__tab-focus,
+    .plyr--video .plyr__control:hover,
     .plyr--video .plyr__control[aria-expanded=true] {
         background-color: #df1e25;
-    
-        &:hover, 
-        &:focus, 
+
+        &:hover,
+        &:focus,
         &:active {
             background-color: #df1e25;
             box-shadow: none;

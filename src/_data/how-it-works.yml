@@ -89,11 +89,13 @@ tabs:
       heading:
         title: Integrate with anything
         subtitle: Use Dor's API to integrate your foot traffic data into the systems your organization is already using.
+        class: no-bottom-padding
       second-section:
         title: Get up and running quickly
         subtitle: 'Integrate with our REST API to access to all your data in one place. Easily integrate with BI tools or on-premise software to get the most out of your data. '
         image: /assets/images/how-it-works/api-json-optimized.svg
         alt: Dor API
+        class: no-bottom-margin
       details:
         title: the API docs to get started
         href: https://assets.getdor.com/api-docs/v2/index.html
