@@ -43,17 +43,19 @@ cta: false
 <div class="tabs-stage">
     {% for tab in string.tabs %}
     <div id="{{ tab.title  | downcase | remove: ' '  }}" >
-        <section class="heading">
+        <section class="heading {{ tab.content.heading.class }}">
             <div class="wrapper flex-column">
                 <div class="col text-center">
                     <h2 class="large">{{ tab.content.heading.title }}</h2>
                     <div class="subtitle">{{ tab.content.heading.subtitle }}</div>
-                    <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+                    {% if tab.content.heading.image %}
+                        <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+                    {% endif %}
                 </div>
             </div>
         </section>
     
-        <section class="second-section">
+        <section class="second-section {{ tab.content.second-section.class }}">
             <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
                 <div class="col">
                     <img src="{{ tab.content.second-section.image }}" alt="{{ tab.content.second-section.alt }}">
@@ -92,7 +94,12 @@ cta: false
         <div class="wrapper">
             <div class="more-details flex-row fl-sm-col content-center text-center content-middle">
                 <div class="col-66 col-sm-100">
-                    <a data-modal="#{{ tab.content.heading.contentID }}">Download</a> {{ tab.content.details.title }}
+                    {% if tab.content.details.href %}
+                        <a href="{{tab.content.details.href}}">{{tab.content.details.link_text}}</a>
+                    {% else %}
+                        <a data-modal="#{{ tab.content.heading.contentID }}">Download</a>
+                    {% endif %}
+                    {{ tab.content.details.title }}
                 </div>
             </div>
         </div>

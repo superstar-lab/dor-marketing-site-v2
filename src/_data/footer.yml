@@ -22,6 +22,8 @@ navigation:
     url: /resources/#retail
   - title: Blog
     url: https://blog.getdor.com/
+  - title: API
+    url: https://assets.getdor.com/api-docs/v2/index.html
 - name: Company
   links:
   - title: About Us
