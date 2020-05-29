@@ -54,10 +54,6 @@ members:
       name: Ryan
       lastName: Casella
       position: Operations Associate
-    - image: /assets/images/about/Clendening-Scott.jpg
-      name: Scott
-      lastName: Clendening
-      position: Software Engineer
     - image: /assets/images/about/Delbuck-Julie.jpg
       name: Julie
       lastName: Delbuck
@@ -70,10 +66,6 @@ members:
       name: Chad
       lastName: Golembeski
       position: QA Engineer
-    - image: /assets/images/about/Hackworth-Dave.jpg
-      name: David
-      lastName: Hackworth
-      position: Head of Customer Success
     - image: /assets/images/about/Huang-Tina.jpg
       name: Tina
       lastName: Huang
@@ -94,10 +86,6 @@ members:
       name: Mike
       lastName: Lyons
       position: Senior Software Engineer
-    - image: /assets/images/about/Noble-Evan.jpg
-      name: Evan
-      lastName: Noble
-      position: Firmware Engineer
     - image: /assets/images/about/Olsen-Erik.jpg
       name: Erik
       lastName: Olsen
@@ -106,18 +94,10 @@ members:
       name: Kameron
       lastName: Seto
       position: Software Engineer
-    - image: /assets/images/about/Shahabi-Aubtin.jpg
-      name: Aubtin
-      lastName: Shahabi
-      position: SMB Sales Representative
     - image: /assets/images/about/Simpson-Madeleine.jpg
       name: Madeleine
       lastName: Simpson
       position: Office Manager
-    - image: /assets/images/about/wei-wang.jpg
-      name: Wei
-      lastName: Wang
-      position: Machine Learning Engineer
   dogs:
     - image: /assets/images/about/finn.jpg
       name: Finn
