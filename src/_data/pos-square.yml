@@ -1,0 +1,36 @@
+hero:
+  title: Increase your store’s performance by measuring its conversion rate
+  text: Only 1% increase in conversion rate can increase profitability by 10%. Integrate Dor with Square to automatically calculate your conversion rate, helping you make swifter and better decisions for your business.
+  button_text: Get Dor
+  url: "https://app.getdor.com/auth/pos/square/redirect?before_signup=true"
+  url_staging: 'https://app-staging.getdor.com/auth/pos/square/redirect?before_signup=true'
+  image: /assets/images/pos/square-hero-2.jpg
+  logo: /assets/images/pos/squaredorlogo.svg
+  alt: 'square-dor logo'
+
+why_dor:
+  title : Why Dor?
+  image: /assets/images/pos/square-image-01.png
+  alt: 'Dor Sensor'
+  points:
+    - title: Peel and stick thermal sensor over any door and start counting your foot traffic right away.
+    - title: One-click integration with your Square POS enables you to view sales, foot traffic, and conversion rate all in one place.
+    - title: Dor uses a cellular network - no WiFi required in your space.
+
+empower_your_store:
+  title: Empower your store
+  image: /assets/images/pos/square-image-02.jpg
+  alt: 'empower your store'
+  points:
+    text: Dor easily integrates with Square to automatically calculate your conversion rate and gives you the power to increase store performance, optimize staffing and improve marketing effectiveness.
+
+cta_section:
+  title: Start measuring your store performance now
+  button_text: Connect Now
+  url: "https://app.getdor.com/auth/pos/square/redirect?before_signup=true"
+  url_staging: 'https://app-staging.getdor.com/auth/pos/square/redirect?before_signup=true'
+already_have_dor:
+  title: Already have Dor?
+  text: Sign in to your Dor app to securely connect your Square account.
+  button_text: Sign in
+  url: https://app.getdor.com/admin/pos/manage

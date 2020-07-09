@@ -16,7 +16,7 @@ navigation:
     - title: Customers
       url: /customers
     - title: Partners
-      url: /partners
+      url: /integrations
 - title: Resources
   url: resources
 
