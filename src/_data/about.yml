@@ -30,10 +30,6 @@ members:
       name: Joseph
       lastName: Abad
       position: Director of Engineering
-    - image: /assets/images/about/Apaydin-Batuhan.jpg
-      name: Batuhan
-      lastName: Apaydin
-      position: Senior Marketing Manager
     - image: /assets/images/about/Bas-Levent.jpg
       name: Levent
       lastName: Bas
@@ -46,34 +42,10 @@ members:
       name: Alex
       lastName: Brandes
       position: Director Software Engineering
-    - image: /assets/images/about/Brown-Jason.jpg
-      name: Jason
-      lastName: Brown
-      position: Head of Strategic Accounts
     - image: /assets/images/about/Casella-Ryan.jpg
       name: Ryan
       lastName: Casella
       position: Operations Associate
-    - image: /assets/images/about/Delbuck-Julie.jpg
-      name: Julie
-      lastName: Delbuck
-      position: Head of Operations
-    - image: /assets/images/about/Jamirsen-Ezell.jpg
-      name: Jamirsen
-      lastName: Ezell
-      position: Firmware Engineer
-    - image: /assets/images/about/Golembeski-Chad.jpg
-      name: Chad
-      lastName: Golembeski
-      position: QA Engineer
-    - image: /assets/images/about/Huang-Tina.jpg
-      name: Tina
-      lastName: Huang
-      position: Customer Advocate
-    - image: /assets/images/about/Kazemian-Daniel.jpg
-      name: Daniel
-      lastName: Kazemian
-      position: Software Engineer
     - image: /assets/images/about/Le-Trini.jpg
       name: Trini
       lastName: Le
@@ -90,18 +62,7 @@ members:
       name: Erik
       lastName: Olsen
       position: Firmware Engineer
-    - image: /assets/images/about/Seto-Kameron.jpg
-      name: Kameron
-      lastName: Seto
-      position: Software Engineer
-    - image: /assets/images/about/Simpson-Madeleine.jpg
-      name: Madeleine
-      lastName: Simpson
-      position: Office Manager
   dogs:
-    - image: /assets/images/about/finn.jpg
-      name: Finn
-      position: Director of Dog
     - image: /assets/images/about/Guster.jpg
       name: Guster
       position: Engineering Overlord

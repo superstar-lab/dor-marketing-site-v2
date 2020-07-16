@@ -31,7 +31,8 @@ values:
 
 openPositions:
   title: Open positions
-  subtitle: At Dor, we look for enthusiasm and talent, over perfection and pedigree. However you identify and whatever background you bring with you, we want to hear from you!<br>Excited about Dor but don’t see a role that fits your background? Apply for your dream job below and tell us why you’re our perfect match.
+  subtitle: At Dor, we look for enthusiasm and talent, over perfection and pedigree. However you identify and whatever background you bring with you, we want to hear from you!<br>
+  text: 'There are currently no open positions at Dor.'
 
 benefits:
   image: /assets/images/careers/benefits.jpg
