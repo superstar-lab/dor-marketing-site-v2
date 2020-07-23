@@ -38,41 +38,6 @@ cta: false
     </div>
 </section>
 
-<section class="team">
-    <div class="wrapper content-center flex-row">
-        <div class="col-66 col-sm-100 text-center">
-            <h2 class="large">{{ string.team.title }}</h2>
-            <div class="subtitle">{{ string.team.subtitle }}</div>
-        </div>
-    </div>
-    <div class="wrapper members">
-        <div class="flex-row ">
-            {% for member in string.members.mainPostions %}
-            <div class="col-25 col-sm-50 text-center">
-                <img src="{{ member.image }}">
-                <h4>{{ member.name }}</h4>
-                <div>{{ member.position }}</div>
-            </div>
-            {% endfor %}
-            {% assign sortedTeam = string.members.team | sort: 'lastName' %}
-            {% for member in sortedTeam %}
-            <div class="col-25 col-sm-50 text-center">
-                <img src="{{ member.image }}">
-                <h4>{{ member.name }} {{ member.lastName }}</h4>
-                <div>{{ member.position }}</div>
-            </div>
-            {% endfor %}
-            {% for member in string.members.dogs %}
-            <div class="col-25 col-sm-50 text-center">
-                <img src="{{ member.image }}">
-                <h4>{{ member.name }}</h4>
-                <div>{{ member.position }}</div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
 <section class="working-days">
     <div class="wrapper">
         <h2 class="large text-center">{{ string.workingDay.title }}</h2>
