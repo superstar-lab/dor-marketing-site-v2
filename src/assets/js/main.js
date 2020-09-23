@@ -2,6 +2,37 @@ $( function() {
     var $body = $( 'body' );
     var $document = $( document );
 
+    $(".trusted__slider").slick({
+        slidesToShow: 6,
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 2
+            }
+        }
+        ]
+    });
+      
+    $(".faq .tab-header").click(function(){
+        $(".faq .accordion__tab").removeClass("active");
+        $(this).closest(".accordion__tab").addClass("active");
+        $(".faq .tab-body").stop().slideUp("fast");
+        $(this).closest(".accordion__tab").find(".tab-body").stop().slideDown("fast");
+    });
+    
+    $(".compare-plan__body .plan h4").click(function(){
+        if($(window).width() < 767){
+        $(".compare-plan__body .plan").removeClass("active");
+        $(this).closest(".plan").addClass("active");
+        $(".compare-plan__body .accordion-block").stop().slideUp("fast");
+        $(this).closest(".plan").find(".accordion-block").stop().slideDown("fast");
+        }
+    });
+
     $( '#requestDemo' ).on( 'click', function() {
         dataLayer.push( {
             'event': 'RequestHome'
