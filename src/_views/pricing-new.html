@@ -6,12 +6,10 @@ layout: default
 cta: false
 ---
 
-{# {% assign string = site.data.pricing %} #}
-
 <div id="pricing-v2">
   <div class="hero">
     <div class="hero__slogan">
-      <h2>Find the right plan for your store</h2>
+      <h1>Find the right plan for your store</h1>
       <p>Get the data you need to improve your conversion rate,<br>optimize your staff scheduling and increase your<br>marketing effectiveness</p>
     </div>
     <img src="/assets/images/pricing-new/product-dor.png" alt="">
@@ -19,8 +17,7 @@ cta: false
 
   <div class="content">
     <div class="compare-plan">
-      <h3>Compare Plan Fetaures</h3>
-
+      <h3>Compare Plan Features</h3>
       <div class="compare-plan__header">
         <div class="compare-plan__btn-wrapper">
           <button class="compare-plan__btn active">Monthly</button>
@@ -31,7 +28,7 @@ cta: false
         </div>
         
       </div>
-      <div class="compare-plan__body">
+      <div class="compare-plan__body monthly">
         <div class="wrapper">
           <div class="flex-row">
             <div class="col">
@@ -40,8 +37,18 @@ cta: false
                 <ul>
                   <li>User Seats</li>
                   <li>Web/Mobile Access</li>
-                  <li>POS Integration</li>
-                  <li>Custom POS Integration</li>
+                  <li class="info-tooltip">
+                    <span>POS Integration</span>
+                    <div class="info bullet pos">
+                      <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                    </div>
+                  </li>
+                  <li class="info-tooltip">
+                    <span>Custom POS Integration</span>
+                    <div class="info bullet custom-pos">
+                      <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                    </div>
+                  </li>
                   <li>Dashboard Update</li>
                   <li>Location Ranking</li>
                   <li>API</li>
@@ -56,12 +63,12 @@ cta: false
               <div class="plan">
                 <h4>Growth</h4>
                 <div class="accordion-block">
-                  <p>Analytics tool for retail<br>stores with<br>1 or 2 locations</p>
+                  <p>Analytics tool for retail stores with 1 or 2 locations</p>
                   <div class="pricing">
                     <div class="price">
                       <span class="value">$59</span>
-                      <span class="compared-value">$79</span>
-                      <sub>mo per store</sub>
+                      <span class="compared-value">$73</span>
+                      <sub>/ mo <br> per store</sub>
                     </div>
                     <div class="desc">
                       Plus $249 per store one time hardware fee
@@ -69,19 +76,55 @@ cta: false
                   </div>
 
                   <ul>
-                    <li>3</li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li>Every 6 Hours</li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
+                    <li><span class="mobile-title">User Seats</span><span class="number">3</span></li>
+                    <li><span class="mobile-title">Web/Mobile Access</span><span class="number bullet"></span></li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        POS Integration
+                        <div class="info bullet pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="number bullet"></span>
+                    </li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        Custom POS Integration
+                        <div class="info bullet custom-pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Dashboard Update</span>
+                      <span class="number">Every 6 Hours</span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Location Ranking</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">API</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Dedicated CSM</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Free Battery Replacement</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Accuracy Audit</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
+                    <li>
+                      <span class="mobile-title">Single Sign-On</span>
+                      <span class="number bullet opacity-disabled"></span>
+                    </li>
                   </ul>
-                  <div class="balloon">Not Included</div>
                 </div>
               </div>
             </div>
@@ -93,8 +136,8 @@ cta: false
                   <div class="pricing">
                     <div class="price">
                       <span class="value">$69</span>
-                      <span class="compared-value">$83</span>
-                      <sub>mo per store</sub>
+                      <span class="compared-value">$89</span>
+                      <sub>/ mo <br> per store</sub>
                     </div>
                     <div class="desc">
                       Plus $249 per store one time hardware fee
@@ -102,17 +145,33 @@ cta: false
                   </div>
 
                   <ul>
-                    <li>Unlimited</li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet disabled"></span></li>
-                    <li>Every Hour</li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet disabled"></span></li>
-                    <li><span class="bullet disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
-                    <li><span class="bullet opacity-disabled"></span></li>
+                    <li><span class="mobile-title">User Seats</span><span class="number">Unlimited</span></li>
+                    <li><span class="mobile-title">Web/Mobile Access</span><span class="number bullet"></span></li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        POS Integration
+                        <div class="info bullet pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="number bullet"></span>
+                    </li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        Custom POS Integration
+                        <div class="info bullet custom-pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="number bullet disabled"></span>
+                    </li>
+                    <li><span class="mobile-title">Dashboard Update</span><span class="number">Every Hour</span></li>
+                    <li><span class="mobile-title">Location Ranking</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">API</span><span class="number bullet disabled"></span></li>
+                    <li><span class="mobile-title">Dedicated CSM</span><span class="number bullet disabled"></span></li>
+                    <li><span class="mobile-title">Free Battery Replacement</span><span class="number bullet opacity-disabled"></span></li>
+                    <li><span class="mobile-title">Accuracy Audit</span><span class="number bullet opacity-disabled"></span></li>
+                    <li><span class="mobile-title">Single Sign-On</span><span class="number bullet opacity-disabled"></span></li>
                   </ul>
                 </div>
               </div>
@@ -121,7 +180,7 @@ cta: false
               <div class="plan">
                 <h4>Enterprise</h4>
                 <div class="accordion-block">
-                  <p>Store performance solution for regional & national retail chaings</p>
+                  <p>Store performance solution for regional &amp; national retail chains</p>
                   <div class="pricing pricing--big">
                     <div class="price">
                       Talk to sales
@@ -129,19 +188,34 @@ cta: false
                   </div>
 
                   <ul>
-                    <li>Unlimited</li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li>Every Hour</li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
-                    <li><span class="bullet"></span></li>
+                    <li><span class="mobile-title">User Seats</span><span class="number">Unlimited</span></li>
+                    <li><span class="mobile-title">Web/Mobile Access</span><span class="number bullet"></span></li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        POS Integration
+                        <div class="info bullet pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="number bullet"></span>
+                    </li>
+                    <li class="info-tooltip">
+                      <span class="mobile-title">
+                        Custom POS Integration
+                        <div class="info bullet custom-pos">
+                          <img src="/assets/images/pricing-new/icon-info.svg" alt="">
+                        </div>
+                      </span>
+                      <span class="number bullet"></span>
+                    </li>
+                    <li><span class="mobile-title">Dashboard Update</span><span class="number">Every Hour</span></li>
+                    <li><span class="mobile-title">Location Ranking</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">API</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">Dedicated CSM</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">Free Battery Replacement</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">Accuracy Audit</span><span class="number bullet"></span></li>
+                    <li><span class="mobile-title">Single Sign-On</span><span class="number bullet"></span></li>
                   </ul>
-                  <div class="balloon">Included</div>
                 </div>
               </div>
             </div>
@@ -150,7 +224,8 @@ cta: false
       </div>
     </div>
 
-    <a href="#" class="request-demo-btn">Request a Demo</a>
+    <!--<a href="#" class="request-demo-btn">Request a Demo</a>-->
+    <button data-modal="#modal-header" class="request-demo-btn button-link">Request a Demo</button>
 
     <section class="people-counting-section slider-quote">
       <div class="wrapper">
@@ -167,21 +242,21 @@ cta: false
               </div>
             
               <div class="slider__item">
-                <p>After working with Dor, I’ve learned that even a 10% drop in conversion rate costs my business from $5,000 to $7,000 depending on foot traffic. Without Dor, I couldn’t know how much money walked out the door.</p>
+                <p>I love that Dor and Shopify integrate seamlessly. Having conversion stats at my fingertips helps me set goals for my team and me. It’s one of the most essential tools I use to maximize sales and plan staffing needs.</p>
                 <div class="slider__author">
                   <span class="wrap">
-                    <strong>Adam Scott</strong>
-                    <small>President, Clothes Mentor</small>
+                    <strong>Kate Calder</strong>
+                    <small>Owner, Communitie Marfa</small>
                   </span>
                 </div>
               </div>
 
               <div class="slider__item">
-                <p>After working with Dor, I’ve learned that even a 10% drop in conversion rate costs my business from $5,000 to $7,000 depending on foot traffic. Without Dor, I couldn’t know how much money walked out the door.</p>
+                <p>We love using Dor! It is magic. We cannot even figure out how it is so precise. I cannot wait to have more data under our belts to really put the numbers to work. This is going to help us dramatically with staffing, store hours, and employee/salesperson evaluation.</p>
                 <div class="slider__author">
                   <span class="wrap">
-                    <strong>Adam Scott</strong>
-                    <small>President, Clothes Mentor</small>
+                    <strong>Johnny Freeman</strong>
+                    <small>Founder, Johnny Fly Co.</small>
                   </span>
                 </div>
               </div>
@@ -194,7 +269,7 @@ cta: false
 
     <section class="trusted">
       <div class="wrapper">
-        <h3>Trusted by...</h3>
+        <h3>Trusted by</h3>
         <div class="trusted__slider">
           <div class="trusted__slide">
             <img src="/assets/images/pricing-new/partner-hilton.png" alt="">
@@ -225,62 +300,75 @@ cta: false
           <div class="accordion__tab">
             <div class="tab-header">
               <span class="number">1</span>
-              <h5>What payment methods do you offer?</h5>
+              <h5>What payment methods do you accept?</h5>
             </div>
             <div class="tab-body">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+              <p>We accept credit card and ACH for Growth and Premium plans. Enterprise plans have flexible billing options.</p>
             </div>
           </div>
           <div class="accordion__tab">
             <div class="tab-header">
               <span class="number">2</span>
-              <h5>What payment methods do you offer?</h5>
+              <h5>Are there any additional fees?</h5>
             </div>
             <div class="tab-body">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+              <p>No. The listed fees are all-inclusive; there are no additional or hidden fees.</p>
             </div>
           </div>
           <div class="accordion__tab">
             <div class="tab-header">
               <span class="number">3</span>
-              <h5>What payment methods do you offer?</h5>
+              <h5>Do you offer a free trial?</h5>
             </div>
             <div class="tab-body">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+              <p>No. We offer a 30-day money-back guarantee if you are not satisfied with our product. </p>
             </div>
           </div>
           <div class="accordion__tab">
             <div class="tab-header">
               <span class="number">4</span>
-              <h5>What payment methods do you offer?</h5>
+              <h5>Can I change my plan later? </h5>
             </div>
             <div class="tab-body">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+              <p>Yes. You can upgrade your plan at any time or change it at renewal. </p>
             </div>
           </div>
           <div class="accordion__tab">
             <div class="tab-header">
               <span class="number">5</span>
-              <h5>What payment methods do you offer?</h5>
+              <h5>In what type of doorways do the sensors work?</h5>
             </div>
             <div class="tab-body">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+              <p>We designed our sensors to operate in indoor conditions for standard doorways that allow frequent ingress and egress. The sensor may be top-mounted on door frames up to 8ft (2.4m) wide and 12ft (3.6m) tall. For more information on doorway compatibility, please visit our <a href="https://intercom.help/getdor/en" target="_blank" style="font-size:inherit">Help Center</a>.</p>
+            </div>
+          </div>
+          <div class="accordion__tab">
+            <div class="tab-header">
+              <span class="number">6</span>
+              <h5>How accurate is the sensor?</h5>
+            </div>
+            <div class="tab-body">
+              <p>Dor pairs thermal-imaging technology with machine-learning algorithms that optimize the sensor for any environment. While the sensor accuracy at deployment is typically on-par with camera-based solutions, we continuously train our algorithms to improve accuracy and consistency across all your deployments.</p>
+            </div>
+          </div>
+          <div class="accordion__tab">
+            <div class="tab-header">
+              <span class="number">7</span>
+              <h5>I have more questions.</h5>
+            </div>
+            <div class="tab-body">
+              <p>Please contact our sales team by <a href="#" data-modal="#modal-header" style="font-size:inherit">requesting a demo</a> and we’d be happy to answer any of your questions. </p>
             </div>
           </div>
         </div>
       </div>
     </section> 
 
-    <div class="wrapper">
+    <div class="wrapper wrapper-cta">
       <section class="people-counting-section people-counting-cta">
         <div class="flex-row fl-sm-col wrapper col-p40 column-reverse">
           <div class="col col-sm-100 flex-column d-flex justify-content-center">
-            <h3>Start counting your foot traffic</h3>
+            <h3>Start counting <br> your foot traffic</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
             <a href="#" class="button-link" data-modal="#modal-header">
               <div class="button large white">Request Demo</div>
@@ -289,7 +377,7 @@ cta: false
           <div class="col col-sm-100 flex-column">
             <img class="dots" src="/assets/images/pricing-new/icon-dots.svg" alt="">
             <figure class="cta-figure">
-              <span style="background-image: url(/assets/images/people-counting/request-demo-2.4482400c.jpg);"></span>
+              <span style="background-image: url(/assets/images/pricing-new/request-demo.png);"></span>
             </figure>
           </div>
         </div>
