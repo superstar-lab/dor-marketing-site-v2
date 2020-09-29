@@ -424,11 +424,15 @@
       content: "";
       margin: auto; }
   
-  #pricing-v2 .content .trusted__slider {
-    padding: 10px 0; }
+    #pricing-v2 .content .trusted__slider {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 0; }
   
   #pricing-v2 .content .trusted__slide {
     width: 185px;
+    height: 133px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -593,7 +597,7 @@
           background: url(../images/pricing-new/icon-balloon.svg);
           background-repeat: no-repeat;
           padding: 7px 0;
-          font-size: 12px;
+          font-size: 11px;
           color: black;
           font-weight: 400;
           position: absolute;
@@ -636,7 +640,7 @@
         }
         &.disabled{
           &:after{
-            content: "Subscription Only";
+            content: "Annual Subscription";
           }
         }
         &.opacity-disabled{
@@ -907,12 +911,6 @@
 
         #pricing-v2 .content .compare-plan__body .plan .bullet {
           margin: 0;
-        }
-
-        #pricing-v2 .content .trusted__slider {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
         }
 
         #pricing-v2 .content .trusted__slide {
