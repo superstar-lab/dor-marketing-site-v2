@@ -340,7 +340,7 @@
             font-weight: 600;
             font-size: 24px; }
           #pricing-v2 .content .compare-plan__body .plan .pricing .price {
-            padding: 20px 30px;
+            padding: 20px;
             background: #205ED8;
             border-radius: 16px; }
             @media screen and (max-width: 767px) {
@@ -587,14 +587,15 @@
         position:relative;
         &:after{
           content: "Included";
-          width: 113px;
+          width: 115px;
           height: 42px;
+          line-height: 22px;
           background: url(../images/pricing-new/icon-balloon.svg);
           background-repeat: no-repeat;
           padding: 7px 0;
-          font-size: 14px;
+          font-size: 12px;
           color: black;
-          font-weight: 600;
+          font-weight: 400;
           position: absolute;
           top: -40px;
           left: 50%;
@@ -608,6 +609,19 @@
           padding: 15px;
           top: -84px;
           background-image: url(../images/pricing-new/icon-balloon-large.svg);
+          font-size: 14px;
+          line-height: normal;
+          text-align: center;
+          padding: 25px 20px;
+          font-family: "Ringside Regular A","Ringside Regular B";
+          font-weight: 400;
+        }
+        &.info.custom-pos:after {
+          width: 265px;
+          height: 62px;
+          top: -62px;
+          padding: 20px;
+          background-image: url(../images/pricing-new/custom-pos-balloon.png);
         }
       &.info.pos:after {
         content: "1-click integration with Shopify, Square and Lightspeed POS";
@@ -622,9 +636,7 @@
         }
         &.disabled{
           &:after{
-            content: "Annual Subscription Only";
-            font-size: 12px;
-            padding: 1px;
+            content: "Subscription Only";
           }
         }
         &.opacity-disabled{
@@ -947,4 +959,8 @@
           font-size: 20px;
           padding-right: 70px;
         }
+      }
+
+      #pricing-v2 sub {
+        bottom: 2px;
       }
