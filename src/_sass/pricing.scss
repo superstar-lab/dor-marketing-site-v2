@@ -263,6 +263,7 @@
         #pricing-v2 .content .compare-plan__body .categories h4 {
           margin: 181px 0; }
       #pricing-v2 .content .compare-plan__body ul li {
+        min-height: 55px;
         padding: 15px 0;
         border-bottom: 1px solid #E6ECF7;
       color: #002A81; }
@@ -362,7 +363,7 @@
               font-size: 20px;
               color: white; }
           #pricing-v2 .content .compare-plan__body .plan .pricing .desc {
-            padding: 17px 20px;
+            padding: 17px 15px;
             color: #002A81; }
         #pricing-v2 .content .compare-plan__body .plan .balloon {
           width: 113px;
@@ -625,7 +626,7 @@
           height: 62px;
           top: -62px;
           padding: 20px;
-          background-image: url(../images/pricing-new/custom-pos-balloon.png);
+          background-image: url(../images/pricing-new/custom-pos-balloon.svg);
         }
       &.info.pos:after {
         content: "1-click integration with Shopify, Square and Lightspeed POS";
@@ -653,7 +654,7 @@
       #pricing-v2 .content .request-demo-btn{
         border:0;
         outline:0;
-        padding: 10px 120px;
+        padding: 10px 90px;
         width:auto ;
         display:block;
         cursor: pointer;
@@ -848,7 +849,7 @@
 
         #pricing-v2 .hero__slogan p {
           font-size: 22px;
-          padding: 0 50px 20px;
+          padding: 0 30px 20px;
         }
 
         #pricing-v2 .content .compare-plan {
