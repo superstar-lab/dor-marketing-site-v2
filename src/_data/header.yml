@@ -10,9 +10,9 @@ navigation:
     - title: About Us
       url: /about-us
     - title: Contact Us
-      url: https://support.getdor.com/s/#faq-contact
+      url: https://help.getdor.com/en/articles/4474780-connect-with-dor-team
     - title: FAQ
-      url: https://support.getdor.com/s/
+      url: https://help.getdor.com/en/
     - title: Customers
       url: /customers
     - title: Partners

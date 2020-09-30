@@ -2,6 +2,56 @@ $( function() {
     var $body = $( 'body' );
     var $document = $( document );
 
+    /*$(".trusted__slider").slick({
+        slidesToShow: 6,
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2
+            }
+          }
+        ]
+      });*/
+    
+    $(".faq .tab-header").click(function(){
+        $(".faq .accordion__tab").removeClass("active");
+    
+        $(".faq .tab-body").stop().slideUp("fast");
+        $(this).closest(".accordion__tab").find(".tab-body").stop().slideToggle(function(){
+            if($(this).is(":visible")){
+                $(this).closest(".accordion__tab").addClass("active");
+            }else{
+                $(this).closest(".accordion__tab").removeClass("active");
+            }
+        });
+    });
+
+    $(".compare-plan__body .plan h4").click(function(){
+    if($(window).width() < 767){
+        if ($(this).parent('.plan').hasClass('active')) {
+            $(".compare-plan__body .plan").removeClass("active");
+            $(".compare-plan__body .accordion-block").stop().slideUp("fast");
+        } else {
+            $(this).closest(".plan").addClass("active");
+            $(this).closest(".plan").find(".accordion-block").stop().slideDown("fast");
+        }
+    }
+    });
+
+    $(".compare-plan__btn").click(function(){
+        $(".compare-plan__btn").removeClass("active");
+        $(this).addClass("active");
+        if($(this).find(".save").length > 0){
+            $(".compare-plan__body").removeClass("monthly")
+        }else{
+            $(".compare-plan__body").addClass("monthly")
+        }
+    });
+
     $( '#requestDemo' ).on( 'click', function() {
         dataLayer.push( {
             'event': 'RequestHome'
