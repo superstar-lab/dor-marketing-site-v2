@@ -3,10 +3,10 @@
 <div id="header" class="sticky content-center content-middle">
   <div class="content-wrap wrapper">
     <nav class="header-menu flex-row">
-      <a href="{{ site.baseurl }}/" class="header-logo hidden-xs" id="home-logo-desktop-header">
+      <a href="{{ site.url }}/" class="header-logo hidden-xs" id="home-logo-desktop-header">
         <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
       </a>
-      <a href="{{ site.baseurl }}/" class="header-logo-1 visible-xs">
+      <a href="{{ site.url }}/" class="header-logo-1 visible-xs">
         <img src="{{ string.logo.image }}" alt="{{ string.logo.description }}">
       </a>
 
@@ -27,7 +27,7 @@
               </div>
             </div>
           {% elsif link.title != 'Company' %}
-            <a href="{{ site.baseurl }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
+            <a href="{{ site.url }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
           {% endif %}
       {% endfor %}
     </nav>
@@ -53,9 +53,9 @@
     <div class="menu-hide">
       <nav>
         <ul>
-          <a href="{{ site.baseurl }}/" class="header-menu-item link">Home</a>
+          <a href="{{ site.url }}/" class="header-menu-item link">Home</a>
           {% for link in string.navigation %}
-          <a href="{{ site.baseurl }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
+          <a href="{{ site.url }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
           {% endfor %}
         </ul>
       </nav>

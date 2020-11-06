@@ -3,8 +3,10 @@ email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
 url: "https://getdor.com"
+app_url: "http://app.getdor.com"
 source: src
 destination: _dist
+env: production
 include:
   - _views
 show_dir_listing: false
@@ -16,8 +18,6 @@ forms:
   getdor: "8fe0d8e6-218c-4e3d-8d04-fdc5bc7613ab"
   pricing: "c83cb1dc-1afe-4e9e-a67f-f52d1f4c429e"
   press: "2d610ce2-58ab-4623-8544-927fe358a97a"
-urls:
-  app: "https://app.getdor.com/dashboard"
 plugins:
   - jekyll-sitemap
 
