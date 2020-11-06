@@ -6,6 +6,7 @@ url: "http://staging.getdor.com"
 app_url: "http://app-staging.getdor.com"
 source: src
 destination: _dist
+env: staging
 include:
   - _views
 show_dir_listing: false

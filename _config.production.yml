@@ -6,6 +6,7 @@ url: "https://getdor.com"
 app_url: "http://app.getdor.com"
 source: src
 destination: _dist
+env: production
 include:
   - _views
 show_dir_listing: false
