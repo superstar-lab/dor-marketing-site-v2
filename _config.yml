@@ -3,6 +3,7 @@ email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
 url: "http://localhost:4000"
+app_url: "http://localhost:3000"
 host: 0.0.0.0
 source: src
 destination: _dist
@@ -17,8 +18,6 @@ forms:
   getdor: "84aad393-73fb-4f53-83d0-67fe7d68b253"
   pricing: "779c1985-4837-4301-856c-86015ce17bf6"
   press: "e7418bfb-0790-4636-816d-c28421420503"
-urls:
-  app: "http://localhost:3000/dashboard"
 plugins:
   - jekyll-sitemap
 

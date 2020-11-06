@@ -3,6 +3,7 @@ email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
 url: "http://staging.getdor.com"
+app_url: "http://app-staging.getdor.com"
 source: src
 destination: _dist
 include:
@@ -16,8 +17,6 @@ forms:
   getdor: "84aad393-73fb-4f53-83d0-67fe7d68b253"
   pricing: "779c1985-4837-4301-856c-86015ce17bf6"
   press: "e7418bfb-0790-4636-816d-c28421420503"
-urls:
-  app: "https://app-staging.getdor.com/dashboard"
 plugins:
   - jekyll-sitemap
 
