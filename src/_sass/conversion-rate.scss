@@ -9,13 +9,44 @@
   }
 
   .hero-section {
-    // background: linear-gradient(180deg, #F6FAFF 0%, #E5ECF9 94.55%);
-    background: #F8FAFF url('../images/conversion-rate/hero-bg.png') no-repeat bottom center;
     width: 100%;
     height: 100vh;
-    background-size: cover;
     position: relative;
     overflow: hidden;
+    background: #F8FAFF;
+
+    .wrapper {
+      z-index: 5;
+      position: relative;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform-origin: 0;
+      transform: skewY(-10deg);
+      background: linear-gradient(180deg, #F6FAFF 0%, #E5ECF9 94.61%);
+      overflow: hidden;
+    }
+
+    &:before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: transparent url('../images/conversion-rate/gradient.png') no-repeat bottom right;
+      transform-origin: 0;
+      transform: skewY(-10deg);
+      z-index: 2;
+    }
   }
 
   @media screen and (min-width: 1023px) and (max-width: 1199px) {
@@ -26,21 +57,23 @@
 
   @media screen and (min-width: 1200px) {
     .hero-section .wrapper {
-      padding-left: 100px;
+      padding-left: 50px;
     }
   }
 
-  // .hero-section::before {
-  //   content: "";
-  //   width: 840px;
-  //   height: 713px;
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   background: url('../images/conversion-rate/mask.png') no-repeat center;
-  //   background-size: cover;
-  // }
+  .hero-section .bg::before {
+    content: "";
+    width: 849px;
+    height: 713px;
+    position: absolute;
+    right: 0;
+    // top: 0;
+    bottom: 0;
+    background: url('../images/conversion-rate/mask.png') no-repeat center;
+    background-size: 100%;
+    transform-origin: 0;
+    transform: skewY(10deg);
+  }
 
   .hero-section::after {
     content: '';
@@ -51,6 +84,7 @@
     position: absolute;
     right: 0;
     bottom: 57px;
+    z-index: 3;
   }
 
   .hero-section .hero-content {
@@ -212,7 +246,7 @@
       left: 30%;
       top: -15px;
   
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         left: 0;
       }
     }
@@ -225,7 +259,7 @@
       height: 100%;
       text-align: left;
   
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         margin-bottom: 30px;
   
         .card__title {
@@ -321,7 +355,7 @@
       z-index: -1;
     }
   
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       .slick-slider:after {
         left: auto;
         right: 0;
@@ -356,7 +390,7 @@
         }
       }
   
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         .slider__figure {
           width: 100%;
           height: 400px;
@@ -408,7 +442,7 @@
           }
         }
   
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           h3 {
             font-size: 23px;
           }
@@ -538,7 +572,7 @@
     color: #FFFFFF;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     .wrapper {
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -565,6 +599,19 @@
   }
 
   @media screen and (max-width: 1023px) {
+    & {
+      background-color: #f8faff;
+    }
+
+    .people-counting-section.people-counting-cards,
+    .conversion-rate-cta {
+      background-color: #fff;
+    }
+
+    .hero-section .bg {
+      display: none;
+    }
+
     .flex-row.fl-sm-col.wrapper {
       flex-direction: column;
     }
@@ -595,7 +642,16 @@
 
     .conversion-rate-cta {
       margin-top: 0;
-      margin-bottom: 60px;
+      margin-bottom: 0;
+      padding-bottom: 60px;
+    }
+
+    .conversion-rate-section.about-software .figure-wrapper span {
+      border-radius: 30px;
+    }
+
+    .conversion-rate-section.about-software .figure-wrapper span {
+      border: 0 !important;
     }
 
     .mobile-title {
@@ -647,12 +703,14 @@
       width: 375px;
       height: 329px;
       background: url('../images/conversion-rate/home-hero-bg-mobile-2.png') no-repeat center;
+      top: inherit;
       bottom: -30px;
       z-index: 1;
       position: absolute;
       left: 0;
       right: 0;
       margin: auto;
+      transform: skewY(0deg);
     }
 
     .hero-section .button.large {
@@ -797,7 +855,7 @@
 
 .conversion-rate-cta .flex-row:before {
   content: "";
-  z-index: 0;
+  z-index: -1;
   position: absolute;
   right: 0;
   top: -25px;
