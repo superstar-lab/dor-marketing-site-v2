@@ -285,7 +285,6 @@
 }
 
 #pricing-v2 .content .compare-plan__body .categories {
-    border-bottom: 1px solid rgba(0, 42, 129, 0.2);
     border-top: 1px solid rgba(0, 42, 129, 0.2);
     padding-bottom: 50px;
 }
@@ -963,12 +962,6 @@
 
     #pricing-v2 .col {
         padding: 0 1px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #pricing-v2 .content .compare-plan__body .plan {
-        min-height: 100%;
     }
 }
 
