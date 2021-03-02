@@ -14,7 +14,10 @@ Install npm packages
 `npm i`
 
 Run the server (runs bundle exec jekyll serve)
-`npm start`
+`npx gulp`
+
+If you run into build errors, you may need to run with bundle exec:
+`bundle exec npx gulp`
 
 
 ## Directory Structure
