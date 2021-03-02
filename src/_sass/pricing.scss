@@ -289,10 +289,6 @@
     padding-bottom: 50px;
 }
 
-#pricing-v2 .content .compare-plan__body .categories h4 {
-    margin: 181px 0;
-}
-
 #pricing-v2 .content .compare-plan__body ul li {
     min-height: 55px;
     padding: 15px 0;
@@ -383,6 +379,18 @@
 
     @media screen and (max-width: 1084px) {
         height: 245px;
+    }
+}
+
+#pricing-v2 .content .compare-plan__body .categories h4 {
+    margin: 181px 0;
+
+    @media screen and (max-width: 1230px) {
+        margin: 196px 0;
+    }
+
+    @media screen and (max-width: 1084px) {
+        margin: 206px 0;
     }
 }
 
