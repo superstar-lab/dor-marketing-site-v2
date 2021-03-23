@@ -4,6 +4,7 @@ hero:
   subtitle: People counters (or door counters) help retail stores collect foot traffic data to gain valuable business insights about their customers and businesses. Here, you’ll find everything you need to know about the importance of people counting for your business, the different types of people counters on the market, and practical ways to use foot traffic data to make better business decisions.
   image: /assets/images/people-counting/hero.jpg
   icon: /assets/images/icons/hero-cursor.svg
+  ctaText: Ready to buy? Complete your purchase in just minutes!
 
 features:
   - title: Already know about people counting and looking for the right technology?
@@ -11,6 +12,7 @@ features:
     image: /assets/images/people-counting/demo-request.jpg
     button: Request Demo
     buttonUrl: "#"
+    ctaText: Ready to buy? Complete your purchase in just minutes!
 
 cards:
   title: Why is counting door traffic important?

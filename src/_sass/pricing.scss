@@ -848,6 +848,16 @@
     text-decoration: none;
 }
 
+#pricing-v2 .people-counting-cta .wrapper .cta-checkout-section {
+    margin-left: 0px;
+
+    @media screen and (max-width: 767px) {
+        div {
+            color: $white;
+        }
+    }
+}
+
 @media screen and (max-width: 767px) {
     #pricing-v2 .people-counting-cta .wrapper {
         padding: 15px;

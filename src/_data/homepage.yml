@@ -3,6 +3,7 @@ hero:
   subtitle: Meet the world’s first thermal sensing, battery-operated people counter.
   subtitle2: Grow your retail business by understanding your in-store traffic, peak hours, conversion rates and marketing effectiveness.
   button: Request Demo
+  ctaText: Ready to buy? Complete your purchase in just minutes!
 
 cards:
 - title: Roll out to 100% of your stores
@@ -17,7 +18,7 @@ cards:
   buttonUrl: "/how-it-works/"
 - title: React faster to emerging trends
   image: /assets/images/homepage/card-3.png
-  subtitle: Predict what will happen next with year-over-year trends. Replace guesstimates with a source of truth — no decoding necessary. 
+  subtitle: Predict what will happen next with year-over-year trends. Replace guesstimates with a source of truth — no decoding necessary.
   button: Take action on clear insights »
   buttonUrl: "/how-it-works/#software"
 
@@ -42,14 +43,14 @@ testimonials:
   title: Hear what customers have to say about Dor
   reviews:
   - color: green
-    text: “Dor is our secret weapon behind the scenes.” 
+    text: “Dor is our secret weapon behind the scenes.”
     author: ROBERT ODOM
     position: Director Of Sales and Marketing, Original Mattress Factory
   - color: peach
-    text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.” 
-    author: DANIEL KOWALKE 
-    position: General Manager, Retail Toolkit 
+    text: “With Dor, traffic data helps us paint with more color. We feel very strongly that this data point helps our algorithms and helps a better overall story.”
+    author: DANIEL KOWALKE
+    position: General Manager, Retail Toolkit
   - color: pink
-    text: “If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.” 
-    author: ADAM SCOTT 
+    text: “If you don’t know your traffic count, you’re assuming way too much about your business, and that can sink you.”
+    author: ADAM SCOTT
     position: President, Clothes Mentor

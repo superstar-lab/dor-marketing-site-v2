@@ -2,11 +2,11 @@
     padding: 80px 0;
     background: url(../images/how-it-works/empower-pattern.svg) no-repeat center;
     background-size: cover;
-    
+
     @include media-down(md) {
         padding: 64px 0;
     }
-    
+
     @include media-down(sm) {
         padding: 32px 0 48px;
     }
@@ -30,7 +30,7 @@
 
     .wrapper {
 
-        @media (min-width: 768px) and (max-width: 1280px) { 
+        @media (min-width: 768px) and (max-width: 1280px) {
             padding: 0;
         }
 
@@ -51,22 +51,26 @@
                 padding: 0 40px;
             }
         }
-        
+
         .icon.icon-zigzag-group {
-            
+
             @include media-down(md) {
                 background-size: cover;
             }
         }
     }
-    
+
     .flex-row {
 
         p {
             margin: 12px 0 32px;
             font-size: $font-size-large;
-            line-height: 1.33;  
+            line-height: 1.33;
         }
+    }
+
+    .cta-checkout-section.inverted {
+        justify-content: center;
     }
 
 }
@@ -81,8 +85,8 @@ hr {
 #footer {
     margin: 19px 0 40px;
 
-    .flex-row { 
-        
+    .flex-row {
+
         @include media-down(md) {
            flex-direction: column;
         }
@@ -102,7 +106,7 @@ hr {
                     margin-bottom: 32px;
                 }
             }
-    
+
             .section-name {
                 font-weight: $font-weight-semi-bold;
                 margin-bottom: 10px;
@@ -112,15 +116,15 @@ hr {
                     font-size: $font-size-small;
                 }
             }
-            
+
             ul {
                 @extend .list-style;
-    
+
                 li {
                     margin-bottom: 8px;
-                    
+
                     a {
-                        font-weight: $font-weight-normal;        
+                        font-weight: $font-weight-normal;
                         @include media-down(sm) {
                             font-size: $font-size-small;
                         }
@@ -142,7 +146,7 @@ hr {
                 display: flex;
                 justify-content: center;
             }
-            
+
             ul {
                 @extend .list-style;
                 display: flex;
@@ -182,7 +186,7 @@ hr {
         @include media-down(md) {
             margin-top: -33px;
         }
-        
+
         @include media-down(sm) {
             margin-top: 24px;
             text-align: center;
@@ -192,7 +196,7 @@ hr {
 }
 
   // The mask
-  
+
 .bg-mask {
     position: fixed;
     top: 0;
@@ -206,9 +210,9 @@ hr {
     transition: 0.7s;
     z-index: 0;
 }
-  
+
   // Modal
-  
+
 .modal {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -218,18 +222,18 @@ hr {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease-out;
-    transform: translateX(-50%) translateY(-50%); 
-    top: 50%; 
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
     left: 50%;
     height: 100%;
     width: 100%;
     overflow: auto;
     display: flex;
-    
+
     @include media-down(sm) {
         padding: 24px 16px;
     }
-    
+
     .modal-body {
         margin: 64px 0;
         overflow-x: auto;
@@ -243,7 +247,7 @@ hr {
         @include media-down(md) {
             width: 576px;
         }
-        
+
         @include media-down(sm) {
             margin: 0;
             padding: 16px;
@@ -261,12 +265,12 @@ hr {
             h3 {
                 display: inline-block;
                 font-size: $font-size-large;
-    
+
                 @include media-down(md) {
                     font-size: $default-font-size;
                 }
             }
-    
+
             .close {
                 position: absolute;
                 right: 32px;
@@ -274,29 +278,29 @@ hr {
                 color: $black;
                 cursor: pointer;
                 border: 0;
-    
+
                 @include media-down(sm) {
                     right: 16px;
                 }
             }
         }
-        
-        
+
+
         .consent-text {
             font-size: $font-size-small;
             color: $brownish-grey;
             display: inherit;
             text-align: center;
-            
+
             a {
                 font-size: $font-size-small;
                 color: $blue;
             }
-            
+
         }
     }
 }
-  
+
 .active.modal {
     visibility: visible;
     opacity: 1;

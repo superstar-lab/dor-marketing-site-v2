@@ -3,12 +3,13 @@ hero:
   subtitle: Learn more about your store's conversion rates, peak hours and marketing effectiveness.
   button: Request Demo
   image: /assets/images/pricing/hero.svg
+  ctaText: Ready to buy? Complete your purchase in just minutes!
 
 plans:
   - title: PRO
     subtitle: 'Good for:'
     image: /assets/images/pricing/pro.png
-    alt: 
+    alt:
     lists:
       - title: Independent retailers
       - title: Medium-sized chains
