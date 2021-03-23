@@ -3,7 +3,7 @@ email: api@getdor.com
 description: "From small business to enterprise, go beyond people counting with retail analytics from Dor."
 baseurl: ""
 url: "https://getdor.com"
-app_url: "http://app.getdor.com"
+app_url: "https://app.getdor.com"
 source: src
 destination: _dist
 env: production

@@ -63,14 +63,14 @@
       visibility: hidden;
       height: 0;
       transition: all 0.5s ease-in;
-      
+
       &.active {
         height: auto;
         visibility: visible;
         opacity: 1;
       }
     }
-    
+
     h1 {
       padding-bottom: 20px;
       font-size: 24px;
@@ -80,7 +80,7 @@
         font-size: $font-size-large;
       }
     }
-    
+
     .subtitle {
       font-size: 18px;
       line-height: 26px;
@@ -176,7 +176,7 @@
         right: 0;
         margin: auto;
       }
-      
+
       &:not(:last-child) {
         border-right: 1px solid #EAEDFB;
       }
@@ -194,7 +194,7 @@
     @media screen and (max-width: 767px) {
       width: 100%;
       overflow-x: auto;
-      
+
       .list {
         width: 100%;
         display: table;
@@ -259,7 +259,7 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
-  
+
   .flex-wrap .col {
     flex: 50%;
     margin-bottom: 25px;
@@ -344,7 +344,7 @@
         }
       }
     }
-    
+
     &__body {
       padding: 0 25px;
     }
@@ -384,7 +384,7 @@
   position: relative;
   min-height: 900px;
   padding-bottom: 400px;
-  
+
   .accurate__bottom {
     width: 85%;
     margin: auto;
@@ -486,7 +486,7 @@
     img {
       width: auto;
     }
-    
+
     &__figure {
       border-radius: 40px;
       position: relative;
@@ -514,7 +514,7 @@
         height: 400px;
       }
     }
-    
+
     &__figure:before {
       content: "";
       width: 100%;
@@ -555,7 +555,7 @@
         h3 {
           font-size: 23px;
         }
-        
+
         p {
           font-size: 17px;
         }
@@ -745,6 +745,28 @@
   }
 }
 
+.people-counting-section .cta-checkout-section {
+  @media screen and (max-width: 1023px) {
+    &.align-left {
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &.align-left {
+      justify-content: center;
+    }
+  }
+}
+
+.people-counting-cta .cta-checkout-section {
+  @media screen and (max-width: 767px) {
+    div {
+      color: $black;
+    }
+  }
+}
+
 .d-flex {
   display: flex;
 }
@@ -829,7 +851,7 @@
     padding: 0;
     margin: 0;
   }
-  
+
   .flex-xs-row {
     flex-direction: row;
   }
@@ -897,7 +919,7 @@
       border-radius: 0;
       padding: 30px 15px;
       text-align: left;
-      
+
       .button {
         width: 100%;
       }
@@ -940,7 +962,7 @@
     overflow: hidden;
     max-width: 1140px;
   }
-  
+
   .embed-container iframe,
   .embed-container object,
   .embed-container embed {

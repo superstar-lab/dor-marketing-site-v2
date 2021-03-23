@@ -2,6 +2,7 @@ hero:
   title: Count your foot Traffic
   subtitle: Measure how well your stores engage customers so you can repeat what works best.
   button: Request Demo
+  ctaText: Ready to buy? Complete your purchase in just minutes!
   videoImage: /assets/images/how-it-works/empower-pattern.svg
   videoUrl: https://www.youtube.com/embed/wNjMUDspr1k
 
@@ -30,7 +31,7 @@ tabs:
         subtitle: 'With zero reliance on your in-store network, Dor sets up in minutes. Just peel and stick on your entrances and we’ll do the rest. Dor’s proprietary thermal technology and advanced machine-learning algorithms ensure consistently accurate counts with no calibration needed, so you can focus on what really matters in your stores: your customers.'
         image: /assets/images/how-it-works/hardware-2.jpg
         alt: Installation image
-      
+
       feautures:
         title: Tech for one or one thousand locations
         image: /assets/images/how-it-works/hardware-3.jpg
@@ -46,7 +47,7 @@ tabs:
             - title: Machine learning enhances accuracy on every door in any condition
             - title: Thermal sensors protect customer privacy
             - title: Actionable data automatically available at your fingertips on your dashboard
-      
+
       details:
         title: 'the datasheet for detailed hardware specs'
 
@@ -64,7 +65,7 @@ tabs:
         subtitle: 'Data is only valuable if you can access it on your terms. Unite your company’s stakeholders on a smart dashboard they can use to analyze multiple date ranges and stores while factoring in seasonality so they can keep their finger to the pulse of the most important metrics in your business: Foot traffic counts, conversion rates and revenue per store.'
         image: /assets/images/how-it-works/software-2.jpg
         alt: Installation image
-      
+
       feautures:
         title: Get a powerful perspective on store performance
         image: /assets/images/how-it-works/software-3.jpg
@@ -80,7 +81,7 @@ tabs:
             - title: View, analyze and download your cloud-based data anytime
             - title: Power your own business intelligence tools seamlessly with API support
             - title: Invite unlimited users while having full control over role-based access within your organization
-      
+
       details:
         title: 'datasheet for detailed software specs'
 
@@ -114,7 +115,7 @@ tabs:
         subtitle: Your customers are already telling you what they want. Through their engagement with your brand, they’re leaving patterns and trends behind them. With the right tool in hand to capture those trends, and the right partner dedicated to supporting your long-term operational excellence, you can meet your customer where they need you to be.
         image: /assets/images/how-it-works/support-2.jpg
         alt: Installation image
-      
+
       feautures:
         title: Operate excellently with the right partner by your side
         image: /assets/images/how-it-works/support-3.jpg

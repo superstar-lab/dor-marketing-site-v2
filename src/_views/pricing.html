@@ -6,6 +6,8 @@ layout: default
 cta: false
 ---
 
+{% assign string = site.data.pricing %}
+
 <div id="pricing-v2">
     <div class="hero">
         <div class="hero__slogan">
@@ -405,6 +407,10 @@ cta: false
                             increase your marketing effectiveness.</p>
                         <a href="#" class="button-link" data-modal="#modal-header">
                             <div class="button large white">Request Demo</div>
+                        </a>
+                        <a class="cta-checkout-section inverted" href="{{site.app_url}}/checkout">
+                            <img src="/assets/images/icons/new.png" alt="new">
+                            <div>{{ string.hero.ctaText }}</div>
                         </a>
                     </div>
                     <div class="col col-sm-100 flex-column">

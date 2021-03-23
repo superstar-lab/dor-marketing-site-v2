@@ -6,7 +6,7 @@
 
     @include media-down(md) {
         padding: 96px 0;
-    } 
+    }
 
     @include media-down(sm) {
         padding: 0;
@@ -14,7 +14,7 @@
         min-height: auto;
         align-items: flex-end;
     }
-    
+
     .hero-image {
         @include media-down(sm) {
             background: url(../images/homepage/hero.jpg) no-repeat;
@@ -67,7 +67,7 @@
     .card {
 
         &:last-child {
-    
+
             @include media-down(sm) {
                 margin-bottom: 0px;
             }
@@ -86,7 +86,7 @@
             @include media-down(md) {
                 height: 176px;
             }
-                
+
             @include media-down(sm) {
                 height: inherit;
             }
@@ -120,7 +120,7 @@
     background-color: $ice-blue;
     @extend .padding;
 
-    
+
     .flex-row {
 
         @include media-down(md) {
@@ -148,7 +148,7 @@
             .col:nth-child(2n+1) {
                 margin-left: 32px;
                 margin-right: 0;
-                
+
                 @include media-down(md) {
                     margin-left: 0;
                 }
@@ -167,7 +167,7 @@
                     margin-right: 0;
                 }
             }
-            
+
             h2 {
                 color: $dark-blue;
 
@@ -223,78 +223,78 @@
         }
 
         & + div {
-    
+
             & > div {
                 border: 1px solid $light-blue-grey;
                 border-radius: 16px;
                 width: 100%;
                 margin-bottom: 48px;
-                padding: 66px;   
+                padding: 66px;
                 display: flex;
                 justify-content: center;
-    
-                @include media-down(md) { 
+
+                @include media-down(md) {
                     margin-bottom: 32px;
                     padding: 40px;
                 }
-    
+
                 @include media-down(sm) {
                     padding: 16px;
                 }
-    
+
                 & > div {
-                    
+
                     &:nth-child(1) {
                         max-width: 86%;
-                        
-                        @include media-down(md) { 
+
+                        @include media-down(md) {
                             max-width: 100%;
                         }
                     }
-                    
+
                     &:nth-child(2) {
                         max-width: 73%;
-    
-                        @include media-down(md) { 
+
+                        @include media-down(md) {
                             max-width: 90%;
                         }
-        
+
                         @include media-down(sm) {
                             max-width: 100%;
                         }
                     }
-                    
+
                     &:nth-child(3) {
                         max-width: 60%;
-        
+
                         @include media-down(md) {
                             max-width: 80%;
                             margin-bottom: 0;
                         }
-        
+
                         @include media-down(sm) {
                             max-width: 100%;
                         }
                     }
-        
+
                     p {
                         line-height: 1.4;
                         color: $black;
                         margin-bottom: 16px;
                         padding: 0 56px;
                         font-size: $font-size-large;
-        
+
                         @include media-down(md) {
                             padding: 0 25px;
                             font-size: $default-font-size;
                         }
-        
+
                         @include media-down(sm) {
                             padding: 0;
                             margin-top: 16px;
                         }
                     }
-        
+
                     cite {
                         display: inline-block;
                         font-style: normal;
@@ -303,18 +303,18 @@
                         line-height: 1.5;
                         text-transform: capitalize;
                         color: $black;
-        
+
                         @include media-down(sm) {
                             font-size: $font-size-small;
                         }
-                        
+
                     }
-    
+
                     small {
                         font-size: $default-font-size;
                         margin-top: 4px;
                         text-transform: capitalize;
-                        
+
                         @include media-down(sm) {
                             font-size: $font-size-small;
                         }
@@ -325,4 +325,3 @@
     }
 
 }
-
