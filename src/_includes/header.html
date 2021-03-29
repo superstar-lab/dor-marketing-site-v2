@@ -13,9 +13,9 @@
       {% for link in string.navigation %}
         {% assign class = nil %}
         {% if page.url == link.url %}
-          {% assign class = 'active' %} 
-        {% elsif page.url != '/' and page.url contains link.url %} 
-          {% assign class = 'active' %} 
+          {% assign class = 'active' %}
+        {% elsif page.url != '/' and page.url contains link.url %}
+          {% assign class = 'active' %}
         {% endif %}
           {% if link.title == 'Company' %}
             <div class="dropdown">
@@ -42,7 +42,7 @@
       </a>
     </div>
   </div>
-  
+
   <div class="bg-mask"></div>
   <div class="mobile-header st-menu st-effect-1 visible-xs" id="menu-1">
     <div class="menu-tab">
@@ -75,7 +75,8 @@
 			<li class="dropdown">
 				<button class="header-menu-item link dropdown-toggle" type="button">Company</button>
 				<div class="dropdown-menu">
-                    <a href="/solutions/people-counting" class="dropdown-item">PEOPLE COUNTING</a>
+          <a class="dropdown-item" href="/industries/retail">RETAIL</a>
+          <a href="/solutions/people-counting" class="dropdown-item">PEOPLE COUNTING</a>
 					<a class="dropdown-item" href="/about-us">ABOUT US</a>
 					<a class="dropdown-item" href="https://help.getdor.com/en/articles/4474780-connect-with-dor-team">CONTACT US</a>
 					<a class="dropdown-item" href="https://help.getdor.com/en/">FAQ</a>
