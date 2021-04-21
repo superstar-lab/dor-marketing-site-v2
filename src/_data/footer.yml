@@ -22,7 +22,7 @@ navigation:
   - title: Retail
     url: /resources/#retail
   - title: Blog
-    url: https://blog.getdor.com/
+    url: https://getdor.com/blog/
   - title: API
     url: https://assets.getdor.com/api-docs/v2/index.html
 - name: Company
@@ -58,6 +58,6 @@ social:
 - icon: fab fa-instagram
   url: https://www.instagram.com/getdor/
 - icon: blog
-  url: https://blog.getdor.com/
+  url: https://getdor.com/blog/
 
 copyright: ©2019 Dor Technologies, Inc
