@@ -83,64 +83,64 @@ faq:
   questions:
     - title: "What is foot traffic and why is it so important for retailers?"
       text: "Foot traffic, door traffic, store traffic, and customer traffic is the measure of people walking into a physical space such as a retail store, facility, office etc. Simply put, it measures how many people are in a given space at any time. <br><br> Collecting foot traffic metrics allows you to start tracking other business metrics such as conversion rate and start optimizing your business activities like employee scheduling and marketing effectiveness."
-      link: https://getdor.com/blog/2019/11/11/foot-traffic-people-counting/
+      link: https://www.getdor.com/blog/2019/11/11/foot-traffic-people-counting/
       image_url: /assets/images/people-counting/foot-traffic-people-counting-min.jpg
     - title: "What are the factors that affect foot traffic for retailers?"
       text: "There are numerous factors that influence the number of people that visit your store every day including seasonality, marketing spending and type of business.<br/><br/> Weather is one of the most important factors to consider. Every location has different weather conditions and they can often drive foot traffic up or down. Location is another prominent factor. It is worth noting how foot traffic is varied in locations in higher density areas versus locations in lesser trafficked places."
-      link: https://getdor.com/blog/2019/12/05/factors-affect-foot-traffic/
+      link: https://www.getdor.com/blog/2019/12/05/factors-affect-foot-traffic/
       image_url: /assets/images/people-counting/factors-affect-foot-traffic.jpg
     - title: "How can independent retailers use door counters?"
       text: "Unlike enterprise retailers with hundreds of physical stores, independent retailers (or small businesses - SMBs) usually have between one and five stores. <br/><br/>Independent retailers should be tracking their stores’ foot traffic in order to have an in-depth understanding about their stores’ performance. By integrating a people counter to their POS, small business owners can easily see their conversion rates. Understanding individual store performance, allows them to make strategic and data driven decisions. Moreover, traffic counters show retailers store peak hours in order to optimize staff scheduling."
-      link: https://getdor.com/blog/2019/12/04/retail-small-businesses-people-counting/
+      link: https://www.getdor.com/blog/2019/12/04/retail-small-businesses-people-counting/
       image_url: /assets/images/people-counting/small-business-retail-foot-traffic.jpg
     - title: "How can enterprise retailers use people counting technologies?"
       text: "With dozens or hundreds of stores, enterprise retailers have no choice but to use foot traffic counters to make strategic data driven decisions.<br/><br/>One of the key ways enterprise retailers can utilize a customer counter is by comparing foot traffic and conversion rates across different store locations to see overall performance. With this information, retailers can change retail strategy where needed and determine store openings and closures based on their own foot traffic data.<br/><br/>Some people counters allow you to use their API to connect the traffic data to your own data hubs."
-      link: https://getdor.com/blog/2019/12/17/how-enterprise-retailers-utilize-people-counting/
+      link: https://www.getdor.com/blog/2019/12/17/how-enterprise-retailers-utilize-people-counting/
       image_url: /assets/images/people-counting/enterprise-retail-foot-traffic-solutions.jpg
     - title: "How can facilities and offices use people counting systems?"
       text: "Foot traffic for facilities, offices and buildings can be tracked by the same hardware as retailers, but gather completely different insights.<br/><br/>Building, office and facility owners or managers use people counters to understand how spaces are being occupied and how they can make smarter decisions to optimize space usage. Furthermore, people counting solutions can be used for property and real-estate management decisions as it’s a great way to decrease your costs based on your space usage data.<br/><br/>People counters can also be used for restroom maintenance, lunch area and meeting room usage."
-      link: https://getdor.com/blog/2019/11/19/offices-facilities-foot-traffic-data/
+      link: https://www.getdor.com/blog/2019/11/19/offices-facilities-foot-traffic-data/
       image_url: /assets/images/people-counting/office-facilities-foot-traffic.jpg
     - title: "What are the different foot traffic solutions for businesses?"
       text: "Customer counters help retail businesses measure their stores’ foot traffic and purchasing trends to optimize their operations.<br/><br/>There are numerous people counter technologies on the market including thermal sensors, camera sensors, WiFi sensors, break-beam sensors and bluetooth beacons. Every sensor has its own limitations - price point, accuracy, and installations costs all differ.<br/><br/>Thermal sensors with machine learning algorithms, like Dor, have the highest accuracy rates with reasonable pricing and minimal installation requirements."
-      link: https://getdor.com/blog/2019/11/19/people-counting-door-counter-sensors/
+      link: https://www.getdor.com/blog/2019/11/19/people-counting-door-counter-sensors/
       image_url: /assets/images/people-counting/people-counting-solutions.jpg
     - title: "How can you decide which people counting solution is right for your business?"
       text: "It is important to consider the questions your business needs answered before choosing the people counting technology that is best suited for your store.<br/><br/>How long does it take to install the sensor and start tracking the foot traffic? How much does it cost to install and are there any extra costs? Do I have direct control over accessing the data? Can the door counter be integrated with third-party solutions such as POS systems?<br/><br/>There are a lot of people counter options and you deserve to know everything before purchasing the one that is right for you."
-      link: https://getdor.com/blog/2019/11/22/questions-to-ask-people-counting/
+      link: https://www.getdor.com/blog/2019/11/22/questions-to-ask-people-counting/
       image_url: /assets/images/people-counting/questions-to-ask-people-counting.jpg
     - title: "How can you increase foot traffic?"
       text: "At Dor, we know that increasing foot traffic for retailers is a huge challenge.<br/><br/>There are so many different and creative ways to increase retail foot traffic. Set up sandwich boards or creative displays, have an social media influencer promote your location, offer in-store classes and keep up with pop-culture trends when it comes to store design. <br/><br/>Want more ideas? Check out ourlist of 40 different ideas to increase your customer traffic."
-      link: https://getdor.com/blog/2019/10/14/how-to-increase-retail-foot-traffic-sales/
+      link: https://www.getdor.com/blog/2019/10/14/how-to-increase-retail-foot-traffic-sales/
       image_url: /assets/images/people-counting/retail-increase-foot-traffic-sales.jpg
 
 blog_posts:
   title: Recommended from Dor Blog
   posts:
     - title: "Digital Marketing for Retailers: Every Tactic and Channel You Must Know"
-      link: https://getdor.com/blog/2020/03/04/retail-digital-marketing/?abc123
+      link: https://www.getdor.com/blog/2020/03/04/retail-digital-marketing/?abc123
       image_url: /assets/images/people-counting/blog-image1.jpg
     - title: How to Calculate (and Increase) Retail Conversion Rate
-      link: https://getdor.com/blog/2019/12/17/how-to-calculate-and-increase-retail-conversion-rate/
+      link: https://www.getdor.com/blog/2019/12/17/how-to-calculate-and-increase-retail-conversion-rate/
       image_url: /assets/images/people-counting/blog-image2.jpg
     - title: "Retail Stats: All the Numbers and Benchmarks You Need to Know (2020)"
-      link: https://getdor.com/blog/2020/03/26/retail-stats-numbers-and-benchmarks/
+      link: https://www.getdor.com/blog/2020/03/26/retail-stats-numbers-and-benchmarks/
       image_url: /assets/images/people-counting/blog-image3.jpg
     - title: "12 Successful Retail Pricing Strategies Every Retailer Should Know"
-      link: https://getdor.com/blog/2020/02/29/successful-retail-pricing-strategies/
+      link: https://www.getdor.com/blog/2020/02/29/successful-retail-pricing-strategies/
       image_url: /assets/images/people-counting/blog-image4.jpg
     - title: "The Ultimate Guide to Retail Analytics and The Future of Retail (2020)"
-      link: https://getdor.com/blog/2020/01/23/the-ultimate-guide-to-retail-analytics/
+      link: https://www.getdor.com/blog/2020/01/23/the-ultimate-guide-to-retail-analytics/
       image_url: /assets/images/people-counting/blog-image5.jpg
     - title: "7 Proven and Working Ways to Increase Profit Margins in Retail"
-      link: https://getdor.com/blog/2020/01/10/how-to-increase-profit-margins-in-retail/
+      link: https://www.getdor.com/blog/2020/01/10/how-to-increase-profit-margins-in-retail/
       image_url: /assets/images/people-counting/blog-image6.jpg
     - title: "15 Key Metrics (KPIs) to Measure Retail Store Performance"
-      link: https://getdor.com/blog/2019/12/11/key-metrics-to-measure-retail-store-performance/
+      link: https://www.getdor.com/blog/2019/12/11/key-metrics-to-measure-retail-store-performance/
       image_url: /assets/images/people-counting/blog-image7.jpg
     - title: "14 Real-Life Examples of Amazing Customer Service in Retail"
-      link: https://getdor.com/blog/2020/03/23/real-life-examples-of-amazing-customer-service/
+      link: https://www.getdor.com/blog/2020/03/23/real-life-examples-of-amazing-customer-service/
       image_url: /assets/images/people-counting/blog-image8.jpg
     - title: "15 Creative Retail Display Examples to Increase Foot Traffic and Sales"
-      link: https://getdor.com/blog/2020/03/23/creative-retail-display-examples/
+      link: https://www.getdor.com/blog/2020/03/23/creative-retail-display-examples/
       image_url: /assets/images/people-counting/blog-image9.jpg
