@@ -102,57 +102,6 @@
 					}
 				]
 			}
-		},
-		{
-			"section": "Retail",
-			"title": "Apocalypse... or renaissance?",
-			"subtitle": "Retail’s physical footprint is shrinking while consumers demand more from\nbrands than ever before. Here’s what to do about it.",
-			"featured": [
-				{
-					"image": "/assets/images/resources/section3-1.jpg",
-					"alt": "Image",
-					"text": "The way people interact with spaces is fundamentally shifting. Customers\nare demanding more value from their experiences in your stores. They also happen\nto be giving you all the data you need to pivot, simply through their own engagement\nwith your brand. Retail leaders are listening and responding, creating the consistent\nmeaningful experiences necessary for them to survive — and thrive.",
-					"url": null
-				},
-				{
-					"image": "/assets/images/resources/section3-2.jpg",
-					"alt": "image",
-					"text": "The data shows that retail’s physical footprint is shrinking while consumers\ndemand more from brands than ever before. Customers no longer want or need millions\nof retail square footage to have a meaningful interaction with a brand in person,\nand retail has been reacting far too slowly. To compete, retailers must create\nthe experiences their shoppers desire in the spaces that make those experiences\nprofitable, driving revenue in spaces that are optimized for efficiency.",
-					"url": null
-				}
-			],
-			"learnMore": {
-				"title": "Keep reading about retail’s future",
-				"posts": [
-					{
-						"date": "2019-04-03",
-						"type": "CASE STUDY",
-						"title": "Eliminating Original Mattress Factory's manual traffic counting middleman",
-						"description": "See why this retailer calls Dor their 'secret weapon behind the\nscenes'",
-						"url": "https://www.getdor.com/blog/2019/03/13/customer-story-original-mattress-factory/?utm_source=resources",
-						"imageurl": "/assets/images/resources/omf_cs.png",
-						"contentID": "omf_cs"
-					},
-					{
-						"date": "2019-02-22",
-						"type": "WEBINAR",
-						"title": "Blocking out the noise",
-						"description": "How to harness in-store experience trends to deliver results that\nlast",
-						"url": "https://www.getdor.com/blog/2019/02/22/in-store-retail-experience-trends-webinar-recap/?utm_source=resources",
-						"imageurl": "/assets/images/resources/wbn-1.png",
-						"contentID": "wbn-1"
-					},
-					{
-						"date": "2018-12-01",
-						"type": "EBOOK",
-						"title": "The ultimate guide to opening and closing stores using foot traffic metrics",
-						"description": "How to evaluate true store performance beyond revenue for better\ndecision-making",
-						"url": "https://www.getdor.com/blog/2018/12/26/opening-and-closing-stores/?utm_source=resources",
-						"imageurl": "/assets/images/resources/ebook_opening.png",
-						"contentID": "ebook_opening"
-					}
-				]
-			}
 		}
 	],
 	"allresources": [
