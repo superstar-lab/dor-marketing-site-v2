@@ -1,0 +1,32 @@
+hero:
+  title: Increase your marketing performance with Dor
+  text: 47% of marketing spend is left unjustified.
+  text_b:  The smartest way to decide where and how to spend your marketing budget is to track your foot traffic and see the correlation.
+  button_text: Get Dor
+  url: "/checkout?utm_source=engage121&utm_medium=engage121-LP&utm_campaign=engage121-integration"
+  image: /assets/images/pos/square-hero-2.jpg
+  logo: /assets/images/integrations/engage121.png
+  logo_b: /assets/images/logos/dor_logo.svg
+  alt: 'engage121-logo'
+  alt_b: 'dor-logo'
+
+why_dor:
+  title : Why Dor?
+  image: /assets/images/pos/square-image-01.png
+  alt: 'Dor Sensor'
+  points:
+    - title: Peel and stick thermal sensor over your door and start counting your foot traffic right away. No installation, no technical requirements.
+    - title: Measure the success of your marketing campaign with your hourly, daily and weekly foot traffic reports.
+    - title: One-click integration with your POS enables you to view sales, foot traffic, and conversion rate all in one place.
+
+empower_your_store:
+  title: Empower your store
+  image: /assets/images/pos/square-image-02.jpg
+  alt: 'empower your store'
+  points:
+    text: Easily integrate Dor to your Engage121 dashboard and see your foot traffic and sales data based on your recent marketing campaigns. Never miss any opportunity to increase your store performance.
+
+cta_section:
+  title: Start measuring your store performance now
+  button_text: Connect Now
+  url: "/checkout?utm_source=engage121&utm_medium=engage121-LP&utm_campaign=engage121-integration"

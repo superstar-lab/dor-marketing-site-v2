@@ -50,6 +50,20 @@
             }
         }
 
+        .integration-logo-group {
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            margin-bottom: 16px;
+
+            & > img {
+                width: unset;
+            }
+
+            & >img:first-child {
+                margin-right: 40px;
+            }
+        }
 
         h1,
         .subtitle {

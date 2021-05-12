@@ -3,9 +3,19 @@
 <section id="pos-square" class="page-hero hero-section content-center content-middle">
     <div class="wrapper content-center">
         <div class="hero hero-text col-50 text-center">
-            <img class="pos-square-logo" src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+            {%if string.hero.logo_b %}
+            <div class="integration-logo-group">
+                <img class="integration-logo" src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+                <img class="dor-logo" src="{{ string.hero.logo_b }}" alt="{{ string.hero.alt_b }}"/>
+            </div>
+            {% else %}
+                <img class="pos-square-logo" src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+            {% endif %}
             <h1 class="text-title">{{ string.hero.title }}</h1>
             <div class="subtitle">{{ string.hero.text }}</div>
+            {%if string.hero.text_b %}
+            <div class="subtitle">{{ string.hero.text_b }}</div>
+            {% endif %}
             <a href="{{ site.app_url }}{{ string.hero.url }}" target="_blank" class="button-link button">
                 <div class="button large large blue" aria-haspopup="true">
                     {{ string.hero.button_text }}
@@ -68,6 +78,7 @@
     </div>
 </section>
 
+{% if string.already_have_dor %}
 <section class="pos-square-cta-section">
     <div class="wrapper content-wrap flex-row fl-sm-col content-middle content-center">
         <div class="col-50 col-sm-100 text-center">
@@ -81,3 +92,4 @@
         </div>
     </div>
 </section>
+{% endif %}
