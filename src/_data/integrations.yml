@@ -10,7 +10,7 @@ partners:
   - title: Square
     subtitle: Square Point of Sale is designed to get your staff up and running quickly. Drag and drop items and categories, customize your items grid and bring popular items front and center. Integrating Square with Dor makes it easier to compare daily trends against a base conversion rate to make better business decisions.
     image: /assets/images/integrations/square.svg
-    alt: Square POS logo 
+    alt: Square POS logo
     url: https://squareup.com/t/f_partnerships/p_Dor/l_us?route=retail
     urlTitle: Learn More  »
   - title: Lightspeed
@@ -24,4 +24,10 @@ partners:
     image: /assets/images/integrations/star_micronics.svg
     alt: Star Micronics logo
     url: http://www.starmicronics.com/
-    urlTitle: Learn More  » 
+    urlTitle: Learn More  »
+  - title: Engage121
+    subtitle: Engage121 helps local businesses create and maintain their online presence across consumer reviews sites, online directories, social media and more. Engage121 solutions identify local prospects, engage customers, manage local cause marketing and deliver local PR.
+    image: /assets/images/integrations/engage121.png
+    alt: Engage121 logo
+    url: /integrations/engage121/
+    urlTitle: Learn More  »
