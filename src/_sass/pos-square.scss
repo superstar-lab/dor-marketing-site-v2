@@ -56,6 +56,10 @@
             justify-content: center;
             margin-bottom: 16px;
 
+            .integration-logo {
+                max-width: 178px;
+            }
+
             & > img {
                 width: unset;
             }

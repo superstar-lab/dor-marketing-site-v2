@@ -5,7 +5,11 @@
         <div class="hero hero-text col-50 text-center">
             {%if string.hero.logo_b %}
             <div class="integration-logo-group">
-                <img class="integration-logo" src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+                {% if string.hero.alt == "egoditor-logo" %}
+                    <img class="integration-logo" src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+                {% else %}
+                    <img src="{{ string.hero.logo }}" alt="{{ string.hero.alt }}"/>
+                {% endif %}
                 <img class="dor-logo" src="{{ string.hero.logo_b }}" alt="{{ string.hero.alt_b }}"/>
             </div>
             {% else %}
