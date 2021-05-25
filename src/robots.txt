@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://www.getdor.com/sitemap.xml
+Sitemap: https://www.getdor.com/blog/sitemap.xml
+Disallow: /blog/tag/
