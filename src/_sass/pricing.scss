@@ -636,7 +636,7 @@
 }
 
 #pricing-v2 .content .people-counting-section {
-    margin-top: 260px;
+    margin-top: 50px;
 }
 
 #pricing-v2 .content .people-counting-section h3 {
@@ -651,6 +651,10 @@
     top: -180px;
     left: -60px;
     z-index: -1;
+}
+
+#pricing-v2.homepage {
+    padding-top: 50px;
 }
 
 @media screen and (max-width: 767px) {

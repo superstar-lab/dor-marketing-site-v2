@@ -70,57 +70,179 @@ layout: default
   </div>
 </section>
 
-<section id="homepage-cards">
-  <div class="flex-row fl-sm-col wrapper">
-    {% for card in string.cards %}
-    <div class="card col col-sm-100 flex-column">
-      <img src="{{ card.image }}">
-      <h3>{{ card.title }}</h3>
-      <p>{{ card.subtitle }}</p>
-      <a href="{{ site.url }}{{ card.buttonUrl }}">{{ card.button }}</a>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="features">
-  <div class="wrapper content-wrap">
-    {% for feature in string.features %}
-    <div class="flex-row fl-sm-col content-middle">
-      <div class="col col-sm-100">
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.subtitle }}</p>
-        <a href="{{ feature.buttonUrl }}" class="button-link">
-          <div class="button large blue">
-            {{ feature.button }}
-          </div>
-        </a>
-      </div>
-      <div class="col col-sm-100">
-        <img src="{{ feature.image }}">
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="testimonials">
-  <div class="wrapper content-wrap">
-    <h2 class="text-center">{{ string.testimonials.title }}</h2>
-    <div>
-      {% for testimonial in string.testimonials.reviews %}
-      <div>
-        <div class="text-center">
-          <p>{{ testimonial.text }}</p>
-          <cite>{{ testimonial.author  | capitalize }}</cite>
-          <small>{{ testimonial.position }}</small>
+<div id="conversion-rate">
+  <section class="clients">
+    <div class="wrapper content-center">
+        <div class="col">
+            <h2 class="client-title">1600+ retail stores are increasing their sales performance with Dor</h2>
         </div>
-      </div>
-      {% endfor %}
+        <div class="flex-row fl-sm-col">
+            <div class="col-33 col-sm-50 flex-column border-bottom">
+                <div class="client-logo">
+                    <img src="/assets/images/conversion-rate/client-apricot-lane.png" width="125" height="23" alt="">
+                </div>
+            </div>
+            <div class="col-33 col-sm-50 flex-column border-bottom">
+                <div class="client-logo">
+                    <img src="/assets/images/conversion-rate/client-duluth-trading.png" width="107" height="35" alt="">
+                </div>
+            </div>
+            <div class="col-33 col-sm-50 flex-column border-bottom">
+                <div class="client-logo border-right-none">
+                    <img src="/assets/images/conversion-rate/client-onward-reserve.webp" width="150" height="32" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="client-logo-diver"></div>
+            </div>
+            <div class="col-33 col-sm-50 flex-column">
+                <div class="client-logo">
+                    <img src="/assets/images/conversion-rate/client-woolrich.webp" width="100" height="12" alt="">
+                </div>
+            </div>
+            <div class="col-33 col-sm-50 flex-column">
+                <div class="client-logo">
+                    <img src="/assets/images/conversion-rate/client-clothes-mentor.png" width="120" height="39" alt="">
+                </div>
+            </div>
+            <div class="col-33 col-sm-50 flex-column">
+                <div class="client-logo border-right-none">
+                    <img src="/assets/images/conversion-rate/client-buck-mason.png" width="129" height="46" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<div class="homepage-partners">
-  {% include partners.html %}
+<div id="pricing-v2" class="homepage">
+  <div class="content">
+    <section class="people-counting-section slider-quote">
+      <div class="wrapper">
+          <div class="flex-row flex-row--reverse fl-sm-col wrapper col-p40">
+              <div class="slider wrapper">
+                  <div class="slider__item">
+                      <p>After working with Dor, I’ve learned that even a 10% drop in conversion rate costs my
+                          business from $5,000 to $7,000 depending on foot traffic. Without Dor, I couldn’t know
+                          how much money walked out the door.</p>
+                      <div class="slider__author">
+                        <span class="wrap">
+                          <strong>Adam Scott</strong>
+                          <small>President, Clothes Mentor</small>
+                        </span>
+                      </div>
+                  </div>
+    
+                  <div class="slider__item">
+                      <p>I love that Dor and Shopify integrate seamlessly. Having conversion stats at my
+                          fingertips helps me set goals for my team and me. It’s one of the most essential tools I
+                          use to maximize sales and plan staffing needs.</p>
+                      <div class="slider__author">
+                        <span class="wrap">
+                          <strong>Kate Calder</strong>
+                          <small>Owner, Communitie Marfa</small>
+                        </span>
+                      </div>
+                  </div>
+    
+                  <div class="slider__item">
+                      <p>We love using Dor! It is magic. We cannot even figure out how it is so precise. I cannot
+                          wait to have more data under our belts to really put the numbers to work. This is going
+                          to help us dramatically with staffing, store hours, and employee/salesperson
+                          evaluation.</p>
+                      <div class="slider__author">
+                        <span class="wrap">
+                          <strong>Johnny Freeman</strong>
+                          <small>Founder, Johnny Fly Co.</small>
+                        </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+  </div>
+</div>
+
+<nav id="navigation" class="body-navigation">
+  <ul>
+      {% for nav in string.navigation %}
+      <li>
+          <a href="#{{ nav.title  | downcase | remove: ' ' }}">
+              <span class="hidden-xs">{{ nav.title }}</span>
+              <span class="visible-xs">{{ nav.mobileTitle }}</span>
+          </a>
+      </li>
+      {% endfor %}
+  </ul>
+</nav>
+
+<div class="tabs-stage">
+  {% for tab in string.tabs %}
+  <div id="{{ tab.title  | downcase | remove: ' '  }}" >
+      <section class="heading {{ tab.content.heading.class }}">
+          <div class="wrapper flex-column">
+              <div class="col text-center">
+                  <h2 class="large">{{ tab.content.heading.title }}</h2>
+                  <div class="subtitle">{{ tab.content.heading.subtitle }}</div>
+                  {% if tab.content.heading.image %}
+                      <img src="{{ tab.content.heading.image }}" alt="{{ tab.content.heading.alt }}">
+                  {% endif %}
+              </div>
+          </div>
+      </section>
+
+      <section class="second-section {{ tab.content.second-section.class }}">
+          <div class="dor wrapper flex-row fl-sm-reverse  content-middle">
+              <div class="col">
+                  <img src="{{ tab.content.second-section.image }}" alt="{{ tab.content.second-section.alt }}">
+              </div>
+              <div class="col">
+                  <h2>{{ tab.content.second-section.title }}</h2>
+                  <p>{{ tab.content.second-section.subtitle }}</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="feautures">
+          <div class="wrapper">
+              <h2 class="text-center">{{ tab.content.feautures.title }}</h2>
+              <div class="flex-row fl-sm-col">
+                  {% for item in tab.content.feautures.points %}
+                  <div class="col col-sm-100">
+                      <div class="checklist-section">
+                          <h3>{{ item.title }}</h3>
+                          <ul>
+                              {% for list in item.lists %}
+                              <li class="flex-row">
+                                  <i class="icon icon-check"></i>
+                                  <span>{{ list.title }}</span>
+                              </li>
+                              {% endfor %}
+                          </ul>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </section>
+
+      {% if tab.content.details %}
+      <div class="wrapper">
+          <div class="more-details flex-row fl-sm-col content-center text-center content-middle">
+              <div class="col-66 col-sm-100">
+                  {% if tab.content.details.href %}
+                      <a href="{{tab.content.details.href}}">{{tab.content.details.link_text}}</a>
+                  {% else %}
+                      <a data-modal="#{{ tab.content.heading.contentID }}">Download</a>
+                  {% endif %}
+                  {{ tab.content.details.title }}
+              </div>
+          </div>
+      </div>
+      {% endif %}
+  </div>
+  {% endfor %}
 </div>
