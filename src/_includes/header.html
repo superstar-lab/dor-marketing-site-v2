@@ -26,7 +26,16 @@
                 {% endfor %}
               </div>
             </div>
-          {% elsif link.title != 'Company' %}
+          {% elsif link.title == 'Resources' %}
+            <div class="dropdown">
+              <button type="button" class="hidden-xs header-menu-item link dropdown-toggle">{{ link.title }}</button>
+              <div class="dropdown-menu">
+                {% for dropdown in link.dropdown %}
+                  <a href="{{ dropdown.url }}" class="{{class}} dropdown-item">{{ dropdown.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
             <a href="{{ site.url }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
           {% endif %}
       {% endfor %}
@@ -67,7 +76,7 @@
 	<nav>
   	<ul>
       <li>
-      	<a href="/how-it-works" class="header-menu-item link">How it Works</a>
+      	<a href="/solutions/people-counting" class="header-menu-item link">People Counting</a>
       </li>
       <li>
 				<a href="/pricing" class="header-menu-item link">Pricing</a>
@@ -75,17 +84,20 @@
 			<li class="dropdown">
 				<button class="header-menu-item link dropdown-toggle" type="button">Company</button>
 				<div class="dropdown-menu">
-          <a class="dropdown-item" href="/industries/retail">RETAIL</a>
-          <a href="/solutions/people-counting" class="dropdown-item">PEOPLE COUNTING</a>
 					<a class="dropdown-item" href="/about-us">ABOUT US</a>
 					<a class="dropdown-item" href="https://help.getdor.com/en/articles/4474780-connect-with-dor-team">CONTACT US</a>
-					<a class="dropdown-item" href="https://help.getdor.com/en/">FAQ</a>
 					<a class="dropdown-item" href="/customers">CUSTOMERS</a>
 					<a class="dropdown-item" href="/integrations">PARTNERS</a>
 				</div>
 			</li>
 			<li>
-				<a href="/resources" class="header-menu-item link">Resources</a>
+        <button class="header-menu-item link dropdown-toggle" type="button">Resources</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/industries/retail">RETAIL</a>
+          <a class="dropdown-item" href="/resources">DOWNLOADS</a>
+          <a class="dropdown-item" href="https://www.getdor.com/blog/">BLOG</a>
+          <a class="dropdown-item" href="https://help.getdor.com/en/">FAQ</a>
+        </div>
 			</li>
     </ul>
   </nav>

@@ -1,26 +1,28 @@
 navigation:
-- title: How it Works
-  url: how-it-works
+- title: People Counting
+  url: /solutions/people-counting
 - title: Pricing
   url: pricing
 - title: Company
   dropdown:
-    - title: Retail
-      url: /industries/retail
-    - title: People Counting
-      url: /solutions/people-counting
     - title: About Us
       url: /about-us
     - title: Contact Us
       url: https://help.getdor.com/en/articles/4474780-connect-with-dor-team
-    - title: FAQ
-      url: https://help.getdor.com/en/
     - title: Customers
       url: /customers
     - title: Partners
       url: /integrations
 - title: Resources
-  url: resources
+  dropdown:
+    - title: Retail
+      url: /industries/retail
+    - title: Downloads
+      url: /resources
+    - title: Blog
+      url: https://www.getdor.com/blog/
+    - title: FAQ
+      url: https://help.getdor.com/en/
 
 logo:
   description: Dor Logo

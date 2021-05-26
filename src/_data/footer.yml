@@ -5,44 +5,40 @@ demo:
   ctaText: Ready to buy? Complete your purchase in just minutes!
 
 navigation:
-- name: How It Works
+- name: Dor
   links:
-  - title: Hardware
-    url: /how-it-works/#hardware
-  - title: Software
-    url: /how-it-works/#software
+  - title: Homepage
+    url: /
+  - title: People Counting
+    url: /solutions/people-counting
   - title: Pricing
     url: /pricing
-- name: Resources
-  links:
-  - title: Why Dor?
-    url: /resources/#whydor
-  - title: Accuracy & Visibility
-    url: /resources/#accuracy&visibility
-  - title: Retail
-    url: /resources/#retail
-  - title: Blog
-    url: https://www.getdor.com/blog/
-  - title: API
-    url: https://assets.getdor.com/api-docs/v2/index.html
 - name: Company
   links:
   - title: About Us
     url: /about-us
+  - title: Contact Us
+    url: https://help.getdor.com/en/articles/4474780-connect-with-dor-team
   - title: Customers
     url: /customers
   - title: Partners
     url: /integrations
-  - title: Careers
-    url: /careers
-  - title: Press
-    url: /press
-- name: Support
+- name: Resources
   links:
-  - title: Contact Us
-    url: https://help.getdor.com/en/articles/4474780-connect-with-dor-team
+  - title: Retail
+    url: /industries/retail
+  - title: Downloads
+    url: /resources
+  - title: Blog
+    url: https://www.getdor.com/blog/
   - title: FAQ
     url: https://help.getdor.com/en/
+  - title: Press
+    url: /press
+  - title: Careers
+    url: /careers
+- name: Legal
+  links:
   - title: Terms of Use
     url: /terms
   - title: Privacy Policy
