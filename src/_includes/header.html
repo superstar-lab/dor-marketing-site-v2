@@ -36,7 +36,7 @@
               </div>
             </div>
           {% else %}
-            <a href="{{ site.url }}/{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="{{class}} hidden-xs header-menu-item link">{{ link.title }}</a>
           {% endif %}
       {% endfor %}
     </nav>
@@ -64,7 +64,7 @@
         <ul>
           <a href="{{ site.url }}/" class="header-menu-item link">Home</a>
           {% for link in string.navigation %}
-          <a href="{{ site.url }}/{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
+          <a href="{{ link.url }}" class="header-menu-item link">{{ link.title }}</a>
           {% endfor %}
         </ul>
       </nav>

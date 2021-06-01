@@ -2,7 +2,7 @@ navigation:
 - title: People Counting
   url: /solutions/people-counting
 - title: Pricing
-  url: pricing
+  url: /pricing
 - title: Company
   dropdown:
     - title: About Us
