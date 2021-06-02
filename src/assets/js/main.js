@@ -158,10 +158,31 @@ $( function() {
     } );
 
     //Mobile Dropdown menu
-    $( '.header-bottom-menu .dropdown' ).click( function() {
-        $( '.dropdown-menu' ).toggleClass( 'active' );
+    $( '#dropdown1' ).click( function() {
+        $( this ).closest( '#dropdown1' ).find( '.dropdown-menu' ).addClass( 'active' );
+    } );
+    
+    $( '#dropdown1' ).mouseover( function() {
+        $( this ).closest( '#dropdown1' ).find( '.dropdown-menu' ).addClass( 'active' );
+    } );
+    
+    $( '#dropdown1' ).mouseout( function() {
+        $( '.dropdown-menu' ).removeClass( 'active' );
     } );
 
+    $( '#dropdown2' ).click( function() {
+        $( this ).closest( '#dropdown2' ).find( '.dropdown-menu' ).addClass( 'active' );
+    } );
+    
+    $( '#dropdown2' ).mouseover( function() {
+        $( this ).closest( '#dropdown2' ).find( '.dropdown-menu' ).addClass( 'active' );
+    } );
+    
+    $( '#dropdown2' ).mouseout( function() {
+        $( '.dropdown-menu' ).removeClass( 'active' );
+    } );
+
+    //Desktop Dropdown menu
     $( '#header .dropdown' ).click( function() {
         $( this ).closest( '.dropdown' ).find( '.dropdown-menu' ).addClass( 'active' );
     } );
