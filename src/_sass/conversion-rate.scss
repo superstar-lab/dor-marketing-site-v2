@@ -198,7 +198,7 @@
     flex-flow: wrap;
   }
 
-  .clients .client-title {
+  .clients .client-title, .clients .client-title-homepage {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -747,6 +747,11 @@
     .clients .client-title {
       line-height: 30px;
       margin-top: 150px;
+      padding: 0 40px 0;
+    }
+
+    .clients .client-title-homepage {
+      line-height: 30px;
       padding: 0 40px 0;
     }
 
