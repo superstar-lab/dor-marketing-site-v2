@@ -16,19 +16,18 @@
           {% assign class = 'active' %}
         {% elsif page.url != '/' and page.url contains link.url %}
           {% assign class = 'active' %}
+        {% elsif link.dropdown %}
+          {% for dropdown in link.dropdown %}
+            {% if page.url == dropdown.url %}
+              {% assign class = 'active' %}
+            {% elsif page.url != '/' and page.url contains dropdown.url %}
+              {% assign class = 'active' %}
+            {% endif %}
+          {% endfor %}
         {% endif %}
-          {% if link.title == 'Company' %}
+          {% if link.dropdown %}
             <div class="dropdown">
-              <button type="button" class="hidden-xs header-menu-item link dropdown-toggle">{{ link.title }}</button>
-              <div class="dropdown-menu">
-                {% for dropdown in link.dropdown %}
-                  <a href="{{ dropdown.url }}" class="{{class}} dropdown-item">{{ dropdown.title }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          {% elsif link.title == 'Resources' %}
-            <div class="dropdown">
-              <button type="button" class="hidden-xs header-menu-item link dropdown-toggle">{{ link.title }}</button>
+              <button type="button" class="{{class}} hidden-xs header-menu-item link dropdown-toggle">{{ link.title }}</button>
               <div class="dropdown-menu">
                 {% for dropdown in link.dropdown %}
                   <a href="{{ dropdown.url }}" class="{{class}} dropdown-item">{{ dropdown.title }}</a>
