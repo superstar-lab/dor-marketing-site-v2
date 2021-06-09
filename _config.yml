@@ -4,6 +4,7 @@ description: "From small business to enterprise, go beyond people counting with 
 baseurl: ""
 url: "http://localhost:4000"
 app_url: "http://localhost:3200"
+proxy_url: "https://staging.getdor.com"
 host: 0.0.0.0
 source: src
 destination: _dist

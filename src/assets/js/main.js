@@ -1,21 +1,6 @@
 $( function() {
     var $body = $( 'body' );
     var $document = $( document );
-
-    /*$(".trusted__slider").slick({
-        slidesToShow: 6,
-        autoplay: true,
-        dots: false,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2
-            }
-          }
-        ]
-      });*/
     
     $(".faq .tab-header").click(function(){
         $(".faq .accordion__tab").removeClass("active");

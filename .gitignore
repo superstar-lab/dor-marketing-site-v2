@@ -166,8 +166,10 @@ Gemfile.lock
 _dist
 .sass-cache
 .jekyll-metadata
+src/.jekyll-cache
 
 ### Custom ###
 rev
 pre_rev
 post_rev
+.ruby-version
