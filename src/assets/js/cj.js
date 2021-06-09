@@ -39,10 +39,7 @@ $( function() {
         }
     };
 
-    $('form.fsForm .fsSubmitButton').on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
+    $('form.fsForm .fsSubmitButton').on('click', function () {
         var form = $(this).closest('form.fsForm');
         var email = form.find('input[type="email"]').first().val();
 
